@@ -1,0 +1,85 @@
+extra mod families to add, along with their type, mod names, tiers, and stats.
+All tiers implied, start from the bottom, with the bottom-most tier always being T1. All tiers are displayed as name and then stat separated by a single or double Tab. If a name begins with "of", then it is of type:suffix. Otherwise it's a prefix.
+***
+Subcat: Ring
+Family: MinionDamageX
+Baroness's 	 Minions deal (5–10)% increased Damage 	
+Viscountess's 	 Minions deal (11–20)% increased Damage 	
+Marchioness's 	 Minions deal (21–30)% increased Damage 	
+Countess's 	 Minions deal (31–36)% increased Damage 	
+Duchess's 	 Minions deal (37–42)% increased Damage
+
+Family: MinionAttackSpeedAndCastSpeedX
+of Motivation 	 Minions have (5–7)% increased Attack and Cast Speed 	
+of Coercion 	 Minions have (8–10)% increased Attack and Cast Speed 	
+of Incitation 	 Minions have (11–13)% increased Attack and Cast Speed 	
+of Agitation 	 Minions have (14–16)% increased Attack and Cast Speed
+
+Family: MinionLifeX
+of the Administrator 	 Minions have (13–17)% increased maximum Life 	
+of the Rector 	 	 Minions have (18–22)% increased maximum Life 	
+of the Overseer 	 Minions have (23–27)% increased maximum Life 	
+of the Taskmaster 	 Minions have (28–32)% increased maximum Life
+
+Family: MinionMovementSpeedX
+of Coordination 	 Minions have (6–10)% increased Movement Speed 	
+of Collaboration 	 Minions have (11–15)% increased Movement Speed 	
+of Integration 		 Minions have (16–20)% increased Movement Speed 	
+of Orchestration 	 Minions have (21–25)% increased Movement Speed 	
+of Harmony 		 Minions have (26–30)% increased Movement Speed
+
+Family: MinionElementalResistancesX
+of Adjustment 		 Minions have +(11–15)% to all Elemental Resistances 	
+of Acclimatisation 	 Minions have +(16–20)% to all Elemental Resistances 	
+of Adaptation 		 Minions have +(21–23)% to all Elemental Resistances 	
+of Evolution 		 Minions have +(24–26)% to all Elemental Resistances 	
+of Metamorphosis 	 Minions have +(27–30)% to all Elemental Resistances
+
+Family: IncreaseSocketedGemLevelX
+Exemplary 	 +1 to Level of Socketed Gems 	
+Quintessential 	 +2 to Level of Socketed Gems 	
+Flawless 	 +3 to Level of Socketed Gems
+
+***
+Subcat: Shield(INT)
+Family: MinionDamageX2
+Baroness's 	 Minions deal (10–19)% increased Damage 	
+Viscountess's 	 Minions deal (20–29)% increased Damage 	
+Marchioness's 	 Minions deal (30–39)% increased Damage 	
+Countess's 	 Minions deal (40–54)% increased Damage 	
+Duchess's 	 Minions deal (55–69)% increased Damage 	
+Princess's 	 Minions deal (70–84)% increased Damage 	
+Queen's 	 Minions deal (85–99)% increased Damage 	
+Empress's 	 Minions deal (100–109)% increased Damage
+
+Family: MinionLifeX2
+of the Administrator 	 Minions have (13–17)% increased maximum Life 	
+of the Rector 		 Minions have (18–22)% increased maximum Life 	
+of the Overseer 	 Minions have (23–27)% increased maximum Life 	
+of the Taskmaster 	 Minions have (28–32)% increased maximum Life 	
+of the Slavedriver 	 Minions have (33–36)% increased maximum Life 	
+of the Despot 		 Minions have (37–40)% increased maximum Life 	
+
+Family: MinionElementalResistancesX2
+of Adjustment 		Minions have +(11–15)% to all Elemental Resistances 	
+of Acclimatisation 		Minions have +(16–20)% to all Elemental Resistances 	
+of Adaptation 		Minions have +(21–23)% to all Elemental Resistances 	
+of Evolution 		Minions have +(24–26)% to all Elemental Resistances 	
+of Metamorphosis 		Minions have +(27–30)% to all Elemental Resistances
+
+Family: MinionPhysicalDamageReductionX2
+of the Guard 		physical,minion500 Minions have (7–9)% additional Physical Damage Reduction 	
+of the Brigade 		physical,minion500 Minions have (10–12)% additional Physical Damage Reduction 	
+of the Phalanx 		physical,minion500 Minions have (13–15)% additional Physical Damage Reduction
+
+Family: MinionCriticalStrikeChanceX2
+of Luck 		Minions have (10–19)% increased Critical Strike Chance 	
+of Fortune 		Minions have (20–39)% increased Critical Strike Chance 	
+of Providence 		Minions have (40–59)% increased Critical Strike Chance 	
+of Serendipity 		Minions have (60–79)% increased Critical Strike Chance 	
+of Determinism 		Minions have (80–99)% increased Critical Strike Chance 	
+of Destiny 		Minions have (100–109)% increased Critical Strike Chance
+
+Family: GrantedSkillX2
+of the Convocation 	Grants Level 1 Convocation Skill
+

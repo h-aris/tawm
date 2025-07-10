@@ -1,0 +1,406 @@
+The following are subcategories for weapons. The A or C next to their name signifies Attack or Caster.
+
+OneHanded:
+
+Claw A 
+Minion Wand C
+Dagger A
+One Hand Axe A
+One Hand Mace A
+One Hand Sword A
+Rune Dagger C 
+Sceptre C
+Thrusting One Hand Sword A
+Wand C
+
+TwoHanded:
+
+Bow A 
+Staff C
+Two Hand Axe A 
+Two Hand Mace A
+Two Hand Sword A
+Warstaff A
+
+-----------
+
+The following are Basetypes for each subcat. They are separated by asterisks. For weapons, keep at most 15 of them starting from the bottom. "None" does not count as a Basetype, disregard it. In the application, order them in reverse order.
+
+SUBCAT: Claw
+
+None
+Nailed Fist
+Sharktooth Claw
+Awl
+Cat's Paw
+Blinder
+Timeworn Claw
+Sparkling Claw
+Fright Claw
+Double Claw
+Thresher Claw
+Gouger
+Tiger's Paw
+Gut Ripper
+Prehistoric Claw
+Noble Claw
+Eagle Claw
+Twin Claw
+Great White Claw
+Throat Stabber
+Hellion's Paw
+Eye Gouger
+Vaal Claw
+Imperial Claw
+Terror Claw
+Gemini Claw
+
+***
+
+SUBCAT: Minion Wand
+
+None
+Calling Wand
+Convening Wand
+Convoking Wand
+
+***
+
+SUBCAT: Dagger
+
+None
+Glass Shank
+Skinning Knife
+Stiletto
+Flaying Knife
+Prong Dagger
+Poignard
+Trisula
+Gutting Knife
+Ambusher
+Sai
+
+***
+
+SUBCAT: One Hand Axe
+
+None
+Rusted Hatchet
+Jade Hatchet
+Boarding Axe
+Cleaver
+Broad Axe
+Arming Axe
+Decorative Axe
+Spectral Axe
+Etched Hatchet
+Jasper Axe
+Tomahawk
+Wrist Chopper
+War Axe
+Chest Splitter
+Ceremonial Axe
+Wraith Axe
+Engraved Hatchet
+Karui Axe
+Siege Axe
+Reaver Axe
+Butcher Axe
+Vaal Hatchet
+Royal Axe
+Infernal Axe
+Runic Hatchet
+
+***
+
+SUBCAT: One Hand Mace
+
+None
+Driftwood Club
+Tribal Club
+Spiked Club
+Stone Hammer
+War Hammer
+Bladed Mace
+Ceremonial Mace
+Dream Mace
+Wyrm Mace
+Petrified Club
+Barbed Club
+Rock Breaker
+Battle Hammer
+Flanged Mace
+Ornate Mace
+Phantom Mace
+Dragon Mace
+Ancestral Club
+Tenderizer
+Gavel
+Legion Hammer
+Pernach
+Auric Mace
+Nightmare Mace
+Behemoth Mace
+
+***
+
+SUBCAT: One Hand Sword
+
+None
+Golden Blade
+Rusted Sword
+Charan's Sword
+Copper Sword
+Sabre
+Broad Sword
+War Sword
+Ancient Sword
+Elegant Sword
+Dusk Blade
+Hook Sword
+Variscite Blade
+Cutlass
+Baselard
+Battle Sword
+Elder Sword
+Graceful Sword
+Twilight Blade
+Grappler
+Gemstone Sword
+Corsair Sword
+Gladius
+Legion Sword
+Vaal Blade
+Eternal Sword
+Midnight Blade
+Tiger Hook
+
+***
+
+SUBCAT: Rune Dagger
+
+None
+Carving Knife
+Boot Knife
+Copper Kris
+Skean
+Imp Dagger
+Butcher Knife
+Boot Blade
+Golden Kris
+Royal Skean
+Fiend Dagger
+Slaughter Knife
+Ezomyte Dagger
+Platinum Kris
+Imperial Skean
+Demon Dagger
+
+***
+
+SUBCAT: Sceptre
+
+None
+Driftwood Sceptre
+Darkwood Sceptre
+Bronze Sceptre
+Quartz Sceptre
+Iron Sceptre
+Ochre Sceptre
+Ritual Sceptre
+Shadow Sceptre
+Grinning Fetish
+Horned Sceptre
+Sekhem
+Crystal Sceptre
+Lead Sceptre
+Blood Sceptre
+Royal Sceptre
+Abyssal Sceptre
+Stag Sceptre
+Karui Sceptre
+Tyrant's Sekhem
+Opal Sceptre
+Platinum Sceptre
+Vaal Sceptre
+Carnal Sceptre
+Void Sceptre
+Sambar Sceptre
+
+***
+
+SUBCAT: Thrusting One Hand Sword
+
+None
+Rusted Spike
+Whalebone Rapier
+Battered Foil
+Basket Rapier
+Jagged Foil
+Antique Rapier
+Elegant Foil
+Thorn Rapier
+Smallsword
+Wyrmbone Rapier
+Burnished Foil
+Estoc
+Serrated Foil
+Primeval Rapier
+Fancy Foil
+Apex Rapier
+Courtesan Sword
+Dragonbone Rapier
+Tempered Foil
+Pecoraro
+Spiraled Foil
+Vaal Rapier
+Jewelled Foil
+Harpy Rapier
+Dragoon Sword
+
+***
+
+SUBCAT: Wand
+
+None
+Driftwood Wand
+Goat's Horn
+Carved Wand
+Quartz Wand
+Spiraled Wand
+Sage Wand
+Pagan Wand
+Faun's Horn
+Engraved Wand
+Crystal Wand
+Coiled Wand
+Omen Wand
+Heathen Wand
+Demon's Horn
+Imbued Wand
+Opal Wand
+Tornado Wand
+Prophecy Wand
+Profane Wand
+
+***
+
+SUBCAT: Bow 
+
+None
+Crude Bow
+Short Bow
+Long Bow
+Composite Bow
+Recurve Bow
+Bone Bow
+Royal Bow
+Death Bow
+Grove Bow
+Reflex Bow
+Decurve Bow
+Compound Bow
+Sniper Bow
+Ivory Bow
+Highborn Bow
+Decimation Bow
+Thicket Bow
+Steelwood Bow
+Citadel Bow
+Ranger Bow
+Assassin Bow
+Spine Bow
+Imperial Bow
+Harbinger Bow
+Maraketh Bow
+
+*** 
+
+SUBCAT: Staff
+
+None
+Gnarled Branch
+Primitive Staff
+Long Staff
+Royal Staff
+Crescent Staff
+Woodful Staff
+Quarterstaff
+Highborn Staff
+Moon Staff
+Primordial Staff
+Lathi
+Imperial Staff
+Eclipse Staff
+
+***
+
+SUBCAT: Two Hand Axe
+
+None
+Stone Axe
+Jade Chopper
+Woodsplitter
+Poleaxe
+Double Axe
+Gilded Axe
+Shadow Axe
+Dagger Axe
+Jasper Chopper
+Timber Axe
+Headsman Axe
+Labrys
+Noble Axe
+Abyssal Axe
+Karui Chopper
+Talon Axe
+Sundering Axe
+Ezomyte Axe
+Vaal Axe
+Despot Axe
+Void Axe
+Fleshripper
+
+***
+
+SUBCAT: Two Hand Sword
+
+None
+Corroded Blade
+Longsword
+Bastard Sword
+Two-Handed Sword
+Etched Greatsword
+Ornate Sword
+Spectral Sword
+Curved Blade
+Butcher Sword
+Footman Sword
+Highland Blade
+Engraved Greatsword
+Tiger Sword
+Wraith Sword
+Lithe Blade
+Headman's Sword
+Reaver Sword
+Ezomyte Blade
+Vaal Greatsword
+Lion Sword
+Infernal Sword
+Exquisite Blade
+
+***
+
+SUBCAT: Warstaff
+
+None
+Iron Staff
+Coiled Staff
+Vile Staff
+Military Staff
+Serpentine Staff
+Foul Staff
+Ezomyte Staff
+Maelström Staff
+Judgement Staff
+

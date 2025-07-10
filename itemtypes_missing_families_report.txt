@@ -1,0 +1,127 @@
+Family: SocketedColdGemLevel2To
+  Equipment: Attack Weapons
+  Subcategories: ['TwoHanded', 'OneHanded']
+  Likely matches: ['SocketedColdGemLevel']
+
+Family: SocketedFireGemLevel2To
+  Equipment: Attack Weapons
+  Subcategories: ['TwoHanded', 'OneHanded']
+  Likely matches: ['SocketedFireGemLevel']
+
+Family: ReducedPhysicalDamageTaken5Additional
+  Equipment: Body Armour
+  Subcategories: ['Str', 'StrDex', 'StrInt']
+  Likely matches: ['PhysicalDamage', 'ReducedPhysicalDamageTaken']
+  Equipment: Shield
+  Subcategories: ['Str', 'StrDex', 'StrInt']
+  Likely matches: ['PhysicalDamage', 'ReducedPhysicalDamageTaken']
+
+Family: ReducedPhysicalDamageTaken6Additional
+  Equipment: Body Armour
+  Subcategories: ['Str', 'StrDex', 'StrInt']
+  Likely matches: ['PhysicalDamage', 'ReducedPhysicalDamageTaken']
+  Equipment: Shield
+  Subcategories: ['Str', 'StrDex', 'StrInt']
+  Likely matches: ['PhysicalDamage', 'ReducedPhysicalDamageTaken']
+
+Family: ReducedPhysicalDamageTaken7Additional
+  Equipment: Body Armour
+  Subcategories: ['Str', 'StrDex', 'StrInt']
+  Likely matches: ['PhysicalDamage', 'ReducedPhysicalDamageTaken']
+  Equipment: Shield
+  Subcategories: ['Str', 'StrDex', 'StrInt']
+  Likely matches: ['PhysicalDamage', 'ReducedPhysicalDamageTaken']
+
+Family: ReducedPhysicalDamageTaken8Additional
+  Equipment: Body Armour
+  Subcategories: ['Str', 'StrDex', 'StrInt']
+  Likely matches: ['PhysicalDamage', 'ReducedPhysicalDamageTaken']
+  Equipment: Shield
+  Subcategories: ['Str', 'StrDex', 'StrInt']
+  Likely matches: ['PhysicalDamage', 'ReducedPhysicalDamageTaken']
+
+Family: MovementVelocity20Increased
+  Equipment: Boots
+  Subcategories: ['StrInt', 'Dex', 'Str', 'DexInt', 'Int', 'StrDex']
+  Likely matches: ['MovementVelocity']
+
+Family: MovementVelocity25Increased
+  Equipment: Boots
+  Subcategories: ['StrInt', 'Dex', 'Str', 'DexInt', 'Int', 'StrDex']
+  Likely matches: ['MovementVelocity']
+
+Family: MovementVelocity30Increased
+  Equipment: Boots
+  Subcategories: ['StrInt', 'Dex', 'Str', 'DexInt', 'Int', 'StrDex']
+  Likely matches: ['MovementVelocity']
+
+Family: MovementVelocity35Increased
+  Equipment: Boots
+  Subcategories: ['StrInt', 'Dex', 'Str', 'DexInt', 'Int', 'StrDex']
+  Likely matches: ['MovementVelocity']
+
+Family: PhysicalDamageAddsTo22
+  Equipment: Gloves
+  Subcategories: ['StrInt', 'Dex', 'Str', 'DexInt', 'Int', 'StrDex']
+  Likely matches: ['PhysicalDamageAddsTo222', 'PhysicalDamageAddsTo2', 'PhysicalDamage']
+
+Family: LifeGainPerTargetGain32
+  Equipment: Jewellery
+  Subcategories: ['Amulet']
+  Likely matches: ['LifeGainPerTarget']
+
+Family: LifeGainPerTargetGain42
+  Equipment: Jewellery
+  Subcategories: ['Amulet']
+  Likely matches: ['LifeGainPerTarget']
+
+Family: LifeLeechJewellery2
+  Equipment: Jewellery
+  Subcategories: ['Amulet']
+  Likely matches: ['LifeLeech', 'LifeLeechJewellery222']
+
+Family: MaximumChaosResistance2To
+  Equipment: Shield
+  Subcategories: ['StrInt', 'Dex', 'Str', 'DexInt', 'Int', 'StrDex']
+  Likely matches: ['ChaosResistance', 'MaximumChaosResistance']
+
+Family: MaximumChaosResistance3To
+  Equipment: Shield
+  Subcategories: ['StrInt', 'Dex', 'Str', 'DexInt', 'Int', 'StrDex']
+  Likely matches: ['ChaosResistance', 'MaximumChaosResistance']
+
+Family: MaximumColdResist2To
+  Equipment: Shield
+  Subcategories: ['StrInt', 'Dex', 'Str', 'DexInt', 'Int', 'StrDex']
+  Likely matches: ['MaximumColdResist']
+
+Family: MaximumColdResist3To
+  Equipment: Shield
+  Subcategories: ['StrInt', 'Dex', 'Str', 'DexInt', 'Int', 'StrDex']
+  Likely matches: ['MaximumColdResist']
+
+Family: MaximumFireResist2To
+  Equipment: Shield
+  Subcategories: ['StrInt', 'Dex', 'Str', 'DexInt', 'Int', 'StrDex']
+  Likely matches: ['MaximumFireResist']
+
+Family: MaximumFireResist3To
+  Equipment: Shield
+  Subcategories: ['StrInt', 'Dex', 'Str', 'DexInt', 'Int', 'StrDex']
+  Likely matches: ['MaximumFireResist']
+
+Family: MaximumLightningResistance2To
+  Equipment: Shield
+  Subcategories: ['StrInt', 'Dex', 'Str', 'DexInt', 'Int', 'StrDex']
+  Likely matches: ['MaximumLightningResistance', 'LightningResistance']
+
+Family: MaximumLightningResistance3To
+  Equipment: Shield
+  Subcategories: ['StrInt', 'Dex', 'Str', 'DexInt', 'Int', 'StrDex']
+  Likely matches: ['MaximumLightningResistance', 'LightningResistance']
+
+Family: MaximumResistances2To
+  Equipment: Shield
+  Subcategories: ['StrInt', 'Dex', 'Str', 'DexInt', 'Int', 'StrDex']
+  Likely matches: ['MaximumResistances']
+

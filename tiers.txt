@@ -1,0 +1,69 @@
+AdditionalArrowsBowAttacks2: ['T2'] 
+-> Convert to T1
+
+BaseEnergyShieldAndMana222: ['T2', 'T4']
+BaseEnergyShieldAndMana3: ['T2', 'T4']
+BeltFlaskRecoveryRateIncreasedFlask: ['T2', 'T4']
+-> Convert to ['T1', 'T2']
+
+GlobalDamageTypeGemLevel: ['T5']
+GlobalDamageTypeGemLevel1To: ['T2']
+GlobalDamageTypeGemLevel1To3: ['T3']
+GlobalDamageTypeGemLevel1To4: ['T4']
+-> Convert to T1
+
+LifeGainPerTarget2: ['T3']
+LifeGainPerTargetGain32: ['T2']
+-> Merge with LifeGainPerTargetGain42 (keep whichever name you prefer), keep tiering.
+
+LifeLeech2: ['T3']
+-> Merge with LifeLeechJewellery2, same as above.
+
+LifeLeechJewellery222: ['T2']
+-> convert to T1, merge with ManaLeech222, keep ManaLeech222 name.
+
+MaximumChaosResistance: ['T3']
+MaximumChaosResistance2To: ['T2']
+-> Merge with MaximumChaosResistance3To (keep whichever name you prefer), keep tiering.
+
+MaximumColdResist: ['T3']
+MaximumColdResist2To: ['T2']
+-> Merge with MaximumColdResist3To (keep whichever name you prefer), keep tiering.
+
+MaximumFireResist: ['T3']
+MaximumFireResist2To: ['T2']
+-> Merge with MaximumFireResist3To (keep whichever name you prefer), keep tiering.
+
+MaximumLightningResistance: ['T3']
+MaximumLightningResistance2To: ['T2']
+-> Merge with MaximumLightningResistance3To (keep whichever name you prefer), keep tiering.
+
+MaximumResistances: ['T2']
+-> Merge with MaximumResistances2To (keep whichever name you prefer), keep tiering.
+
+MovementVelocity: ['T5']
+MovementVelocity20Increased: ['T4']
+MovementVelocity25Increased: ['T3']
+MovementVelocity30Increased: ['T2']
+-> Merge with MovementVelocity35Increased, keep name MovementVelocity, keep tiering.
+
+
+PhysicalDamage2: ['T4']
+-> Merge with PhysicalDamageAddsTo22 (keep whichever name you prefer), keep tiering.
+
+ReducedPhysicalDamageTaken: ['T5']
+ReducedPhysicalDamageTaken5Additional: ['T4']
+ReducedPhysicalDamageTaken6Additional: ['T3']
+ReducedPhysicalDamageTaken7Additional: ['T2']
+-> Merge with ReducedPhysicalDamageTaken8Additional, keep name ReducedPhysicalDamageTaken, keep tiering.
+
+SocketedColdGemLevel: ['T2']
+-> Merge with SocketedColdGemLevel2To, keep name SocketedColdGemLevel, keep tiering.
+
+
+SocketedFireGemLevel: ['T2']
+-> Merge with SocketedFireGemLevel2To, keep name SocketedColdGemLevel, keep tiering.
+
+
+
+

@@ -1,0 +1,138 @@
+Parse as before. First line under asterisks is the Basetype. Do not keep the 15 tier maximum, we will abolish this for the other basetypes as well. Ignore "None" and "Choose an item"
+***
+Quiver
+Choose an item
+None
+Serrated Arrow Quiver
+Fire Arrow Quiver
+Sharktooth Arrow Quiver
+Feathered Arrow Quiver
+Penetrating Arrow Quiver
+Blunt Arrow Quiver
+Two-Point Arrow Quiver
+Spike-Point Arrow Quiver
+Blazing Arrow Quiver
+Broadhead Arrow Quiver
+Vile Arrow Quiver
+Heavy Arrow Quiver
+Primal Arrow Quiver
+Ornate Quiver
+Artillery Quiver
+
+***
+Shield (DEX)
+Choose an item
+None
+Goathide Buckler
+Pine Buckler
+Painted Buckler
+Hammered Buckler
+War Buckler
+Gilded Buckler
+Oak Buckler
+Enameled Buckler
+Corrugated Buckler
+Battle Buckler
+Golden Buckler
+Ironwood Buckler
+Lacquered Buckler
+Vaal Buckler
+Crusader Buckler
+Imperial Buckler
+
+***
+Shield (DEX/INT)
+Choose an item
+None
+Spiked Bundle
+Driftwood Spiked Shield
+Alloyed Spiked Shield
+Burnished Spiked Shield
+Ornate Spiked Shield
+Redwood Spiked Shield
+Compound Spiked Shield
+Polished Spiked Shield
+Sovereign Spiked Shield
+Alder Spiked Shield
+Ezomyte Spiked Shield
+Mirrored Spiked Shield
+Supreme Spiked Shield
+
+***
+Shield (INT)
+Choose an item
+None
+Twig Spirit Shield
+Yew Spirit Shield
+Tarnished Spirit Shield
+Jingling Spirit Shield
+Brass Spirit Shield
+Walnut Spirit Shield
+Ancient Spirit Shield
+Bone Spirit Shield
+Ivory Spirit Shield
+Fossilised Spirit Shield
+Chiming Spirit Shield
+Thorium Spirit Shield
+Lacewood Spirit Shield
+Vaal Spirit Shield
+Harmonic Spirit Shield
+Titanium Spirit Shield
+
+***
+Shield (STR)
+Choose an item
+None
+Splintered Tower Shield
+Corroded Tower Shield
+Rawhide Tower Shield
+Cedar Tower Shield
+Copper Tower Shield
+Reinforced Tower Shield
+Painted Tower Shield
+Buckskin Tower Shield
+Mahogany Tower Shield
+Bronze Tower Shield
+Girded Tower Shield
+Crested Tower Shield
+Shagreen Tower Shield
+Ebony Tower Shield
+Ezomyte Tower Shield
+Colossal Tower Shield
+Pinnacle Tower Shield
+
+***
+Shield (STR/DEX)
+Choose an item
+None
+Rotted Round Shield
+Fir Round Shield
+Studded Round Shield
+Scarlet Round Shield
+Splendid Round Shield
+Maple Round Shield
+Spiked Round Shield
+Crimson Round Shield
+Baroque Round Shield
+Teak Round Shield
+Spiny Round Shield
+Cardinal Round Shield
+Elegant Round Shield
+
+***
+Shield (STR/INT)
+Choose an item
+None
+Plank Kite Shield
+Linden Kite Shield
+Reinforced Kite Shield
+Layered Kite Shield
+Ceremonial Kite Shield
+Etched Kite Shield
+Steel Kite Shield
+Laminated Kite Shield
+Angelic Kite Shield
+Branded Kite Shield
+Champion Kite Shield
+Mosaic Kite Shield
+Archon Kite Shield

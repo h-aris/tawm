@@ -1,0 +1,556 @@
+The following are all non weapon basetypes. Seperating with asterisks per subcat. Keep 15 basetypes maximum, starting from the bottom, disregarding "None" and "Choose an item". First line after asterisks is always the subcat.
+
+***  
+Body Armour (DEX)
+Choose an item
+None
+Shabby Jerkin
+Strapped Leather
+Buckskin Tunic
+Wild Leather
+Full Leather
+Sun Leather
+Thief's Garb
+Eelskin Tunic
+Frontier Leather
+Glorious Leather
+Coronal Leather
+Cutthroat's Garb
+Sharkskin Tunic
+Destiny Leather
+Exquisite Leather
+Zodiac Leather
+Assassin's Garb
+Supreme Leather
+Astral Leather
+Syndicate's Garb
+
+***
+Body Armour (DEX/INT)
+Choose an item
+None
+Padded Vest
+Oiled Vest
+Padded Jacket
+Oiled Coat
+Scarlet Raiment
+Waxed Garb
+Bone Armour
+Quilted Jacket
+Sleek Coat
+Crimson Raiment
+Lacquered Garb
+Crypt Armour
+Sentinel Jacket
+Varnished Coat
+Blood Raiment
+Sadist Garb
+Carnal Armour
+Sanguine Raiment
+Torturer Garb
+Necrotic Armour
+
+***
+Body Armour (INT)
+Choose an item
+None
+Simple Robe
+Silken Vest
+Scholar's Robe
+Silken Garb
+Mage's Vestment
+Silk Robe
+Cabalist Regalia
+Sage's Robe
+Silken Wrap
+Conjurer's Vestment
+Spidersilk Robe
+Destroyer Regalia
+Savant's Robe
+Necromancer Silks
+Occultist's Vestment
+Widowsilk Robe
+Vaal Regalia
+Arcane Vestment
+Nightweave Robe
+Twilight Regalia
+
+***
+Body Armour (STR)
+Choose an item
+None
+Plate Vest
+Chestplate
+Copper Plate
+War Plate
+Full Plate
+Arena Plate
+Lordly Plate
+Bronze Plate
+Battle Plate
+Sun Plate
+Colosseum Plate
+Majestic Plate
+Golden Plate
+Crusader Plate
+Astral Plate
+Gladiator Plate
+Glorious Plate
+Titan Plate
+Legion Plate
+Royal Plate
+
+***
+Body Armour (STR/DEX)
+Choose an item
+None
+Scale Vest
+Light Brigandine
+Scale Doublet
+Infantry Brigandine
+Full Scale Armour
+Soldier's Brigandine
+Field Lamellar
+Wyrmscale Doublet
+Hussar Brigandine
+Full Wyrmscale
+Commander's Brigandine
+Battle Lamellar
+Dragonscale Doublet
+Desert Brigandine
+Full Dragonscale
+General's Brigandine
+Triumphant Lamellar
+Full Wyvernscale
+Marshall's Brigandine
+Conquest Lamellar
+
+***
+Body Armour (STR/INT)
+Choose an item
+None
+Chainmail Vest
+Chainmail Tunic
+Ringmail Coat
+Chainmail Doublet
+Full Ringmail
+Full Chainmail
+Holy Chainmail
+Latticed Ringmail
+Crusader Chainmail
+Ornate Ringmail
+Chain Hauberk
+Devout Chainmail
+Loricated Ringmail
+Conquest Chainmail
+Elegant Ringmail
+Saint's Hauberk
+Saintly Chainmail
+Grand Ringmail
+Paladin's Hauberk
+Sacred Chainmail
+
+***
+Boots (DEX)
+Choose an item
+None
+Rawhide Boots
+Goathide Boots
+Cloudwhisper Boots
+Deerskin Boots
+Nubuck Boots
+Eelskin Boots
+Sharkskin Boots
+Windbreak Boots
+Shagreen Boots
+Stealth Boots
+Slink Boots
+Harpyskin Boots
+Stormrider Boots
+Velour Boots
+
+***
+Boots (DEX/INT)
+Choose an item
+None
+Wrapped Boots
+Strapped Boots
+Clasped Boots
+Shackled Boots
+Trapper Boots
+Ambush Boots
+Carnal Boots
+Assassin's Boots
+Murder Boots
+Fugitive Boots
+Two-Toned Boots
+Infiltrator Boots
+Phantom Boots
+
+***
+Boots (INT)
+Choose an item
+None
+Wool Shoes
+Velvet Slippers
+Duskwalk Slippers
+Silk Slippers
+Scholar Boots
+Satin Slippers
+Samite Slippers
+Nightwind Slippers
+Conjurer Boots
+Arcanist Slippers
+Sorcerer Boots
+Sage Slippers
+Dreamquest Slippers
+Warlock Boots
+
+***
+Boots (STR)
+Choose an item
+None
+Iron Greaves
+Steel Greaves
+Basemetal Treads
+Plated Greaves
+Reinforced Greaves
+Antique Greaves
+Ancient Greaves
+Darksteel Treads
+Goliath Greaves
+Vaal Greaves
+Titan Greaves
+Precursor Greaves
+Brimstone Treads
+Leviathan Greaves
+
+***
+Boots (STR/DEX)
+Choose an item
+None
+Leatherscale Boots
+Ironscale Boots
+Bronzescale Boots
+Steelscale Boots
+Serpentscale Boots
+Wyrmscale Boots
+Hydrascale Boots
+Dragonscale Boots
+Two-Toned Boots
+Chimerascale Boots
+Wyvernscale Boots
+
+***
+Boots (STR/INT)
+Choose an item
+None
+Chain Boots
+Ringmail Boots
+Mesh Boots
+Riveted Boots
+Zealot Boots
+Soldier Boots
+Legion Boots
+Crusader Boots
+Two-Toned Boots
+Martyr Boots
+Paladin Boots
+
+***
+Gloves (DEX)
+Choose an item
+None
+Rawhide Gloves
+Goathide Gloves
+Tinker Gloves
+Deerskin Gloves
+Nubuck Gloves
+Eelskin Gloves
+Apprentice Gloves
+Sharkskin Gloves
+Shagreen Gloves
+Stealth Gloves
+Gripped Gloves
+Slink Gloves
+Trapsetter Gloves
+Harpyskin Gloves
+Velour Gloves
+
+***
+Gloves (DEX/INT)
+Choose an item
+None
+Wrapped Mitts
+Strapped Mitts
+Clasped Mitts
+Trapper Mitts
+Ambush Mitts
+Carnal Mitts
+Assassin's Mitts
+Murder Mitts
+Infiltrator Mitts
+Phantom Mitts
+
+***
+Gloves (INT)
+Choose an item
+None
+Wool Gloves
+Leyline Gloves
+Velvet Gloves
+Silk Gloves
+Embroidered Gloves
+Aetherwind Gloves
+Satin Gloves
+Samite Gloves
+Conjurer Gloves
+Arcanist Gloves
+Sorcerer Gloves
+Fingerless Silk Gloves
+Nexus Gloves
+Sage Gloves
+Warlock Gloves
+
+***
+Gloves (STR)
+Choose an item
+None
+Iron Gauntlets
+Preserving Gauntlets
+Plated Gauntlets
+Bronze Gauntlets
+Steel Gauntlets
+Antique Gauntlets
+Guarding Gauntlets
+Ancient Gauntlets
+Goliath Gauntlets
+Vaal Gauntlets
+Titan Gauntlets
+Spiked Gloves
+Thwarting Gauntlets
+Precursor Gauntlets
+Leviathan Gauntlets
+
+***
+Gloves (STR/DEX)
+Choose an item
+None
+Fishscale Gauntlets
+Ironscale Gauntlets
+Bronzescale Gauntlets
+Steelscale Gauntlets
+Serpentscale Gauntlets
+Wyrmscale Gauntlets
+Hydrascale Gauntlets
+Dragonscale Gauntlets
+Chimerascale Gauntlets
+Wyvernscale Gauntlets
+
+***
+Gloves (STR/INT)
+Choose an item
+None
+Chain Gloves
+Ringmail Gloves
+Mesh Gloves
+Riveted Gloves
+Zealot Gloves
+Soldier Gloves
+Legion Gloves
+Crusader Gloves
+Apothecary's Gloves
+Martyr Gloves
+Paladin Gloves
+
+***
+Helmet (DEX)
+Choose an item
+None
+Leather Cap
+Tricorne
+Leather Hood
+Wolf Pelt
+Hunter Hood
+Noble Tricorne
+Ursine Pelt
+Silken Hood
+Sinner Tricorne
+Lion Pelt
+Dire Pelt
+Grizzly Pelt
+Majestic Pelt
+
+***
+Helmet (DEX/INT)
+Choose an item
+None
+Scare Mask
+Plague Mask
+Gale Crown
+Iron Mask
+Festival Mask
+Golden Mask
+Raven Mask
+Callous Mask
+Winter Crown
+Regicide Mask
+Harlequin Mask
+Vaal Mask
+Deicide Mask
+Jester Mask
+Blizzard Crown
+Ancient Mask
+Torturer's Mask
+
+***
+Helmet (INT)
+Choose an item
+None
+Vine Circlet
+Iron Circlet
+Torture Cage
+Tribal Circlet
+Bone Circlet
+Lunaris Circlet
+Steel Circlet
+Necromancer Circlet
+Solaris Circlet
+Mind Cage
+Hubris Circlet
+Moonlit Circlet
+Sunfire Circlet
+Lich's Circlet
+
+***
+Helmet (STR)
+Choose an item
+None
+Iron Hat
+Cone Helmet
+Barbute Helmet
+Close Helmet
+Gladiator Helmet
+Reaver Helmet
+Siege Helmet
+Samnite Helmet
+Ezomyte Burgonet
+Royal Burgonet
+Eternal Burgonet
+General's Helmet
+Conqueror's Helmet
+Giantslayer Helmet
+
+***
+Helmet (STR/DEX)
+Choose an item
+None
+Battered Helm
+Sallet
+Sorrow Mask
+Visored Sallet
+Gilded Sallet
+Secutor Helm
+Fencer Helm
+Atonement Mask
+Lacquered Helmet
+Fluted Bascinet
+Pig-Faced Bascinet
+Nightmare Bascinet
+Knight Helm
+Penitent Mask
+Conquest Helmet
+Haunted Bascinet
+
+***
+Helmet (STR/INT)
+Choose an item
+None
+Rusted Coif
+Soldier Helmet
+Imp Crown
+Great Helmet
+Crusader Helmet
+Aventail Helmet
+Zealot Helmet
+Demon Crown
+Great Crown
+Magistrate Crown
+Prophet Crown
+Praetor Crown
+Bone Helmet
+Faithful Helmet
+Archdemon Crown
+Paladin Crown
+Divine Crown
+
+***
+Amulet
+Choose an item
+None
+Greatwolf Talisman
+Coral Amulet
+Paua Amulet
+Amber Amulet
+Jade Amulet
+Lapis Amulet
+Gold Amulet
+Agate Amulet
+Citrine Amulet
+Turquoise Amulet
+Onyx Amulet
+Unset Amulet
+Ruby Amulet
+Marble Amulet
+Seaglass Amulet
+Blue Pearl Amulet
+
+***
+Belt
+Choose an item
+None
+Stygian Vise
+Chain Belt
+Rustic Sash
+Heavy Belt
+Leather Belt
+Golden Obi
+Cloth Belt
+Studded Belt
+Mechanical Belt
+Crystal Belt
+Vanguard Belt
+
+***
+Ring
+Choose an item
+None
+Breach Ring
+Ring
+Iron Ring
+Coral Ring
+Paua Ring
+Sapphire Ring
+Golden Hoop
+Topaz Ring
+Ruby Ring
+Gold Ring
+Two-Stone Ring
+Shadowed Ring
+Shadowed Ring
+Diamond Ring
+Dusk Ring
+Moonstone Ring
+Penumbra Ring
+Shadowed Ring
+Tenebrous Ring
+Prismatic Ring
+Amethyst Ring
+Nameless Ring
+Iolite Ring
+Opal Ring
+Steel Ring
+Cerulean Ring
+Vermillion Ring
+Bone Ring
+Unset Ring

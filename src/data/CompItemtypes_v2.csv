@@ -1,0 +1,530 @@
+Equipment,Family,Subcategory
+Attack Weapons,AdditionalArrows2,TwoHanded
+Attack Weapons,AdditionalArrowsBowAttacks2,TwoHanded
+Attack Weapons,ChanceToFreeze2,TwoHanded
+Attack Weapons,ChanceToIgnite2,TwoHanded
+Attack Weapons,ChanceToShock2,TwoHanded
+Attack Weapons,ChaosDOTMultiplier,OneHanded
+Attack Weapons,ChaosDOTMultiplier2,TwoHanded
+Attack Weapons,ColdDamage,TwoHanded
+Attack Weapons,ColdDamage22,OneHanded
+Attack Weapons,ColdDamagePercentage2,TwoHanded
+Attack Weapons,CriticalStrikeChanceIncrease2,ALL
+Attack Weapons,CriticalStrikeMultiplierToGlobal,ALL
+Attack Weapons,Dexterity,ALL
+Attack Weapons,FireDOTMultiplier2,TwoHanded
+Attack Weapons,FireDamage,TwoHanded
+Attack Weapons,FireDamage22,OneHanded
+Attack Weapons,FireDamagePercentage2,TwoHanded
+Attack Weapons,GlobalDamageOverTimeMultiplier,TwoHanded
+Attack Weapons,GlobalDamageOverTimeMultiplier2,OneHanded
+Attack Weapons,IncreaseSocketedGemLevel1To2,ALL
+Attack Weapons,IncreasedAccuracy,OneHanded
+Attack Weapons,IncreasedAccuracy2,TwoHanded
+Attack Weapons,IncreasedAttackSpeed,ALL
+Attack Weapons,IncreasedMana,TwoHanded
+Attack Weapons,IncreasedMana222,OneHanded
+Attack Weapons,IncreasedWeaponElementalDamagePercent2,TwoHanded
+Attack Weapons,IncreasedWeaponElementalDamagePercent222,OneHanded
+Attack Weapons,Intelligence,ALL
+Attack Weapons,LifeGainPerTargetGrantsLife2,ALL
+Attack Weapons,LifeGainedFromEnemyDeath,ALL
+Attack Weapons,LifeLeechAttackWeapons2,ALL
+Attack Weapons,LightRadiusAndAccuracy,ALL
+Attack Weapons,LightRadiusAndAccuracyIncreasedGlobal,ALL
+Attack Weapons,LightRadiusAndAccuracyIncreasedGlobal2,ALL
+Attack Weapons,LightningDamage,TwoHanded
+Attack Weapons,LightningDamage22,OneHanded
+Attack Weapons,LightningDamagePercentage2,TwoHanded
+Attack Weapons,LocalAttributeRequirements,ALL
+Attack Weapons,LocalAttributeRequirements32Reduced,ALL
+Attack Weapons,LocalChaosDamage,TwoHanded
+Attack Weapons,LocalChaosDamage2,OneHanded
+Attack Weapons,LocalIncreasedPhysicalDamagePercentAndAccuracyRating,ALL
+Attack Weapons,LocalPhysicalDamagePercent,ALL
+Attack Weapons,ManaGainedFromEnemyDeath,ALL
+Attack Weapons,ManaLeech,ALL
+Attack Weapons,ManaRegeneration,TwoHanded
+Attack Weapons,ManaRegeneration2,OneHanded
+Attack Weapons,PhysicalDOTMultiplier2,TwoHanded
+Attack Weapons,PhysicalDamage22,OneHanded
+Attack Weapons,PhysicalDamageAddsTo2,TwoHanded
+Attack Weapons,ProjectileSpeed,TwoHanded
+Attack Weapons,SocketedBowGemLevel,TwoHanded
+Attack Weapons,SocketedChaosGemLevel,ALL
+Attack Weapons,SocketedColdGemLevel,ALL
+Attack Weapons,SocketedColdGemLevel2To,ALL
+Attack Weapons,SocketedFireGemLevel,ALL
+Attack Weapons,SocketedFireGemLevel2To,ALL
+Attack Weapons,SocketedLightningGemLevel,ALL
+Attack Weapons,SocketedMeleeGemLevel,ALL
+Attack Weapons,Strength,ALL
+Attack Weapons,StunDurationIncreasePercent,ALL
+Attack Weapons,StunThresholdReduction,ALL
+Body Armour,ArmourEnergyShieldPercent2,StrInt
+Body Armour,ArmourEnergyShieldPercent22,StrInt
+Body Armour,ArmourEvasionPercent2,StrDex
+Body Armour,ArmourEvasionPercent22,StrDex
+Body Armour,ArmourPercent2,Str
+Body Armour,ArmourPercentIncreasedArmour,Str
+Body Armour,AttackerTakesDamageNoRange2,ALL
+Body Armour,BaseArmour3,Str
+Body Armour,BaseArmourAndLife3,Str-StrDex-StrInt
+Body Armour,BaseArmourEnergyShield3,StrInt
+Body Armour,BaseArmourEvasion222,StrDex
+Body Armour,BaseEnergyShield32,Int
+Body Armour,BaseEnergyShieldAndLife22,DexInt-Int-StrInt
+Body Armour,BaseEnergyShieldAndMana,DexInt-StrInt
+Body Armour,BaseEnergyShieldAndMana222,Int
+Body Armour,BaseEvasion3,Dex
+Body Armour,BaseEvasionAndLife3,Dex-DexInt-StrDex
+Body Armour,BaseEvasionEnergyShield222,DexInt
+Body Armour,ChanceToSuppressSpells,Dex-DexInt-StrDex
+Body Armour,ChaosResistance,ALL
+Body Armour,ColdResistance,ALL
+Body Armour,Dexterity,Dex-DexInt-StrDex
+Body Armour,EnergyShieldDelay,DexInt-Int-StrInt
+Body Armour,EnergyShieldPercent2,Int
+Body Armour,EnergyShieldPercentIncreasedEnergy2,Int
+Body Armour,EvasionEnergyShieldPercent2,DexInt
+Body Armour,EvasionEnergyShieldPercent22,DexInt
+Body Armour,EvasionPercent2,Dex
+Body Armour,EvasionPercentIncreasedEvasion,Dex
+Body Armour,FireResistance,ALL
+Body Armour,IncreasedLife4,ALL
+Body Armour,IncreasedMana22,DexInt-Int-StrInt
+Body Armour,Intelligence,DexInt-Int-StrInt
+Body Armour,LifeRegenerationBodyArmour,ALL
+Body Armour,LightningResistance,ALL
+Body Armour,LocalAttributeRequirements,ALL
+Body Armour,LocalAttributeRequirements32Reduced,ALL
+Body Armour,ReducedPhysicalDamageTaken,Str-StrDex-StrInt
+Body Armour,ReducedPhysicalDamageTaken5Additional,Str-StrDex-StrInt
+Body Armour,ReducedPhysicalDamageTaken6Additional,Str-StrDex-StrInt
+Body Armour,ReducedPhysicalDamageTaken7Additional,Str-StrDex-StrInt
+Body Armour,ReducedPhysicalDamageTaken8Additional,Str-StrDex-StrInt
+Body Armour,Strength,Str-StrDex-StrInt
+Body Armour,StunRecovery,ALL
+Boots,ArmourEnergyShieldPercent,StrInt
+Boots,ArmourEnergyShieldPercent2,StrInt
+Boots,ArmourEvasionPercent,StrDex
+Boots,ArmourEvasionPercent2,StrDex
+Boots,ArmourPercent,Str
+Boots,ArmourPercentIncreasedArmour,Str
+Boots,BaseArmour,Str
+Boots,BaseArmourAndLife,Str-StrDex-StrInt
+Boots,BaseArmourEnergyShield2,StrInt
+Boots,BaseArmourEvasion2,StrDex
+Boots,BaseEnergyShield2,Int
+Boots,BaseEnergyShieldAndLife,DexInt-Int-StrInt
+Boots,BaseEnergyShieldAndMana2,DexInt-Int-StrInt
+Boots,BaseEvasion,Dex
+Boots,BaseEvasionAndLife,Dex-DexInt-StrDex
+Boots,BaseEvasionEnergyShield2,DexInt
+Boots,ChanceToSuppressSpells2,Dex-DexInt-StrDex
+Boots,ChaosResistance,ALL
+Boots,ColdResistance,ALL
+Boots,Dexterity,Dex-DexInt-StrDex
+Boots,EnergyShieldPercent22,Int
+Boots,EnergyShieldPercentIncreasedEnergy2,Int
+Boots,EnergyShieldRegeneration,DexInt-Int-StrInt
+Boots,EvasionEnergyShieldPercent,DexInt
+Boots,EvasionEnergyShieldPercent2,DexInt
+Boots,EvasionPercent,Dex
+Boots,EvasionPercentIncreasedEvasion,Dex
+Boots,FireResistance,ALL
+Boots,IncreasedLife2,ALL
+Boots,IncreasedMana22,DexInt-Int-StrInt
+Boots,Intelligence,DexInt-Int-StrInt
+Boots,ItemFoundRarityIncrease,ALL
+Boots,ItemFoundRarityIncreasePrefix,ALL
+Boots,LifeRegenerationBoots,ALL
+Boots,LifeRegenerationRate,Str-StrDex-StrInt
+Boots,LightningResistance,ALL
+Boots,LocalAttributeRequirements,ALL
+Boots,LocalAttributeRequirements32Reduced,ALL
+Boots,MovementVelocity,ALL
+Boots,MovementVelocity20Increased,ALL
+Boots,MovementVelocity25Increased,ALL
+Boots,MovementVelocity30Increased,ALL
+Boots,MovementVelocity35Increased,ALL
+Boots,Strength,Str-StrDex-StrInt
+Boots,StunRecovery,ALL
+Caster Weapons,AllGemChaos,OneHanded
+Caster Weapons,AllGemChaos3,TwoHanded
+Caster Weapons,AllGemCold,OneHanded
+Caster Weapons,AllGemCold3,TwoHanded
+Caster Weapons,AllGemFire3,TwoHanded
+Caster Weapons,AllGemLightning,OneHanded
+Caster Weapons,AllGemLightning3,TwoHanded
+Caster Weapons,AllGemMinion,OneHanded
+Caster Weapons,AllGemPhysical,OneHanded
+Caster Weapons,AllGemPhysical3,TwoHanded
+Caster Weapons,ChanceToFreeze,OneHanded
+Caster Weapons,ChanceToFreeze2,TwoHanded
+Caster Weapons,ChanceToIgnite,OneHanded
+Caster Weapons,ChanceToIgnite2,TwoHanded
+Caster Weapons,ChanceToShock,OneHanded
+Caster Weapons,ChanceToShock2,TwoHanded
+Caster Weapons,ChaosDOTMultiplier2,TwoHanded
+Caster Weapons,ChaosDOTMultiplier22,OneHanded
+Caster Weapons,ColdDOTMultiplier,TwoHanded
+Caster Weapons,ColdDOTMultiplier2,OneHanded
+Caster Weapons,ColdDamage,TwoHanded
+Caster Weapons,ColdDamage22,OneHanded
+Caster Weapons,ColdDamagePercentage2,TwoHanded
+Caster Weapons,ColdDamagePercentage3,OneHanded
+Caster Weapons,ColdDamagePercentagePrefix,TwoHanded
+Caster Weapons,ColdDamagePercentagePrefix2,OneHanded
+Caster Weapons,CriticalStrikeChanceIncrease2,ALL
+Caster Weapons,CriticalStrikeMultiplierToGlobal,ALL
+Caster Weapons,FireDOTMultiplier,OneHanded
+Caster Weapons,FireDOTMultiplier2,TwoHanded
+Caster Weapons,FireDamage,TwoHanded
+Caster Weapons,FireDamage22,OneHanded
+Caster Weapons,FireDamagePercentage2,TwoHanded
+Caster Weapons,FireDamagePercentage3,OneHanded
+Caster Weapons,FireDamagePercentagePrefix,TwoHanded
+Caster Weapons,FireDamagePercentagePrefix2,OneHanded
+Caster Weapons,GlobalDamageOverTimeMultiplier,TwoHanded
+Caster Weapons,GlobalDamageOverTimeMultiplier2,OneHanded
+Caster Weapons,IncreaseSocketedGemLevel,TwoHanded
+Caster Weapons,IncreaseSocketedGemLevel2,OneHanded
+Caster Weapons,IncreasedAccuracy,TwoHanded
+Caster Weapons,IncreasedAccuracy2,OneHanded
+Caster Weapons,IncreasedAttackSpeed,ALL
+Caster Weapons,IncreasedCastSpeed,TwoHanded
+Caster Weapons,IncreasedCastSpeed3,OneHanded
+Caster Weapons,IncreasedMana,TwoHanded
+Caster Weapons,IncreasedMana222,OneHanded
+Caster Weapons,IncreasedWeaponElementalDamagePercent2,TwoHanded
+Caster Weapons,IncreasedWeaponElementalDamagePercent222,OneHanded
+Caster Weapons,Intelligence,ALL
+Caster Weapons,LifeGainPerTargetGrantsLife2,ALL
+Caster Weapons,LifeGainedFromEnemyDeath,ALL
+Caster Weapons,LifeLeechAttackWeapons2,ALL
+Caster Weapons,LightRadiusAndAccuracy,ALL
+Caster Weapons,LightRadiusAndAccuracyIncreasedGlobal,ALL
+Caster Weapons,LightRadiusAndAccuracyIncreasedGlobal2,ALL
+Caster Weapons,LightningDamage,TwoHanded
+Caster Weapons,LightningDamage22,OneHanded
+Caster Weapons,LightningDamagePercentage2,TwoHanded
+Caster Weapons,LightningDamagePercentage3,OneHanded
+Caster Weapons,LightningDamagePercentagePrefix,TwoHanded
+Caster Weapons,LightningDamagePercentagePrefix2,OneHanded
+Caster Weapons,LocalAttributeRequirements,ALL
+Caster Weapons,LocalAttributeRequirements32Reduced,ALL
+Caster Weapons,LocalChaosDamage,TwoHanded
+Caster Weapons,LocalChaosDamage2,OneHanded
+Caster Weapons,LocalIncreasedPhysicalDamagePercentAndAccuracyRating,ALL
+Caster Weapons,LocalPhysicalDamagePercent,ALL
+Caster Weapons,ManaGainedFromEnemyDeath,ALL
+Caster Weapons,ManaLeech,ALL
+Caster Weapons,ManaRegeneration,TwoHanded
+Caster Weapons,ManaRegeneration2,OneHanded
+Caster Weapons,MinionAccuracyRating,OneHanded
+Caster Weapons,MinionAttackSpeedAndCastSpeed,OneHanded
+Caster Weapons,MinionCriticalStrikeChance,OneHanded
+Caster Weapons,MinionCriticalStrikeMultiplier,OneHanded
+Caster Weapons,MinionDamageMana,OneHanded
+Caster Weapons,MinionDamagePercentage,OneHanded
+Caster Weapons,PhysicalDOTMultiplier,OneHanded
+Caster Weapons,PhysicalDOTMultiplier2,TwoHanded
+Caster Weapons,PhysicalDamage22,OneHanded
+Caster Weapons,PhysicalDamageAddsTo2,TwoHanded
+Caster Weapons,ProjectileSpeed,OneHanded
+Caster Weapons,SocketedMeleeGemLevel,ALL
+Caster Weapons,SpellAddedColdDamage,TwoHanded
+Caster Weapons,SpellAddedColdDamage2,OneHanded
+Caster Weapons,SpellAddedFireDamage,TwoHanded
+Caster Weapons,SpellAddedFireDamage2,OneHanded
+Caster Weapons,SpellAddedLightningDamage,TwoHanded
+Caster Weapons,SpellAddedLightningDamage2,OneHanded
+Caster Weapons,SpellCriticalStrikeChanceIncrease,ALL
+Caster Weapons,SpellDamageAndMana,TwoHanded
+Caster Weapons,SpellDamageMana,OneHanded
+Caster Weapons,SpellPercentage2,ALL
+Caster Weapons,Strength,ALL
+Caster Weapons,StunDurationIncreasePercent,ALL
+Caster Weapons,StunThresholdReduction,ALL
+Gloves,ArmourEnergyShieldPercent,StrInt
+Gloves,ArmourEnergyShieldPercent2,StrInt
+Gloves,ArmourEvasionPercent,StrDex
+Gloves,ArmourEvasionPercent2,StrDex
+Gloves,ArmourPercent,Str
+Gloves,ArmourPercentIncreasedArmour,Str
+Gloves,BaseArmour,Str
+Gloves,BaseArmourAndLife,Str-StrDex-StrInt
+Gloves,BaseArmourEnergyShield2,StrInt
+Gloves,BaseArmourEvasion2,StrDex
+Gloves,BaseEnergyShield2,Int
+Gloves,BaseEnergyShieldAndLife,DexInt-Int-StrInt
+Gloves,BaseEnergyShieldAndMana2,DexInt-StrInt
+Gloves,BaseEnergyShieldAndMana22,Int
+Gloves,BaseEvasion,Dex
+Gloves,BaseEvasionAndLife,Dex-DexInt-StrDex
+Gloves,BaseEvasionEnergyShield2,DexInt
+Gloves,ChanceToSuppressSpells2,Dex-DexInt-StrDex
+Gloves,ChaosResistance,ALL
+Gloves,ColdDamage2,ALL
+Gloves,ColdResistance,ALL
+Gloves,Dexterity2,ALL
+Gloves,EnergyShieldPercent22,Int
+Gloves,EnergyShieldPercentIncreasedEnergy2,Int
+Gloves,EnergyShieldRegeneration,DexInt-Int-StrInt
+Gloves,EvasionEnergyShieldPercent,DexInt
+Gloves,EvasionEnergyShieldPercent2,DexInt
+Gloves,EvasionPercent,Dex
+Gloves,EvasionPercentIncreasedEvasion,Dex
+Gloves,FireDamage2,ALL
+Gloves,FireResistance,ALL
+Gloves,IncreasedAccuracy222,ALL
+Gloves,IncreasedAttackSpeed22,ALL
+Gloves,IncreasedLife2,ALL
+Gloves,IncreasedMana22,DexInt-Int-StrInt
+Gloves,Intelligence,DexInt-Int-StrInt
+Gloves,ItemFoundRarityIncrease,ALL
+Gloves,ItemFoundRarityIncreasePrefix,ALL
+Gloves,LifeGainPerTarget,ALL
+Gloves,LifeGainedFromEnemyDeath,ALL
+Gloves,LifeLeech,ALL
+Gloves,LifeRegenerationBoots,ALL
+Gloves,LifeRegenerationRate,Str-StrDex-StrInt
+Gloves,LightningDamage2,ALL
+Gloves,LightningDamageAddsTo2,ALL
+Gloves,LightningResistance,ALL
+Gloves,LocalAttributeRequirements,ALL
+Gloves,LocalAttributeRequirements32Reduced,ALL
+Gloves,ManaGainedFromEnemyDeath,ALL
+Gloves,ManaLeech2,ALL
+Gloves,PhysicalDamage2,ALL
+Gloves,PhysicalDamageAddsTo22,ALL
+Gloves,Strength,Str-StrDex-StrInt
+Helmets,AllMinionGemLevel,ALL
+Helmets,ArmourEnergyShieldPercent,StrInt
+Helmets,ArmourEnergyShieldPercent2,StrInt
+Helmets,ArmourEvasionPercent,StrDex
+Helmets,ArmourEvasionPercent2,StrDex
+Helmets,ArmourPercent,Str
+Helmets,ArmourPercentIncreasedArmour,Str
+Helmets,AttackerTakesDamageNoRange,ALL
+Helmets,BaseArmour2,Str
+Helmets,BaseArmourAndLife2,Str-StrDex-StrInt
+Helmets,BaseArmourEnergyShield22,StrInt
+Helmets,BaseArmourEvasion22,StrDex
+Helmets,BaseEnergyShield22,Int
+Helmets,BaseEnergyShieldAndLife22,DexInt-Int-StrInt
+Helmets,BaseEnergyShieldAndMana22,DexInt-StrInt
+Helmets,BaseEnergyShieldAndMana3,Int
+Helmets,BaseEvasion2,Dex
+Helmets,BaseEvasionAndLife2,Dex-DexInt-StrDex
+Helmets,BaseEvasionEnergyShield22,DexInt
+Helmets,ChanceToSuppressSpells2,Dex-DexInt-StrDex
+Helmets,ChaosResistance,ALL
+Helmets,ColdResistance,ALL
+Helmets,Dexterity,Dex-DexInt-StrDex
+Helmets,EnergyShieldPercent22,Int
+Helmets,EnergyShieldPercentIncreasedEnergy2,Int
+Helmets,EnergyShieldRegeneration,DexInt-Int-StrInt
+Helmets,EvasionEnergyShieldPercent,DexInt
+Helmets,EvasionEnergyShieldPercent2,DexInt
+Helmets,EvasionPercent,Dex
+Helmets,EvasionPercentIncreasedEvasion,Dex
+Helmets,FireResistance,ALL
+Helmets,IncreasedAccuracy222,ALL
+Helmets,IncreasedLife22,ALL
+Helmets,IncreasedMana22,DexInt-Int-StrInt
+Helmets,Intelligence2,ALL
+Helmets,ItemFoundRarityIncrease2,ALL
+Helmets,ItemFoundRarityIncreasePrefix2,ALL
+Helmets,LifeRegenerationHelmets,ALL
+Helmets,LifeRegenerationRate,Str-StrDex-StrInt
+Helmets,LightRadiusAndAccuracy,ALL
+Helmets,LightRadiusAndAccuracyIncreasedGlobal,ALL
+Helmets,LightRadiusAndAccuracyIncreasedGlobal2,ALL
+Helmets,LightningResistance,ALL
+Helmets,LocalAttributeRequirements,ALL
+Helmets,LocalAttributeRequirements32Reduced,ALL
+Helmets,Strength,Str-StrDex-StrInt
+Helmets,StunRecovery,ALL
+Jewellery,AllAttributes,Ring
+Jewellery,AllAttributes2,Amulet
+Jewellery,AllResistances,Ring
+Jewellery,AllResistances2,Amulet
+Jewellery,AttackerTakesDamageNoRange,Belt
+Jewellery,BeltFlaskCharges,Belt
+Jewellery,BeltFlaskDuration,Belt
+Jewellery,BeltFlaskRecoveryRate,Belt
+Jewellery,BeltFlaskRecoveryRateIncreasedFlask,Belt
+Jewellery,ChaosResistance,ALL
+Jewellery,ColdDamageAddsTo22,Amulet-Ring
+Jewellery,ColdDamagePercentage,Ring
+Jewellery,ColdDamagePercentage2,Amulet
+Jewellery,ColdResistance,ALL
+Jewellery,CriticalStrikeChanceIncreaseIncreasedGlobal2,Amulet
+Jewellery,CriticalStrikeMultiplierToGlobal,Amulet
+Jewellery,DamageTakenGainedAsLife,Ring
+Jewellery,Dexterity,Amulet-Ring
+Jewellery,EnergyShieldPercent,Amulet
+Jewellery,EvasionRatingPercent,Amulet
+Jewellery,FireDamageAddsTo22,Amulet-Ring
+Jewellery,FireDamagePercentage,Ring
+Jewellery,FireDamagePercentage2,Amulet
+Jewellery,FireResistance,ALL
+Jewellery,FlaskEffect,Belt
+Jewellery,GlobalDamageOverTimeMultiplier2,Amulet
+Jewellery,GlobalDamageTypeGemLevel,Amulet
+Jewellery,GlobalDamageTypeGemLevel1To,Amulet
+Jewellery,GlobalDamageTypeGemLevel1To2,Amulet
+Jewellery,GlobalDamageTypeGemLevel1To3,Amulet
+Jewellery,GlobalDamageTypeGemLevel1To4,Amulet
+Jewellery,GlobalSkillGemLevel,Amulet
+Jewellery,IncreasedAccuracy22,Amulet-Ring
+Jewellery,IncreasedAttackSpeed2,Ring
+Jewellery,IncreasedCastSpeed2,Ring
+Jewellery,IncreasedCastSpeed22,Amulet
+Jewellery,IncreasedEnergyShield,Ring
+Jewellery,IncreasedEnergyShield2,Amulet-Belt
+Jewellery,IncreasedEvasionRating,Ring
+Jewellery,IncreasedLife,Ring
+Jewellery,IncreasedLife2,Amulet
+Jewellery,IncreasedLife22,Belt
+Jewellery,IncreasedMana2,Belt
+Jewellery,IncreasedMana3,Amulet-Ring
+Jewellery,IncreasedPhysicalDamageReductionRating,Belt
+Jewellery,IncreasedPhysicalDamageReductionRatingPercent,Amulet
+Jewellery,IncreasedWeaponElementalDamagePercent,Ring
+Jewellery,IncreasedWeaponElementalDamagePercent2,Amulet-Belt
+Jewellery,Intelligence,Amulet-Ring
+Jewellery,ItemFoundRarityIncrease2,Amulet-Ring
+Jewellery,ItemFoundRarityIncreasePrefix3,Amulet-Ring
+Jewellery,LifeGainPerTarget,Ring
+Jewellery,LifeGainPerTarget2,Amulet
+Jewellery,LifeGainPerTargetGain32,Amulet
+Jewellery,LifeGainPerTargetGain42,Amulet
+Jewellery,LifeGainedFromEnemyDeath,Amulet-Ring
+Jewellery,LifeLeech,Ring
+Jewellery,LifeLeech2,Amulet
+Jewellery,LifeLeechJewellery2,Amulet
+Jewellery,LifeLeechJewellery222,Amulet
+Jewellery,LifeRegenerationHelmets,ALL
+Jewellery,LightRadiusAndAccuracy,Ring
+Jewellery,LightRadiusAndAccuracyIncreasedGlobal,Ring
+Jewellery,LightRadiusAndAccuracyIncreasedGlobal2,Ring
+Jewellery,LightningDamageAddsTo22,Amulet-Ring
+Jewellery,LightningDamagePercentage,Ring
+Jewellery,LightningDamagePercentage2,Amulet
+Jewellery,LightningResistance,ALL
+Jewellery,ManaGainedFromEnemyDeath,Amulet-Ring
+Jewellery,ManaLeech2,Ring
+Jewellery,ManaLeech222,Amulet
+Jewellery,ManaRegeneration2,Amulet-Ring
+Jewellery,PhysicalDamage222,Amulet
+Jewellery,PhysicalDamageAddsTo222,Ring
+Jewellery,SpellDamage,Amulet
+Jewellery,Strength,Amulet-Ring
+Jewellery,Strength2,Belt
+Jewellery,StunDurationIncreasePercent,Belt
+Jewellery,StunRecovery,Belt
+Jewellery,StunThresholdReduction,Belt
+Quiver,AdditionalArrows,ALL
+Quiver,ChaosDamage,ALL
+Quiver,ChaosResistance,ALL
+Quiver,ColdDamageAddsTo222,ALL
+Quiver,ColdResistance,ALL
+Quiver,CriticalStrikeChanceIncrease,ALL
+Quiver,CriticalStrikeMultiplier,ALL
+Quiver,DamageWithWeaponTypeSkill,ALL
+Quiver,Dexterity2,ALL
+Quiver,FireDamageAddsTo222,ALL
+Quiver,FireResistance,ALL
+Quiver,GlobalDamageOverTimeMultiplier22,ALL
+Quiver,IncreasedAccuracy222,ALL
+Quiver,IncreasedAttackSpeed22,ALL
+Quiver,IncreasedLife22,ALL
+Quiver,LifeGainedFromEnemyDeath,ALL
+Quiver,LifeLeech,ALL
+Quiver,LightningDamageAddsTo222,ALL
+Quiver,LightningResistance,ALL
+Quiver,ManaGainedFromEnemyDeath,ALL
+Quiver,ManaLeech2,ALL
+Quiver,PhysicalDamage,ALL
+Quiver,ProjectileSpeed,ALL
+Quiver,StunDurationIncreasePercent,ALL
+Shield,AllGemChaos,Int
+Shield,AllGemCold,Int
+Shield,AllGemFire,Int
+Shield,AllGemLightning,Int
+Shield,AllGemPhysical,Int
+Shield,AllResistances2,ALL
+Shield,ArmourEnergyShieldPercent2,StrInt
+Shield,ArmourEnergyShieldPercent22,StrInt
+Shield,ArmourEvasionPercent2,StrDex
+Shield,ArmourEvasionPercent22,StrDex
+Shield,ArmourPercent2,Str
+Shield,ArmourPercentIncreasedArmour,Str
+Shield,AttackerTakesDamageNoRange2,ALL
+Shield,AvoidElementalStatusAilments,ALL
+Shield,BaseArmour3,Str
+Shield,BaseArmourAndLife2,Str-StrDex-StrInt
+Shield,BaseArmourEnergyShield222,StrInt
+Shield,BaseArmourEvasion222,StrDex
+Shield,BaseEnergyShield222,Int
+Shield,BaseEnergyShieldAndLife22,DexInt-Int-StrInt
+Shield,BaseEnergyShieldAndMana22,DexInt-StrInt
+Shield,BaseEnergyShieldAndMana3,Int
+Shield,BaseEvasion3,Dex
+Shield,BaseEvasionAndLife2,Dex-DexInt-StrDex
+Shield,BaseEvasionEnergyShield222,DexInt
+Shield,ChanceToSuppressSpells,Dex-DexInt-StrDex
+Shield,ChaosResistance,ALL
+Shield,ColdResistance,ALL
+Shield,Dexterity,Dex-DexInt-StrDex
+Shield,EnergyShieldDelay,DexInt-Int-StrInt
+Shield,EnergyShieldPercent2,Int
+Shield,EnergyShieldPercentIncreasedEnergy2,Int
+Shield,EvasionEnergyShieldPercent2,DexInt
+Shield,EvasionEnergyShieldPercent22,DexInt
+Shield,EvasionPercent2,Dex
+Shield,EvasionPercentIncreasedEvasion,Dex
+Shield,FireResistance,ALL
+Shield,IncreasedAccuracy22,Dex-DexInt-StrDex
+Shield,IncreasedAttackSpeed22,Dex-DexInt-StrDex
+Shield,IncreasedLife3,ALL
+Shield,IncreasedMana22,DexInt-Int-StrInt
+Shield,IncreasedShieldBlockPercentage,ALL
+Shield,Intelligence,DexInt-Int-StrInt
+Shield,LifeRegenerationShield,ALL
+Shield,LightningResistance,ALL
+Shield,LocalAttributeRequirements,ALL
+Shield,LocalAttributeRequirements32Reduced,ALL
+Shield,ManaRegeneration2,DexInt-Int-StrInt
+Shield,MaximumChaosResistance,ALL
+Shield,MaximumChaosResistance2To,ALL
+Shield,MaximumChaosResistance3To,ALL
+Shield,MaximumColdResist,ALL
+Shield,MaximumColdResist2To,ALL
+Shield,MaximumColdResist3To,ALL
+Shield,MaximumFireResist,ALL
+Shield,MaximumFireResist2To,ALL
+Shield,MaximumFireResist3To,ALL
+Shield,MaximumLightningResistance,ALL
+Shield,MaximumLightningResistance2To,ALL
+Shield,MaximumLightningResistance3To,ALL
+Shield,MaximumResistances,ALL
+Shield,MaximumResistances2To,ALL
+Shield,ReducedExtraDamageFromCrits,Str-StrDex-StrInt
+Shield,ReducedPhysicalDamageTaken,Str-StrDex-StrInt
+Shield,ReducedPhysicalDamageTaken5Additional,Str-StrDex-StrInt
+Shield,ReducedPhysicalDamageTaken6Additional,Str-StrDex-StrInt
+Shield,ReducedPhysicalDamageTaken7Additional,Str-StrDex-StrInt
+Shield,ReducedPhysicalDamageTaken8Additional,Str-StrDex-StrInt
+Shield,SocketedMeleeGemLevel,Dex-DexInt-Str-StrDex-StrInt
+Shield,SpellBlockPercentage,ALL
+Shield,SpellCriticalStrikeChanceIncrease,DexInt-Int-StrInt
+Shield,SpellPercentage2,Int
+Shield,SpellPercentage22,Int
+Shield,SpellPercentageIncreasedFire22,Int
+Shield,SpellPercentageIncreasedLightning22,Int
+Shield,Strength,Str-StrDex-StrInt
+Shield,StunRecovery,ALL

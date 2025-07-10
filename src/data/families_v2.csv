@@ -1,0 +1,1091 @@
+Family,Type,Tier,Mod Name,Stat
+AdditionalArrows,Suffix,T1,of Splintering,Bow Attacks fire an additional Arrow
+AdditionalArrows2,Suffix,T1,of Many,Bow Attacks fire 2 additional Arrows
+AdditionalArrowsBowAttacks2,Suffix,T2,of Splintering,Bow Attacks fire an additional Arrow
+AllAttributes,Suffix,T1,of the Comet,+(13-16) to all Attributes
+AllAttributes,Suffix,T2,of the Meteor,+(9-12) to all Attributes
+AllAttributes,Suffix,T3,of the Sky,+(5-8) to all Attributes
+AllAttributes,Suffix,T4,of the Clouds,+(1-4) to all Attributes
+AllAttributes2,Suffix,T1,of the Multiverse,+(33-35) to all Attributes
+AllAttributes2,Suffix,T2,of the Infinite,+(29-32) to all Attributes
+AllAttributes2,Suffix,T3,of the Universe,+(25-28) to all Attributes
+AllAttributes2,Suffix,T4,of the Galaxy,+(21-24) to all Attributes
+AllAttributes2,Suffix,T5,of the Heavens,+(17-20) to all Attributes
+AllGemChaos,Prefix,T1,Mad Lord's,+1 to Level of all Chaos Spell Skill Gems
+AllGemChaos3,Prefix,T1,Splintermind's,+3 to Level of all Chaos Spell Skill Gems
+AllGemCold,Prefix,T1,Frost Singer's,+1 to Level of all Cold Spell Skill Gems
+AllGemCold3,Prefix,T1,Winter Beckoner's,+3 to Level of all Cold Spell Skill Gems
+AllGemFire,Prefix,T1,Flame Shaper's,+1 to Level of all Fire Spell Skill Gems
+AllGemFire3,Prefix,T1,Lava Conjurer's,+3 to Level of all Fire Spell Skill Gems
+AllGemLightning,Prefix,T1,Thunderhand's,+1 to Level of all Lightning Spell Skill Gems
+AllGemLightning3,Prefix,T1,Tempest Master's,+3 to Level of all Lightning Spell Skill Gems
+AllGemMinion,Prefix,T1,Martinet's,+1 to Level of all Minion Skill Gems
+AllGemPhysical,Prefix,T1,Lithomancer's,+1 to Level of all Physical Spell Skill Gems
+AllGemPhysical3,Prefix,T1,Tecton's,+3 to Level of all Physical Spell Skill Gems
+AllMinionGemLevel,Prefix,T1,Overseer's,+2 to Level of all Minion Skill Gems
+AllMinionGemLevel,Prefix,T2,Taskmaster's,+1 to Level of all Minion Skill Gems
+AllResistances,Suffix,T1,of the Rainbow,+(15-16)% to all Elemental Resistances
+AllResistances,Suffix,T2,of Variegation,+(12-14)% to all Elemental Resistances
+AllResistances,Suffix,T3,of the Kaleidoscope,+(9-11)% to all Elemental Resistances
+AllResistances,Suffix,T4,of the Prism,+(6-8)% to all Elemental Resistances
+AllResistances,Suffix,T5,of the Crystal,+(3-5)% to all Elemental Resistances
+AllResistances2,Suffix,T1,of the Span,+(17-18)% to all Elemental Resistances
+AllResistances2,Suffix,T2,of the Rainbow,+(15-16)% to all Elemental Resistances
+AllResistances2,Suffix,T3,of Variegation,+(12-14)% to all Elemental Resistances
+AllResistances2,Suffix,T4,of the Kaleidoscope,+(9-11)% to all Elemental Resistances
+AllResistances2,Suffix,T5,of the Prism,+(6-8)% to all Elemental Resistances
+ArmourEnergyShieldPercent,Prefix,T1,Inspired,(92-100)% increased Armour and Energy Shield
+ArmourEnergyShieldPercent,Prefix,T2,Interpolated,(80-91)% increased Armour and Energy Shield
+ArmourEnergyShieldPercent,Prefix,T3,Inculcated,(68-79)% increased Armour and Energy Shield
+ArmourEnergyShieldPercent,Prefix,T4,Infused,(56-67)% increased Armour and Energy Shield
+ArmourEnergyShieldPercent,Prefix,T5,Instilled,(43-55)% increased Armour and Energy Shield
+ArmourEnergyShieldPercent2,Prefix,T1,Seraphim's,(39-42)% increased Armour and Energy Shield(16-17)% increased Stun and Block Recovery
+ArmourEnergyShieldPercent2,Prefix,T2,Djinn's,(33-38)% increased Armour and Energy Shield(14-15)% increased Stun and Block Recovery
+ArmourEnergyShieldPercent2,Prefix,T3,Naga's,(27-32)% increased Armour and Energy Shield(12-13)% increased Stun and Block Recovery
+ArmourEnergyShieldPercent2,Prefix,T4,Boggart's,(21-26)% increased Armour and Energy Shield(10-11)% increased Stun and Block Recovery
+ArmourEnergyShieldPercent2,Prefix,T5,Gremlin's,(14-20)% increased Armour and Energy Shield(8-9)% increased Stun and Block Recovery
+ArmourEnergyShieldPercent22,Prefix,T1,Interpermeated,(101-110)% increased Armour and Energy Shield
+ArmourEnergyShieldPercent22,Prefix,T2,Inspired,(92-100)% increased Armour and Energy Shield
+ArmourEnergyShieldPercent22,Prefix,T3,Interpolated,(80-91)% increased Armour and Energy Shield
+ArmourEnergyShieldPercent22,Prefix,T4,Inculcated,(68-79)% increased Armour and Energy Shield
+ArmourEnergyShieldPercent22,Prefix,T5,Infused,(56-67)% increased Armour and Energy Shield
+ArmourEvasionPercent,Prefix,T1,Legend's,(92-100)% increased Armour and Evasion
+ArmourEvasionPercent,Prefix,T2,Hero's,(80-91)% increased Armour and Evasion
+ArmourEvasionPercent,Prefix,T3,Duelist's,(68-79)% increased Armour and Evasion
+ArmourEvasionPercent,Prefix,T4,Gladiator's,(56-67)% increased Armour and Evasion
+ArmourEvasionPercent,Prefix,T5,Fencer's,(43-55)% increased Armour and Evasion
+ArmourEvasionPercent2,Prefix,T1,Mammoth's,(39-42)% increased Armour and Evasion(16-17)% increased Stun and Block Recovery
+ArmourEvasionPercent2,Prefix,T2,Elephant's,(33-38)% increased Armour and Evasion(14-15)% increased Stun and Block Recovery
+ArmourEvasionPercent2,Prefix,T3,Rhino's,(27-32)% increased Armour and Evasion(12-13)% increased Stun and Block Recovery
+ArmourEvasionPercent2,Prefix,T4,Armadillo's,(21-26)% increased Armour and Evasion(10-11)% increased Stun and Block Recovery
+ArmourEvasionPercent2,Prefix,T5,Crab's,(14-20)% increased Armour and Evasion(8-9)% increased Stun and Block Recovery
+ArmourEvasionPercent22,Prefix,T1,Victor's,(101-110)% increased Armour and Evasion
+ArmourEvasionPercent22,Prefix,T2,Legend's,(92-100)% increased Armour and Evasion
+ArmourEvasionPercent22,Prefix,T3,Hero's,(80-91)% increased Armour and Evasion
+ArmourEvasionPercent22,Prefix,T4,Duelist's,(68-79)% increased Armour and Evasion
+ArmourEvasionPercent22,Prefix,T5,Gladiator's,(56-67)% increased Armour and Evasion
+ArmourPercent,Prefix,T1,Impregnable,(92-100)% increased Armour
+ArmourPercent,Prefix,T2,Girded,(80-91)% increased Armour
+ArmourPercent,Prefix,T3,Thickened,(68-79)% increased Armour
+ArmourPercent,Prefix,T4,Buttressed,(56-67)% increased Armour
+ArmourPercent,Prefix,T5,Lobstered,(43-55)% increased Armour
+ArmourPercent2,Prefix,T1,Impenetrable,(101-110)% increased Armour
+ArmourPercent2,Prefix,T2,Impregnable,(92-100)% increased Armour
+ArmourPercent2,Prefix,T3,Girded,(80-91)% increased Armour
+ArmourPercent2,Prefix,T4,Thickened,(68-79)% increased Armour
+ArmourPercent2,Prefix,T5,Buttressed,(56-67)% increased Armour
+ArmourPercentIncreasedArmour,Prefix,T1,Mammoth's,(39-42)% increased Armour(16-17)% increased Stun and Block Recovery
+ArmourPercentIncreasedArmour,Prefix,T2,Elephant's,(33-38)% increased Armour(14-15)% increased Stun and Block Recovery
+ArmourPercentIncreasedArmour,Prefix,T3,Rhino's,(27-32)% increased Armour(12-13)% increased Stun and Block Recovery
+ArmourPercentIncreasedArmour,Prefix,T4,Armadillo's,(21-26)% increased Armour(10-11)% increased Stun and Block Recovery
+ArmourPercentIncreasedArmour,Prefix,T5,Crab's,(14-20)% increased Armour(8-9)% increased Stun and Block Recovery
+AttackerTakesDamageNoRange,Prefix,T1,Spiny,Reflects (5-10) Physical Damage to Melee Attackers
+AttackerTakesDamageNoRange,Prefix,T2,Thorny,Reflects (1-4) Physical Damage to Melee Attackers
+AttackerTakesDamageNoRange2,Prefix,T1,Jagged,Reflects (25-50) Physical Damage to Melee Attackers
+AttackerTakesDamageNoRange2,Prefix,T2,Barbed,Reflects (11-24) Physical Damage to Melee Attackers
+AttackerTakesDamageNoRange2,Prefix,T3,Spiny,Reflects (5-10) Physical Damage to Melee Attackers
+AttackerTakesDamageNoRange2,Prefix,T4,Thorny,Reflects (1-4) Physical Damage to Melee Attackers
+AvoidElementalStatusAilments,Suffix,T1,of Will,(31-35)% chance to Avoid Elemental Ailments
+AvoidElementalStatusAilments,Suffix,T2,of Fortitude,(26-30)% chance to Avoid Elemental Ailments
+AvoidElementalStatusAilments,Suffix,T3,of Resolve,(21-25)% chance to Avoid Elemental Ailments
+AvoidElementalStatusAilments,Suffix,T4,of Stoicism,(16-20)% chance to Avoid Elemental Ailments
+BaseArmour,Prefix,T1,Encased,+(121-150) to Armour
+BaseArmour,Prefix,T2,Carapaced,+(102-120) to Armour
+BaseArmour,Prefix,T3,Plated,+(83-101) to Armour
+BaseArmour,Prefix,T4,Fortified,+(64-82) to Armour
+BaseArmour,Prefix,T5,Ribbed,+(36-63) to Armour
+BaseArmour2,Prefix,T1,Enveloped,+(151-200) to Armour
+BaseArmour2,Prefix,T2,Encased,+(121-150) to Armour
+BaseArmour2,Prefix,T3,Carapaced,+(102-120) to Armour
+BaseArmour2,Prefix,T4,Plated,+(83-101) to Armour
+BaseArmour2,Prefix,T5,Fortified,+(64-82) to Armour
+BaseArmour3,Prefix,T1,Impervious,+(401-500) to Armour
+BaseArmour3,Prefix,T1,Unmoving,+(301-400) to Armour
+BaseArmour3,Prefix,T2,Abating,+(201-300) to Armour
+BaseArmour3,Prefix,T3,Enveloped,+(151-200) to Armour
+BaseArmour3,Prefix,T4,Encased,+(121-150) to Armour
+BaseArmour3,Prefix,T5,Carapaced,+(102-120) to Armour
+BaseArmourAndLife,Prefix,T1,Urchin's,+(33-48) to Armour+(24-28) to maximum Life
+BaseArmourAndLife,Prefix,T2,Oyster's,+(20-32) to Armour+(18-23) to maximum Life
+BaseArmourAndLife2,Prefix,T1,Nautilus's,+(49-96) to Armour+(29-33) to maximum Life
+BaseArmourAndLife2,Prefix,T2,Urchin's,+(33-48) to Armour+(24-28) to maximum Life
+BaseArmourAndLife2,Prefix,T3,Oyster's,+(20-32) to Armour+(18-23) to maximum Life
+BaseArmourAndLife3,Prefix,T1,Crocodile's,+(97-144) to Armour+(34-38) to maximum Life
+BaseArmourAndLife3,Prefix,T2,Nautilus's,+(49-96) to Armour+(29-33) to maximum Life
+BaseArmourAndLife3,Prefix,T3,Urchin's,+(33-48) to Armour+(24-28) to maximum Life
+BaseArmourAndLife3,Prefix,T4,Oyster's,+(20-32) to Armour+(18-23) to maximum Life
+BaseArmourEnergyShield2,Prefix,T1,Hallowed,+(49-85) to Armour+(23-28) to maximum Energy Shield
+BaseArmourEnergyShield2,Prefix,T2,Sanctified,+(28-48) to Armour+(13-22) to maximum Energy Shield
+BaseArmourEnergyShield2,Prefix,T3,Anointed,+(10-27) to Armour+(5-12) to maximum Energy Shield
+BaseArmourEnergyShield2,Prefix,T4,Blessed,+(5-9) to Armour+(3-4) to maximum Energy Shield
+BaseArmourEnergyShield22,Prefix,T1,Beatified,+(86-145) to Armour+(29-48) to maximum Energy Shield
+BaseArmourEnergyShield22,Prefix,T2,Hallowed,+(49-85) to Armour+(23-28) to maximum Energy Shield
+BaseArmourEnergyShield22,Prefix,T3,Sanctified,+(28-48) to Armour+(13-22) to maximum Energy Shield
+BaseArmourEnergyShield22,Prefix,T4,Anointed,+(10-27) to Armour+(5-12) to maximum Energy Shield
+BaseArmourEnergyShield22,Prefix,T5,Blessed,+(5-9) to Armour+(3-4) to maximum Energy Shield
+BaseArmourEnergyShield222,Prefix,T1,Saintly,+(221-300) to Armour+(61-72) to maximum Energy Shield
+BaseArmourEnergyShield222,Prefix,T2,Consecrated,+(146-220) to Armour+(49-60) to maximum Energy Shield
+BaseArmourEnergyShield222,Prefix,T3,Beatified,+(86-145) to Armour+(29-48) to maximum Energy Shield
+BaseArmourEnergyShield222,Prefix,T4,Hallowed,+(49-85) to Armour+(23-28) to maximum Energy Shield
+BaseArmourEnergyShield222,Prefix,T5,Sanctified,+(28-48) to Armour+(13-22) to maximum Energy Shield
+BaseArmourEnergyShield3,Prefix,T1,Godly,+(301-375) to Armour+(73-80) to maximum Energy Shield
+BaseArmourEnergyShield3,Prefix,T2,Saintly,+(221-300) to Armour+(61-72) to maximum Energy Shield
+BaseArmourEnergyShield3,Prefix,T3,Consecrated,+(146-220) to Armour+(49-60) to maximum Energy Shield
+BaseArmourEnergyShield3,Prefix,T4,Beatified,+(86-145) to Armour+(29-48) to maximum Energy Shield
+BaseArmourEnergyShield3,Prefix,T5,Hallowed,+(49-85) to Armour+(23-28) to maximum Energy Shield
+BaseArmourEvasion2,Prefix,T1,Durable,+(49-85) to Armour+(49-85) to Evasion Rating
+BaseArmourEvasion2,Prefix,T2,Flexible,+(28-48) to Armour+(28-48) to Evasion Rating
+BaseArmourEvasion2,Prefix,T3,Pliant,+(10-27) to Armour+(10-27) to Evasion Rating
+BaseArmourEvasion2,Prefix,T4,Supple,+(5-9) to Armour+(5-9) to Evasion Rating
+BaseArmourEvasion22,Prefix,T1,Sturdy,+(86-145) to Armour+(86-145) to Evasion Rating
+BaseArmourEvasion22,Prefix,T2,Durable,+(49-85) to Armour+(49-85) to Evasion Rating
+BaseArmourEvasion22,Prefix,T3,Flexible,+(28-48) to Armour+(28-48) to Evasion Rating
+BaseArmourEvasion22,Prefix,T4,Pliant,+(10-27) to Armour+(10-27) to Evasion Rating
+BaseArmourEvasion22,Prefix,T5,Supple,+(5-9) to Armour+(5-9) to Evasion Rating
+BaseArmourEvasion222,Prefix,T1,Adaptable,+(221-300) to Armour+(221-300) to Evasion Rating
+BaseArmourEvasion222,Prefix,T1,Versatile,+(301-375) to Armour+(301-375) to Evasion Rating
+BaseArmourEvasion222,Prefix,T2,Resilient,+(146-220) to Armour+(146-220) to Evasion Rating
+BaseArmourEvasion222,Prefix,T3,Sturdy,+(86-145) to Armour+(86-145) to Evasion Rating
+BaseArmourEvasion222,Prefix,T4,Durable,+(49-85) to Armour+(49-85) to Evasion Rating
+BaseArmourEvasion222,Prefix,T5,Flexible,+(28-48) to Armour+(28-48) to Evasion Rating
+BaseEnergyShield2,Prefix,T1,Seething,+(39-49) to maximum Energy Shield
+BaseEnergyShield2,Prefix,T2,Pulsing,+(31-38) to maximum Energy Shield
+BaseEnergyShield2,Prefix,T3,Radiating,+(24-30) to maximum Energy Shield
+BaseEnergyShield2,Prefix,T4,Glowing,+(17-23) to maximum Energy Shield
+BaseEnergyShield2,Prefix,T5,Glittering,+(12-16) to maximum Energy Shield
+BaseEnergyShield22,Prefix,T1,Blazing,+(50-61) to maximum Energy Shield
+BaseEnergyShield22,Prefix,T2,Seething,+(39-49) to maximum Energy Shield
+BaseEnergyShield22,Prefix,T3,Pulsing,+(31-38) to maximum Energy Shield
+BaseEnergyShield22,Prefix,T4,Radiating,+(24-30) to maximum Energy Shield
+BaseEnergyShield22,Prefix,T5,Glowing,+(17-23) to maximum Energy Shield
+BaseEnergyShield222,Prefix,T1,Incandescent,+(77-90) to maximum Energy Shield
+BaseEnergyShield222,Prefix,T2,Scintillating,+(62-76) to maximum Energy Shield
+BaseEnergyShield222,Prefix,T3,Blazing,+(50-61) to maximum Energy Shield
+BaseEnergyShield222,Prefix,T4,Seething,+(39-49) to maximum Energy Shield
+BaseEnergyShield222,Prefix,T5,Pulsing,+(31-38) to maximum Energy Shield
+BaseEnergyShield32,Prefix,T1,Resplendent,+(91-100) to maximum Energy Shield
+BaseEnergyShield32,Prefix,T2,Incandescent,+(77-90) to maximum Energy Shield
+BaseEnergyShield32,Prefix,T3,Scintillating,+(62-76) to maximum Energy Shield
+BaseEnergyShield32,Prefix,T4,Blazing,+(50-61) to maximum Energy Shield
+BaseEnergyShield32,Prefix,T5,Seething,+(39-49) to maximum Energy Shield
+BaseEnergyShieldAndLife,Prefix,T1,Prior's,+(11-15) to maximum Energy Shield+(24-28) to maximum Life
+BaseEnergyShieldAndLife,Prefix,T2,Monk's,+(8-10) to maximum Energy Shield+(18-23) to maximum Life
+BaseEnergyShieldAndLife,Prefix,T3,Monk's,+(8-10) to maximum Energy Shield+(18-23) to maximum Life
+BaseEnergyShieldAndLife22,Prefix,T1,Abbot's,+(16-25) to maximum Energy Shield+(29-33) to maximum Life
+BaseEnergyShieldAndLife22,Prefix,T1,Exarch's,+(26-30) to maximum Energy Shield+(34-38) to maximum Life
+BaseEnergyShieldAndLife22,Prefix,T2,Prior's,+(11-15) to maximum Energy Shield+(24-28) to maximum Life
+BaseEnergyShieldAndLife22,Prefix,T3,Abbot's,+(16-25) to maximum Energy Shield+(29-33) to maximum Life
+BaseEnergyShieldAndLife22,Prefix,T3,Prior's,+(11-15) to maximum Energy Shield+(24-28) to maximum Life
+BaseEnergyShieldAndLife22,Prefix,T5,Monk's,+(8-10) to maximum Energy Shield+(18-23) to maximum Life
+BaseEnergyShieldAndLife22,Prefix,T5,Prior's,+(11-15) to maximum Energy Shield+(24-28) to maximum Life
+BaseEnergyShieldAndMana,Prefix,T1,Bishop's,+(26-30) to maximum Energy Shield+(23-25) to maximum Mana
+BaseEnergyShieldAndMana2,Prefix,T1,Deacon's,+(11-15) to maximum Energy Shield+(16-19) to maximum Mana
+BaseEnergyShieldAndMana2,Prefix,T2,Acolyte's,+(8-10) to maximum Energy Shield+(11-15) to maximum Mana
+BaseEnergyShieldAndMana22,Prefix,T1,Priest's,+(16-25) to maximum Energy Shield+(20-22) to maximum Mana
+BaseEnergyShieldAndMana22,Prefix,T2,Deacon's,+(11-15) to maximum Energy Shield+(16-19) to maximum Mana
+BaseEnergyShieldAndMana22,Prefix,T4,Acolyte's,+(8-10) to maximum Energy Shield+(11-15) to maximum Mana
+BaseEnergyShieldAndMana222,Prefix,T2,Bishop's,+(26-30) to maximum Energy Shield+(23-25) to maximum Mana
+BaseEnergyShieldAndMana222,Prefix,T4,Priest's,+(16-25) to maximum Energy Shield+(20-22) to maximum Mana
+BaseEnergyShieldAndMana3,Prefix,T2,Priest's,+(16-25) to maximum Energy Shield+(20-22) to maximum Mana
+BaseEnergyShieldAndMana3,Prefix,T4,Deacon's,+(11-15) to maximum Energy Shield+(16-19) to maximum Mana
+BaseEvasion,Prefix,T1,Vaporous,+(121-150) to Evasion Rating
+BaseEvasion,Prefix,T2,Phased,+(102-120) to Evasion Rating
+BaseEvasion,Prefix,T3,Blurred,+(83-101) to Evasion Rating
+BaseEvasion,Prefix,T4,Fleet,+(64-82) to Evasion Rating
+BaseEvasion,Prefix,T5,Acrobat's,+(36-63) to Evasion Rating
+BaseEvasion2,Prefix,T1,Elusory,+(151-200) to Evasion Rating
+BaseEvasion2,Prefix,T2,Vaporous,+(121-150) to Evasion Rating
+BaseEvasion2,Prefix,T3,Phased,+(102-120) to Evasion Rating
+BaseEvasion2,Prefix,T4,Blurred,+(83-101) to Evasion Rating
+BaseEvasion2,Prefix,T5,Fleet,+(64-82) to Evasion Rating
+BaseEvasion3,Prefix,T1,Fugitive,+(401-500) to Evasion Rating
+BaseEvasion3,Prefix,T1,Lissome,+(301-400) to Evasion Rating
+BaseEvasion3,Prefix,T2,Adroit,+(201-300) to Evasion Rating
+BaseEvasion3,Prefix,T3,Elusory,+(151-200) to Evasion Rating
+BaseEvasion3,Prefix,T4,Vaporous,+(121-150) to Evasion Rating
+BaseEvasion3,Prefix,T5,Phased,+(102-120) to Evasion Rating
+BaseEvasionAndLife,Prefix,T1,Fawn's,+(21-42) to Evasion Rating+(24-28) to maximum Life
+BaseEvasionAndLife,Prefix,T2,Flea's,+(14-20) to Evasion Rating+(18-23) to maximum Life
+BaseEvasionAndLife2,Prefix,T1,Ram's,+(43-95) to Evasion Rating+(29-33) to maximum Life
+BaseEvasionAndLife2,Prefix,T2,Fawn's,+(21-42) to Evasion Rating+(24-28) to maximum Life
+BaseEvasionAndLife2,Prefix,T3,Flea's,+(14-20) to Evasion Rating+(18-23) to maximum Life
+BaseEvasionAndLife3,Prefix,T1,Ibex's,+(96-120) to Evasion Rating+(34-38) to maximum Life
+BaseEvasionAndLife3,Prefix,T2,Ram's,+(43-95) to Evasion Rating+(29-33) to maximum Life
+BaseEvasionAndLife3,Prefix,T3,Fawn's,+(21-42) to Evasion Rating+(24-28) to maximum Life
+BaseEvasionAndLife3,Prefix,T4,Flea's,+(14-20) to Evasion Rating+(18-23) to maximum Life
+BaseEvasionEnergyShield2,Prefix,T1,Cherub's,+(49-85) to Evasion Rating+(23-28) to maximum Energy Shield
+BaseEvasionEnergyShield2,Prefix,T2,Sylph's,+(28-48) to Evasion Rating+(13-22) to maximum Energy Shield
+BaseEvasionEnergyShield2,Prefix,T3,Nymph's,+(10-27) to Evasion Rating+(5-12) to maximum Energy Shield
+BaseEvasionEnergyShield2,Prefix,T4,Will-o-wisp's,+(5-9) to Evasion Rating+(3-4) to maximum Energy Shield
+BaseEvasionEnergyShield22,Prefix,T1,Spirit's,+(86-145) to Evasion Rating+(29-48) to maximum Energy Shield
+BaseEvasionEnergyShield22,Prefix,T2,Cherub's,+(49-85) to Evasion Rating+(23-28) to maximum Energy Shield
+BaseEvasionEnergyShield22,Prefix,T3,Sylph's,+(28-48) to Evasion Rating+(13-22) to maximum Energy Shield
+BaseEvasionEnergyShield22,Prefix,T4,Nymph's,+(10-27) to Evasion Rating+(5-12) to maximum Energy Shield
+BaseEvasionEnergyShield22,Prefix,T5,Will-o-wisp's,+(5-9) to Evasion Rating+(3-4) to maximum Energy Shield
+BaseEvasionEnergyShield222,Prefix,T1,Apparition's,+(221-300) to Evasion Rating+(61-72) to maximum Energy Shield
+BaseEvasionEnergyShield222,Prefix,T1,Phantasm's,+(301-375) to Evasion Rating+(73-80) to maximum Energy Shield
+BaseEvasionEnergyShield222,Prefix,T2,Eidolon's,+(146-220) to Evasion Rating+(49-60) to maximum Energy Shield
+BaseEvasionEnergyShield222,Prefix,T3,Spirit's,+(86-145) to Evasion Rating+(29-48) to maximum Energy Shield
+BaseEvasionEnergyShield222,Prefix,T4,Cherub's,+(49-85) to Evasion Rating+(23-28) to maximum Energy Shield
+BaseEvasionEnergyShield222,Prefix,T5,Sylph's,+(28-48) to Evasion Rating+(13-22) to maximum Energy Shield
+BeltFlaskCharges,Suffix,T1,of Overflowing,(35-40)% increased Flask Charges gained
+BeltFlaskCharges,Suffix,T2,of Brimming,(29-34)% increased Flask Charges gained
+BeltFlaskCharges,Suffix,T3,of Pouring,(23-28)% increased Flask Charges gained
+BeltFlaskCharges,Suffix,T4,of Replenishing,(17-22)% increased Flask Charges gained
+BeltFlaskCharges,Suffix,T5,of Restocking,(11-16)% increased Flask Charges gained
+BeltFlaskDuration,Suffix,T1,of Reveling,(28-33)% increased Flask Effect Duration
+BeltFlaskDuration,Suffix,T2,of Relishing,(22-27)% increased Flask Effect Duration
+BeltFlaskDuration,Suffix,T3,of Savouring,(16-21)% increased Flask Effect Duration
+BeltFlaskDuration,Suffix,T4,of Tasting,(10-15)% increased Flask Effect Duration
+BeltFlaskDuration,Suffix,T5,of Sipping,(4-9)% increased Flask Effect Duration
+BeltFlaskRecoveryRate,Prefix,T1,Regenerating,(35-40)% increased Flask Life Recovery rate
+BeltFlaskRecoveryRate,Prefix,T3,Rejuvenating,(29-34)% increased Flask Life Recovery rate
+BeltFlaskRecoveryRate,Prefix,T5,Refreshing,(23-28)% increased Flask Life Recovery rate
+BeltFlaskRecoveryRateIncreasedFlask,Prefix,T2,Inspiring,(35-40)% increased Flask Mana Recovery rate
+BeltFlaskRecoveryRateIncreasedFlask,Prefix,T4,Galvanizing,(29-34)% increased Flask Mana Recovery rate
+ChanceToFreeze,Suffix,T1,of the Hyperboreal,(31-40)% chance to Freeze
+ChanceToFreeze,Suffix,T2,of Bleakness,(25-30)% chance to Freeze
+ChanceToFreeze,Suffix,T3,of Freezing,(18-24)% chance to Freeze
+ChanceToFreeze2,Suffix,T1,of the Hyperboreal,(43-55)% chance to Freeze
+ChanceToFreeze2,Suffix,T2,of Bleakness,(33-42)% chance to Freeze
+ChanceToFreeze2,Suffix,T3,of Freezing,(25-32)% chance to Freeze
+ChanceToIgnite,Suffix,T1,of Conflagration,(31-40)% chance to Ignite
+ChanceToIgnite,Suffix,T2,of Combustion,(25-30)% chance to Ignite
+ChanceToIgnite,Suffix,T3,of Ignition,(18-24)% chance to Ignite
+ChanceToIgnite2,Suffix,T1,of Conflagration,(43-55)% chance to Ignite
+ChanceToIgnite2,Suffix,T2,of Combustion,(33-42)% chance to Ignite
+ChanceToIgnite2,Suffix,T3,of Ignition,(25-32)% chance to Ignite
+ChanceToShock,Suffix,T1,of Electrocution,(31-40)% chance to Shock
+ChanceToShock,Suffix,T2,of Zapping,(25-30)% chance to Shock
+ChanceToShock,Suffix,T3,of Shocking,(18-24)% chance to Shock
+ChanceToShock2,Suffix,T1,of Electrocution,(43-55)% chance to Shock
+ChanceToShock2,Suffix,T2,of Zapping,(33-42)% chance to Shock
+ChanceToShock2,Suffix,T3,of Shocking,(25-32)% chance to Shock
+ChanceToSuppressSpells,Suffix,T1,of Nullification,+(20-22)% chance to Suppress Spell Damage
+ChanceToSuppressSpells,Suffix,T2,of Abjuration,+(17-19)% chance to Suppress Spell Damage
+ChanceToSuppressSpells,Suffix,T3,of Revoking,+(14-16)% chance to Suppress Spell Damage
+ChanceToSuppressSpells,Suffix,T4,of Snuffing,+(11-13)% chance to Suppress Spell Damage
+ChanceToSuppressSpells,Suffix,T5,of Rebuttal,+(8-10)% chance to Suppress Spell Damage
+ChanceToSuppressSpells2,Suffix,T1,of Nullification,+(13-14)% chance to Suppress Spell Damage
+ChanceToSuppressSpells2,Suffix,T2,of Abjuration,+(11-12)% chance to Suppress Spell Damage
+ChanceToSuppressSpells2,Suffix,T3,of Revoking,+(9-10)% chance to Suppress Spell Damage
+ChanceToSuppressSpells2,Suffix,T4,of Snuffing,+(7-8)% chance to Suppress Spell Damage
+ChanceToSuppressSpells2,Suffix,T5,of Rebuttal,+(5-6)% chance to Suppress Spell Damage
+ChaosDOTMultiplier,Suffix,T1,of Atrophying,+(29-33)% to Chaos Damage over Time Multiplier
+ChaosDOTMultiplier,Suffix,T2,of Deteriorating,+(24-28)% to Chaos Damage over Time Multiplier
+ChaosDOTMultiplier,Suffix,T3,of Wasting,+(19-23)% to Chaos Damage over Time Multiplier
+ChaosDOTMultiplier,Suffix,T4,of Waning,+(14-18)% to Chaos Damage over Time Multiplier
+ChaosDOTMultiplier2,Suffix,T1,of Disintegrating,+(66-75)% to Chaos Damage over Time Multiplier
+ChaosDOTMultiplier2,Suffix,T2,of Atrophying,+(56-65)% to Chaos Damage over Time Multiplier
+ChaosDOTMultiplier2,Suffix,T3,of Deteriorating,+(46-55)% to Chaos Damage over Time Multiplier
+ChaosDOTMultiplier2,Suffix,T4,of Wasting,+(36-45)% to Chaos Damage over Time Multiplier
+ChaosDOTMultiplier2,Suffix,T5,of Waning,+(26-35)% to Chaos Damage over Time Multiplier
+ChaosDOTMultiplier22,Suffix,T1,of Disintegrating,+(34-38)% to Chaos Damage over Time Multiplier
+ChaosDOTMultiplier22,Suffix,T2,of Atrophying,+(29-33)% to Chaos Damage over Time Multiplier
+ChaosDOTMultiplier22,Suffix,T3,of Deteriorating,+(24-28)% to Chaos Damage over Time Multiplier
+ChaosDOTMultiplier22,Suffix,T4,of Wasting,+(19-23)% to Chaos Damage over Time Multiplier
+ChaosDOTMultiplier22,Suffix,T5,of Waning,+(14-18)% to Chaos Damage over Time Multiplier
+ChaosDamage,Prefix,T1,Malicious,Adds (27-41) to (55-69) Chaos Damage to Attacks
+ChaosResistance,Suffix,T1,of Bameth,+(31-35)% to Chaos Resistance
+ChaosResistance,Suffix,T2,of Exile,+(26-30)% to Chaos Resistance
+ChaosResistance,Suffix,T3,of Expulsion,+(21-25)% to Chaos Resistance
+ChaosResistance,Suffix,T4,of Eviction,+(16-20)% to Chaos Resistance
+ChaosResistance,Suffix,T5,of Banishment,+(11-15)% to Chaos Resistance
+ColdDOTMultiplier,Suffix,T1,of Heartstopping,+(66-75)% to Cold Damage over Time Multiplier
+ColdDOTMultiplier,Suffix,T2,of the Gelid,+(56-65)% to Cold Damage over Time Multiplier
+ColdDOTMultiplier,Suffix,T3,of the Boreal,+(46-55)% to Cold Damage over Time Multiplier
+ColdDOTMultiplier,Suffix,T4,of the Bleak,+(36-45)% to Cold Damage over Time Multiplier
+ColdDOTMultiplier,Suffix,T5,of the Inclement,+(26-35)% to Cold Damage over Time Multiplier
+ColdDOTMultiplier2,Suffix,T1,of Heartstopping,+(34-38)% to Cold Damage over Time Multiplier
+ColdDOTMultiplier2,Suffix,T2,of the Gelid,+(29-33)% to Cold Damage over Time Multiplier
+ColdDOTMultiplier2,Suffix,T3,of the Boreal,+(24-28)% to Cold Damage over Time Multiplier
+ColdDOTMultiplier2,Suffix,T4,of the Bleak,+(19-23)% to Cold Damage over Time Multiplier
+ColdDOTMultiplier2,Suffix,T5,of the Inclement,+(14-18)% to Cold Damage over Time Multiplier
+ColdDamage,Prefix,T1,Crystalising,Adds (149-204) to (300-348) Cold Damage
+ColdDamage,Prefix,T2,Entombing,Adds (124-170) to (250-290) Cold Damage
+ColdDamage,Prefix,T3,Polar,Adds (99-136) to (200-232) Cold Damage
+ColdDamage,Prefix,T4,Glaciated,Adds (77-104) to (154-178) Cold Damage
+ColdDamage,Prefix,T5,Frozen,Adds (57-77) to (114-132) Cold Damage
+ColdDamage2,Prefix,T1,Frozen,Adds (10-13) to (20-24) Cold Damage to Attacks
+ColdDamage2,Prefix,T2,Freezing,Adds (8-11) to (16-19) Cold Damage to Attacks
+ColdDamage2,Prefix,T3,Frigid,Adds (6-9) to (13-16) Cold Damage to Attacks
+ColdDamage2,Prefix,T4,Icy,Adds (5-7) to (10-12) Cold Damage to Attacks
+ColdDamage2,Prefix,T5,Chilled,Adds (3-4) to (7-8) Cold Damage to Attacks
+ColdDamage22,Prefix,T1,Crystalising,Adds (81-111) to (163-189) Cold Damage
+ColdDamage22,Prefix,T2,Entombing,Adds (68-92) to (136-157) Cold Damage
+ColdDamage22,Prefix,T3,Polar,Adds (54-74) to (108-126) Cold Damage
+ColdDamage22,Prefix,T4,Glaciated,Adds (41-57) to (83-97) Cold Damage
+ColdDamage22,Prefix,T5,Frozen,Adds (31-42) to (62-71) Cold Damage
+ColdDamageAddsTo22,Prefix,T1,Entombing,Adds (17-22) to (34-40) Cold Damage to Attacks
+ColdDamageAddsTo22,Prefix,T2,Polar,Adds (14-19) to (29-34) Cold Damage to Attacks
+ColdDamageAddsTo22,Prefix,T3,Glaciated,Adds (12-16) to (24-28) Cold Damage to Attacks
+ColdDamageAddsTo22,Prefix,T4,Frozen,Adds (10-13) to (20-24) Cold Damage to Attacks
+ColdDamageAddsTo22,Prefix,T5,Freezing,Adds (8-11) to (16-19) Cold Damage to Attacks
+ColdDamageAddsTo222,Prefix,T1,Entombing,Adds (33-45) to (67-78) Cold Damage to Attacks
+ColdDamageAddsTo222,Prefix,T2,Polar,Adds (23-32) to (48-55) Cold Damage to Attacks
+ColdDamageAddsTo222,Prefix,T3,Glaciated,Adds (18-24) to (36-42) Cold Damage to Attacks
+ColdDamageAddsTo222,Prefix,T4,Frozen,Adds (15-20) to (30-35) Cold Damage to Attacks
+ColdDamageAddsTo222,Prefix,T5,Freezing,Adds (12-16) to (24-28) Cold Damage to Attacks
+ColdDamagePercentage,Suffix,T1,of Rime,(19-22)% increased Cold Damage
+ColdDamagePercentage,Suffix,T2,of Ice,(16-18)% increased Cold Damage
+ColdDamagePercentage,Suffix,T3,of Sleet,(13-15)% increased Cold Damage
+ColdDamagePercentage,Suffix,T4,of Snow,(10-12)% increased Cold Damage
+ColdDamagePercentage2,Suffix,T1,of Floe,(23-26)% increased Cold Damage
+ColdDamagePercentage2,Suffix,T1,of Glaciation,(45-50)% increased Cold Damage
+ColdDamagePercentage2,Suffix,T2,of Floe,(40-44)% increased Cold Damage
+ColdDamagePercentage2,Suffix,T2,of Rime,(19-22)% increased Cold Damage
+ColdDamagePercentage2,Suffix,T3,of Ice,(16-18)% increased Cold Damage
+ColdDamagePercentage2,Suffix,T3,of Rime,(35-39)% increased Cold Damage
+ColdDamagePercentage2,Suffix,T4,of Ice,(29-34)% increased Cold Damage
+ColdDamagePercentage2,Suffix,T4,of Sleet,(13-15)% increased Cold Damage
+ColdDamagePercentage2,Suffix,T5,of Sleet,(23-28)% increased Cold Damage
+ColdDamagePercentage2,Suffix,T5,of Snow,(10-12)% increased Cold Damage
+ColdDamagePercentage3,Suffix,T1,of Glaciation,(27-30)% increased Cold Damage
+ColdDamagePercentage3,Suffix,T2,of Floe,(23-26)% increased Cold Damage
+ColdDamagePercentage3,Suffix,T3,of Rime,(19-22)% increased Cold Damage
+ColdDamagePercentage3,Suffix,T4,of Ice,(16-18)% increased Cold Damage
+ColdDamagePercentage3,Suffix,T5,of Sleet,(13-15)% increased Cold Damage
+ColdDamagePercentagePrefix,Prefix,T1,Tul's,(150-164)% increased Cold Damage
+ColdDamagePercentagePrefix,Prefix,T2,Cryomancer's,(125-149)% increased Cold Damage
+ColdDamagePercentagePrefix,Prefix,T3,Crystalline,(105-124)% increased Cold Damage
+ColdDamagePercentagePrefix,Prefix,T4,Hailing,(85-104)% increased Cold Damage
+ColdDamagePercentagePrefix,Prefix,T5,Snowy,(60-84)% increased Cold Damage
+ColdDamagePercentagePrefix2,Prefix,T1,Tul's,(100-109)% increased Cold Damage
+ColdDamagePercentagePrefix2,Prefix,T2,Cryomancer's,(85-99)% increased Cold Damage
+ColdDamagePercentagePrefix2,Prefix,T3,Crystalline,(70-84)% increased Cold Damage
+ColdDamagePercentagePrefix2,Prefix,T4,Hailing,(55-69)% increased Cold Damage
+ColdDamagePercentagePrefix2,Prefix,T5,Snowy,(40-54)% increased Cold Damage
+ColdResistance,Suffix,T1,of Haast,+(46-48)% to Cold Resistance
+ColdResistance,Suffix,T2,of the Ice,+(42-45)% to Cold Resistance
+ColdResistance,Suffix,T3,of the Polar Bear,+(36-41)% to Cold Resistance
+ColdResistance,Suffix,T4,of the Walrus,+(30-35)% to Cold Resistance
+ColdResistance,Suffix,T5,of the Yeti,+(24-29)% to Cold Resistance
+CriticalStrikeChanceIncrease,Suffix,T1,of Rending,(39-44)% increased Critical Strike Chance with Bows
+CriticalStrikeChanceIncrease,Suffix,T2,of Incision,(35-38)% increased Critical Strike Chance with Bows
+CriticalStrikeChanceIncrease,Suffix,T3,of Penetrating,(30-34)% increased Critical Strike Chance with Bows
+CriticalStrikeChanceIncrease,Suffix,T4,of Rupturing,(25-29)% increased Critical Strike Chance with Bows
+CriticalStrikeChanceIncrease,Suffix,T5,of Piercing,(20-24)% increased Critical Strike Chance with Bows
+CriticalStrikeChanceIncrease2,Suffix,T1,of Incision,(35-38)% increased Critical Strike Chance
+CriticalStrikeChanceIncrease2,Suffix,T2,of Penetrating,(30-34)% increased Critical Strike Chance
+CriticalStrikeChanceIncrease2,Suffix,T3,of Puncturing,(25-29)% increased Critical Strike Chance
+CriticalStrikeChanceIncrease2,Suffix,T4,of Piercing,(20-24)% increased Critical Strike Chance
+CriticalStrikeChanceIncrease2,Suffix,T5,of Stinging,(15-19)% increased Critical Strike Chance
+CriticalStrikeChanceIncreaseIncreasedGlobal2,Suffix,T1,of Incision,(35-38)% increased Global Critical Strike Chance
+CriticalStrikeChanceIncreaseIncreasedGlobal2,Suffix,T2,of Penetrating,(30-34)% increased Global Critical Strike Chance
+CriticalStrikeChanceIncreaseIncreasedGlobal2,Suffix,T3,of Rupturing,(25-29)% increased Global Critical Strike Chance
+CriticalStrikeChanceIncreaseIncreasedGlobal2,Suffix,T4,of Piercing,(20-24)% increased Global Critical Strike Chance
+CriticalStrikeChanceIncreaseIncreasedGlobal2,Suffix,T5,of Stinging,(15-19)% increased Global Critical Strike Chance
+CriticalStrikeMultiplier,Suffix,T1,of Destruction,+(35-38)% to Critical Strike Multiplier with Bows
+CriticalStrikeMultiplier,Suffix,T2,of Ferocity,+(30-34)% to Critical Strike Multiplier with Bows
+CriticalStrikeMultiplier,Suffix,T3,of Fury,+(25-29)% to Critical Strike Multiplier with Bows
+CriticalStrikeMultiplier,Suffix,T4,of Rage,+(20-24)% to Critical Strike Multiplier with Bows
+CriticalStrikeMultiplier,Suffix,T5,of Anger,+(13-19)% to Critical Strike Multiplier with Bows
+CriticalStrikeMultiplierToGlobal,Suffix,T1,of Destruction,+(35-38)% to Global Critical Strike Multiplier
+CriticalStrikeMultiplierToGlobal,Suffix,T2,of Ferocity,+(30-34)% to Global Critical Strike Multiplier
+CriticalStrikeMultiplierToGlobal,Suffix,T3,of Fury,+(25-29)% to Global Critical Strike Multiplier
+CriticalStrikeMultiplierToGlobal,Suffix,T4,of Rage,+(20-24)% to Global Critical Strike Multiplier
+CriticalStrikeMultiplierToGlobal,Suffix,T5,of Anger,+(15-19)% to Global Critical Strike Multiplier
+CriticalStrikeMultiplierToGlobal,Suffix,T5,of Anger,+(13-19)% to Global Critical Strike Multiplier
+DamageTakenGainedAsLife,Suffix,T1,of Fleshbinding,(13-15)% of Damage taken Recouped as Life
+DamageTakenGainedAsLife,Suffix,T2,of Suturing,(10-12)% of Damage taken Recouped as Life
+DamageTakenGainedAsLife,Suffix,T3,of Stitching,(7-9)% of Damage taken Recouped as Life
+DamageTakenGainedAsLife,Suffix,T4,of Bandaging,(4-6)% of Damage taken Recouped as Life
+DamageWithWeaponTypeSkill,Prefix,T1,Impaling,(43-50)% increased Damage with Bow Skills
+DamageWithWeaponTypeSkill,Prefix,T2,Lacerating,(37-42)% increased Damage with Bow Skills
+DamageWithWeaponTypeSkill,Prefix,T3,Incisive,(31-36)% increased Damage with Bow Skills
+DamageWithWeaponTypeSkill,Prefix,T4,Perforating,(21-30)% increased Damage with Bow Skills
+DamageWithWeaponTypeSkill,Prefix,T5,Trenchant,(11-20)% increased Damage with Bow Skills
+Dexterity,Suffix,T1,of the Wind,+(51-55) to Dexterity
+Dexterity,Suffix,T2,of the Phantom,+(43-50) to Dexterity
+Dexterity,Suffix,T3,of the Jaguar,+(38-42) to Dexterity
+Dexterity,Suffix,T4,of the Leopard,+(33-37) to Dexterity
+Dexterity,Suffix,T5,of the Panther,+(28-32) to Dexterity
+Dexterity2,Suffix,T1,of the Blur,+(56-60) to Dexterity
+Dexterity2,Suffix,T2,of the Wind,+(51-55) to Dexterity
+Dexterity2,Suffix,T3,of the Phantom,+(43-50) to Dexterity
+Dexterity2,Suffix,T4,of the Jaguar,+(38-42) to Dexterity
+Dexterity2,Suffix,T5,of the Leopard,+(33-37) to Dexterity
+EnergyShieldDelay,Suffix,T1,of Second Wind,(59-66)% faster start of Energy Shield Recharge
+EnergyShieldDelay,Suffix,T2,of Vigour,(51-58)% faster start of Energy Shield Recharge
+EnergyShieldDelay,Suffix,T3,of Galvanising,(43-50)% faster start of Energy Shield Recharge
+EnergyShieldDelay,Suffix,T4,of Zest,(35-42)% faster start of Energy Shield Recharge
+EnergyShieldDelay,Suffix,T5,of Enlivening,(27-34)% faster start of Energy Shield Recharge
+EnergyShieldPercent,Prefix,T1,Unassailable,(20-22)% increased maximum Energy Shield
+EnergyShieldPercent,Prefix,T2,Indomitable,(17-19)% increased maximum Energy Shield
+EnergyShieldPercent,Prefix,T3,Dauntless,(14-16)% increased maximum Energy Shield
+EnergyShieldPercent,Prefix,T4,Fearless,(11-13)% increased maximum Energy Shield
+EnergyShieldPercent,Prefix,T5,Resolute,(8-10)% increased maximum Energy Shield
+EnergyShieldPercent2,Prefix,T1,Unfaltering,(101-110)% increased Energy Shield
+EnergyShieldPercent2,Prefix,T2,Unassailable,(92-100)% increased Energy Shield
+EnergyShieldPercent2,Prefix,T3,Indomitable,(80-91)% increased Energy Shield
+EnergyShieldPercent2,Prefix,T4,Dauntless,(68-79)% increased Energy Shield
+EnergyShieldPercent2,Prefix,T5,Fearless,(56-67)% increased Energy Shield
+EnergyShieldPercent22,Prefix,T1,Unassailable,(92-100)% increased Energy Shield
+EnergyShieldPercent22,Prefix,T2,Indomitable,(80-91)% increased Energy Shield
+EnergyShieldPercent22,Prefix,T3,Dauntless,(68-79)% increased Energy Shield
+EnergyShieldPercent22,Prefix,T4,Fearless,(56-67)% increased Energy Shield
+EnergyShieldPercent22,Prefix,T5,Resolute,(43-55)% increased Energy Shield
+EnergyShieldPercentIncreasedEnergy2,Prefix,T1,Seraphim's,(39-42)% increased Energy Shield(16-17)% increased Stun and Block Recovery
+EnergyShieldPercentIncreasedEnergy2,Prefix,T2,Djinn's,(33-38)% increased Energy Shield(14-15)% increased Stun and Block Recovery
+EnergyShieldPercentIncreasedEnergy2,Prefix,T3,Naga's,(27-32)% increased Energy Shield(12-13)% increased Stun and Block Recovery
+EnergyShieldPercentIncreasedEnergy2,Prefix,T4,Boggart's,(21-26)% increased Energy Shield(10-11)% increased Stun and Block Recovery
+EnergyShieldPercentIncreasedEnergy2,Prefix,T5,Gremlin's,(14-20)% increased Energy Shield(8-9)% increased Stun and Block Recovery
+EnergyShieldRegeneration,Suffix,T1,of Ardour,(36-38)% increased Energy Shield Recharge Rate
+EnergyShieldRegeneration,Suffix,T2,of Buffering,(33-35)% increased Energy Shield Recharge Rate
+EnergyShieldRegeneration,Suffix,T3,of Dispersal,(30-32)% increased Energy Shield Recharge Rate
+EnergyShieldRegeneration,Suffix,T4,of Diffusion,(27-29)% increased Energy Shield Recharge Rate
+EnergyShieldRegeneration,Suffix,T5,of Allaying,(24-26)% increased Energy Shield Recharge Rate
+EvasionEnergyShieldPercent,Prefix,T1,Illusory,(92-100)% increased Evasion and Energy Shield
+EvasionEnergyShieldPercent,Prefix,T2,Unreal,(80-91)% increased Evasion and Energy Shield
+EvasionEnergyShieldPercent,Prefix,T3,Evanescent,(68-79)% increased Evasion and Energy Shield
+EvasionEnergyShieldPercent,Prefix,T4,Ephemeral,(56-67)% increased Evasion and Energy Shield
+EvasionEnergyShieldPercent,Prefix,T5,Unworldly,(43-55)% increased Evasion and Energy Shield
+EvasionEnergyShieldPercent2,Prefix,T1,Hummingbird's,(39-42)% increased Evasion and Energy Shield(16-17)% increased Stun and Block Recovery
+EvasionEnergyShieldPercent2,Prefix,T2,Dragonfly's,(33-38)% increased Evasion and Energy Shield(14-15)% increased Stun and Block Recovery
+EvasionEnergyShieldPercent2,Prefix,T3,Wasp's,(27-32)% increased Evasion and Energy Shield(12-13)% increased Stun and Block Recovery
+EvasionEnergyShieldPercent2,Prefix,T4,Butterfly's,(21-26)% increased Evasion and Energy Shield(10-11)% increased Stun and Block Recovery
+EvasionEnergyShieldPercent2,Prefix,T5,Moth's,(14-20)% increased Evasion and Energy Shield(8-9)% increased Stun and Block Recovery
+EvasionEnergyShieldPercent22,Prefix,T1,Incorporeal,(101-110)% increased Evasion and Energy Shield
+EvasionEnergyShieldPercent22,Prefix,T2,Illusory,(92-100)% increased Evasion and Energy Shield
+EvasionEnergyShieldPercent22,Prefix,T3,Unreal,(80-91)% increased Evasion and Energy Shield
+EvasionEnergyShieldPercent22,Prefix,T4,Evanescent,(68-79)% increased Evasion and Energy Shield
+EvasionEnergyShieldPercent22,Prefix,T5,Ephemeral,(56-67)% increased Evasion and Energy Shield
+EvasionPercent,Prefix,T1,Mirage's,(92-100)% increased Evasion Rating
+EvasionPercent,Prefix,T2,Nightmare's,(80-91)% increased Evasion Rating
+EvasionPercent,Prefix,T3,Phantasm's,(68-79)% increased Evasion Rating
+EvasionPercent,Prefix,T4,Wraith's,(56-67)% increased Evasion Rating
+EvasionPercent,Prefix,T5,Spectre's,(43-55)% increased Evasion Rating
+EvasionPercent2,Prefix,T1,Illusion's,(101-110)% increased Evasion Rating
+EvasionPercent2,Prefix,T2,Mirage's,(92-100)% increased Evasion Rating
+EvasionPercent2,Prefix,T3,Nightmare's,(80-91)% increased Evasion Rating
+EvasionPercent2,Prefix,T4,Phantasm's,(68-79)% increased Evasion Rating
+EvasionPercent2,Prefix,T5,Wraith's,(56-67)% increased Evasion Rating
+EvasionPercentIncreasedEvasion,Prefix,T1,Hummingbird's,(39-42)% increased Evasion Rating(16-17)% increased Stun and Block Recovery
+EvasionPercentIncreasedEvasion,Prefix,T2,Dragonfly's,(33-38)% increased Evasion Rating(14-15)% increased Stun and Block Recovery
+EvasionPercentIncreasedEvasion,Prefix,T3,Wasp's,(27-32)% increased Evasion Rating(12-13)% increased Stun and Block Recovery
+EvasionPercentIncreasedEvasion,Prefix,T4,Butterfly's,(21-26)% increased Evasion Rating(10-11)% increased Stun and Block Recovery
+EvasionPercentIncreasedEvasion,Prefix,T5,Moth's,(14-20)% increased Evasion Rating(8-9)% increased Stun and Block Recovery
+EvasionRatingPercent,Prefix,T1,Vaporous,(33-36)% increased Evasion Rating
+EvasionRatingPercent,Prefix,T2,Phased,(29-32)% increased Evasion Rating
+EvasionRatingPercent,Prefix,T3,Blurred,(24-28)% increased Evasion Rating
+EvasionRatingPercent,Prefix,T4,Fleet,(19-23)% increased Evasion Rating
+EvasionRatingPercent,Prefix,T5,Acrobat's,(14-18)% increased Evasion Rating
+FireDOTMultiplier,Suffix,T1,of the Fanatical,+(34-38)% to Fire Damage over Time Multiplier
+FireDOTMultiplier,Suffix,T2,of the Zealous,+(29-33)% to Fire Damage over Time Multiplier
+FireDOTMultiplier,Suffix,T3,of the Ardent,+(24-28)% to Fire Damage over Time Multiplier
+FireDOTMultiplier,Suffix,T4,of the Fervid,+(19-23)% to Fire Damage over Time Multiplier
+FireDOTMultiplier,Suffix,T5,of the Earnest,+(14-18)% to Fire Damage over Time Multiplier
+FireDOTMultiplier2,Suffix,T1,of the Fanatical,+(66-75)% to Fire Damage over Time Multiplier
+FireDOTMultiplier2,Suffix,T2,of the Zealous,+(56-65)% to Fire Damage over Time Multiplier
+FireDOTMultiplier2,Suffix,T3,of the Ardent,+(46-55)% to Fire Damage over Time Multiplier
+FireDOTMultiplier2,Suffix,T4,of the Fervid,+(36-45)% to Fire Damage over Time Multiplier
+FireDOTMultiplier2,Suffix,T5,of the Earnest,+(26-35)% to Fire Damage over Time Multiplier
+FireDamage,Prefix,T1,Carbonising,Adds (165-225) to (335-390) Fire Damage
+FireDamage,Prefix,T2,Cremating,Adds (137-188) to (279-325) Fire Damage
+FireDamage,Prefix,T3,Blasting,Adds (110-150) to (223-260) Fire Damage
+FireDamage,Prefix,T4,Incinerating,Adds (85-115) to (172-200) Fire Damage
+FireDamage,Prefix,T5,Scorching,Adds (63-85) to (128-148) Fire Damage
+FireDamage2,Prefix,T1,Scorching,Adds (11-15) to (23-27) Fire Damage to Attacks
+FireDamage2,Prefix,T2,Flaming,Adds (9-12) to (19-22) Fire Damage to Attacks
+FireDamage2,Prefix,T3,Burning,Adds (7-10) to (15-18) Fire Damage to Attacks
+FireDamage2,Prefix,T4,Smoking,Adds (5-7) to (11-13) Fire Damage to Attacks
+FireDamage2,Prefix,T5,Smouldering,Adds (3-5) to (7-8) Fire Damage to Attacks
+FireDamage22,Prefix,T1,Carbonising,Adds (89-121) to (180-210) Fire Damage
+FireDamage22,Prefix,T2,Cremating,Adds (74-101) to (150-175) Fire Damage
+FireDamage22,Prefix,T3,Blasting,Adds (59-81) to (120-140) Fire Damage
+FireDamage22,Prefix,T4,Incinerating,Adds (46-62) to (93-107) Fire Damage
+FireDamage22,Prefix,T5,Scorching,Adds (34-46) to (68-80) Fire Damage
+FireDamageAddsTo22,Prefix,T1,Cremating,Adds (19-25) to (39-45) Fire Damage to Attacks
+FireDamageAddsTo22,Prefix,T2,Blasting,Adds (16-22) to (32-38) Fire Damage to Attacks
+FireDamageAddsTo22,Prefix,T3,Incinerating,Adds (13-18) to (27-31) Fire Damage to Attacks
+FireDamageAddsTo22,Prefix,T4,Scorching,Adds (11-15) to (23-27) Fire Damage to Attacks
+FireDamageAddsTo22,Prefix,T5,Flaming,Adds (9-12) to (19-22) Fire Damage to Attacks
+FireDamageAddsTo222,Prefix,T1,Cremating,Adds (37-50) to (74-87) Fire Damage to Attacks
+FireDamageAddsTo222,Prefix,T2,Blasting,Adds (27-35) to (53-62) Fire Damage to Attacks
+FireDamageAddsTo222,Prefix,T3,Incinerating,Adds (20-27) to (40-47) Fire Damage to Attacks
+FireDamageAddsTo222,Prefix,T4,Scorching,Adds (17-22) to (33-38) Fire Damage to Attacks
+FireDamageAddsTo222,Prefix,T5,Flaming,Adds (13-18) to (27-31) Fire Damage to Attacks
+FireDamagePercentage,Suffix,T1,of Flames,(19-22)% increased Fire Damage
+FireDamagePercentage,Suffix,T2,of Cinders,(16-18)% increased Fire Damage
+FireDamagePercentage,Suffix,T3,of Coals,(13-15)% increased Fire Damage
+FireDamagePercentage,Suffix,T4,of Embers,(10-12)% increased Fire Damage
+FireDamagePercentage2,Suffix,T1,of Ashes,(45-50)% increased Fire Damage
+FireDamagePercentage2,Suffix,T1,of Immolation,(23-26)% increased Fire Damage
+FireDamagePercentage2,Suffix,T2,of Flames,(19-22)% increased Fire Damage
+FireDamagePercentage2,Suffix,T2,of Immolation,(40-44)% increased Fire Damage
+FireDamagePercentage2,Suffix,T3,of Cinders,(16-18)% increased Fire Damage
+FireDamagePercentage2,Suffix,T3,of Flames,(35-39)% increased Fire Damage
+FireDamagePercentage2,Suffix,T4,of Cinders,(29-34)% increased Fire Damage
+FireDamagePercentage2,Suffix,T4,of Coals,(13-15)% increased Fire Damage
+FireDamagePercentage2,Suffix,T5,of Coals,(23-28)% increased Fire Damage
+FireDamagePercentage2,Suffix,T5,of Embers,(10-12)% increased Fire Damage
+FireDamagePercentage3,Suffix,T1,of Ashes,(27-30)% increased Fire Damage
+FireDamagePercentage3,Suffix,T2,of Immolation,(23-26)% increased Fire Damage
+FireDamagePercentage3,Suffix,T3,of Flames,(19-22)% increased Fire Damage
+FireDamagePercentage3,Suffix,T4,of Cinders,(16-18)% increased Fire Damage
+FireDamagePercentage3,Suffix,T5,of Coals,(13-15)% increased Fire Damage
+FireDamagePercentagePrefix,Prefix,T1,Xoph's,(150-164)% increased Fire Damage
+FireDamagePercentagePrefix,Prefix,T2,Pyroclastic,(125-149)% increased Fire Damage
+FireDamagePercentagePrefix,Prefix,T3,Magmatic,(105-124)% increased Fire Damage
+FireDamagePercentagePrefix,Prefix,T4,Volcanic,(85-104)% increased Fire Damage
+FireDamagePercentagePrefix,Prefix,T5,Cauterising,(60-84)% increased Fire Damage
+FireDamagePercentagePrefix2,Prefix,T1,Xoph's,(100-109)% increased Fire Damage
+FireDamagePercentagePrefix2,Prefix,T2,Pyroclastic,(85-99)% increased Fire Damage
+FireDamagePercentagePrefix2,Prefix,T3,Magmatic,(70-84)% increased Fire Damage
+FireDamagePercentagePrefix2,Prefix,T4,Volcanic,(55-69)% increased Fire Damage
+FireDamagePercentagePrefix2,Prefix,T5,Cauterising,(40-54)% increased Fire Damage
+FireResistance,Suffix,T1,of Tzteosh,+(46-48)% to Fire Resistance
+FireResistance,Suffix,T2,of the Magma,+(42-45)% to Fire Resistance
+FireResistance,Suffix,T3,of the Volcano,+(36-41)% to Fire Resistance
+FireResistance,Suffix,T4,of the Furnace,+(30-35)% to Fire Resistance
+FireResistance,Suffix,T5,of the Kiln,+(24-29)% to Fire Resistance
+FlaskEffect,Prefix,T1,Magnifying,Flasks applied to you have (10-12)% increased Effect
+FlaskEffect,Prefix,T2,Condensing,Flasks applied to you have (7-9)% increased Effect
+FlaskEffect,Prefix,T3,Distilling,Flasks applied to you have (4-6)% increased Effect
+GlobalDamageOverTimeMultiplier,Suffix,T1,of Dissolution,+(41-45)% to Damage over Time Multiplier
+GlobalDamageOverTimeMultiplier,Suffix,T2,of Melting,+(36-40)% to Damage over Time Multiplier
+GlobalDamageOverTimeMultiplier,Suffix,T3,of Liquefaction,+(31-35)% to Damage over Time Multiplier
+GlobalDamageOverTimeMultiplier,Suffix,T4,of Dispersion,+(24-29)% to Damage over Time Multiplier
+GlobalDamageOverTimeMultiplier,Suffix,T5,of Acrimony,+(16-21)% to Damage over Time Multiplier
+GlobalDamageOverTimeMultiplier,Suffix,T5,of Melting,+(20-23)% to Damage over Time Multiplier
+GlobalDamageOverTimeMultiplier2,Suffix,T1,of Dissolution,+(24-26)% to Damage over Time Multiplier
+GlobalDamageOverTimeMultiplier2,Suffix,T2,of Melting,+(20-23)% to Damage over Time Multiplier
+GlobalDamageOverTimeMultiplier2,Suffix,T3,of Liquefaction,+(16-19)% to Damage over Time Multiplier
+GlobalDamageOverTimeMultiplier2,Suffix,T4,of Dispersion,+(12-15)% to Damage over Time Multiplier
+GlobalDamageOverTimeMultiplier2,Suffix,T5,of Acrimony,+(7-11)% to Damage over Time Multiplier
+GlobalDamageOverTimeMultiplier22,Suffix,T1,of Dissolution,+(24-26)% to Damage over Time Multiplier with Attack Skills
+GlobalDamageOverTimeMultiplier22,Suffix,T2,of Melting,+(20-23)% to Damage over Time Multiplier with Attack Skills
+GlobalDamageOverTimeMultiplier22,Suffix,T3,of Liquefaction,+(16-19)% to Damage over Time Multiplier with Attack Skills
+GlobalDamageOverTimeMultiplier22,Suffix,T4,of Dispersion,+(12-15)% to Damage over Time Multiplier with Attack Skills
+GlobalDamageOverTimeMultiplier22,Suffix,T5,of Acrimony,+(7-11)% to Damage over Time Multiplier with Attack Skills
+GlobalDamageTypeGemLevel,Prefix,T5,Provocateur's,+1 to Level of all Chaos Skill Gems
+GlobalDamageTypeGemLevel1To,Prefix,T2,Rimedweller's,+1 to Level of all Cold Skill Gems
+GlobalDamageTypeGemLevel1To2,Prefix,T1,Vulcanist's,+1 to Level of all Fire Skill Gems
+GlobalDamageTypeGemLevel1To3,Prefix,T3,Stormbrewer's,+1 to Level of all Lightning Skill Gems
+GlobalDamageTypeGemLevel1To4,Prefix,T4,Behemoth's,+1 to Level of all Physical Skill Gems
+GlobalSkillGemLevel,Prefix,T1,Exalter's,+1 to Level of all Skill Gems
+IncreaseSocketedGemLevel,Prefix,T1,Magister's,+(1-2) to Level of all Spell Skill Gems
+IncreaseSocketedGemLevel1To2,Prefix,T1,Paragon's,+1 to Level of Socketed Gems
+IncreaseSocketedGemLevel2,Prefix,T1,Magister's,+1 to Level of all Spell Skill Gems
+IncreasedAccuracy,Suffix,T1,of the Ranger,+(456-624) to Accuracy Rating
+IncreasedAccuracy,Suffix,T2,of the Marksman,+(326-455) to Accuracy Rating
+IncreasedAccuracy,Suffix,T3,of the Sniper,+(216-325) to Accuracy Rating
+IncreasedAccuracy,Suffix,T4,of Precision,+(131-215) to Accuracy Rating
+IncreasedAccuracy,Suffix,T5,of Steadiness,+(80-130) to Accuracy Rating
+IncreasedAccuracy2,Suffix,T1,of Lioneye,+(625-780) to Accuracy Rating
+IncreasedAccuracy2,Suffix,T2,of the Ranger,+(456-624) to Accuracy Rating
+IncreasedAccuracy2,Suffix,T3,of the Marksman,+(326-455) to Accuracy Rating
+IncreasedAccuracy2,Suffix,T4,of the Sniper,+(216-325) to Accuracy Rating
+IncreasedAccuracy2,Suffix,T5,of Precision,+(131-215) to Accuracy Rating
+IncreasedAccuracy22,Suffix,T1,of the Ranger,+(351-480) to Accuracy Rating
+IncreasedAccuracy22,Suffix,T2,of the Marksman,+(251-350) to Accuracy Rating
+IncreasedAccuracy22,Suffix,T3,of the Sniper,+(166-250) to Accuracy Rating
+IncreasedAccuracy22,Suffix,T4,of Precision,+(100-165) to Accuracy Rating
+IncreasedAccuracy22,Suffix,T5,of Steadiness,+(50-100) to Accuracy Rating
+IncreasedAccuracy222,Suffix,T1,of Lioneye,+(481-600) to Accuracy Rating
+IncreasedAccuracy222,Suffix,T2,of the Ranger,+(351-480) to Accuracy Rating
+IncreasedAccuracy222,Suffix,T3,of the Marksman,+(251-350) to Accuracy Rating
+IncreasedAccuracy222,Suffix,T4,of the Sniper,+(166-250) to Accuracy Rating
+IncreasedAccuracy222,Suffix,T5,of Precision,+(100-165) to Accuracy Rating
+IncreasedAttackSpeed,Suffix,T1,of Celebration,(26-27)% increased Attack Speed
+IncreasedAttackSpeed,Suffix,T2,of Infamy,(23-25)% increased Attack Speed
+IncreasedAttackSpeed,Suffix,T3,of Fame,(20-22)% increased Attack Speed
+IncreasedAttackSpeed,Suffix,T4,of Acclaim,(17-19)% increased Attack Speed
+IncreasedAttackSpeed,Suffix,T5,of Renown,(14-16)% increased Attack Speed
+IncreasedAttackSpeed2,Suffix,T1,of Skill,(5-7)% increased Attack Speed
+IncreasedAttackSpeed22,Suffix,T1,of Grandmastery,(14-16)% increased Attack Speed
+IncreasedAttackSpeed22,Suffix,T2,of Mastery,(11-13)% increased Attack Speed
+IncreasedAttackSpeed22,Suffix,T3,of Ease,(8-10)% increased Attack Speed
+IncreasedAttackSpeed22,Suffix,T4,of Skill,(5-7)% increased Attack Speed
+IncreasedCastSpeed,Suffix,T1,of Finesse,(44-49)% increased Cast Speed
+IncreasedCastSpeed,Suffix,T2,of Sortilege,(38-43)% increased Cast Speed
+IncreasedCastSpeed,Suffix,T3,of Prestidigitation,(32-37)% increased Cast Speed
+IncreasedCastSpeed,Suffix,T4,of Legerdemain,(26-31)% increased Cast Speed
+IncreasedCastSpeed,Suffix,T5,of Expertise,(20-25)% increased Cast Speed
+IncreasedCastSpeed2,Suffix,T1,of Expertise,(13-16)% increased Cast Speed
+IncreasedCastSpeed2,Suffix,T2,of Nimbleness,(9-12)% increased Cast Speed
+IncreasedCastSpeed2,Suffix,T3,of Talent,(5-8)% increased Cast Speed
+IncreasedCastSpeed22,Suffix,T1,of Legerdemain,(17-20)% increased Cast Speed
+IncreasedCastSpeed22,Suffix,T2,of Expertise,(13-16)% increased Cast Speed
+IncreasedCastSpeed22,Suffix,T3,of Nimbleness,(9-12)% increased Cast Speed
+IncreasedCastSpeed22,Suffix,T4,of Talent,(5-8)% increased Cast Speed
+IncreasedCastSpeed3,Suffix,T1,of Finesse,(29-32)% increased Cast Speed
+IncreasedCastSpeed3,Suffix,T2,of Sortilege,(25-28)% increased Cast Speed
+IncreasedCastSpeed3,Suffix,T3,of Prestidigitation,(21-24)% increased Cast Speed
+IncreasedCastSpeed3,Suffix,T4,of Legerdemain,(17-20)% increased Cast Speed
+IncreasedCastSpeed3,Suffix,T5,of Expertise,(13-16)% increased Cast Speed
+IncreasedEnergyShield,Prefix,T1,Resplendent,+(44-47) to maximum Energy Shield
+IncreasedEnergyShield,Prefix,T2,Incandescent,+(38-43) to maximum Energy Shield
+IncreasedEnergyShield,Prefix,T3,Scintillating,+(32-37) to maximum Energy Shield
+IncreasedEnergyShield,Prefix,T4,Blazing,+(27-31) to maximum Energy Shield
+IncreasedEnergyShield,Prefix,T5,Seething,+(23-26) to maximum Energy Shield
+IncreasedEnergyShield2,Prefix,T1,Dazzling,+(48-51) to maximum Energy Shield
+IncreasedEnergyShield2,Prefix,T2,Resplendent,+(44-47) to maximum Energy Shield
+IncreasedEnergyShield2,Prefix,T3,Incandescent,+(38-43) to maximum Energy Shield
+IncreasedEnergyShield2,Prefix,T4,Scintillating,+(32-37) to maximum Energy Shield
+IncreasedEnergyShield2,Prefix,T5,Blazing,+(27-31) to maximum Energy Shield
+IncreasedEvasionRating,Prefix,T1,Vaporous,+(151-170) to Evasion Rating
+IncreasedEvasionRating,Prefix,T2,Phased,+(121-150) to Evasion Rating
+IncreasedEvasionRating,Prefix,T3,Blurred,+(81-120) to Evasion Rating
+IncreasedEvasionRating,Prefix,T4,Fleet,+(61-80) to Evasion Rating
+IncreasedEvasionRating,Prefix,T5,Acrobat's,+(36-60) to Evasion Rating
+IncreasedLife,Prefix,T1,Virile,+(100-114) to maximum Life
+IncreasedLife,Prefix,T2,Rotund,+(85-99) to maximum Life
+IncreasedLife,Prefix,T3,Robust,+(70-84) to maximum Life
+IncreasedLife,Prefix,T4,Stout,+(55-69) to maximum Life
+IncreasedLife,Prefix,T5,Stalwart,+(40-54) to maximum Life
+IncreasedLife2,Prefix,T1,Athlete's,+(115-129) to maximum Life
+IncreasedLife2,Prefix,T2,Virile,+(100-114) to maximum Life
+IncreasedLife2,Prefix,T3,Rotund,+(85-99) to maximum Life
+IncreasedLife2,Prefix,T4,Robust,+(70-84) to maximum Life
+IncreasedLife2,Prefix,T5,Stout,+(55-69) to maximum Life
+IncreasedLife22,Prefix,T1,Fecund,+(130-144) to maximum Life
+IncreasedLife22,Prefix,T2,Athlete's,+(115-129) to maximum Life
+IncreasedLife22,Prefix,T3,Virile,+(100-114) to maximum Life
+IncreasedLife22,Prefix,T4,Rotund,+(85-99) to maximum Life
+IncreasedLife22,Prefix,T5,Robust,+(70-84) to maximum Life
+IncreasedLife3,Prefix,T1,Vigorous,+(145-159) to maximum Life
+IncreasedLife3,Prefix,T2,Fecund,+(130-144) to maximum Life
+IncreasedLife3,Prefix,T3,Athlete's,+(115-129) to maximum Life
+IncreasedLife3,Prefix,T4,Virile,+(100-114) to maximum Life
+IncreasedLife3,Prefix,T5,Rotund,+(85-99) to maximum Life
+IncreasedLife4,Prefix,T1,Prime,+(175-189) to maximum Life
+IncreasedLife4,Prefix,T2,Rapturous,+(160-174) to maximum Life
+IncreasedLife4,Prefix,T3,Vigorous,+(145-159) to maximum Life
+IncreasedLife4,Prefix,T4,Fecund,+(130-144) to maximum Life
+IncreasedLife4,Prefix,T5,Athlete's,+(115-129) to maximum Life
+IncreasedMana,Prefix,T1,Zaffre,+(200-229) to maximum Mana
+IncreasedMana,Prefix,T2,Blue,+(180-199) to maximum Mana
+IncreasedMana,Prefix,T3,Mazarine,+(160-179) to maximum Mana
+IncreasedMana,Prefix,T4,Chalybeous,+(140-159) to maximum Mana
+IncreasedMana,Prefix,T5,Gentian,+(120-139) to maximum Mana
+IncreasedMana2,Prefix,T1,Blue,+(65-68) to maximum Mana
+IncreasedMana2,Prefix,T2,Mazarine,+(60-64) to maximum Mana
+IncreasedMana2,Prefix,T3,Chalybeous,+(55-59) to maximum Mana
+IncreasedMana2,Prefix,T4,Gentian,+(50-54) to maximum Mana
+IncreasedMana2,Prefix,T5,Opalescent,+(45-49) to maximum Mana
+IncreasedMana22,Prefix,T1,Zaffre,+(69-73) to maximum Mana
+IncreasedMana22,Prefix,T2,Blue,+(65-68) to maximum Mana
+IncreasedMana22,Prefix,T3,Mazarine,+(60-64) to maximum Mana
+IncreasedMana22,Prefix,T4,Chalybeous,+(55-59) to maximum Mana
+IncreasedMana22,Prefix,T5,Gentian,+(50-54) to maximum Mana
+IncreasedMana222,Prefix,T1,Zaffre,+(140-159) to maximum Mana
+IncreasedMana222,Prefix,T2,Blue,+(130-139) to maximum Mana
+IncreasedMana222,Prefix,T3,Mazarine,+(120-129) to maximum Mana
+IncreasedMana222,Prefix,T4,Chalybeous,+(110-119) to maximum Mana
+IncreasedMana222,Prefix,T5,Gentian,+(100-109) to maximum Mana
+IncreasedMana3,Prefix,T1,Ultramarine,+(74-78) to maximum Mana
+IncreasedMana3,Prefix,T2,Zaffre,+(69-73) to maximum Mana
+IncreasedMana3,Prefix,T3,Blue,+(65-68) to maximum Mana
+IncreasedMana3,Prefix,T4,Mazarine,+(60-64) to maximum Mana
+IncreasedMana3,Prefix,T5,Chalybeous,+(55-59) to maximum Mana
+IncreasedPhysicalDamageReductionRating,Prefix,T1,Enveloped,+(461-540) to Armour
+IncreasedPhysicalDamageReductionRating,Prefix,T2,Encased,+(401-460) to Armour
+IncreasedPhysicalDamageReductionRating,Prefix,T3,Carapaced,+(323-400) to Armour
+IncreasedPhysicalDamageReductionRating,Prefix,T4,Plated,+(139-322) to Armour
+IncreasedPhysicalDamageReductionRating,Prefix,T5,Fortified,+(61-138) to Armour
+IncreasedPhysicalDamageReductionRatingPercent,Prefix,T1,Impregnable,(33-36)% increased Armour
+IncreasedPhysicalDamageReductionRatingPercent,Prefix,T2,Girded,(29-32)% increased Armour
+IncreasedPhysicalDamageReductionRatingPercent,Prefix,T3,Thickened,(24-28)% increased Armour
+IncreasedPhysicalDamageReductionRatingPercent,Prefix,T4,Buttressed,(19-23)% increased Armour
+IncreasedPhysicalDamageReductionRatingPercent,Prefix,T5,Lobstered,(14-18)% increased Armour
+IncreasedShieldBlockPercentage,Prefix,T1,Unyielding,(76-81)% increased Chance to Block
+IncreasedShieldBlockPercentage,Prefix,T2,Enduring,(70-75)% increased Chance to Block
+IncreasedShieldBlockPercentage,Prefix,T3,Unwavering,(64-69)% increased Chance to Block
+IncreasedShieldBlockPercentage,Prefix,T4,Warded,(58-63)% increased Chance to Block
+IncreasedShieldBlockPercentage,Prefix,T5,Adamant,(52-57)% increased Chance to Block
+IncreasedWeaponElementalDamagePercent,Prefix,T1,Overpowering,(37-42)% increased Elemental Damage with Attack Skills
+IncreasedWeaponElementalDamagePercent,Prefix,T2,Unleashed,(31-36)% increased Elemental Damage with Attack Skills
+IncreasedWeaponElementalDamagePercent,Prefix,T3,Empowering,(21-30)% increased Elemental Damage with Attack Skills
+IncreasedWeaponElementalDamagePercent,Prefix,T4,Infusing,(11-20)% increased Elemental Damage with Attack Skills
+IncreasedWeaponElementalDamagePercent,Prefix,T5,Catalysing,(5-10)% increased Elemental Damage with Attack Skills
+IncreasedWeaponElementalDamagePercent2,Prefix,T1,Devastating,(87-100)% increased Elemental Damage with Attack Skills
+IncreasedWeaponElementalDamagePercent2,Prefix,T1,Devastating,(43-50)% increased Elemental Damage with Attack Skills
+IncreasedWeaponElementalDamagePercent2,Prefix,T2,Overpowering,(73-85)% increased Elemental Damage with Attack Skills
+IncreasedWeaponElementalDamagePercent2,Prefix,T2,Overpowering,(37-42)% increased Elemental Damage with Attack Skills
+IncreasedWeaponElementalDamagePercent2,Prefix,T3,Unleashed,(63-71)% increased Elemental Damage with Attack Skills
+IncreasedWeaponElementalDamagePercent2,Prefix,T3,Unleashed,(31-36)% increased Elemental Damage with Attack Skills
+IncreasedWeaponElementalDamagePercent2,Prefix,T4,Empowering,(53-61)% increased Elemental Damage with Attack Skills
+IncreasedWeaponElementalDamagePercent2,Prefix,T4,Empowering,(21-30)% increased Elemental Damage with Attack Skills
+IncreasedWeaponElementalDamagePercent2,Prefix,T5,Infusing,(36-51)% increased Elemental Damage with Attack Skills
+IncreasedWeaponElementalDamagePercent2,Prefix,T5,Infusing,(11-20)% increased Elemental Damage with Attack Skills
+IncreasedWeaponElementalDamagePercent222,Prefix,T1,Devastating,(51-59)% increased Elemental Damage with Attack Skills
+IncreasedWeaponElementalDamagePercent222,Prefix,T2,Overpowering,(43-50)% increased Elemental Damage with Attack Skills
+IncreasedWeaponElementalDamagePercent222,Prefix,T3,Unleashed,(37-42)% increased Elemental Damage with Attack Skills
+IncreasedWeaponElementalDamagePercent222,Prefix,T4,Empowering,(31-36)% increased Elemental Damage with Attack Skills
+IncreasedWeaponElementalDamagePercent222,Prefix,T5,Infusing,(21-30)% increased Elemental Damage with Attack Skills
+Intelligence,Suffix,T1,of the Genius,+(51-55) to Intelligence
+Intelligence,Suffix,T2,of the Virtuoso,+(43-50) to Intelligence
+Intelligence,Suffix,T3,of the Savant,+(38-42) to Intelligence
+Intelligence,Suffix,T4,of the Sage,+(33-37) to Intelligence
+Intelligence,Suffix,T5,of the Philosopher,+(28-32) to Intelligence
+Intelligence2,Suffix,T1,of the Polymath,+(56-60) to Intelligence
+Intelligence2,Suffix,T2,of the Genius,+(51-55) to Intelligence
+Intelligence2,Suffix,T3,of the Virtuoso,+(43-50) to Intelligence
+Intelligence2,Suffix,T4,of the Savant,+(38-42) to Intelligence
+Intelligence2,Suffix,T5,of the Sage,+(33-37) to Intelligence
+ItemFoundRarityIncrease,Suffix,T1,of Raiding,(11-14)% increased Rarity of Items found
+ItemFoundRarityIncrease,Suffix,T2,of Plunder,(6-10)% increased Rarity of Items found
+ItemFoundRarityIncrease2,Suffix,T1,of Excavation,(21-26)% increased Rarity of Items found
+ItemFoundRarityIncrease2,Suffix,T2,of Archaeology,(15-20)% increased Rarity of Items found
+ItemFoundRarityIncrease2,Suffix,T3,of Raiding,(11-14)% increased Rarity of Items found
+ItemFoundRarityIncrease2,Suffix,T4,of Plunder,(6-10)% increased Rarity of Items found
+ItemFoundRarityIncreasePrefix,Prefix,T1,Pirate's,(13-18)% increased Rarity of Items found
+ItemFoundRarityIncreasePrefix,Prefix,T2,Magpie's,(8-12)% increased Rarity of Items found
+ItemFoundRarityIncreasePrefix2,Prefix,T1,Dragon's,(19-24)% increased Rarity of Items found
+ItemFoundRarityIncreasePrefix2,Prefix,T2,Pirate's,(13-18)% increased Rarity of Items found
+ItemFoundRarityIncreasePrefix2,Prefix,T3,Magpie's,(8-12)% increased Rarity of Items found
+ItemFoundRarityIncreasePrefix3,Prefix,T1,Perandus',(25-28)% increased Rarity of Items found
+ItemFoundRarityIncreasePrefix3,Prefix,T2,Dragon's,(19-24)% increased Rarity of Items found
+ItemFoundRarityIncreasePrefix3,Prefix,T3,Pirate's,(13-18)% increased Rarity of Items found
+ItemFoundRarityIncreasePrefix3,Prefix,T4,Magpie's,(8-12)% increased Rarity of Items found
+LifeGainPerTarget,Suffix,T1,of Rejuvenation,Gain 2 Life per Enemy Hit with Attacks
+LifeGainPerTarget2,Suffix,T3,of Rejuvenation,Gain 2 Life per Enemy Hit with Attacks
+LifeGainPerTargetGain32,Suffix,T2,of Restoration,Gain 3 Life per Enemy Hit with Attacks
+LifeGainPerTargetGain42,Suffix,T1,of Regrowth,Gain 4 Life per Enemy Hit with Attacks
+LifeGainPerTargetGrantsLife2,Suffix,T1,of Revitalization,Grants (27-30) Life per Enemy Hit
+LifeGainPerTargetGrantsLife2,Suffix,T2,of Recuperation,Grants (23-26) Life per Enemy Hit
+LifeGainPerTargetGrantsLife2,Suffix,T3,of Renewal,Grants (19-22) Life per Enemy Hit
+LifeGainPerTargetGrantsLife2,Suffix,T4,of Regenesis,Grants (15-18) Life per Enemy Hit
+LifeGainPerTargetGrantsLife2,Suffix,T5,of Nourishment,Grants (11-14) Life per Enemy Hit
+LifeGainedFromEnemyDeath,Suffix,T1,of Masterstroke,Gain (84-110) Life per Enemy Killed
+LifeGainedFromEnemyDeath,Suffix,T2,of Feat,Gain (56-72) Life per Enemy Killed
+LifeGainedFromEnemyDeath,Suffix,T3,of Conquest,Gain (35-44) Life per Enemy Killed
+LifeGainedFromEnemyDeath,Suffix,T4,of Triumph,Gain (24-32) Life per Enemy Killed
+LifeGainedFromEnemyDeath,Suffix,T5,of Victory,Gain (12-18) Life per Enemy Killed
+LifeLeech,Suffix,T1,of the Remora,(0.2-0.4)% of Physical Attack Damage Leeched as Life
+LifeLeech2,Suffix,T3,of the Remora,(0.2-0.4)% of Physical Attack Damage Leeched as Life
+LifeLeechAttackWeapons2,Suffix,T1,of the Vampire,(3.5-4.5)% of Physical Attack Damage Leeched as Life
+LifeLeechAttackWeapons2,Suffix,T2,of the Lamprey,(2.6-3.2)% of Physical Attack Damage Leeched as Life
+LifeLeechAttackWeapons2,Suffix,T3,of the Remora,(2-2.4)% of Physical Attack Damage Leeched as Life
+LifeLeechJewellery2,Suffix,T1,of the Vampire,(1-1.2)% of Physical Attack Damage Leeched as Life
+LifeLeechJewellery2,Suffix,T2,of the Lamprey,(0.6-0.8)% of Physical Attack Damage Leeched as Life
+LifeLeechJewellery222,Suffix,T2,of Parching,(0.6-0.8)% of Physical Attack Damage Leeched as Mana
+LifeRegenerationBodyArmour,Suffix,T1,of Convalescence,Regenerate (152.1-176) Life per second
+LifeRegenerationBodyArmour,Suffix,T2,of Life-giving,Regenerate (128.1-152) Life per second
+LifeRegenerationBodyArmour,Suffix,T3,of Recuperation,Regenerate (96.1-128) Life per second
+LifeRegenerationBodyArmour,Suffix,T4,of the Phoenix,Regenerate (64.1-96) Life per second
+LifeRegenerationBodyArmour,Suffix,T5,of Ryslatha,Regenerate (48.1-64) Life per second
+LifeRegenerationBoots,Suffix,T1,of the Phoenix,Regenerate (64.1-96) Life per second
+LifeRegenerationBoots,Suffix,T2,of Ryslatha,Regenerate (48.1-64) Life per second
+LifeRegenerationBoots,Suffix,T3,of the Troll,Regenerate (32.1-48) Life per second
+LifeRegenerationBoots,Suffix,T4,of the Hydra,Regenerate (24.1-32) Life per second
+LifeRegenerationBoots,Suffix,T5,of the Starfish,Regenerate (16.1-24) Life per second
+LifeRegenerationHelmets,Suffix,T1,of Recuperation,Regenerate (96.1-128) Life per second
+LifeRegenerationHelmets,Suffix,T2,of the Phoenix,Regenerate (64.1-96) Life per second
+LifeRegenerationHelmets,Suffix,T3,of Ryslatha,Regenerate (48.1-64) Life per second
+LifeRegenerationHelmets,Suffix,T4,of the Troll,Regenerate (32.1-48) Life per second
+LifeRegenerationHelmets,Suffix,T5,of the Hydra,Regenerate (24.1-32) Life per second
+LifeRegenerationHelmets,Suffix,T6,of the Starfish,Regenerate (16.1-24) Life per second
+LifeRegenerationHelmets,Suffix,T7,of the Flatworm,Regenerate (8.1-16) Life per second
+LifeRegenerationRate,Suffix,T1,of Everlasting,(20-21)% increased Life Regeneration rate
+LifeRegenerationRate,Suffix,T2,of Youth,(18-19)% increased Life Regeneration rate
+LifeRegenerationRate,Suffix,T3,of Vivification,(15-17)% increased Life Regeneration rate
+LifeRegenerationRate,Suffix,T4,of Perpetuity,(12-14)% increased Life Regeneration rate
+LifeRegenerationRate,Suffix,T5,of Esprit,(9-11)% increased Life Regeneration rate
+LifeRegenerationShield,Suffix,T1,of Life-giving,Regenerate (128.1-152) Life per second
+LifeRegenerationShield,Suffix,T2,of Recuperation,Regenerate (96.1-128) Life per second
+LifeRegenerationShield,Suffix,T3,of the Phoenix,Regenerate (64.1-96) Life per second
+LifeRegenerationShield,Suffix,T4,of Ryslatha,Regenerate (48.1-64) Life per second
+LifeRegenerationShield,Suffix,T5,of the Troll,Regenerate (32.1-48) Life per second
+LightRadiusAndAccuracy,Suffix,T2,of Light,(12-15)% increased Global Accuracy Rating10% increased Light Radius
+LightRadiusAndAccuracyIncreasedGlobal,Suffix,T1,of Radiance,(16-20)% increased Global Accuracy Rating15% increased Light Radius
+LightRadiusAndAccuracyIncreasedGlobal2,Suffix,T3,of Shining,(9-11)% increased Global Accuracy Rating5% increased Light Radius
+LightningDamage,Prefix,T1,Vapourising,Adds (28-38) to (549-638) Lightning Damage
+LightningDamage,Prefix,T2,Electrocuting,Adds (23-32) to (458-531) Lightning Damage
+LightningDamage,Prefix,T3,Discharging,Adds (19-25) to (366-425) Lightning Damage
+LightningDamage,Prefix,T4,Shocking,Adds (14-20) to (281-327) Lightning Damage
+LightningDamage,Prefix,T5,Arcing,Adds (11-14) to (208-242) Lightning Damage
+LightningDamage2,Prefix,T5,Buzzing,Adds 1 to (14-15) Lightning Damage to Attacks
+LightningDamage22,Prefix,T1,Vapourising,Adds (15-21) to (296-344) Lightning Damage
+LightningDamage22,Prefix,T2,Electrocuting,Adds (13-17) to (247-286) Lightning Damage
+LightningDamage22,Prefix,T3,Discharging,Adds (10-14) to (197-229) Lightning Damage
+LightningDamage22,Prefix,T4,Shocking,Adds (8-10) to (152-176) Lightning Damage
+LightningDamage22,Prefix,T5,Arcing,Adds (5-8) to (112-131) Lightning Damage
+LightningDamageAddsTo2,Prefix,T1,Arcing,Adds (1-4) to (40-43) Lightning Damage to Attacks
+LightningDamageAddsTo2,Prefix,T2,Sparking,Adds (1-3) to (33-34) Lightning Damage to Attacks
+LightningDamageAddsTo2,Prefix,T3,Crackling,Adds (1-2) to (27-28) Lightning Damage to Attacks
+LightningDamageAddsTo2,Prefix,T4,Snapping,Adds (1-2) to (22-23) Lightning Damage to Attacks
+LightningDamageAddsTo22,Prefix,T1,Electrocuting,Adds (3-7) to (68-72) Lightning Damage to Attacks
+LightningDamageAddsTo22,Prefix,T2,Discharging,Adds (3-6) to (57-61) Lightning Damage to Attacks
+LightningDamageAddsTo22,Prefix,T3,Shocking,Adds (2-5) to (47-50) Lightning Damage to Attacks
+LightningDamageAddsTo22,Prefix,T4,Arcing,Adds (1-4) to (40-43) Lightning Damage to Attacks
+LightningDamageAddsTo22,Prefix,T5,Sparking,Adds (1-3) to (33-34) Lightning Damage to Attacks
+LightningDamageAddsTo222,Prefix,T1,Electrocuting,Adds (5-11) to (124-140) Lightning Damage to Attacks
+LightningDamageAddsTo222,Prefix,T2,Discharging,Adds (3-8) to (89-99) Lightning Damage to Attacks
+LightningDamageAddsTo222,Prefix,T3,Shocking,Adds (2-6) to (66-75) Lightning Damage to Attacks
+LightningDamageAddsTo222,Prefix,T4,Arcing,Adds (2-5) to (56-62) Lightning Damage to Attacks
+LightningDamageAddsTo222,Prefix,T5,Sparking,Adds (2-4) to (44-50) Lightning Damage to Attacks
+LightningDamagePercentage,Suffix,T1,of Voltage,(19-22)% increased Lightning Damage
+LightningDamagePercentage,Suffix,T2,of Electricity,(16-18)% increased Lightning Damage
+LightningDamagePercentage,Suffix,T3,of Static,(13-15)% increased Lightning Damage
+LightningDamagePercentage,Suffix,T4,of Sparks,(10-12)% increased Lightning Damage
+LightningDamagePercentage2,Suffix,T1,of Arcing,(45-50)% increased Lightning Damage
+LightningDamagePercentage2,Suffix,T1,of Discharge,(23-26)% increased Lightning Damage
+LightningDamagePercentage2,Suffix,T2,of Discharge,(40-44)% increased Lightning Damage
+LightningDamagePercentage2,Suffix,T2,of Voltage,(19-22)% increased Lightning Damage
+LightningDamagePercentage2,Suffix,T3,of Electricity,(16-18)% increased Lightning Damage
+LightningDamagePercentage2,Suffix,T3,of Voltage,(35-39)% increased Lightning Damage
+LightningDamagePercentage2,Suffix,T4,of Electricity,(29-34)% increased Lightning Damage
+LightningDamagePercentage2,Suffix,T4,of Static,(13-15)% increased Lightning Damage
+LightningDamagePercentage2,Suffix,T5,of Sparks,(10-12)% increased Lightning Damage
+LightningDamagePercentage2,Suffix,T5,of Static,(23-28)% increased Lightning Damage
+LightningDamagePercentage3,Suffix,T1,of Arcing,(27-30)% increased Lightning Damage
+LightningDamagePercentage3,Suffix,T2,of Discharge,(23-26)% increased Lightning Damage
+LightningDamagePercentage3,Suffix,T3,of Voltage,(19-22)% increased Lightning Damage
+LightningDamagePercentage3,Suffix,T4,of Electricity,(16-18)% increased Lightning Damage
+LightningDamagePercentage3,Suffix,T5,of Static,(13-15)% increased Lightning Damage
+LightningDamagePercentagePrefix,Prefix,T1,Esh's,(150-164)% increased Lightning Damage
+LightningDamagePercentagePrefix,Prefix,T2,Ionising,(125-149)% increased Lightning Damage
+LightningDamagePercentagePrefix,Prefix,T3,Smiting,(105-124)% increased Lightning Damage
+LightningDamagePercentagePrefix,Prefix,T4,Striking,(85-104)% increased Lightning Damage
+LightningDamagePercentagePrefix,Prefix,T5,Coursing,(60-84)% increased Lightning Damage
+LightningDamagePercentagePrefix2,Prefix,T1,Esh's,(100-109)% increased Lightning Damage
+LightningDamagePercentagePrefix2,Prefix,T2,Ionising,(85-99)% increased Lightning Damage
+LightningDamagePercentagePrefix2,Prefix,T3,Smiting,(70-84)% increased Lightning Damage
+LightningDamagePercentagePrefix2,Prefix,T4,Striking,(55-69)% increased Lightning Damage
+LightningDamagePercentagePrefix2,Prefix,T5,Coursing,(40-54)% increased Lightning Damage
+LightningResistance,Suffix,T1,of Ephij,+(46-48)% to Lightning Resistance
+LightningResistance,Suffix,T2,of the Lightning,+(42-45)% to Lightning Resistance
+LightningResistance,Suffix,T3,of the Maelstrom,+(36-41)% to Lightning Resistance
+LightningResistance,Suffix,T4,of the Tempest,+(30-35)% to Lightning Resistance
+LightningResistance,Suffix,T5,of the Thunderhead,+(24-29)% to Lightning Resistance
+LocalAttributeRequirements,Suffix,T2,of the Worthy,18% reduced Attribute Requirements
+LocalAttributeRequirements32Reduced,Suffix,T1,of the Apt,32% reduced Attribute Requirements
+LocalChaosDamage,Prefix,T1,Malicious,Adds (98-149) to (183-280) Chaos Damage
+LocalChaosDamage2,Prefix,T1,Malicious,Adds (56-87) to (105-160) Chaos Damage
+LocalIncreasedPhysicalDamagePercentAndAccuracyRating,Prefix,T1,Dictator's,(75-79)% increased Physical Damage+(175-200) to Accuracy Rating
+LocalIncreasedPhysicalDamagePercentAndAccuracyRating,Prefix,T2,Emperor's,(65-74)% increased Physical Damage+(150-174) to Accuracy Rating
+LocalIncreasedPhysicalDamagePercentAndAccuracyRating,Prefix,T3,Conqueror's,(55-64)% increased Physical Damage+(124-149) to Accuracy Rating
+LocalIncreasedPhysicalDamagePercentAndAccuracyRating,Prefix,T4,Champion's,(45-54)% increased Physical Damage+(98-123) to Accuracy Rating
+LocalIncreasedPhysicalDamagePercentAndAccuracyRating,Prefix,T5,Mercenary's,(35-44)% increased Physical Damage+(73-97) to Accuracy Rating
+LocalPhysicalDamagePercent,Prefix,T1,Merciless,(170-179)% increased Physical Damage
+LocalPhysicalDamagePercent,Prefix,T2,Tyrannical,(155-169)% increased Physical Damage
+LocalPhysicalDamagePercent,Prefix,T3,Cruel,(135-154)% increased Physical Damage
+LocalPhysicalDamagePercent,Prefix,T4,Bloodthirsty,(110-134)% increased Physical Damage
+LocalPhysicalDamagePercent,Prefix,T5,Vicious,(85-109)% increased Physical Damage
+ManaGainedFromEnemyDeath,Suffix,T1,of Retention,Gain (38-50) Mana per Enemy Killed
+ManaGainedFromEnemyDeath,Suffix,T2,of Permeation,Gain (26-37) Mana per Enemy Killed
+ManaGainedFromEnemyDeath,Suffix,T3,of Diffusion,Gain (16-25) Mana per Enemy Killed
+ManaGainedFromEnemyDeath,Suffix,T4,of Consumption,Gain (11-15) Mana per Enemy Killed
+ManaGainedFromEnemyDeath,Suffix,T5,of Osmosis,Gain (7-10) Mana per Enemy Killed
+ManaLeech,Suffix,T1,of Thirst,(2.6-3.2)% of Physical Attack Damage Leeched as Mana
+ManaLeech2,Suffix,T1,of Thirst,(0.2-0.4)% of Physical Attack Damage Leeched as Mana
+ManaLeech222,Suffix,T2,of Thirst,(0.2-0.4)% of Physical Attack Damage Leeched as Mana
+ManaRegeneration,Suffix,T1,of Nirvana,(86-105)% increased Mana Regeneration Rate
+ManaRegeneration,Suffix,T2,of Euphoria,(73-85)% increased Mana Regeneration Rate
+ManaRegeneration,Suffix,T3,of Bliss,(59-72)% increased Mana Regeneration Rate
+ManaRegeneration,Suffix,T4,of Elation,(46-58)% increased Mana Regeneration Rate
+ManaRegeneration,Suffix,T5,of Joy,(33-45)% increased Mana Regeneration Rate
+ManaRegeneration2,Suffix,T1,of Nirvana,(60-69)% increased Mana Regeneration Rate
+ManaRegeneration2,Suffix,T2,of Euphoria,(50-59)% increased Mana Regeneration Rate
+ManaRegeneration2,Suffix,T3,of Bliss,(40-49)% increased Mana Regeneration Rate
+ManaRegeneration2,Suffix,T4,of Elation,(30-39)% increased Mana Regeneration Rate
+ManaRegeneration2,Suffix,T5,of Joy,(20-29)% increased Mana Regeneration Rate
+MaximumChaosResistance,Suffix,T3,of Regularity,+1% to maximum Chaos Resistance
+MaximumChaosResistance2To,Suffix,T2,of Concord,+2% to maximum Chaos Resistance
+MaximumChaosResistance3To,Suffix,T1,of Harmony,+3% to maximum Chaos Resistance
+MaximumColdResist,Suffix,T3,of Furs,+1% to maximum Cold Resistance
+MaximumColdResist2To,Suffix,T2,of the Tundra,+2% to maximum Cold Resistance
+MaximumColdResist3To,Suffix,T1,of the Mammoth,+3% to maximum Cold Resistance
+MaximumFireResist,Suffix,T3,of the Bushfire,+1% to maximum Fire Resistance
+MaximumFireResist2To,Suffix,T2,of the Molten Core,+2% to maximum Fire Resistance
+MaximumFireResist3To,Suffix,T1,of the Solar Storm,+3% to maximum Fire Resistance
+MaximumLightningResistance,Suffix,T3,of Impedance,+1% to maximum Lightning Resistance
+MaximumLightningResistance2To,Suffix,T2,of Shockproofing,+2% to maximum Lightning Resistance
+MaximumLightningResistance3To,Suffix,T1,of the Lightning Rod,+3% to maximum Lightning Resistance
+MaximumResistances,Suffix,T2,of the Sempiternal,+1% to all maximum Resistances
+MaximumResistances2To,Suffix,T1,of the Deathless,+2% to all maximum Resistances
+MinionAccuracyRating,Suffix,T1,of the Monarch,Minions have +(546-624) to Accuracy Rating
+MinionAccuracyRating,Suffix,T2,of the Ruler,Minions have +(456-545) to Accuracy Rating
+MinionAccuracyRating,Suffix,T3,of the Magnate,Minions have +(326-455) to Accuracy Rating
+MinionAccuracyRating,Suffix,T4,of the Commander,Minions have +(216-325) to Accuracy Rating
+MinionAccuracyRating,Suffix,T5,of the Tutor,Minions have +(131-215) to Accuracy Rating
+MinionAttackSpeedAndCastSpeed,Suffix,T1,of Infuriation,Minions have (23-25)% increased Attack and Cast Speed
+MinionAttackSpeedAndCastSpeed,Suffix,T2,of Provocation,Minions have (20-22)% increased Attack and Cast Speed
+MinionAttackSpeedAndCastSpeed,Suffix,T3,of Instigation,Minions have (17-19)% increased Attack and Cast Speed
+MinionAttackSpeedAndCastSpeed,Suffix,T4,of Agitation,Minions have (14-16)% increased Attack and Cast Speed
+MinionAttackSpeedAndCastSpeed,Suffix,T5,of Incitation,Minions have (11-13)% increased Attack and Cast Speed
+MinionCriticalStrikeChance,Suffix,T1,of Destiny,Minions have (100-109)% increased Critical Strike Chance
+MinionCriticalStrikeChance,Suffix,T2,of Determinism,Minions have (80-99)% increased Critical Strike Chance
+MinionCriticalStrikeChance,Suffix,T3,of Serendipity,Minions have (60-79)% increased Critical Strike Chance
+MinionCriticalStrikeChance,Suffix,T4,of Providence,Minions have (40-59)% increased Critical Strike Chance
+MinionCriticalStrikeChance,Suffix,T5,of Fortune,Minions have (20-39)% increased Critical Strike Chance
+MinionCriticalStrikeMultiplier,Suffix,T1,of the Legion,Minions have +(35-38)% to Critical Strike Multiplier
+MinionCriticalStrikeMultiplier,Suffix,T2,of the Invasion,Minions have +(30-34)% to Critical Strike Multiplier
+MinionCriticalStrikeMultiplier,Suffix,T3,of the Swarm,Minions have +(25-29)% to Critical Strike Multiplier
+MinionCriticalStrikeMultiplier,Suffix,T4,of the Throng,Minions have +(20-24)% to Critical Strike Multiplier
+MinionCriticalStrikeMultiplier,Suffix,T5,of the Horde,Minions have +(15-19)% to Critical Strike Multiplier
+MinionDamageMana,Prefix,T1,King's,+(42-45) to maximum ManaMinions deal (35-39)% increased Damage
+MinionDamageMana,Prefix,T2,Prince's,+(38-41) to maximum ManaMinions deal (30-34)% increased Damage
+MinionDamageMana,Prefix,T3,Duke's,+(34-37) to maximum ManaMinions deal (25-29)% increased Damage
+MinionDamageMana,Prefix,T4,Count's,+(29-33) to maximum ManaMinions deal (20-24)% increased Damage
+MinionDamageMana,Prefix,T5,Marquess's,+(25-28) to maximum ManaMinions deal (15-19)% increased Damage
+MinionDamagePercentage,Prefix,T1,Empress's,Minions deal (100-109)% increased Damage
+MinionDamagePercentage,Prefix,T2,Queen's,Minions deal (85-99)% increased Damage
+MinionDamagePercentage,Prefix,T3,Princess's,Minions deal (70-84)% increased Damage
+MinionDamagePercentage,Prefix,T4,Duchess's,Minions deal (55-69)% increased Damage
+MinionDamagePercentage,Prefix,T5,Countess's,Minions deal (40-54)% increased Damage
+MovementVelocity,Prefix,T5,Sprinter's,15% increased Movement Speed
+MovementVelocity20Increased,Prefix,T4,Stallion's,20% increased Movement Speed
+MovementVelocity25Increased,Prefix,T3,Gazelle's,25% increased Movement Speed
+MovementVelocity30Increased,Prefix,T2,Cheetah's,30% increased Movement Speed
+MovementVelocity35Increased,Prefix,T1,Hellion's,35% increased Movement Speed
+PhysicalDOTMultiplier,Suffix,T1,of Exsanguinating,+(34-38)% to Physical Damage over Time Multiplier
+PhysicalDOTMultiplier,Suffix,T2,of Hemorrhaging,+(29-33)% to Physical Damage over Time Multiplier
+PhysicalDOTMultiplier,Suffix,T3,of Phlebotomising,+(24-28)% to Physical Damage over Time Multiplier
+PhysicalDOTMultiplier,Suffix,T4,of Spilling,+(19-23)% to Physical Damage over Time Multiplier
+PhysicalDOTMultiplier,Suffix,T5,of Seeping,+(14-18)% to Physical Damage over Time Multiplier
+PhysicalDOTMultiplier2,Suffix,T1,of Hemorrhaging,+(56-65)% to Physical Damage over Time Multiplier
+PhysicalDOTMultiplier2,Suffix,T2,of Phlebotomising,+(46-55)% to Physical Damage over Time Multiplier
+PhysicalDOTMultiplier2,Suffix,T3,of Spilling,+(36-45)% to Physical Damage over Time Multiplier
+PhysicalDOTMultiplier2,Suffix,T4,of Seeping,+(26-35)% to Physical Damage over Time Multiplier
+PhysicalDamage,Prefix,T1,Flaring,Adds (17-23) to (34-39) Physical Damage to Attacks
+PhysicalDamage,Prefix,T2,Tempered,Adds (14-19) to (28-33) Physical Damage to Attacks
+PhysicalDamage,Prefix,T3,Razor-sharp,Adds (11-16) to (23-26) Physical Damage to Attacks
+PhysicalDamage,Prefix,T4,Annealed,Adds (10-13) to (19-23) Physical Damage to Attacks
+PhysicalDamage,Prefix,T5,Gleaming,Adds (8-11) to (16-18) Physical Damage to Attacks
+PhysicalDamage2,Prefix,T4,Glinting,Adds 1 to 2 Physical Damage to Attacks
+PhysicalDamage22,Prefix,T1,Flaring,Adds (22-29) to (45-52) Physical Damage
+PhysicalDamage22,Prefix,T2,Tempered,Adds (19-25) to (39-45) Physical Damage
+PhysicalDamage22,Prefix,T3,Razor-sharp,Adds (16-21) to (32-38) Physical Damage
+PhysicalDamage22,Prefix,T4,Annealed,Adds (13-18) to (27-31) Physical Damage
+PhysicalDamage22,Prefix,T5,Gleaming,Adds (11-14) to (21-25) Physical Damage
+PhysicalDamage222,Prefix,T1,Flaring,Adds (11-15) to (22-26) Physical Damage to Attacks
+PhysicalDamage222,Prefix,T2,Tempered,Adds (9-12) to (19-22) Physical Damage to Attacks
+PhysicalDamage222,Prefix,T3,Razor-sharp,Adds (7-10) to (15-18) Physical Damage to Attacks
+PhysicalDamage222,Prefix,T4,Annealed,Adds (6-9) to (13-15) Physical Damage to Attacks
+PhysicalDamage222,Prefix,T5,Gleaming,Adds (5-7) to (11-12) Physical Damage to Attacks
+PhysicalDamageAddsTo2,Prefix,T1,Flaring,Adds (34-47) to (72-84) Physical Damage
+PhysicalDamageAddsTo2,Prefix,T2,Tempered,Adds (30-40) to (63-73) Physical Damage
+PhysicalDamageAddsTo2,Prefix,T3,Razor-sharp,Adds (25-33) to (52-61) Physical Damage
+PhysicalDamageAddsTo2,Prefix,T4,Annealed,Adds (20-28) to (43-51) Physical Damage
+PhysicalDamageAddsTo2,Prefix,T5,Gleaming,Adds (16-22) to (35-40) Physical Damage
+PhysicalDamageAddsTo22,Prefix,T1,Honed,Adds (4-6) to (9-10) Physical Damage to Attacks
+PhysicalDamageAddsTo22,Prefix,T2,Polished,Adds (3-4) to (6-7) Physical Damage to Attacks
+PhysicalDamageAddsTo22,Prefix,T3,Burnished,Adds (2-3) to (4-5) Physical Damage to Attacks
+PhysicalDamageAddsTo222,Prefix,T1,Annealed,Adds (6-9) to (13-15) Physical Damage to Attacks
+PhysicalDamageAddsTo222,Prefix,T2,Gleaming,Adds (5-7) to (11-12) Physical Damage to Attacks
+PhysicalDamageAddsTo222,Prefix,T3,Honed,Adds (4-6) to (9-10) Physical Damage to Attacks
+PhysicalDamageAddsTo222,Prefix,T4,Polished,Adds (3-4) to (6-7) Physical Damage to Attacks
+PhysicalDamageAddsTo222,Prefix,T5,Burnished,Adds (2-3) to (4-5) Physical Damage to Attacks
+ProjectileSpeed,Suffix,T1,of the Gale,(42-46)% increased Projectile Speed
+ProjectileSpeed,Suffix,T2,of the Zephyr,(34-41)% increased Projectile Speed
+ProjectileSpeed,Suffix,T3,of Propulsion,(26-33)% increased Projectile Speed
+ProjectileSpeed,Suffix,T4,of Flight,(18-25)% increased Projectile Speed
+ProjectileSpeed,Suffix,T5,of Darting,(10-17)% increased Projectile Speed
+ReducedExtraDamageFromCrits,Suffix,T1,of Obstruction,You take (51-60)% reduced Extra Damage from Critical Strikes
+ReducedExtraDamageFromCrits,Suffix,T2,of Interference,You take (41-50)% reduced Extra Damage from Critical Strikes
+ReducedExtraDamageFromCrits,Suffix,T3,of Deadening,You take (31-40)% reduced Extra Damage from Critical Strikes
+ReducedExtraDamageFromCrits,Suffix,T4,of Dulling,You take (21-30)% reduced Extra Damage from Critical Strikes
+ReducedPhysicalDamageTaken,Suffix,T5,of the Watchman,4% additional Physical Damage Reduction
+ReducedPhysicalDamageTaken5Additional,Suffix,T4,of the Sentry,5% additional Physical Damage Reduction
+ReducedPhysicalDamageTaken6Additional,Suffix,T3,of the Keeper,6% additional Physical Damage Reduction
+ReducedPhysicalDamageTaken7Additional,Suffix,T2,of the Protector,7% additional Physical Damage Reduction
+ReducedPhysicalDamageTaken8Additional,Suffix,T1,of the Conservator,8% additional Physical Damage Reduction
+SocketedBowGemLevel,Prefix,T1,Sharpshooter's,+2 to Level of Socketed Bow Gems
+SocketedBowGemLevel,Prefix,T2,Fletcher's,+1 to Level of Socketed Bow Gems
+SocketedChaosGemLevel,Prefix,T1,Anarchist's,+2 to Level of Socketed Chaos Gems
+SocketedChaosGemLevel,Prefix,T2,Nihilist's,+1 to Level of Socketed Chaos Gems
+SocketedColdGemLevel,Prefix,T2,Frost Weaver's,+1 to Level of Socketed Cold Gems
+SocketedColdGemLevel2To,Prefix,T1,Winterbringer's,+2 to Level of Socketed Cold Gems
+SocketedFireGemLevel,Prefix,T2,Flame Spinner's,+1 to Level of Socketed Fire Gems
+SocketedFireGemLevel2To,Prefix,T1,Lava Caller's,+2 to Level of Socketed Fire Gems
+SocketedLightningGemLevel,Prefix,T1,Tempest King's,+2 to Level of Socketed Lightning Gems
+SocketedLightningGemLevel,Prefix,T2,Thunder Lord's,+1 to Level of Socketed Lightning Gems
+SocketedMeleeGemLevel,Prefix,T1,Weaponmaster's,+2 to Level of Socketed Melee Gems
+SocketedMeleeGemLevel,Prefix,T2,Combatant's,+1 to Level of Socketed Melee Gems
+SpellAddedColdDamage,Prefix,T1,Entombing,Adds (61-81) to (120-140) Cold Damage to Spells
+SpellAddedColdDamage,Prefix,T2,Polar,Adds (49-64) to (96-113) Cold Damage to Spells
+SpellAddedColdDamage,Prefix,T3,Glaciated,Adds (39-52) to (77-90) Cold Damage to Spells
+SpellAddedColdDamage,Prefix,T4,Frozen,Adds (30-40) to (59-69) Cold Damage to Spells
+SpellAddedColdDamage,Prefix,T5,Freezing,Adds (24-30) to (45-53) Cold Damage to Spells
+SpellAddedColdDamage2,Prefix,T1,Entombing,Adds (41-54) to (81-93) Cold Damage to Spells
+SpellAddedColdDamage2,Prefix,T2,Polar,Adds (33-43) to (64-75) Cold Damage to Spells
+SpellAddedColdDamage2,Prefix,T3,Glaciated,Adds (26-35) to (51-60) Cold Damage to Spells
+SpellAddedColdDamage2,Prefix,T4,Frozen,Adds (20-26) to (40-46) Cold Damage to Spells
+SpellAddedColdDamage2,Prefix,T5,Freezing,Adds (16-20) to (30-36) Cold Damage to Spells
+SpellAddedFireDamage,Prefix,T1,Cremating,Adds (66-88) to (132-155) Fire Damage to Spells
+SpellAddedFireDamage,Prefix,T2,Blasting,Adds (53-70) to (107-123) Fire Damage to Spells
+SpellAddedFireDamage,Prefix,T3,Incinerating,Adds (42-56) to (85-99) Fire Damage to Spells
+SpellAddedFireDamage,Prefix,T4,Scorching,Adds (32-44) to (65-76) Fire Damage to Spells
+SpellAddedFireDamage,Prefix,T5,Flaming,Adds (25-33) to (50-59) Fire Damage to Spells
+SpellAddedFireDamage2,Prefix,T1,Cremating,Adds (49-66) to (98-115) Fire Damage to Spells
+SpellAddedFireDamage2,Prefix,T2,Blasting,Adds (40-52) to (79-91) Fire Damage to Spells
+SpellAddedFireDamage2,Prefix,T3,Incinerating,Adds (31-42) to (64-73) Fire Damage to Spells
+SpellAddedFireDamage2,Prefix,T4,Scorching,Adds (24-33) to (48-57) Fire Damage to Spells
+SpellAddedFireDamage2,Prefix,T5,Flaming,Adds (19-25) to (37-44) Fire Damage to Spells
+SpellAddedLightningDamage,Prefix,T1,Electrocuting,Adds (7-20) to (255-270) Lightning Damage to Spells
+SpellAddedLightningDamage,Prefix,T2,Discharging,Adds (5-17) to (204-216) Lightning Damage to Spells
+SpellAddedLightningDamage,Prefix,T3,Shocking,Adds (5-12) to (164-173) Lightning Damage to Spells
+SpellAddedLightningDamage,Prefix,T4,Arcing,Adds (3-10) to (126-133) Lightning Damage to Spells
+SpellAddedLightningDamage,Prefix,T5,Sparking,Adds (2-8) to (97-102) Lightning Damage to Spells
+SpellAddedLightningDamage2,Prefix,T1,Electrocuting,Adds (4-14) to (170-179) Lightning Damage to Spells
+SpellAddedLightningDamage2,Prefix,T2,Discharging,Adds (4-11) to (136-144) Lightning Damage to Spells
+SpellAddedLightningDamage2,Prefix,T3,Shocking,Adds (2-9) to (109-115) Lightning Damage to Spells
+SpellAddedLightningDamage2,Prefix,T4,Arcing,Adds (2-7) to (84-88) Lightning Damage to Spells
+SpellAddedLightningDamage2,Prefix,T5,Sparking,Adds (2-5) to (64-68) Lightning Damage to Spells
+SpellBlockPercentage,Prefix,T1,Oracle's,(14-15)% Chance to Block Spell Damage
+SpellBlockPercentage,Prefix,T2,Seer's,(12-13)% Chance to Block Spell Damage
+SpellBlockPercentage,Prefix,T3,Enlightened,(10-11)% Chance to Block Spell Damage
+SpellBlockPercentage,Prefix,T4,Enigmatic,(8-9)% Chance to Block Spell Damage
+SpellBlockPercentage,Prefix,T5,Clairvoyant,(6-7)% Chance to Block Spell Damage
+SpellCriticalStrikeChanceIncrease,Suffix,T1,of Unmaking,(100-109)% increased Spell Critical Strike Chance
+SpellCriticalStrikeChanceIncrease,Suffix,T2,of Ruin,(80-99)% increased Spell Critical Strike Chance
+SpellCriticalStrikeChanceIncrease,Suffix,T3,of Calamity,(60-79)% increased Spell Critical Strike Chance
+SpellCriticalStrikeChanceIncrease,Suffix,T4,of Disaster,(40-59)% increased Spell Critical Strike Chance
+SpellCriticalStrikeChanceIncrease,Suffix,T5,of Havoc,(20-39)% increased Spell Critical Strike Chance
+SpellDamage,Prefix,T1,Wizard's,(23-26)% increased Spell Damage
+SpellDamage,Prefix,T2,Thaumaturgist's,(18-22)% increased Spell Damage
+SpellDamage,Prefix,T3,Sorcerer's,(13-17)% increased Spell Damage
+SpellDamage,Prefix,T4,Mage's,(8-12)% increased Spell Damage
+SpellDamage,Prefix,T5,Chanter's,(3-7)% increased Spell Damage
+SpellDamageAndMana,Prefix,T1,Lich's,(51-55)% increased Spell Damage+(60-64) to maximum Mana
+SpellDamageAndMana,Prefix,T2,Archmage's,(45-50)% increased Spell Damage+(54-59) to maximum Mana
+SpellDamageAndMana,Prefix,T3,Mage's,(38-44)% increased Spell Damage+(48-53) to maximum Mana
+SpellDamageAndMana,Prefix,T4,Warlock's,(30-37)% increased Spell Damage+(42-47) to maximum Mana
+SpellDamageAndMana,Prefix,T5,Wizard's,(23-29)% increased Spell Damage+(36-41) to maximum Mana
+SpellDamageMana,Prefix,T1,Lich's,(35-39)% increased Spell Damage+(42-45) to maximum Mana
+SpellDamageMana,Prefix,T2,Archmage's,(30-34)% increased Spell Damage+(38-41) to maximum Mana
+SpellDamageMana,Prefix,T3,Mage's,(25-29)% increased Spell Damage+(34-37) to maximum Mana
+SpellDamageMana,Prefix,T4,Warlock's,(20-24)% increased Spell Damage+(29-33) to maximum Mana
+SpellDamageMana,Prefix,T5,Wizard's,(15-19)% increased Spell Damage+(25-28) to maximum Mana
+SpellPercentage2,Prefix,T1,Runic,(100-109)% increased Spell Damage
+SpellPercentage2,Prefix,T1,Runic,(150-164)% increased Spell Damage
+SpellPercentage2,Prefix,T2,Glyphic,(85-99)% increased Spell Damage
+SpellPercentage2,Prefix,T2,Glyphic,(125-149)% increased Spell Damage
+SpellPercentage2,Prefix,T3,Incanter's,(70-84)% increased Spell Damage
+SpellPercentage2,Prefix,T3,Incanter's,(105-124)% increased Spell Damage
+SpellPercentage2,Prefix,T4,Occultist's,(55-69)% increased Spell Damage
+SpellPercentage2,Prefix,T4,Occultist's,(85-104)% increased Spell Damage
+SpellPercentage2,Prefix,T5,Glyphic,(85-99)% increased Spell Damage
+SpellPercentage2,Prefix,T5,Professor's,(40-54)% increased Spell Damage
+SpellPercentage2,Prefix,T5,Professor's,(60-84)% increased Spell Damage
+SpellPercentage22,Prefix,T1,Tul's,(100-109)% increased Cold Damage
+SpellPercentageIncreasedFire22,Prefix,T1,Xoph's,(100-109)% increased Fire Damage
+SpellPercentageIncreasedLightning22,Prefix,T1,Esh's,(100-109)% increased Lightning Damage
+Strength,Suffix,T1,of the Gods,+(51-55) to Strength
+Strength,Suffix,T2,of the Titan,+(43-50) to Strength
+Strength,Suffix,T3,of the Leviathan,+(38-42) to Strength
+Strength,Suffix,T4,of the Goliath,+(33-37) to Strength
+Strength,Suffix,T5,of the Gorilla,+(28-32) to Strength
+Strength2,Suffix,T1,of the Godslayer,+(56-60) to Strength
+Strength2,Suffix,T2,of the Gods,+(51-55) to Strength
+Strength2,Suffix,T3,of the Titan,+(43-50) to Strength
+Strength2,Suffix,T4,of the Leviathan,+(38-42) to Strength
+Strength2,Suffix,T5,of the Goliath,+(33-37) to Strength
+StunDurationIncreasePercent,Suffix,T1,of Staggering,(31-35)% increased Stun Duration on Enemies
+StunDurationIncreasePercent,Suffix,T2,of Slamming,(26-30)% increased Stun Duration on Enemies
+StunDurationIncreasePercent,Suffix,T3,of Stunning,(21-25)% increased Stun Duration on Enemies
+StunDurationIncreasePercent,Suffix,T4,of Dazing,(16-20)% increased Stun Duration on Enemies
+StunDurationIncreasePercent,Suffix,T5,of Impact,(11-15)% increased Stun Duration on Enemies
+StunRecovery,Suffix,T1,of Corundum Skin,(26-28)% increased Stun and Block Recovery
+StunRecovery,Suffix,T2,of Adamantite Skin,(23-25)% increased Stun and Block Recovery
+StunRecovery,Suffix,T3,of Steel Skin,(20-22)% increased Stun and Block Recovery
+StunRecovery,Suffix,T4,of Iron Skin,(17-19)% increased Stun and Block Recovery
+StunRecovery,Suffix,T5,of Stone Skin,(14-16)% increased Stun and Block Recovery
+StunThresholdReduction,Suffix,T1,of the Gladiator,(14-15)% reduced Enemy Stun Threshold
+StunThresholdReduction,Suffix,T2,of the Combatant,(12-13)% reduced Enemy Stun Threshold
+StunThresholdReduction,Suffix,T3,of the Boxer,(10-11)% reduced Enemy Stun Threshold
+StunThresholdReduction,Suffix,T4,of the Brawler,(8-9)% reduced Enemy Stun Threshold
+StunThresholdReduction,Suffix,T5,of the Pugilist,(5-7)% reduced Enemy Stun Threshold

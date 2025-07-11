@@ -13,6 +13,7 @@ body {
   background: #1a1a1a;
   color: #e6e6e6;
   line-height: 1.6;
+  font-weight: bold;
 }
 
 :root {
@@ -27,6 +28,179 @@ body {
   --selected-text: #181a20;
   --button-hover: #2a2b32;
   --button-focus: #f7c873;
+  --giga-bg: #ffffff;
+  --giga-text: #e9967a;
+  --giga-border: #e9967a;
+  --giga-glow: rgba(233, 150, 122, 0.6);
+}
+
+/* Giga styling */
+.giga-style {
+  background: var(--giga-bg) !important;
+  color: var(--giga-text) !important;
+  border-color: var(--giga-border) !important;
+  box-shadow: 
+    0 0 10px var(--giga-glow),
+    0 0 20px var(--giga-glow),
+    0 0 30px var(--giga-glow) !important;
+  text-shadow: 0 0 5px var(--giga-text) !important;
+}
+
+.giga-style:hover {
+  background: var(--giga-bg) !important;
+  color: var(--giga-text) !important;
+  border-color: var(--giga-border) !important;
+  box-shadow: 
+    0 0 15px var(--giga-glow),
+    0 0 25px var(--giga-glow),
+    0 0 35px var(--giga-glow) !important;
+}
+
+/* Mod button styling */
+.mod-button {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  color: var(--text);
+  font-size: 0.9rem;
+  padding: 0.4em 0.8em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.15s, border 0.15s, color 0.15s;
+  outline: none;
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  margin-right: 0.5rem;
+}
+
+.mod-button:hover:not(.selected):not(.giga-style) {
+  background: var(--button-hover);
+  border-color: var(--accent);
+}
+
+.mod-button.selected {
+  background: var(--selected);
+  color: var(--selected-text);
+  border-color: var(--selected);
+  box-shadow: 0 2px 8px rgba(231,184,111,0.12);
+}
+
+.mod-button.giga-style {
+  background: var(--giga-bg) !important;
+  color: var(--giga-text) !important;
+  border-color: var(--giga-border) !important;
+  box-shadow: 
+    0 0 10px var(--giga-glow),
+    0 0 20px var(--giga-glow),
+    0 0 30px var(--giga-glow) !important;
+  text-shadow: 0 0 5px var(--giga-text) !important;
+}
+
+.mod-button.giga-style:hover {
+  background: var(--giga-bg) !important;
+  color: var(--giga-text) !important;
+  border-color: var(--giga-border) !important;
+  box-shadow: 
+    0 0 15px var(--giga-glow),
+    0 0 25px var(--giga-glow),
+    0 0 35px var(--giga-glow) !important;
+}
+
+/* 2x2 grid layout for mod buttons */
+.mod-buttons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.mod-buttons-grid .mod-button {
+  margin-right: 0;
+  font-size: 0.8rem;
+  padding: 0.3em 0.6em;
+  text-align: center;
+}
+
+/* Info panel styling */
+.info-panel {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.info-panel h4 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.info-content {
+  color: var(--text);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.info-content .info-item {
+  margin-bottom: 0.5rem;
+}
+
+.info-content .info-label {
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.info-content .info-value {
+  margin-left: 0.5rem;
+}
+
+/* Info column styling to match other columns */
+.info-col {
+  background: var(--surface);
+  border-radius: 1em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  min-width: 0;
+  border: 1.5px solid var(--border);
+  max-height: 80vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 2rem;
+}
+
+.info-col h4 {
+  text-align: center;
+  font-size: 1.3rem;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.05em;
+}
+
+.info-col .info-content {
+  color: var(--text);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.info-col .info-item {
+  margin-bottom: 0.8rem;
+  word-wrap: break-word;
+}
+
+.info-col .info-label {
+  font-weight: bold;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.info-col .info-value {
+  display: block;
+  margin-left: 0;
+  word-break: break-word;
 }
 
 .app-header {
@@ -115,7 +289,7 @@ body {
   color: var(--text);
   font-size: 1.2rem;
   padding: 0.6em 1.4em;
-  border-radius: 0.7em;
+  border-radius: 4px;
   cursor: pointer;
   transition: background 0.15s, border 0.15s, color 0.15s;
   outline: none;
@@ -129,7 +303,7 @@ body {
   color: var(--text);
   font-size: 1.2rem;
   padding: 0.6em 1.4em;
-  border-radius: 0.7em;
+  border-radius: 4px;
   cursor: pointer;
   transition: background 0.15s, border 0.15s, color 0.15s;
   outline: none;
@@ -210,7 +384,7 @@ body {
   color: var(--text);
   font-size: 1.2rem;
   padding: 0.4em 1.1em;
-  border-radius: 0.6em;
+  border-radius: 4px;
   cursor: pointer;
   transition: background 0.15s, border 0.15s, color 0.15s;
   outline: none;
@@ -243,7 +417,7 @@ body {
   background: var(--selected);
   color: var(--selected-text);
   border: none;
-  border-radius: 0.7em;
+  border-radius: 4px;
   font-size: 1.1rem;
   padding: 0.7em 2em;
   margin-bottom: 1.2rem;
@@ -901,7 +1075,7 @@ body {
   border: 2px solid #e7b86f;
   font-size: 1.1rem;
   padding: 0.8em 1.5em;
-  border-radius: 0.7em;
+  border-radius: 4px;
   cursor: pointer;
   font-weight: 600;
   width: 100%;
@@ -937,4 +1111,96 @@ body {
   background: var(--accent);
   border-color: var(--accent);
 }
+
+.mod-button.selected.good {
+  background-color: #ff6b6b;
+  color: white;
+  border-color: #ff6b6b;
+}
+
+.mod-button.selected.ok {
+  background-color: #ffd93d;
+  color: #333;
+  border-color: #ffd93d;
+}
+
+/* Preview text styling */
+.preview-text {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background: var(--surface);
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+}
+
+.preview-line {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background: var(--selected);
+  color: var(--selected-text);
+  border: 2px solid var(--selected);
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(231,184,111,0.12);
+}
+
+.preview-line:last-child {
+  margin-bottom: 0;
+}
+
+.preview-line-blue {
+  background: rgb(0, 160, 227);
+  color: white;
+  border-color: rgb(0, 160, 227);
+  box-shadow: 0 2px 8px rgba(0,160,227,0.12);
+}
+
+.preview-stat {
+  flex: 1;
+}
+
+.preview-giga-base,
+.preview-good-base,
+.preview-ok-base,
+.preview-all-base {
+  margin-left: 0.5rem;
+  font-weight: 700;
+}
+
+.preview-giga-base,
+.preview-good-base,
+.preview-ok-base,
+.preview-all-base {
+  color: inherit;
+}
+
+/* Groupings preview styles */
+.groupings-preview {
+  margin-top: 0.5rem;
+}
+
+.grouping-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.25rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.grouping-label {
+  flex: 1;
+}
+
+.grouping-count {
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+
 

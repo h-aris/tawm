@@ -1,5 +1,9 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import './App.css';
+import isEqual from 'lodash.isequal';
+// Import the new priority function
+// @ts-ignore
+import { getFamilyPriority } from '../new_priority_system';
 
 // Types for the data
 interface ModifierFamily {
@@ -74,16 +78,6 @@ const App: React.FC = () => {
     };
   }>({});
 
-  // Giga selections state: equipment -> subcategory -> family -> giga selections
-  const [gigaSelections, setGigaSelections] = useState<{
-    [equipment: string]: {
-      [subcategory: string]: {
-        families: { [family: string]: { good: string[]; ok: string[] } };
-        basetypes: { good: string[]; ok: string[] };
-      };
-    };
-  }>({});
-
   // Most recently selected info for the new panel
   const [lastSelectedInfo, setLastSelectedInfo] = useState<{
     equipment: string;
@@ -101,6 +95,12 @@ const App: React.FC = () => {
   // const [dragStartIndex, setDragStartIndex] = useState<number | null>(null);
   //const [dragStartSelected, setDragStartSelected] = useState(false);
   //const [dragType, setDragType] = useState<'good' | 'ok'>('ok');
+
+  // Auto-select confirmation state
+  const [autoSelectConfirmation, setAutoSelectConfirmation] = useState<{
+    type: 'all' | 'equipment' | 'subcategory' | 'clear' | null;
+    blinkingButton: string | null;
+  }>({ type: null, blinkingButton: null });
 
   // Check if current item type uses non-tiered basetypes
   const isNonTieredBasetype = (equipment: string): boolean => {
@@ -154,7 +154,7 @@ const App: React.FC = () => {
     const fetchData = async () => {
       try {
         const [familiesRes, itemtypeRes, basetypeRes, groupingsRes] = await Promise.all([
-          fetch(import.meta.env.BASE_URL + 'modifierFamiliesDisplay_6.json'),
+          fetch(import.meta.env.BASE_URL + 'modifierFamiliesDisplay_7.json'),
           fetch(import.meta.env.BASE_URL + 'itemtypes_4.json'),
           fetch(import.meta.env.BASE_URL + 'basetypes_5.json'),
           fetch(import.meta.env.BASE_URL + 'groupings.json'),
@@ -220,47 +220,39 @@ const App: React.FC = () => {
     : [];
 
   // Helper function to get giga base for current selection
-  const getGigaBase = (): string | null => {
+  const getGigaBase = useCallback((): string | null => {
     if (!selectedEquipment || !selectedSubcategory || currentBasetypes.length === 0) return null;
     return currentBasetypes[0]; // First basetype is the giga base
-  };
-
-  // Helper function to check if a basetype is giga
-  const isGigaBase = (basetype: string): boolean => {
-    const gigaBase = getGigaBase();
-    return gigaBase === basetype;
-  };
+  }, [selectedEquipment, selectedSubcategory, currentBasetypes]);
 
   // Helper function to get mod button selection for a family
-  const getModButtonSelection = (familyName: string): 'good' | 'ok' | 'giga' | null => {
+  const getModButtonSelection = useCallback((familyName: string): 'good' | 'ok' | 'giga' | null => {
     if (!selectedEquipment || !selectedSubcategory) return null;
     return modButtonSelections[selectedEquipment]?.[selectedSubcategory]?.[familyName] || null;
-  };
+  }, [selectedEquipment, selectedSubcategory, modButtonSelections]);
 
   // Get selected tiers for a family
-  const getSelectedTiers = (familyName: string): { good: string[], ok: string[] } => {
+  const getSelectedTiers = useCallback((familyName: string): { good: string[], ok: string[] } => {
     if (!selectedEquipment || !selectedSubcategory) return { good: [], ok: [] };
     return tierSelections[selectedEquipment]?.[selectedSubcategory]?.[familyName] || { good: [], ok: [] };
-  };
+  }, [selectedEquipment, selectedSubcategory, tierSelections]);
 
   // Get selected basetypes
-  const getSelectedBasetypes = (): { good: string[], ok: string[], all: string[], giga?: string[] } => {
+  const getSelectedBasetypes = useCallback((): { good: string[], ok: string[], all: string[], giga?: string[] } => {
     if (!selectedEquipment || !selectedSubcategory) return { good: [], ok: [], all: [], giga: [] };
-    return basetypeSelections[selectedEquipment]?.[getBasetypeSubcategory(selectedEquipment, selectedSubcategory)] || { good: [], ok: [], all: [], giga: [] };
-  };
+    const sel = basetypeSelections[selectedEquipment]?.[getBasetypeSubcategory(selectedEquipment, selectedSubcategory)] || { good: [], ok: [], all: [], giga: [] };
+    return { ...sel };
+  }, [selectedEquipment, selectedSubcategory, basetypeSelections, getBasetypeSubcategory]);
 
   // Helper function to update last selected info
   const updateLastSelectedInfo = useCallback((familyName: string) => {
     if (!selectedEquipment || !selectedSubcategory) return;
-    
     const selectedTiers = getSelectedTiers(familyName);
     const selectedBasetypes = getSelectedBasetypes();
     const gigaBase = getGigaBase();
     const modButtonSelection = getModButtonSelection(familyName);
-    
     const gigaTiers = modButtonSelection === 'giga' ? selectedTiers.good.slice(0, 1) : [];
     const gigaBasetypes = gigaBase && selectedBasetypes.good.includes(gigaBase) ? [gigaBase] : [];
-    
     setLastSelectedInfo({
       equipment: selectedEquipment,
       subcategory: selectedSubcategory,
@@ -389,15 +381,11 @@ const App: React.FC = () => {
     });
     
     // Update the panel immediately with the active family
-    setTimeout(() => {
-      if (activeFamily) {
-        updateLastSelectedInfo(activeFamily);
-      }
-    }, 0);
+    updateLastSelectedInfo(familyName);
     
     // Populate all basetypes when any tier selection is made
     populateAllBasetypes();
-  }, [selectedEquipment, selectedSubcategory, families, activeFamily, populateAllBasetypes]);
+  }, [selectedEquipment, selectedSubcategory, families, activeFamily, populateAllBasetypes, getModButtonSelection, updateLastSelectedInfo]);
 
   // Handle mod button selection
   const handleModButtonSelect = useCallback((familyName: string, buttonType: 'off' | 'good' | 'ok' | 'giga') => {
@@ -530,17 +518,7 @@ const App: React.FC = () => {
     // For 'off' button, no additional logic needed as we already cleared everything
     
     // The useEffect will handle updating the panel when selections change
-  }, [selectedEquipment, selectedSubcategory, families]);
-
-
-
-  // Update last selected info whenever selections change
-  useEffect(() => {
-    if (selectedEquipment && selectedSubcategory && activeFamily) {
-      // Update with the active family's info
-      updateLastSelectedInfo(activeFamily);
-    }
-  }, [tierSelections, basetypeSelections, selectedEquipment, selectedSubcategory, activeFamily, updateLastSelectedInfo]);
+  }, [selectedEquipment, selectedSubcategory, families, getModButtonSelection, updateLastSelectedInfo]);
 
   // Handle basetype selection for Good basetypes
   const handleGoodBasetypeSelect = useCallback((basetype: string) => {
@@ -603,7 +581,7 @@ const App: React.FC = () => {
         };
       });
     }
-  }, [selectedEquipment, selectedSubcategory, currentBasetypes, getBasetypeSubcategory]);
+  }, [selectedEquipment, selectedSubcategory, currentBasetypes, getBasetypeSubcategory, isNonTieredBasetype]);
 
   // Handle basetype selection for OK basetypes
   const handleOkBasetypeSelect = useCallback((basetype: string) => {
@@ -666,15 +644,15 @@ const App: React.FC = () => {
         };
       });
     }
-  }, [selectedEquipment, selectedSubcategory, currentBasetypes, getBasetypeSubcategory]);
+  }, [selectedEquipment, selectedSubcategory, currentBasetypes, getBasetypeSubcategory, isNonTieredBasetype]);
 
   // Enhanced basetype selection handlers that also update last selected info
   const handleGoodBasetypeSelectEnhanced = useCallback((basetype: string) => {
     handleGoodBasetypeSelect(basetype);
     populateAllBasetypes();
     
-    // Update giga basetypes to be the first selected good basetype
-    if (selectedEquipment && selectedSubcategory) {
+    // Update giga basetypes to be the first selected good basetype (only for tiered basetypes)
+    if (selectedEquipment && selectedSubcategory && !isNonTieredBasetype(selectedEquipment)) {
       setBasetypeSelections(currentSelections => {
         const newSelections = { ...currentSelections };
         const mappedSubcategory = getBasetypeSubcategory(selectedEquipment, selectedSubcategory);
@@ -690,39 +668,57 @@ const App: React.FC = () => {
       });
     }
     
-    // Update last selected info with the first family if available
-    if (currentFamilies.length > 0) {
-      updateLastSelectedInfo(currentFamilies[0]);
-    }
-  }, [handleGoodBasetypeSelect, populateAllBasetypes, currentFamilies, updateLastSelectedInfo, selectedEquipment, selectedSubcategory, getBasetypeSubcategory]);
+    // Remove direct call to updateLastSelectedInfo
+    // if (currentFamilies.length > 0) {
+    //   updateLastSelectedInfo(currentFamilies[0]);
+    // }
+  }, [handleGoodBasetypeSelect, populateAllBasetypes, currentFamilies, selectedEquipment, selectedSubcategory, getBasetypeSubcategory, isNonTieredBasetype]);
 
   const handleOkBasetypeSelectEnhanced = useCallback((basetype: string) => {
     handleOkBasetypeSelect(basetype);
     populateAllBasetypes();
-    // Update last selected info with the first family if available
-    if (currentFamilies.length > 0) {
-      updateLastSelectedInfo(currentFamilies[0]);
-    }
-  }, [handleOkBasetypeSelect, populateAllBasetypes, currentFamilies, updateLastSelectedInfo]);
+    // Remove direct call to updateLastSelectedInfo
+    // if (currentFamilies.length > 0) {
+    //   updateLastSelectedInfo(currentFamilies[0]);
+    // }
+  }, [handleOkBasetypeSelect, populateAllBasetypes]);
 
-  // Handle OFF button click for tiers
-  const handleOffClick = useCallback((familyName: string, type: 'good' | 'ok') => {
-    if (!selectedEquipment || !selectedSubcategory) return;
-    
-    setTierSelections(currentSelections => {
-      const newSelections = { ...currentSelections };
-      if (newSelections[selectedEquipment]?.[selectedSubcategory]?.[familyName]) {
-        newSelections[selectedEquipment][selectedSubcategory][familyName] = {
-          ...newSelections[selectedEquipment][selectedSubcategory][familyName],
-          [type]: []
-        };
+  // Add useEffect to update lastSelectedInfo when relevant state changes
+  useEffect(() => {
+    if (selectedEquipment && selectedSubcategory && activeFamily) {
+      // Compute the new info
+      const selectedTiers = getSelectedTiers(activeFamily);
+      const selectedBasetypes = getSelectedBasetypes();
+      const gigaBase = getGigaBase();
+      const modButtonSelection = getModButtonSelection(activeFamily);
+
+      const gigaTiers = modButtonSelection === 'giga' ? selectedTiers.good.slice(0, 1) : [];
+      const gigaBasetypes = gigaBase && selectedBasetypes.good.includes(gigaBase) ? [gigaBase] : [];
+
+      const newInfo = {
+        equipment: selectedEquipment,
+        subcategory: selectedSubcategory,
+        family: activeFamily,
+        tiers: {
+          giga: gigaTiers,
+          good: selectedTiers.good,
+          ok: selectedTiers.ok
+        },
+        basetypes: {
+          giga: gigaBasetypes,
+          good: selectedBasetypes.good,
+          ok: selectedBasetypes.ok
+        }
+      };
+
+      if (!isEqual(lastSelectedInfo, newInfo)) {
+        setLastSelectedInfo(newInfo);
       }
-      return newSelections;
-    });
-  }, [selectedEquipment, selectedSubcategory]);
+    }
+  }, [selectedEquipment, selectedSubcategory, activeFamily, tierSelections, basetypeSelections, getSelectedTiers, getSelectedBasetypes, getGigaBase, getModButtonSelection, lastSelectedInfo]);
 
   // Handle basetype OFF button click
-  const handleBasetypeOffClick = useCallback((type: 'good' | 'ok') => {
+  const handleBasetypeOffClick = useCallback((type: 'good' | 'ok' | 'giga') => {
     if (!selectedEquipment || !selectedSubcategory) return;
     setBasetypeSelections(currentSelections => {
       const newSelections = { ...currentSelections };
@@ -738,9 +734,235 @@ const App: React.FC = () => {
     });
   }, [selectedEquipment, selectedSubcategory, getBasetypeSubcategory]);
 
+  // --- Add import UI state ---
+  const [importText, setImportText] = useState('');
+  const [importStatus, setImportStatus] = useState<'idle'|'success'|'error'>("idle");
+  const [importMessage, setImportMessage] = useState('');
+  // --- Add filter output state ---
+  const [filterOutput, setFilterOutput] = useState('');
+  const [hasGenerated, setHasGenerated] = useState(false);
+
+  // --- Export state as TAWM CODE ---
+  const generateTawmCode = () => {
+    const stateObj = {
+      tierSelections,
+      basetypeSelections,
+      modButtonSelections
+    };
+    return encodeState(stateObj);
+  };
+
+  // --- Generate filter output only on button click ---
+  const generateFilterOutput = () => {
+    if (!groupingsData) return '';
+    const filterBlocks = [];
+    // (existing filter output logic)
+    Object.entries(tierSelections).forEach(([equipment, subcats]) => {
+      Object.entries(subcats).forEach(([subcategory, fams]) => {
+        const itemType = `${equipment} ${subcategory}`;
+        const selectedBasetypes = basetypeSelections[equipment]?.[getBasetypeSubcategory(equipment, subcategory)] || { good: [], ok: [], all: [] };
+        // Collect mod names for each grouping type
+        const modNamesByType: { [key: string]: string[] } = {
+          giga: [],
+          goodg: [],
+          good: [],
+          okg: [],
+          okgood: [],
+          ok: []
+        };
+        Object.entries(fams).forEach(([familyName, tierData]) => {
+          const family = families[familyName];
+          if (family) {
+            const modButton = modButtonSelections[equipment]?.[subcategory]?.[familyName];
+            if (modButton === 'giga' && tierData.good.includes('T1')) {
+              const mod = family.mods.find(m => m.tier === 'T1');
+              if (mod && !modNamesByType.giga.includes(mod.name)) {
+                modNamesByType.giga.push(mod.name);
+              }
+            }
+            if (modButton === 'giga' && tierData.good.length > 0) {
+              tierData.good.forEach(tier => {
+                const mod = family.mods.find(m => m.tier === tier);
+                if (mod && !modNamesByType.goodg.includes(mod.name)) {
+                  modNamesByType.goodg.push(mod.name);
+                }
+              });
+            }
+            if (modButton === 'good' && tierData.good.length > 0) {
+              tierData.good.forEach(tier => {
+                const mod = family.mods.find(m => m.tier === tier);
+                if (mod && !modNamesByType.good.includes(mod.name)) {
+                  modNamesByType.good.push(mod.name);
+                }
+              });
+            }
+            if (modButton === 'giga' && tierData.ok.length > 0) {
+              tierData.ok.forEach(tier => {
+                const mod = family.mods.find(m => m.tier === tier);
+                if (mod && !modNamesByType.okg.includes(mod.name)) {
+                  modNamesByType.okg.push(mod.name);
+                }
+              });
+            }
+            if (modButton === 'good' && tierData.ok.length > 0) {
+              tierData.ok.forEach(tier => {
+                const mod = family.mods.find(m => m.tier === tier);
+                if (mod && !modNamesByType.okgood.includes(mod.name)) {
+                  modNamesByType.okgood.push(mod.name);
+                }
+              });
+            }
+            if (modButton === 'ok' && tierData.ok.length > 0) {
+              tierData.ok.forEach(tier => {
+                const mod = family.mods.find(m => m.tier === tier);
+                if (mod && !modNamesByType.ok.includes(mod.name)) {
+                  modNamesByType.ok.push(mod.name);
+                }
+              });
+            }
+          }
+        });
+        groupingsData.groupings.forEach((grouping: any) => {
+          const { baseType, modType, backgroundColor, textColor } = grouping;
+          let hasBase = false;
+          let basetypeString = '';
+          if (baseType === 'giga') {
+            hasBase = !!(selectedBasetypes.giga && selectedBasetypes.giga.length > 0);
+            if (hasBase && selectedBasetypes.giga) {
+              basetypeString = selectedBasetypes.giga.map((name: string) => `"${name}"`).join(' ');
+            }
+          } else if (baseType === 'good') {
+            hasBase = selectedBasetypes.good.length > 0;
+            if (hasBase) {
+              basetypeString = selectedBasetypes.good.map((name: string) => `"${name}"`).join(' ');
+            }
+          } else if (baseType === 'ok') {
+            hasBase = selectedBasetypes.ok.length > 0;
+            if (hasBase) {
+              basetypeString = selectedBasetypes.ok.map((name: string) => `"${name}"`).join(' ');
+            }
+          } else if (baseType === 'all') {
+            hasBase = selectedBasetypes.all.length > 0;
+            if (hasBase) {
+              basetypeString = selectedBasetypes.all.map((name: string) => `"${name}"`).join(' ');
+            }
+          }
+          const modNames = modNamesByType[modType] || [];
+          const hasMods = modNames.length > 0;
+          if (hasBase && hasMods) {
+            const modNamesString = modNames.map((name: string) => `"${name}"`).join(' ');
+            const hexToRgb = (hex: any) => {
+              const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+              return result ? {
+                r: parseInt(result[1], 16),
+                g: parseInt(result[2], 16),
+                b: parseInt(result[3], 16)
+              } : null;
+            };
+            const bgRgb = hexToRgb(backgroundColor);
+            const textRgb = hexToRgb(textColor);
+            if (bgRgb && textRgb) {
+              const block = `Show\n# "${itemType} - ${grouping.name}"\n\tFracturedItem True\n\tIdentified True\n\tRarity Magic\n\tHasExplicitMod >=1 ${modNamesString}\n\tSetFontSize 30\n\tSetTextColor ${textRgb.r} ${textRgb.g} ${textRgb.b} 255\n\tSetBorderColor ${textRgb.r} ${textRgb.g} ${textRgb.b} 255\n\tSetBackgroundColor ${bgRgb.r} ${bgRgb.g} ${bgRgb.b} 255\n\tPlayEffect Blue\n\tMinimapIcon 0 Blue Diamond\nBaseType == ${basetypeString}`;
+              filterBlocks.push(block);
+            }
+          }
+        });
+      });
+    });
+    // Append TAWM CODE
+  //const tawmCode = generateTawmCode();
+    //filterBlocks.push(`# TAWM CODE: ${tawmCode}`);
+
+    // --- Jewels Show block (static, always present) ---
+    filterBlocks.push(`Show
+	FracturedItem True
+	Identified True
+	Rarity Magic
+	# "Shimmering" = ES
+	HasExplicitMod >=1 "Unfaltering"  "Overpowering" "Virile" "of Bameth" "of Exile" "of the Gods" "of the Wind" "of the Genius" "of Fleshbinding" "of Nullification" "of Abjuration" "Hellion's" "of Grandmastery" "Dictator's" "Emperor's" "Conqueror's" "Merciless" "Tyrannical" "Flaring" "Lithomancer's" "Mad Lord's" "Thunderhand's" "Frost Singer's" "Flame Shaper's" "of Finesse" "of Unmaking" "of Incision" "of Penetrating" "Magister's" "of Disintegrating" "of Atrophying" "of Exsanguinating" "of Hemorrhaging" "of the Fanatical" "of the Zealous" "of Dissolution" "of Melting" "of Destruction" "of Acclaim" "Carbonising" "Crystalising" "Vapourising" "of Celebration" "Runic" "Glyphic" "Incanter's" "Overseer's" "Taskmaster's" "of the Deathless" "of the Lightning Rod" "Dragon's" "Incorporeal" "Phantasm's" "of Ferocity" "of Splintering" "of Rending" "Martinet's" "Empress's" "Queen's" "Princess's" "of Many" "Unassailable" "Blazing" "of the Gale" "of Everlasting" "Duchess's" "Zaffre" "Blue" "of Tzteosh" "of Haast" "of Ephij" "of the Rainbow" "Vivid" "of Zealousness" "Shimmering" "of the Elements" "of Sortilege" "Disintegrating" "Atrophying" "of Virulence" "Fanatical" "Zealous" "of the Ardent" "Ardent" "of the Zephyr" "of Legerdemain" "of the Multiverse" "Provocateur's" "Behemoth's" "Stormbrewer's" "Rimedweller's" "Vulcanist's" "Exalter's" "Athlete's" "of Skill" "of Expertise" "Flawless" "of Reveling" "of the Godslayer" "Devastating" "Magnifying" "of Convalescence" "Vigorous" "of the Solar Storm" "of the Mammoth" "of Harmony" "of Will" "of Obstruction" "Impaling" "Fecund" "Xoph's" "Pyroclastic" "Tul's" "Esh's" "of the Bastion" "Cremating" "Blasting" "Entombing" "Polar" "Electrocuting" "Discharging" "Incinerating" "Glaciated" "Shocking" "of Infamy" "of Fame" "of Puncturing" "of Fury" "Tempered" "of Liquefaction" "of Deteriorating" "Mazarine" "Occultist's" "Ionising" "Cryomancer's" "of Prestidigitation" "of the Gelid" "of the Fervid" "of Phlebotomising" "of Heartstopping" "of Ruin" "Lich's" "of Renown" "Rotund" "of the Span" "of Expulsion" "Robust" "Ultramarine" "Resplendent" "Unleashed" "of the Comet" "of the Blur" "of Mastery" 
+	SetFontSize 30
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 0 8 255 255
+	PlayEffect Blue
+	MinimapIcon 0 Blue Diamond
+Class == "Jewel"
+# BaseType == "Cobalt Jewel", "Viridian Jewel", "Crimson Jewel", "Murderous Eye Jewel", "Ghastly Eye Jewel", "Hypnotic Eye Jewel", "Searching Eye Jewel"
+`);
+
+    // --- Small fallback Show block (static, always present) ---
+    filterBlocks.push(`Show
+	FracturedItem True
+	Identified True
+	Rarity Magic
+	SetFontSize 18
+	SetBackgroundColor 0 200 200 55
+	SetTextColor 0 200 200 255
+`);
+
+    // Always append TAWM CODE last
+    const tawmCode = generateTawmCode();
+    filterBlocks.push(`# TAWM CODE: ${tawmCode}`);
+
+    return filterBlocks.join('\n\n');
+  };
+
+  // --- Handler for generating filter output ---
+  const handleGenerateFilterOutput = () => {
+    const output = generateFilterOutput();
+    setFilterOutput(output);
+    setHasGenerated(true);
+  };
+
+  // --- Import handler ---
+  const handleImport = () => {
+    // Find the TAWM CODE in the importText
+    const match = importText.match(/# TAWM CODE: ([A-Za-z0-9+/=]+)/);
+    if (!match) {
+      setImportStatus('error');
+      setImportMessage('No valid TAWM CODE found in the pasted text.');
+      return;
+    }
+    try {
+      const decoded = decodeState(match[1]);
+      // Validate structure
+      if (
+        typeof decoded === 'object' &&
+        decoded &&
+        'tierSelections' in decoded &&
+        'basetypeSelections' in decoded &&
+        'modButtonSelections' in decoded
+      ) {
+        // Handle backward compatibility: convert gigaNonT to giga
+        const processedBasetypeSelections = { ...decoded.basetypeSelections };
+        Object.keys(processedBasetypeSelections).forEach(equipment => {
+          Object.keys(processedBasetypeSelections[equipment]).forEach(subcategory => {
+            const subcatData = processedBasetypeSelections[equipment][subcategory];
+            if (subcatData.gigaNonT) {
+              // Convert old gigaNonT to new giga structure
+              subcatData.giga = subcatData.gigaNonT;
+              delete subcatData.gigaNonT;
+            }
+      });
+    });
+    
+        setTierSelections(decoded.tierSelections || {});
+        setBasetypeSelections(processedBasetypeSelections);
+        setModButtonSelections(decoded.modButtonSelections || {});
+        setImportStatus('success');
+        setImportMessage('Selections imported successfully!');
+      } else {
+        setImportStatus('error');
+        setImportMessage('TAWM CODE is invalid or incomplete.');
+      }
+    } catch (e) {
+      setImportStatus('error');
+      setImportMessage('Failed to decode TAWM CODE.');
+    }
+  };
+
   // Copy to clipboard function
   const copyToClipboard = async () => {
-    const filterOutput = generateFilterOutput();
     if (filterOutput) {
       try {
         await navigator.clipboard.writeText(filterOutput);
@@ -753,8 +975,7 @@ const App: React.FC = () => {
 
   // Download filter output as file
   const downloadFilter = () => {
-    const filter = generateFilterOutput();
-    if (!filter) return;
+    if (!filterOutput) return;
     const now = new Date();
     const pad = (n: number) => n.toString().padStart(2, '0');
     const MM = pad(now.getMonth() + 1);
@@ -763,7 +984,7 @@ const App: React.FC = () => {
     const mm = pad(now.getMinutes());
     const SS = pad(now.getSeconds());
     const filename = `Tawm-${MM}${DD}${HH}${mm}${SS}.filter`;
-    const blob = new Blob([filter], { type: 'text/plain' });
+    const blob = new Blob([filterOutput], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
@@ -813,299 +1034,49 @@ const App: React.FC = () => {
     }
   };
 
-  // Helper function to get family priority for ordering
-  const getFamilyPriority = (familyName: string, family: ModifierFamily): number => {
-    const displayName = family.displayName?.toLowerCase() || '';
-    const stat = family.mods[0]?.stat?.toLowerCase() || '';
-    const name = familyName.toLowerCase();
-    
-    // Spell suppression: absolute top priority
-    if (displayName.includes('spell suppression') || stat.includes('spell suppression') || name.includes('spell suppression')) {
-      return -100; // Absolute highest priority
-    }
-    
-    // High priority for energy shield + evasion (above maximum life)
-    if ((displayName.includes('energy shield') || stat.includes('energy shield') || name.includes('energy shield')) && 
-        family.mods.length === 5) {
-      return 1; // Above maximum life
-    }
-    
-    // High priority families
-    const highPriorityKeywords = [
-      'maximum life', 'life', 'movement speed', 'spell damage',
-      'level to all skill gems', 'energy shield', 'resistances', 'life regeneration',
-      'intelligence', 'attack speed', 'physical damage reduction', 'ailment avoidance',
-      'critical strike multiplier', 'accuracy'
-    ];
-    
-    // Check if family matches high priority criteria
-    for (const keyword of highPriorityKeywords) {
-      if (displayName.includes(keyword) || stat.includes(keyword) || name.includes(keyword)) {
-        // Additional check for 5-tier families
-        if ((keyword.includes('life') || keyword.includes('energy shield') || keyword.includes('mana')) && family.mods.length === 5) {
-          return 1; // High priority
-        }
-        return 2; // Medium priority
-      }
-    }
-    
-    // Elemental damage families (high priority on weapons and jewellery)
-    if (displayName.includes('adds elemental damage') || stat.includes('adds elemental damage')) {
-      return 2; // High priority
-    }
-    
-    // Physical damage (very high on weapons, low on others)
-    if (displayName.includes('physical damage') || stat.includes('physical damage')) {
-      // This will be handled by equipment-specific logic
-      return 2; // Default to medium priority
-    }
-    
-    // Low priority families
-    const lowPriorityKeywords = [
-      'adds chaos damage', 'life per enemy killed', 'mana per enemy killed',
-      'life per hit', 'mana per hit', 'life regeneration per second'
-    ];
-    
-    for (const keyword of lowPriorityKeywords) {
-      if (displayName.includes(keyword) || stat.includes(keyword) || name.includes(keyword)) {
-        return 4; // Low priority
-      }
-    }
-    
-    return 3; // Normal priority
+  
+  // Helper: encode state as base64
+  const encodeState = (obj: any): string => {
+    // Use btoa for browser base64
+    return btoa(unescape(encodeURIComponent(JSON.stringify(obj))));
+  };
+  // Helper: decode state from base64
+  const decodeState = (str: string): any => {
+    return JSON.parse(decodeURIComponent(escape(atob(str))));
   };
 
-  // Helper function to get resistance order
-  const getResistanceOrder = (family: ModifierFamily): number => {
-    const displayName = family.displayName?.toLowerCase() || '';
-    const stat = family.mods[0]?.stat?.toLowerCase() || '';
-    
-    // Resistance order: Chaos, Fire, Cold, Lightning
-    if (displayName.includes('chaos resistance') || stat.includes('chaos resistance')) return 1;
-    if (displayName.includes('fire resistance') || stat.includes('fire resistance')) return 2;
-    if (displayName.includes('cold resistance') || stat.includes('cold resistance')) return 3;
-    if (displayName.includes('lightning resistance') || stat.includes('lightning resistance')) return 4;
-    
-    return 999; // Not a resistance
-  };
-
-  // Helper function to get elemental damage order
-  const getElementalDamageOrder = (family: ModifierFamily): number => {
-    const displayName = family.displayName?.toLowerCase() || '';
-    const stat = family.mods[0]?.stat?.toLowerCase() || '';
-    
-    // Elemental damage order: Fire, Cold, Lightning
-    if (displayName.includes('adds fire damage') || stat.includes('adds fire damage')) return 1;
-    if (displayName.includes('adds cold damage') || stat.includes('adds cold damage')) return 2;
-    if (displayName.includes('adds lightning damage') || stat.includes('adds lightning damage')) return 3;
-    
-    return 999; // Not elemental damage
-  };
-
-  // Build debug display data
-
-
-  // Generate filter output using groupings JSON data
-  const generateFilterOutput = (): string => {
-    if (!groupingsData) return '';
-    
-    const filterBlocks: string[] = [];
-    
-    Object.entries(tierSelections).forEach(([equipment, subcats]) => {
-      Object.entries(subcats).forEach(([subcategory, fams]) => {
-        const itemType = `${equipment} ${subcategory}`;
-        const selectedBasetypes = basetypeSelections[equipment]?.[getBasetypeSubcategory(equipment, subcategory)] || { good: [], ok: [], all: [] };
-        
-        // Collect mod names for each grouping type
-        const modNamesByType: { [key: string]: string[] } = {
-          giga: [],
-          goodg: [],
-          good: [],
-          okg: [],
-          okgood: [],
-          ok: []
-        };
-        
-        Object.entries(fams).forEach(([familyName, tierData]) => {
-          const family = families[familyName];
-          if (family) {
-            const modButton = modButtonSelections[equipment]?.[subcategory]?.[familyName];
-            
-            // Giga Mods: T1 tiers from families with Giga mod button active
-            if (modButton === 'giga' && tierData.good.includes('T1')) {
-              const mod = family.mods.find(m => m.tier === 'T1');
-              if (mod && !modNamesByType.giga.includes(mod.name)) {
-                modNamesByType.giga.push(mod.name);
-              }
-            }
-            
-            // GoodG Mods: Good tiers from families with Giga mod button active
-            if (modButton === 'giga' && tierData.good.length > 0) {
-              tierData.good.forEach(tier => {
-                const mod = family.mods.find(m => m.tier === tier);
-                if (mod && !modNamesByType.goodg.includes(mod.name)) {
-                  modNamesByType.goodg.push(mod.name);
-                }
-              });
-            }
-            
-            // Good Mods: Good tiers from families with Good mod button active
-            if (modButton === 'good' && tierData.good.length > 0) {
-              tierData.good.forEach(tier => {
-                const mod = family.mods.find(m => m.tier === tier);
-                if (mod && !modNamesByType.good.includes(mod.name)) {
-                  modNamesByType.good.push(mod.name);
-                }
-              });
-            }
-            
-            // OKG Mods: OK tiers from families with Giga mod button active
-            if (modButton === 'giga' && tierData.ok.length > 0) {
-              tierData.ok.forEach(tier => {
-                const mod = family.mods.find(m => m.tier === tier);
-                if (mod && !modNamesByType.okg.includes(mod.name)) {
-                  modNamesByType.okg.push(mod.name);
-                }
-              });
-            }
-            
-            // OKGood Mods: OK tiers from families with Good mod button active
-            if (modButton === 'good' && tierData.ok.length > 0) {
-              tierData.ok.forEach(tier => {
-                const mod = family.mods.find(m => m.tier === tier);
-                if (mod && !modNamesByType.okgood.includes(mod.name)) {
-                  modNamesByType.okgood.push(mod.name);
-                }
-              });
-            }
-            
-            // OK Mods: OK tiers from families with OK mod button active
-            if (modButton === 'ok' && tierData.ok.length > 0) {
-              tierData.ok.forEach(tier => {
-                const mod = family.mods.find(m => m.tier === tier);
-                if (mod && !modNamesByType.ok.includes(mod.name)) {
-                  modNamesByType.ok.push(mod.name);
-                }
-              });
-            }
-          }
-        });
-        
-        // Generate blocks using groupings data in priority order
-        groupingsData.groupings.forEach((grouping: any) => {
-          const { id, name, baseType, modType, backgroundColor, textColor } = grouping;
-          
-          // Check if we have the required base types
-          let hasBase = false;
-          let basetypeString = '';
-          if (baseType === 'giga') {
-            hasBase = !!(selectedBasetypes.giga && selectedBasetypes.giga.length > 0);
-            if (hasBase) {
-              basetypeString = selectedBasetypes.giga!.map((name: string) => `"${name}"`).join(' ');
-            }
-          } else if (baseType === 'good') {
-            hasBase = selectedBasetypes.good.length > 0;
-            if (hasBase) {
-              basetypeString = selectedBasetypes.good.map((name: string) => `"${name}"`).join(' ');
-            }
-          } else if (baseType === 'ok') {
-            hasBase = selectedBasetypes.ok.length > 0;
-            if (hasBase) {
-              basetypeString = selectedBasetypes.ok.map((name: string) => `"${name}"`).join(' ');
-            }
-          } else if (baseType === 'all') {
-            hasBase = selectedBasetypes.all.length > 0;
-            if (hasBase) {
-              basetypeString = selectedBasetypes.all.map((name: string) => `"${name}"`).join(' ');
-            }
-          }
-          
-          // Check if we have the required mod types
-          const modNames = modNamesByType[modType] || [];
-          const hasMods = modNames.length > 0;
-          
-          if (hasBase && hasMods) {
-            const modNamesString = modNames.map((name: string) => `"${name}"`).join(' ');
-            
-            // Convert hex colors to RGB
-            const hexToRgb = (hex: string) => {
-              const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-              return result ? {
-                r: parseInt(result[1], 16),
-                g: parseInt(result[2], 16),
-                b: parseInt(result[3], 16)
-              } : null;
-            };
-            
-            const bgRgb = hexToRgb(backgroundColor);
-            const textRgb = hexToRgb(textColor);
-            
-            if (bgRgb && textRgb) {
-              const block = `Show
-# "${itemType} - ${name}"
-	FracturedItem True
-	Identified True
-	Rarity Magic
-	HasExplicitMod >=1 ${modNamesString}
-	SetFontSize 30
-	SetTextColor ${textRgb.r} ${textRgb.g} ${textRgb.b} 255
-	SetBorderColor ${textRgb.r} ${textRgb.g} ${textRgb.b} 255
-	SetBackgroundColor ${bgRgb.r} ${bgRgb.g} ${bgRgb.b} 255
-	PlayEffect Blue
-	MinimapIcon 0 Blue Diamond
-BaseType == ${basetypeString}`;
-              filterBlocks.push(block);
-            }
-          }
-        });
-      });
-    });
-    
-    return filterBlocks.join('\n\n');
-  };
-
-  // Generate new groupings preview based on current selections
+  // Refactored preview: group by base group and add titles
   const generateNewGroupingsPreview = (): React.ReactElement[] => {
     if (!lastSelectedInfo || !groupingsData) return [];
-    
     const family = families[lastSelectedInfo.family];
     if (!family) return [];
-    
     const selectedTiers = getSelectedTiers(lastSelectedInfo.family);
     const selectedBasetypes = getSelectedBasetypes();
     const modButton = getModButtonSelection(lastSelectedInfo.family);
-    
-    const previewItems: React.ReactElement[] = [];
-    
-    // Helper function to get lowest tier stat
+    // Get all preview items as before
+    const previewItems: { group: string, base: string, element: React.ReactElement }[] = [];
     const getLowestTierStat = (tiers: string[]) => {
       if (tiers.length === 0) return null;
-      const lowestTier = tiers[tiers.length - 1]; // Highest index = lowest tier
+      const lowestTier = tiers[tiers.length - 1];
       return family.mods.find(m => m.tier === lowestTier)?.stat || null;
     };
-    
-    // Helper function to get lowest base
     const getLowestBase = (bases: string[]) => {
       if (bases.length === 0) return null;
-      return bases[bases.length - 1]; // Highest index = lowest base
+      return bases[bases.length - 1];
     };
-    
-    // Helper function to determine if a grouping should be shown
     const shouldShowGrouping = (grouping: any) => {
-      const { baseType, modType, id } = grouping;
-      
-      // Check base type availability
+      const { baseType, modType } = grouping;
       let hasBase = false;
-      if (baseType === 'giga') hasBase = !!(selectedBasetypes.giga && selectedBasetypes.giga.length > 0);
-      else if (baseType === 'good') hasBase = selectedBasetypes.good.length > 0;
+      if (baseType === 'giga') {
+        if (isNonTieredBasetype(selectedEquipment!)) {
+          hasBase = !!(selectedBasetypes.giga && selectedBasetypes.giga.length > 0);
+        } else {
+          hasBase = !!(selectedBasetypes.giga && selectedBasetypes.giga.length > 0);
+        }
+      } else if (baseType === 'good') hasBase = selectedBasetypes.good.length > 0;
       else if (baseType === 'ok') hasBase = selectedBasetypes.ok.length > 0;
       else if (baseType === 'all') hasBase = selectedBasetypes.all.length > 0;
-      
-      if (!hasBase) {
-        return false;
-      }
-      
-      // Check mod type availability
+      if (!hasBase) return false;
       let hasMod = false;
       if (modType === 'giga') {
         hasMod = modButton === 'giga' && selectedTiers.good.includes('T1');
@@ -1120,14 +1091,9 @@ BaseType == ${basetypeString}`;
       } else if (modType === 'ok') {
         hasMod = modButton === 'ok' && selectedTiers.ok.length > 0;
       }
-      
       return hasMod;
     };
-    
-    // Generate preview items based on groupings data
     let validGroupings = groupingsData.groupings.filter((grouping: any) => shouldShowGrouping(grouping));
-    
-    // Sort by color scheme: giga -> salmon -> gold -> blue
     const colorSchemeOrder = { giga: 0, salmon: 1, gold: 2, blue: 3 };
     validGroupings.sort((a: any, b: any) => {
       const aScheme = typeof a.colorScheme === 'string' ? a.colorScheme.trim().toLowerCase() : '';
@@ -1136,26 +1102,14 @@ BaseType == ${basetypeString}`;
       const bOrder = colorSchemeOrder[bScheme as keyof typeof colorSchemeOrder] ?? 999;
       return aOrder - bOrder;
     });
-    
-    // Remove redundant GoodG groupings when T1 is the only Good tier selected
     const hasOnlyT1InGood = selectedTiers.good.length === 1 && selectedTiers.good.includes('T1');
     if (hasOnlyT1InGood) {
-      validGroupings = validGroupings.filter((grouping: any) => {
-        // Remove GoodG groupings when T1 is the only Good tier
-        if (grouping.modType === 'goodg') {
-          return false;
+      validGroupings = validGroupings.filter((grouping: any) => grouping.modType !== 'goodg');
         }
-        return true;
-      });
-    }
-    
     validGroupings.forEach((grouping: any) => {
-      const { id, name, colorScheme, backgroundColor, textColor } = grouping;
-      
-      // Get the appropriate stat and base
+      const { backgroundColor, textColor, baseType } = grouping;
       let stat = null;
       let base = null;
-      
       if (grouping.modType === 'giga') {
         stat = getLowestTierStat(['T1']);
       } else if (grouping.modType === 'goodg' || grouping.modType === 'good') {
@@ -1163,47 +1117,715 @@ BaseType == ${basetypeString}`;
       } else if (grouping.modType === 'okg' || grouping.modType === 'okgood' || grouping.modType === 'ok') {
         stat = getLowestTierStat(selectedTiers.ok);
       }
-      
       if (grouping.baseType === 'giga') {
+        if (isNonTieredBasetype(selectedEquipment!)) {
+          // Use all selected giga bases
+          if (selectedBasetypes.giga && selectedBasetypes.giga.length > 0) {
+            selectedBasetypes.giga.forEach((gigaBase: string) => {
+              if (stat && gigaBase) {
+                const style = {
+                  backgroundColor,
+                  color: textColor,
+                  border: `2px solid ${textColor}`
+                };
+                previewItems.push({
+                  group: baseType,
+                  base: gigaBase,
+                  element: (
+                    <div key={grouping.id + '-' + gigaBase} className="preview-line" style={style}>
+                      <span className="preview-stat">{stat}</span>
+                      <span className="preview-base"> {gigaBase}</span>
+                    </div>
+                  )
+                });
+              }
+            });
+          }
+        } else {
         base = getLowestBase(selectedBasetypes.giga!);
+          if (stat && base) {
+            const style = {
+              backgroundColor,
+              color: textColor,
+              border: `2px solid ${textColor}`
+            };
+            previewItems.push({
+              group: baseType,
+              base,
+              element: (
+                <div key={grouping.id} className="preview-line" style={style}>
+                  <span className="preview-stat">{stat}</span>
+                  <span className="preview-base"> {base}</span>
+                </div>
+              )
+            });
+          }
+        }
       } else if (grouping.baseType === 'good') {
         base = getLowestBase(selectedBasetypes.good);
+        if (stat && base) {
+          const style = {
+            backgroundColor,
+            color: textColor,
+            border: `2px solid ${textColor}`
+          };
+          previewItems.push({
+            group: baseType,
+            base,
+            element: (
+              <div key={grouping.id} className="preview-line" style={style}>
+                <span className="preview-stat">{stat}</span>
+                <span className="preview-base"> {base}</span>
+              </div>
+            )
+          });
+        }
       } else if (grouping.baseType === 'ok') {
         base = getLowestBase(selectedBasetypes.ok);
+        if (stat && base) {
+          const style = {
+            backgroundColor,
+            color: textColor,
+            border: `2px solid ${textColor}`
+          };
+          previewItems.push({
+            group: baseType,
+            base,
+            element: (
+              <div key={grouping.id} className="preview-line" style={style}>
+                <span className="preview-stat">{stat}</span>
+                <span className="preview-base"> {base}</span>
+              </div>
+            )
+          });
+        }
       } else if (grouping.baseType === 'all') {
         base = getLowestBase(selectedBasetypes.all);
-      }
-      
       if (stat && base) {
         const style = {
           backgroundColor,
           color: textColor,
           border: `2px solid ${textColor}`
         };
-        
-        previewItems.push(
-          <div key={id} className="preview-line" style={style}>
+          previewItems.push({
+            group: baseType,
+            base,
+            element: (
+          <div key={grouping.id} className="preview-line" style={style}>
             <span className="preview-stat">{stat}</span>
             <span className="preview-base"> {base}</span>
+              </div>
+            )
+          });
+        }
+      }
+    });
+    // Group and order: Giga, Good, OK, All
+    const groupOrder = [
+      { key: 'giga', title: (base: string) => `Giga Base${isNonTieredBasetype(selectedEquipment!) ? 's' : ''} (up to ${base})` },
+      { key: 'good', title: (base: string) => `Good Bases (up to ${base})` },
+      { key: 'ok', title: (base: string) => `OK Bases (up to ${base})` },
+      { key: 'all', title: (base: string) => `All Bases (up to ${base})` }
+    ];
+    const grouped: React.ReactElement[] = [];
+    groupOrder.forEach(({ key, title }) => {
+      const groupItems = previewItems.filter(item => item.group === key);
+      if (groupItems.length > 0) {
+        // Use the base of the last item for the title (should be the worst base)
+        grouped.push(
+          <div key={key + '-group'} style={{ marginBottom: 8 }}>
+            <div className="preview-group-title" style={{ fontWeight: 600, marginBottom: 2 }}>{title(groupItems[groupItems.length - 1].base)}</div>
+            {groupItems.map(item => item.element)}
           </div>
         );
       }
     });
-    
-    return previewItems;
+    return grouped;
   };
+
+  // Add handler for Giga basetype selection, using the same logic as Good/OK
+  const handleGigaBasetypeSelect = useCallback((basetype: string) => {
+    if (!selectedEquipment || !selectedSubcategory) return;
+    const mappedSubcategory = getBasetypeSubcategory(selectedEquipment, selectedSubcategory);
+    if (isNonTieredBasetype(selectedEquipment)) {
+      // Non-tiered logic: toggle individual selection
+      setBasetypeSelections(currentSelections => {
+        const currentData = currentSelections[selectedEquipment]?.[mappedSubcategory] || { good: [], ok: [], all: [], giga: [] };
+        const currentGiga = currentData.giga || [];
+        const newGigaSelection = currentGiga.includes(basetype)
+          ? currentGiga.filter(b => b !== basetype)
+          : [...currentGiga, basetype];
+        return {
+          ...currentSelections,
+          [selectedEquipment]: {
+            ...currentSelections[selectedEquipment],
+            [mappedSubcategory]: {
+              ...currentData,
+              giga: newGigaSelection
+            }
+          }
+        };
+      });
+    } else {
+      // Tiered logic: cumulative selection (single selection, always first base)
+      setBasetypeSelections(currentSelections => {
+        const allBasetypes = currentBasetypes;
+        const basetypeIndex = allBasetypes.indexOf(basetype);
+        if (basetypeIndex === -1) return currentSelections;
+        const currentData = currentSelections[selectedEquipment]?.[mappedSubcategory] || { good: [], ok: [], all: [], giga: [] };
+        const currentGiga = currentData.giga || [];
+        const isCurrentlyHighest = currentGiga.includes(basetype) && 
+          currentGiga.every(b => allBasetypes.indexOf(b) <= basetypeIndex);
+        const newGigaSelection = isCurrentlyHighest 
+          ? allBasetypes.slice(0, basetypeIndex)  // Deselect this basetype
+          : allBasetypes.slice(0, basetypeIndex + 1);  // Select up to this basetype
+        return {
+          ...currentSelections,
+          [selectedEquipment]: {
+            ...currentSelections[selectedEquipment],
+            [mappedSubcategory]: {
+              ...currentData,
+              giga: newGigaSelection
+            }
+          }
+        };
+      });
+    }
+  }, [selectedEquipment, selectedSubcategory, currentBasetypes, getBasetypeSubcategory, isNonTieredBasetype]);
+
+  // Hardcoded family keys for one-shot auto-select
+  const GIGA_FAMILIES = [
+    // Chaos Resistance
+    'ChaosResistance', 'MaximumChaosResistance',
+    // Spell Suppression
+    'ChanceToSuppressSpells', 'ChanceToSuppressSpells2',
+    // Attack Speed
+    'IncreasedAttackSpeed', 'IncreasedAttackSpeed2', 'IncreasedAttackSpeed22',
+    // Physical Damage Reduction
+    'ReducedPhysicalDamageTaken',
+    // Increased Physical Damage %
+    'LocalPhysicalDamagePercent', 'LocalIncreasedPhysicalDamagePercentAndAccuracyRating',
+    // All Gem Level families
+    'AllGemChaos', 'AllGemChaos3', 'AllGemCold', 'AllGemCold3', 'AllGemFire', 'AllGemFire3', 
+    'AllGemLightning', 'AllGemLightning3', 'AllGemMinion', 'AllGemPhysical', 'AllGemPhysical3',
+    'AllMinionGemLevel',
+    // Pure Spell Damage
+    'SpellDamage',
+  ];
+  const GOOD_FAMILIES = [
+    // Fire Resistance
+    'FireResistance',
+    // Cold Resistance
+    'ColdResistance',
+    // Lightning Resistance
+    'LightningResistance',
+    // Increased Maximum Life (all variants)
+    'IncreasedLife', 'IncreasedLife2', 'IncreasedLife3', 'IncreasedLife4',
+    // Increased Elemental Damage with Attacks (all variants)
+    'IncreasedWeaponElementalDamagePercent', 'IncreasedWeaponElementalDamagePercent2', 'IncreasedWeaponElementalDamagePercent222',
+    // Adds Fire Damage (all variants)
+    'FireDamage', 'FireDamage2', 'FireDamage22', 'FireDamageAddsTo22', 'FireDamageAddsTo222',
+    // Adds Cold Damage (all variants)
+    'ColdDamage', 'ColdDamage2', 'ColdDamageAddsTo22', 'ColdDamageAddsTo222',
+    // Adds Lightning Damage (all variants)
+    'LightningDamage', 'LightningDamage2', 'LightningDamageAddsTo2', 'LightningDamageAddsTo22', 'LightningDamageAddsTo222',
+    // Pure Mana families
+    'IncreasedMana', 'IncreasedMana2', 'IncreasedMana22', 'IncreasedMana222', 'IncreasedMana3',
+  ];
+
+  // Add one-shot auto-select handler
+  const handleOneShotAutoSelect = useCallback(() => {
+    // Build new state objects
+    const newTierSelections: typeof tierSelections = {};
+    const newBasetypeSelections: typeof basetypeSelections = {};
+    const newModButtonSelections: typeof modButtonSelections = {};
+
+    for (const equipment of Object.keys(itemtypeMap)) {
+      newTierSelections[equipment] = {};
+      newBasetypeSelections[equipment] = {};
+      newModButtonSelections[equipment] = {};
+      for (const subcategory of Object.keys(itemtypeMap[equipment])) {
+        // Basetypes
+        const basetypes = basetypeMap[equipment]?.[getBasetypeSubcategory(equipment, subcategory)] || [];
+        const isTiered = !isNonTieredBasetype(equipment);
+        // Good: first 3, OK: first 6, Giga: first for tiered
+        newBasetypeSelections[equipment][subcategory] = {
+          good: basetypes.slice(0, 3),
+          ok: basetypes.slice(0, 6),
+          giga: isTiered && basetypes.length > 0 ? [basetypes[0]] : [],
+          all: [...basetypes],
+        };
+        // Families
+        //const familiesList = Object.keys(itemtypeMap[equipment]?.[subcategory] ? itemtypeMap[equipment][subcategory] : {});
+        const allFamilies = Object.keys(families);
+        const subcatFamilies = allFamilies.filter(fam => (itemtypeMap[equipment]?.[subcategory] || []).includes(fam));
+        newModButtonSelections[equipment][subcategory] = {};
+        newTierSelections[equipment][subcategory] = {};
+        for (const family of subcatFamilies) {
+          const allTiers = (families[family]?.mods || []).map((mod: any) => mod.tier).sort();
+          
+          // Determine selection based on family type
+          let selection: 'giga' | 'good' | 'ok' = 'ok';
+          
+          // Special logic for flat physical damage - only giga if percentage physical damage is also present and giga
+          if (['PhysicalDamage', 'PhysicalDamageAddsTo2', 'PhysicalDamageAddsTo222', 'PhysicalDamage22'].includes(family)) {
+            const hasPercentagePhysical = subcatFamilies.includes('LocalPhysicalDamagePercent') || 
+                                       subcatFamilies.includes('LocalIncreasedPhysicalDamagePercentAndAccuracyRating');
+            if (hasPercentagePhysical) {
+              selection = 'giga';
+            } else {
+              selection = 'good';
+            }
+          } else if (GIGA_FAMILIES.includes(family)) {
+            selection = 'giga';
+          } else if (GOOD_FAMILIES.includes(family)) {
+            selection = 'good';
+          }
+          
+          newModButtonSelections[equipment][subcategory][family] = selection;
+          
+          // Set tiers based on selection
+          const t1Index = allTiers.indexOf('T1');
+          if (selection === 'giga') {
+            // Giga: good = T1, ok = T1-T3 (if they exist)
+            const goodTiers = t1Index !== -1 ? allTiers.slice(0, t1Index + 1) : [];
+            const okTiers = t1Index !== -1 ? allTiers.slice(0, Math.min(t1Index + 3, allTiers.length)) : [];
+            newTierSelections[equipment][subcategory][family] = { good: goodTiers, ok: okTiers };
+          } else if (selection === 'good') {
+            // Good: good = T1, ok = T1-T3 (if they exist)
+            const goodTiers = t1Index !== -1 ? allTiers.slice(0, t1Index + 1) : [];
+            const okTiers = t1Index !== -1 ? allTiers.slice(0, Math.min(t1Index + 3, allTiers.length)) : [];
+            newTierSelections[equipment][subcategory][family] = { good: goodTiers, ok: okTiers };
+          } else {
+            // OK: ok = T1 (if it exists)
+            const okTiers = t1Index !== -1 ? allTiers.slice(0, t1Index + 1) : [];
+            newTierSelections[equipment][subcategory][family] = { good: [], ok: okTiers };
+          }
+        }
+      }
+    }
+    setTierSelections(newTierSelections);
+    setBasetypeSelections(newBasetypeSelections);
+    setModButtonSelections(newModButtonSelections);
+  }, [setTierSelections, setBasetypeSelections, setModButtonSelections, families, itemtypeMap, basetypeMap, getBasetypeSubcategory, isNonTieredBasetype]);
+
+  // Auto-select equipment handler
+  const handleAutoSelectEquipment = useCallback(() => {
+    if (!selectedEquipment) return;
+    
+    const newTierSelections: typeof tierSelections = { ...tierSelections };
+    const newBasetypeSelections: typeof basetypeSelections = { ...basetypeSelections };
+    const newModButtonSelections: typeof modButtonSelections = { ...modButtonSelections };
+
+    // Initialize equipment if not exists
+    if (!newTierSelections[selectedEquipment]) newTierSelections[selectedEquipment] = {};
+    if (!newBasetypeSelections[selectedEquipment]) newBasetypeSelections[selectedEquipment] = {};
+    if (!newModButtonSelections[selectedEquipment]) newModButtonSelections[selectedEquipment] = {};
+
+    for (const subcategory of Object.keys(itemtypeMap[selectedEquipment])) {
+      // Basetypes
+      const basetypes = basetypeMap[selectedEquipment]?.[getBasetypeSubcategory(selectedEquipment, subcategory)] || [];
+      const isTiered = !isNonTieredBasetype(selectedEquipment);
+      // Good: first 3, OK: first 6, Giga: first for tiered
+      newBasetypeSelections[selectedEquipment][subcategory] = {
+        good: basetypes.slice(0, 3),
+        ok: basetypes.slice(0, 6),
+        giga: isTiered && basetypes.length > 0 ? [basetypes[0]] : [],
+        all: [...basetypes],
+      };
+      // Families
+      const allFamilies = Object.keys(families);
+      const subcatFamilies = allFamilies.filter(fam => (itemtypeMap[selectedEquipment]?.[subcategory] || []).includes(fam));
+      newModButtonSelections[selectedEquipment][subcategory] = {};
+      newTierSelections[selectedEquipment][subcategory] = {};
+      for (const family of subcatFamilies) {
+        const allTiers = (families[family]?.mods || []).map((mod: any) => mod.tier).sort();
+        
+        // Determine selection based on family type
+        let selection: 'giga' | 'good' | 'ok' = 'ok';
+        
+        // Special logic for flat physical damage - only giga if percentage physical damage is also present and giga
+        if (['PhysicalDamage', 'PhysicalDamageAddsTo2', 'PhysicalDamageAddsTo222', 'PhysicalDamage22'].includes(family)) {
+          const hasPercentagePhysical = subcatFamilies.includes('LocalPhysicalDamagePercent') || 
+                                     subcatFamilies.includes('LocalIncreasedPhysicalDamagePercentAndAccuracyRating');
+          if (hasPercentagePhysical) {
+            selection = 'giga';
+          } else {
+            selection = 'good';
+          }
+        } else if (GIGA_FAMILIES.includes(family)) {
+          selection = 'giga';
+        } else if (GOOD_FAMILIES.includes(family)) {
+          selection = 'good';
+        }
+        
+        newModButtonSelections[selectedEquipment][subcategory][family] = selection;
+        
+        // Set tiers based on selection
+        const t1Index = allTiers.indexOf('T1');
+        if (selection === 'giga') {
+          // Giga: good = T1, ok = T1-T3 (if they exist)
+          const goodTiers = t1Index !== -1 ? allTiers.slice(0, t1Index + 1) : [];
+          const okTiers = t1Index !== -1 ? allTiers.slice(0, Math.min(t1Index + 3, allTiers.length)) : [];
+          newTierSelections[selectedEquipment][subcategory][family] = { good: goodTiers, ok: okTiers };
+        } else if (selection === 'good') {
+          // Good: good = T1, ok = T1-T3 (if they exist)
+          const goodTiers = t1Index !== -1 ? allTiers.slice(0, t1Index + 1) : [];
+          const okTiers = t1Index !== -1 ? allTiers.slice(0, Math.min(t1Index + 3, allTiers.length)) : [];
+          newTierSelections[selectedEquipment][subcategory][family] = { good: goodTiers, ok: okTiers };
+        } else {
+          // OK: ok = T1 (if it exists)
+          const okTiers = t1Index !== -1 ? allTiers.slice(0, t1Index + 1) : [];
+          newTierSelections[selectedEquipment][subcategory][family] = { good: [], ok: okTiers };
+        }
+      }
+    }
+    setTierSelections(newTierSelections);
+    setBasetypeSelections(newBasetypeSelections);
+    setModButtonSelections(newModButtonSelections);
+  }, [selectedEquipment, setTierSelections, setBasetypeSelections, setModButtonSelections, families, itemtypeMap, basetypeMap, getBasetypeSubcategory, isNonTieredBasetype, tierSelections, basetypeSelections, modButtonSelections]);
+
+  // Auto-select subcategory handler
+  const handleAutoSelectSubcategory = useCallback(() => {
+    if (!selectedEquipment || !selectedSubcategory) return;
+    
+    const newTierSelections: typeof tierSelections = { ...tierSelections };
+    const newBasetypeSelections: typeof basetypeSelections = { ...basetypeSelections };
+    const newModButtonSelections: typeof modButtonSelections = { ...modButtonSelections };
+
+    // Initialize equipment and subcategory if not exists
+    if (!newTierSelections[selectedEquipment]) newTierSelections[selectedEquipment] = {};
+    if (!newBasetypeSelections[selectedEquipment]) newBasetypeSelections[selectedEquipment] = {};
+    if (!newModButtonSelections[selectedEquipment]) newModButtonSelections[selectedEquipment] = {};
+    if (!newTierSelections[selectedEquipment][selectedSubcategory]) newTierSelections[selectedEquipment][selectedSubcategory] = {};
+    if (!newBasetypeSelections[selectedEquipment][selectedSubcategory]) newBasetypeSelections[selectedEquipment][selectedSubcategory] = { good: [], ok: [], all: [], giga: [] };
+    if (!newModButtonSelections[selectedEquipment][selectedSubcategory]) newModButtonSelections[selectedEquipment][selectedSubcategory] = {};
+
+    // Basetypes
+    const basetypes = basetypeMap[selectedEquipment]?.[getBasetypeSubcategory(selectedEquipment, selectedSubcategory)] || [];
+    const isTiered = !isNonTieredBasetype(selectedEquipment);
+    // Good: first 3, OK: first 6, Giga: first for tiered
+    newBasetypeSelections[selectedEquipment][selectedSubcategory] = {
+      good: basetypes.slice(0, 3),
+      ok: basetypes.slice(0, 6),
+      giga: isTiered && basetypes.length > 0 ? [basetypes[0]] : [],
+      all: [...basetypes],
+    };
+    // Families
+    const allFamilies = Object.keys(families);
+    const subcatFamilies = allFamilies.filter(fam => (itemtypeMap[selectedEquipment]?.[selectedSubcategory] || []).includes(fam));
+    newModButtonSelections[selectedEquipment][selectedSubcategory] = {};
+    newTierSelections[selectedEquipment][selectedSubcategory] = {};
+    for (const family of subcatFamilies) {
+      const allTiers = (families[family]?.mods || []).map((mod: any) => mod.tier).sort();
+      
+      // Determine selection based on family type
+      let selection: 'giga' | 'good' | 'ok' = 'ok';
+      
+      // Special logic for flat physical damage - only giga if percentage physical damage is also present and giga
+      if (['PhysicalDamage', 'PhysicalDamageAddsTo2', 'PhysicalDamageAddsTo222', 'PhysicalDamage22'].includes(family)) {
+        const hasPercentagePhysical = subcatFamilies.includes('LocalPhysicalDamagePercent') || 
+                                   subcatFamilies.includes('LocalIncreasedPhysicalDamagePercentAndAccuracyRating');
+        if (hasPercentagePhysical) {
+          selection = 'giga';
+        } else {
+          selection = 'good';
+        }
+      } else if (GIGA_FAMILIES.includes(family)) {
+        selection = 'giga';
+      } else if (GOOD_FAMILIES.includes(family)) {
+        selection = 'good';
+      }
+      
+      newModButtonSelections[selectedEquipment][selectedSubcategory][family] = selection;
+      
+      // Set tiers based on selection
+      const t1Index = allTiers.indexOf('T1');
+      if (selection === 'giga') {
+        // Giga: good = T1, ok = T1-T3 (if they exist)
+        const goodTiers = t1Index !== -1 ? allTiers.slice(0, t1Index + 1) : [];
+        const okTiers = t1Index !== -1 ? allTiers.slice(0, Math.min(t1Index + 3, allTiers.length)) : [];
+        newTierSelections[selectedEquipment][selectedSubcategory][family] = { good: goodTiers, ok: okTiers };
+      } else if (selection === 'good') {
+        // Good: good = T1, ok = T1-T3 (if they exist)
+        const goodTiers = t1Index !== -1 ? allTiers.slice(0, t1Index + 1) : [];
+        const okTiers = t1Index !== -1 ? allTiers.slice(0, Math.min(t1Index + 3, allTiers.length)) : [];
+        newTierSelections[selectedEquipment][selectedSubcategory][family] = { good: goodTiers, ok: okTiers };
+      } else {
+        // OK: ok = T1 (if it exists)
+        const okTiers = t1Index !== -1 ? allTiers.slice(0, t1Index + 1) : [];
+        newTierSelections[selectedEquipment][selectedSubcategory][family] = { good: [], ok: okTiers };
+      }
+    }
+    setTierSelections(newTierSelections);
+    setBasetypeSelections(newBasetypeSelections);
+    setModButtonSelections(newModButtonSelections);
+  }, [selectedEquipment, selectedSubcategory, setTierSelections, setBasetypeSelections, setModButtonSelections, families, itemtypeMap, basetypeMap, getBasetypeSubcategory, isNonTieredBasetype, tierSelections, basetypeSelections, modButtonSelections]);
+
+  // Confirmation handlers
+  const handleAutoSelectAllClick = useCallback(() => {
+    setAutoSelectConfirmation({ type: 'all', blinkingButton: 'all' });
+  }, []);
+
+  const handleAutoSelectEquipmentClick = useCallback(() => {
+    if (!selectedEquipment) return;
+    setAutoSelectConfirmation({ type: 'equipment', blinkingButton: 'equipment' });
+  }, [selectedEquipment]);
+
+  const handleAutoSelectSubcategoryClick = useCallback(() => {
+    if (!selectedSubcategory) return;
+    setAutoSelectConfirmation({ type: 'subcategory', blinkingButton: 'subcategory' });
+  }, [selectedSubcategory]);
+
+  const handleClearAllClick = useCallback(() => {
+    setAutoSelectConfirmation({ type: 'clear', blinkingButton: 'clear' });
+  }, []);
+
+  const handleConfirmYes = useCallback(() => {
+    if (autoSelectConfirmation.type === 'all') {
+      handleOneShotAutoSelect();
+    } else if (autoSelectConfirmation.type === 'equipment') {
+      handleAutoSelectEquipment();
+    } else if (autoSelectConfirmation.type === 'subcategory') {
+      handleAutoSelectSubcategory();
+    } else if (autoSelectConfirmation.type === 'clear') {
+      setTierSelections({});
+      setBasetypeSelections({});
+      setModButtonSelections({});
+      setSelectedEquipment(null);
+      setSelectedSubcategory(null);
+    }
+    setAutoSelectConfirmation({ type: null, blinkingButton: null });
+  }, [autoSelectConfirmation.type, handleOneShotAutoSelect, handleAutoSelectEquipment, handleAutoSelectSubcategory]);
+
+  const handleConfirmNo = useCallback(() => {
+    setAutoSelectConfirmation({ type: null, blinkingButton: null });
+  }, []);
 
   if (loading) return <div className="app-loading">Loading...</div>;
   if (error) return <div className="app-error">Error: {error}</div>;
 
   return (
-    <div className="app-root">
+    <div className="app-root" style={{ 
+      minHeight: '100vh', 
+      width: '100vw',
+      display: 'flex',
+      flexDirection: 'column',
+      padding: '20px',
+      boxSizing: 'border-box'
+    }}>
       <header className="app-header">TAWM'BERNO</header>
-      <main className="app-main">
+      <main className="app-main" style={{ 
+        flex: 1,
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: 0
+      }}>
         {/* Equipment Selection */}
         <section className="app-selectors">
-          <h3>Equipment</h3>
-          <div className="equipment-selector">
+          {/* Auto-select buttons moved here */}
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 8, marginTop: 20, gap: '0.5rem', flexWrap: 'wrap' }}>
+            <button 
+              className={`generate-button ${autoSelectConfirmation.blinkingButton === 'all' ? 'blinking' : ''}`}
+              onClick={handleAutoSelectAllClick}
+              style={{
+                padding: '0.4em 1.1em',
+                fontSize: '1.2rem',
+                fontWeight: '500',
+                backgroundColor: autoSelectConfirmation.blinkingButton === 'all' ? 'var(--selected)' : 'var(--surface)',
+                color: autoSelectConfirmation.blinkingButton === 'all' ? 'var(--selected-text)' : 'var(--text)',
+                border: '2px solid var(--border)',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                flex: '1',
+                maxWidth: '200px',
+                transition: 'background 0.15s, border 0.15s, color 0.15s',
+                boxShadow: '0 1px 4px rgba(0,0,0,0.12)'
+              }}
+              onMouseEnter={(e) => {
+                if (autoSelectConfirmation.blinkingButton === 'all') {
+                  e.currentTarget.style.backgroundColor = 'var(--accent)';
+                  e.currentTarget.style.borderColor = 'var(--accent)';
+                } else {
+                  e.currentTarget.style.backgroundColor = 'var(--button-hover)';
+                  e.currentTarget.style.borderColor = 'var(--accent)';
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (autoSelectConfirmation.blinkingButton === 'all') {
+                  e.currentTarget.style.backgroundColor = 'var(--selected)';
+                  e.currentTarget.style.borderColor = 'var(--selected)';
+                } else {
+                  e.currentTarget.style.backgroundColor = 'var(--surface)';
+                  e.currentTarget.style.borderColor = 'var(--border)';
+                }
+              }}
+            >
+              Autoselect ALL
+            </button>
+            <button 
+              className={`generate-button ${autoSelectConfirmation.blinkingButton === 'equipment' ? 'blinking' : ''}`}
+              onClick={handleAutoSelectEquipmentClick}
+              disabled={!selectedEquipment}
+              style={{ 
+                padding: '0.4em 1.1em',
+                fontSize: '1.2rem',
+                fontWeight: '500',
+                backgroundColor: autoSelectConfirmation.blinkingButton === 'equipment' ? 'var(--selected)' : 'var(--surface)',
+                color: autoSelectConfirmation.blinkingButton === 'equipment' ? 'var(--selected-text)' : 'var(--text)',
+                border: '2px solid var(--border)',
+                borderRadius: '4px',
+                cursor: selectedEquipment ? 'pointer' : 'not-allowed',
+                flex: '1',
+                maxWidth: '200px',
+                transition: 'background 0.15s, border 0.15s, color 0.15s',
+                boxShadow: '0 1px 4px rgba(0,0,0,0.12)',
+                opacity: selectedEquipment ? 1 : 0.5
+              }}
+              onMouseEnter={(e) => {
+                if (autoSelectConfirmation.blinkingButton === 'equipment') {
+                  e.currentTarget.style.backgroundColor = 'var(--accent)';
+                  e.currentTarget.style.borderColor = 'var(--accent)';
+                } else if (selectedEquipment) {
+                  e.currentTarget.style.backgroundColor = 'var(--button-hover)';
+                  e.currentTarget.style.borderColor = 'var(--accent)';
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (autoSelectConfirmation.blinkingButton === 'equipment') {
+                  e.currentTarget.style.backgroundColor = 'var(--selected)';
+                  e.currentTarget.style.borderColor = 'var(--selected)';
+                } else {
+                  e.currentTarget.style.backgroundColor = 'var(--surface)';
+                  e.currentTarget.style.borderColor = 'var(--border)';
+                }
+              }}
+            >
+              Autoselect Equipment
+            </button>
+            <button 
+              className={`generate-button ${autoSelectConfirmation.blinkingButton === 'subcategory' ? 'blinking' : ''}`}
+              onClick={handleAutoSelectSubcategoryClick}
+              disabled={!selectedSubcategory}
+              style={{ 
+                padding: '0.4em 1.1em',
+                fontSize: '1.2rem',
+                fontWeight: '500',
+                backgroundColor: autoSelectConfirmation.blinkingButton === 'subcategory' ? 'var(--selected)' : 'var(--surface)',
+                color: autoSelectConfirmation.blinkingButton === 'subcategory' ? 'var(--selected-text)' : 'var(--text)',
+                border: '2px solid var(--border)',
+                borderRadius: '4px',
+                cursor: selectedSubcategory ? 'pointer' : 'not-allowed',
+                flex: '1',
+                maxWidth: '200px',
+                transition: 'background 0.15s, border 0.15s, color 0.15s',
+                boxShadow: '0 1px 4px rgba(0,0,0,0.12)',
+                opacity: selectedSubcategory ? 1 : 0.5
+              }}
+              onMouseEnter={(e) => {
+                if (autoSelectConfirmation.blinkingButton === 'subcategory') {
+                  e.currentTarget.style.backgroundColor = 'var(--accent)';
+                  e.currentTarget.style.borderColor = 'var(--accent)';
+                } else if (selectedSubcategory) {
+                  e.currentTarget.style.backgroundColor = 'var(--button-hover)';
+                  e.currentTarget.style.borderColor = 'var(--accent)';
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (autoSelectConfirmation.blinkingButton === 'subcategory') {
+                  e.currentTarget.style.backgroundColor = 'var(--selected)';
+                  e.currentTarget.style.borderColor = 'var(--selected)';
+                } else {
+                  e.currentTarget.style.backgroundColor = 'var(--surface)';
+                  e.currentTarget.style.borderColor = 'var(--border)';
+                }
+              }}
+            >
+              Autoselect Subcat
+            </button>
+            <button 
+              className={`generate-button ${autoSelectConfirmation.blinkingButton === 'clear' ? 'blinking' : ''}`}
+              onClick={handleClearAllClick}
+              style={{ 
+                padding: '0.4em 1.1em',
+                fontSize: '1.2rem',
+                fontWeight: '500',
+                backgroundColor: autoSelectConfirmation.blinkingButton === 'clear' ? 'var(--selected)' : '#2a1a1a',
+                color: autoSelectConfirmation.blinkingButton === 'clear' ? 'var(--selected-text)' : 'var(--text)',
+                border: '2px solid var(--border)',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                flex: '1',
+                maxWidth: '200px',
+                transition: 'background 0.15s, border 0.15s, color 0.15s',
+                boxShadow: '0 1px 4px rgba(0,0,0,0.12)'
+              }}
+              onMouseEnter={(e) => {
+                if (autoSelectConfirmation.blinkingButton === 'clear') {
+                  e.currentTarget.style.backgroundColor = 'var(--accent)';
+                  e.currentTarget.style.borderColor = 'var(--accent)';
+                } else {
+                  e.currentTarget.style.backgroundColor = '#3a2a2a';
+                  e.currentTarget.style.borderColor = 'var(--accent)';
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (autoSelectConfirmation.blinkingButton === 'clear') {
+                  e.currentTarget.style.backgroundColor = 'var(--selected)';
+                  e.currentTarget.style.borderColor = 'var(--selected)';
+                } else {
+                  e.currentTarget.style.backgroundColor = '#2a1a1a';
+                  e.currentTarget.style.borderColor = 'var(--border)';
+                }
+              }}
+            >
+              Clear ALL
+            </button>
+          </div>
+          {/* Confirmation area */}
+          <div style={{ 
+            display: 'flex', 
+            justifyContent: 'center', 
+            alignItems: 'center', 
+            marginBottom: 8,
+            minHeight: '40px'
+          }}>
+            {autoSelectConfirmation.type === 'all' && (
+              <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                <span>This will replace ALL your current selections. Are you sure?</span>
+                <button className="generate-button" onClick={handleConfirmYes}>Yes</button>
+                <button className="generate-button" onClick={handleConfirmNo}>No</button>
+              </div>
+            )}
+            {autoSelectConfirmation.type === 'equipment' && (
+              <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                <span>This will replace your selections for {getEquipmentDisplayName(selectedEquipment || '')}. Are you sure?</span>
+                <button className="generate-button" onClick={handleConfirmYes}>Yes</button>
+                <button className="generate-button" onClick={handleConfirmNo}>No</button>
+              </div>
+            )}
+            {autoSelectConfirmation.type === 'subcategory' && (
+              <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                <span>This will replace your selections for {getSubcategoryDisplayName(selectedSubcategory || '')} - {getEquipmentDisplayName(selectedEquipment || '')}. Are you sure?</span>
+                <button className="generate-button" onClick={handleConfirmYes}>Yes</button>
+                <button className="generate-button" onClick={handleConfirmNo}>No</button>
+              </div>
+            )}
+            {autoSelectConfirmation.type === 'clear' && (
+              <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                <span>This will clear ALL your selections and reset the app. Are you sure?</span>
+                <button className="generate-button" onClick={handleConfirmYes}>Yes</button>
+                <button className="generate-button" onClick={handleConfirmNo}>No</button>
+              </div>
+            )}
+          </div>
+          <h3 style={{ marginTop: 8 }}>Equipment</h3>
+          <div className="equipment-selector" style={{ 
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
+            gap: '8px',
+            maxWidth: '100%'
+          }}>
             {equipmentList.map((eq: string) => (
               <button
                 key={eq}
@@ -1211,6 +1833,24 @@ BaseType == ${basetypeString}`;
                 onClick={() => {
                   setSelectedEquipment(eq);
                   setSelectedSubcategory(null);
+                }}
+                style={{
+                  order: (() => {
+                    switch (eq) {
+                      case 'Body Armour': return 0;
+                      case 'Boots': return 1;
+                      case 'Gloves': return 2;
+                      case 'Helmets': return 3;
+                      case 'Shield': return 4;
+                      case 'OneHandCast': return 5;
+                      case 'TwoHandCast': return 6;
+                      case 'OneHandAttack': return 7;
+                      case 'TwoHandAttack': return 8;
+                      case 'Jewellery': return 9;
+                      case 'Quiver': return 10;
+                      default: return 999;
+                    }
+                  })()
                 }}
               >
                 {getEquipmentDisplayName(eq)}
@@ -1243,6 +1883,31 @@ BaseType == ${basetypeString}`;
         {/* Basetype Selection */}
         {selectedEquipment && selectedSubcategory && (
           <section className="basetype-section">
+            {/* Giga Bases row for non-tiered basetypes */}
+            {isNonTieredBasetype(selectedEquipment) && (
+              <>
+                <div className="basetype-header">
+                  <h3 className="giga-label">Giga Bases</h3>
+                  <button 
+                    className="off-button giga"
+                    onClick={() => handleBasetypeOffClick('giga')}
+                  >
+                    OFF
+                  </button>
+                </div>
+                <div className="basetype-buttons-row giga-basetypes">
+                  {currentBasetypes.map((basetype, index) => (
+                    <button
+                      key={`giga-${index}`}
+                      className={`basetype-button giga ${(getSelectedBasetypes().giga ?? []).includes(basetype) ? 'selected giga-style' : ''}`}
+                      onClick={() => handleGigaBasetypeSelect(basetype)}
+                    >
+                      {basetype}
+                    </button>
+                  ))}
+                </div>
+              </>
+            )}
             <div className="basetype-header">
               <h3 className="good-label">Good Bases</h3>
               <button 
@@ -1256,7 +1921,7 @@ BaseType == ${basetypeString}`;
               {currentBasetypes.map((basetype, index) => (
                 <button
                   key={`good-${index}`}
-                  className={`basetype-button good ${getSelectedBasetypes().good.includes(basetype) ? 'selected' : ''} ${index === 0 && getSelectedBasetypes().good.includes(basetype) ? 'giga-style' : ''}`}
+                  className={`basetype-button good ${getSelectedBasetypes().good.includes(basetype) ? 'selected' : ''} ${!isNonTieredBasetype(selectedEquipment) && index === 0 && getSelectedBasetypes().good.includes(basetype) ? 'giga-style' : ''}`}
                   onClick={() => handleGoodBasetypeSelectEnhanced(basetype)}
                 >
                   {basetype}
@@ -1288,51 +1953,17 @@ BaseType == ${basetypeString}`;
         )}
 
         {/* Families Display */}
-        <section className="families-section">
+        <section className="families-section" style={{ flex: 1, display: 'flex', flexDirection: 'column', minHeight: 0 }}>
           <h3>Available Families</h3>
-          <div className="families-columns">
+          <div className="families-columns" style={{ flex: 1, display: 'flex', gap: '20px', minHeight: 0 }}>
             {/* Prefixes Column */}
             {selectedEquipment && selectedSubcategory && (
-              <div className="families-col">
+              <div className="families-col" style={{ flex: 1, display: 'flex', flexDirection: 'column', minHeight: 0 }}>
                 <h4>Prefixes</h4>
+                <div style={{ flex: 1, overflowY: 'auto', minHeight: 0 }}>
                 {currentFamilies
                   .filter((familyName: string) => families[familyName]?.type === 'Prefix')
-                  .sort((a, b) => {
-                    const familyA = families[a];
-                    const familyB = families[b];
-                    if (!familyA || !familyB) return 0;
-                    
-                    // First, group resistances together
-                    const resistanceOrderA = getResistanceOrder(familyA);
-                    const resistanceOrderB = getResistanceOrder(familyB);
-                    
-                    if (resistanceOrderA < 999 && resistanceOrderB < 999) {
-                      return resistanceOrderA - resistanceOrderB;
-                    }
-                    if (resistanceOrderA < 999) return -1;
-                    if (resistanceOrderB < 999) return 1;
-                    
-                    // Then group elemental damage families together
-                    const elementalOrderA = getElementalDamageOrder(familyA);
-                    const elementalOrderB = getElementalDamageOrder(familyB);
-                    
-                    if (elementalOrderA < 999 && elementalOrderB < 999) {
-                      return elementalOrderA - elementalOrderB;
-                    }
-                    if (elementalOrderA < 999) return -1;
-                    if (elementalOrderB < 999) return 1;
-                    
-                    // Then prioritize by family priority
-                    const priorityA = getFamilyPriority(a, familyA);
-                    const priorityB = getFamilyPriority(b, familyB);
-                    
-                    if (priorityA !== priorityB) {
-                      return priorityA - priorityB;
-                    }
-                    
-                    // Finally, sort alphabetically
-                    return a.localeCompare(b);
-                  })
+                  .sort((a, b) => getFamilyPriority(a) - getFamilyPriority(b))
                   .map((familyName: string) => {
                     const family = families[familyName];
                     if (!family) return null;
@@ -1412,51 +2043,18 @@ BaseType == ${basetypeString}`;
                       </div>
                     );
                   })}
+                </div>
               </div>
             )}
 
             {/* Suffixes Column */}
             {selectedEquipment && selectedSubcategory && (
-              <div className="families-col">
+              <div className="families-col" style={{ flex: 1, display: 'flex', flexDirection: 'column', minHeight: 0 }}>
                 <h4>Suffixes</h4>
+                <div style={{ flex: 1, overflowY: 'auto', minHeight: 0 }}>
                 {currentFamilies
                   .filter((familyName: string) => families[familyName]?.type === 'Suffix')
-                  .sort((a, b) => {
-                    const familyA = families[a];
-                    const familyB = families[b];
-                    if (!familyA || !familyB) return 0;
-                    
-                    // First, group resistances together
-                    const resistanceOrderA = getResistanceOrder(familyA);
-                    const resistanceOrderB = getResistanceOrder(familyB);
-                    
-                    if (resistanceOrderA < 999 && resistanceOrderB < 999) {
-                      return resistanceOrderA - resistanceOrderB;
-                    }
-                    if (resistanceOrderA < 999) return -1;
-                    if (resistanceOrderB < 999) return 1;
-                    
-                    // Then group elemental damage families together
-                    const elementalOrderA = getElementalDamageOrder(familyA);
-                    const elementalOrderB = getElementalDamageOrder(familyB);
-                    
-                    if (elementalOrderA < 999 && elementalOrderB < 999) {
-                      return elementalOrderA - elementalOrderB;
-                    }
-                    if (elementalOrderA < 999) return -1;
-                    if (elementalOrderB < 999) return 1;
-                    
-                    // Then prioritize by family priority
-                    const priorityA = getFamilyPriority(a, familyA);
-                    const priorityB = getFamilyPriority(b, familyB);
-                    
-                    if (priorityA !== priorityB) {
-                      return priorityA - priorityB;
-                    }
-                    
-                    // Finally, sort alphabetically
-                    return a.localeCompare(b);
-                  })
+                  .sort((a, b) => getFamilyPriority(a) - getFamilyPriority(b))
                   .map((familyName: string) => {
                     const family = families[familyName];
                     if (!family) return null;
@@ -1536,13 +2134,14 @@ BaseType == ${basetypeString}`;
                       </div>
                     );
                   })}
+                </div>
               </div>
             )}
 
             {/* Info Panel Column */}
-            <div className="info-col">
+            <div className="info-col" style={{ flex: '0 0 300px', display: 'flex', flexDirection: 'column', minHeight: 0 }}>
               <h4>Preview</h4>
-              <div className="info-content">
+              <div className="info-content" style={{ flex: 1, overflowY: 'auto', minHeight: 0 }}>
                 {/* New Groupings Preview */}
                 {lastSelectedInfo && (() => {
                   const previewItems = generateNewGroupingsPreview();
@@ -1555,7 +2154,6 @@ BaseType == ${basetypeString}`;
                   }
                   return <div className="preview-text">No groupings to preview</div>;
                 })()}
-                
                 {lastSelectedInfo ? (
                   <>
                     <div className="info-item"><span className="info-label">Equipment:</span><span className="info-value">{lastSelectedInfo.equipment}</span></div>
@@ -1575,21 +2173,113 @@ BaseType == ${basetypeString}`;
         </section>
       </main>
       {/* Filter Output at the bottom */}
-      <section className="filter-output-section" style={{ marginTop: '2rem' }}>
-        <div className="output-header">
-          <button className="copy-button" onClick={copyToClipboard}>
-            Copy to Clipboard
-          </button>
-          <button className="download-button" onClick={downloadFilter} style={{ marginLeft: '1rem' }}>
+      <section className="filter-output-section" style={{ marginTop: '2rem', flexShrink: 0 }}>
+        <div className="output-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+          <button 
+            className="download-button" 
+            onClick={downloadFilter} 
+            disabled={!hasGenerated}
+            style={{
+              padding: '12px 24px',
+              fontSize: '16px',
+              fontWeight: 'bold',
+              backgroundColor: hasGenerated ? '#4CAF50' : '#ccc',
+              color: hasGenerated ? 'white' : '#666',
+              border: '2px solid #45a049',
+              borderRadius: '8px',
+              cursor: hasGenerated ? 'pointer' : 'not-allowed',
+              flex: '1',
+              marginRight: '0.5rem'
+            }}
+          >
             Download Filter
+          </button>
+          <button 
+            className="generate-button" 
+            onClick={handleGenerateFilterOutput}
+            style={{
+              padding: '12px 24px',
+              fontSize: '16px',
+              fontWeight: 'bold',
+              backgroundColor: '#FFD700',
+              color: '#000',
+              border: '2px solid #DAA520',
+              borderRadius: '8px',
+              cursor: 'pointer',
+              flex: '1',
+              margin: '0 0.5rem'
+            }}
+          >
+            Generate Filter Output
+          </button>
+          <button 
+            className="copy-button" 
+            onClick={copyToClipboard} 
+            disabled={!hasGenerated}
+            style={{
+              padding: '12px 24px',
+              fontSize: '16px',
+              fontWeight: 'bold',
+              backgroundColor: hasGenerated ? '#2196F3' : '#ccc',
+              color: hasGenerated ? 'white' : '#666',
+              border: '2px solid #1976D2',
+              borderRadius: '6px',
+              cursor: hasGenerated ? 'pointer' : 'not-allowed',
+              flex: '1',
+              margin: '0 0.5rem'
+            }}
+          >
+            Copy to Clipboard
           </button>
         </div>
         <div className="output-content">
-          <div className="filter-output">
-            {generateFilterOutput() || (
-              <div className="output-empty">No selections yet.</div>
+          <div className="filter-output" style={{ wordBreak: 'break-all', whiteSpace: 'pre-wrap', maxWidth: 700, margin: '0 auto' }}>
+            {hasGenerated ? (
+              filterOutput
+            ) : (
+              <div className="output-empty">No selections yet. Click 'Generate Filter Output' to create your filter.</div>
             )}
           </div>
+        </div>
+        {/* --- Import UI --- */}
+        <div className="import-section" style={{ marginTop: '2rem', borderTop: '1px solid #ccc', paddingTop: '1rem' }}>
+          <h4>Import TAWM CODE</h4>
+          <textarea
+            value={importText}
+            onChange={e => setImportText(e.target.value)}
+            placeholder="Paste filter output or TAWM CODE here..."
+            rows={4}
+            wrap="soft"
+            style={{ 
+              width: '100%',
+              fontFamily: 'monospace', 
+              marginBottom: '1rem', 
+              wordBreak: 'break-all', 
+              whiteSpace: 'pre-wrap'
+            }}
+          />
+          <button 
+            onClick={handleImport} 
+            style={{ 
+              width: '100%', 
+              padding: '12px', 
+              fontSize: '16px',
+              backgroundColor: '#2196F3',
+              color: 'white',
+              border: '2px solid #1976D2',
+              borderRadius: '6px',
+              cursor: 'pointer',
+              marginBottom: '0.5rem'
+            }}
+          >
+            Import
+          </button>
+          {importStatus === 'success' && (
+            <div style={{ color: 'green', textAlign: 'center' }}>{importMessage}</div>
+          )}
+          {importStatus === 'error' && (
+            <div style={{ color: 'red', textAlign: 'center' }}>{importMessage}</div>
+          )}
         </div>
       </section>
     </div>

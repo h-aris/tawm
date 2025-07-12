@@ -1,0 +1,3468 @@
+{
+  "analysis": {
+    "AdditionalArrows": {
+      "category": "Additional Arrows",
+      "type": "Suffix",
+      "displayName": "Bow Attacks fire an additional Arrow",
+      "stat": "Bow Attacks fire an additional Arrow"
+    },
+    "AdditionalArrows2": {
+      "category": "Additional Arrows",
+      "type": "Suffix",
+      "displayName": "Bow Attacks fire # additional Arrows",
+      "stat": "Bow Attacks fire 2 additional Arrows"
+    },
+    "AdditionalArrowsBowAttacks2": {
+      "category": "Additional Arrows",
+      "type": "Suffix",
+      "displayName": "Bow Attacks fire an additional Arrow",
+      "stat": "Bow Attacks fire an additional Arrow"
+    },
+    "AllAttributes": {
+      "category": "Attributes (Int/Dex/Str)",
+      "type": "Suffix",
+      "displayName": "+# to all Attributes",
+      "stat": "+(13-16) to all Attributes"
+    },
+    "AllAttributes2": {
+      "category": "Attributes (Int/Dex/Str)",
+      "type": "Suffix",
+      "displayName": "+# to all Attributes",
+      "stat": "+(33-35) to all Attributes"
+    },
+    "AllGemChaos": {
+      "category": "+# to Level of all Gems (not socketed)",
+      "type": "Prefix",
+      "displayName": "+# to Level of all Chaos Spell Skill Gems",
+      "stat": "+1 to Level of all Chaos Spell Skill Gems"
+    },
+    "AllGemChaos3": {
+      "category": "+# to Level of all Gems (not socketed)",
+      "type": "Prefix",
+      "displayName": "+# to Level of all Chaos Spell Skill Gems",
+      "stat": "+3 to Level of all Chaos Spell Skill Gems"
+    },
+    "AllGemCold": {
+      "category": "+# to Level of all Gems (not socketed)",
+      "type": "Prefix",
+      "displayName": "+# to Level of all Cold Spell Skill Gems",
+      "stat": "+1 to Level of all Cold Spell Skill Gems"
+    },
+    "AllGemCold3": {
+      "category": "+# to Level of all Gems (not socketed)",
+      "type": "Prefix",
+      "displayName": "+# to Level of all Cold Spell Skill Gems",
+      "stat": "+3 to Level of all Cold Spell Skill Gems"
+    },
+    "AllGemFire": {
+      "category": "+# to Level of all Gems (not socketed)",
+      "type": "Prefix",
+      "displayName": "+# to Level of all Fire Spell Skill Gems",
+      "stat": "+1 to Level of all Fire Spell Skill Gems"
+    },
+    "AllGemFire3": {
+      "category": "+# to Level of all Gems (not socketed)",
+      "type": "Prefix",
+      "displayName": "+# to Level of all Fire Spell Skill Gems",
+      "stat": "+3 to Level of all Fire Spell Skill Gems"
+    },
+    "AllGemLightning": {
+      "category": "+# to Level of all Gems (not socketed)",
+      "type": "Prefix",
+      "displayName": "+# to Level of all Lightning Spell Skill Gems",
+      "stat": "+1 to Level of all Lightning Spell Skill Gems"
+    },
+    "AllGemLightning3": {
+      "category": "+# to Level of all Gems (not socketed)",
+      "type": "Prefix",
+      "displayName": "+# to Level of all Lightning Spell Skill Gems",
+      "stat": "+3 to Level of all Lightning Spell Skill Gems"
+    },
+    "AllGemMinion": {
+      "category": "+# to Level of all Gems (not socketed)",
+      "type": "Prefix",
+      "displayName": "+# to Level of all Minion Skill Gems",
+      "stat": "+1 to Level of all Minion Skill Gems"
+    },
+    "AllGemPhysical": {
+      "category": "+# to Level of all Gems (not socketed)",
+      "type": "Prefix",
+      "displayName": "+# to Level of all Physical Spell Skill Gems",
+      "stat": "+1 to Level of all Physical Spell Skill Gems"
+    },
+    "AllGemPhysical3": {
+      "category": "+# to Level of all Gems (not socketed)",
+      "type": "Prefix",
+      "displayName": "+# to Level of all Physical Spell Skill Gems",
+      "stat": "+3 to Level of all Physical Spell Skill Gems"
+    },
+    "AllMinionGemLevel": {
+      "category": "+# to Level of all Gems (not socketed)",
+      "type": "Prefix",
+      "displayName": "+# to Level of all Minion Skill Gems",
+      "stat": "+2 to Level of all Minion Skill Gems"
+    },
+    "AllResistances": {
+      "category": "Fire Resistance",
+      "type": "Suffix",
+      "displayName": "+#% to all Elemental Resistances",
+      "stat": "+(15-16)% to all Elemental Resistances"
+    },
+    "AllResistances2": {
+      "category": "Fire Resistance",
+      "type": "Suffix",
+      "displayName": "+#% to all Elemental Resistances",
+      "stat": "+(17-18)% to all Elemental Resistances"
+    },
+    "ArmourEnergyShieldPercent": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "#% increased Armour and Energy Shield",
+      "stat": "(92-100)% increased Armour and Energy Shield"
+    },
+    "ArmourEnergyShieldPercent2": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "#% increased Armour and Energy Shield #% increased Stun and Block Recovery",
+      "stat": "(39-42)% increased Armour and Energy Shield(16-17)% increased Stun and Block Recovery"
+    },
+    "ArmourEnergyShieldPercent22": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "#% increased Armour and Energy Shield",
+      "stat": "(101-110)% increased Armour and Energy Shield"
+    },
+    "ArmourEvasionPercent": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "#% increased Armour and Evasion",
+      "stat": "(92-100)% increased Armour and Evasion"
+    },
+    "ArmourEvasionPercent2": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "#% increased Armour and Evasion #% increased Stun and Block Recovery",
+      "stat": "(39-42)% increased Armour and Evasion(16-17)% increased Stun and Block Recovery"
+    },
+    "ArmourEvasionPercent22": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "#% increased Armour and Evasion",
+      "stat": "(101-110)% increased Armour and Evasion"
+    },
+    "ArmourPercent": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "#% increased Armour",
+      "stat": "(92-100)% increased Armour"
+    },
+    "ArmourPercent2": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "#% increased Armour",
+      "stat": "(101-110)% increased Armour"
+    },
+    "ArmourPercentIncreasedArmour": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "#% increased Armour #% increased Stun and Block Recovery",
+      "stat": "(39-42)% increased Armour(16-17)% increased Stun and Block Recovery"
+    },
+    "AttackerTakesDamageNoRange": {
+      "category": "Reflects Physical Damage",
+      "type": "Prefix",
+      "displayName": "Reflects # Physical Damage to Melee Attackers",
+      "stat": "Reflects (5-10) Physical Damage to Melee Attackers"
+    },
+    "AttackerTakesDamageNoRange2": {
+      "category": "Reflects Physical Damage",
+      "type": "Prefix",
+      "displayName": "Reflects # Physical Damage to Melee Attackers",
+      "stat": "Reflects (25-50) Physical Damage to Melee Attackers"
+    },
+    "AvoidElementalStatusAilments": {
+      "category": "Chance to Avoid Elemental Ailments",
+      "type": "Suffix",
+      "displayName": "#% chance to Avoid Elemental Ailments",
+      "stat": "(31-35)% chance to Avoid Elemental Ailments"
+    },
+    "BaseArmour": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to Armour",
+      "stat": "+(121-150) to Armour"
+    },
+    "BaseArmour2": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to Armour",
+      "stat": "+(151-200) to Armour"
+    },
+    "BaseArmour3": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to Armour",
+      "stat": "+(401-500) to Armour"
+    },
+    "BaseArmourAndLife": {
+      "category": "Default Priority",
+      "type": "Prefix",
+      "displayName": "+# to Armour +# to maximum Life",
+      "stat": "+(33-48) to Armour+(24-28) to maximum Life"
+    },
+    "BaseArmourAndLife2": {
+      "category": "Default Priority",
+      "type": "Prefix",
+      "displayName": "+# to Armour +# to maximum Life",
+      "stat": "+(49-96) to Armour+(29-33) to maximum Life"
+    },
+    "BaseArmourAndLife3": {
+      "category": "Default Priority",
+      "type": "Prefix",
+      "displayName": "+# to Armour +# to maximum Life",
+      "stat": "+(97-144) to Armour+(34-38) to maximum Life"
+    },
+    "BaseArmourEnergyShield2": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to Armour +# to maximum Energy Shield",
+      "stat": "+(49-85) to Armour+(23-28) to maximum Energy Shield"
+    },
+    "BaseArmourEnergyShield22": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to Armour +# to maximum Energy Shield",
+      "stat": "+(86-145) to Armour+(29-48) to maximum Energy Shield"
+    },
+    "BaseArmourEnergyShield222": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to Armour +# to maximum Energy Shield",
+      "stat": "+(221-300) to Armour+(61-72) to maximum Energy Shield"
+    },
+    "BaseArmourEnergyShield3": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to Armour +# to maximum Energy Shield",
+      "stat": "+(301-375) to Armour+(73-80) to maximum Energy Shield"
+    },
+    "BaseArmourEvasion2": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to Armour +# to Evasion Rating",
+      "stat": "+(49-85) to Armour+(49-85) to Evasion Rating"
+    },
+    "BaseArmourEvasion22": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to Armour +# to Evasion Rating",
+      "stat": "+(86-145) to Armour+(86-145) to Evasion Rating"
+    },
+    "BaseArmourEvasion222": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to Armour +# to Evasion Rating",
+      "stat": "+(221-300) to Armour+(221-300) to Evasion Rating"
+    },
+    "BaseEnergyShield2": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to maximum Energy Shield",
+      "stat": "+(39-49) to maximum Energy Shield"
+    },
+    "BaseEnergyShield22": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to maximum Energy Shield",
+      "stat": "+(50-61) to maximum Energy Shield"
+    },
+    "BaseEnergyShield222": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to maximum Energy Shield",
+      "stat": "+(77-90) to maximum Energy Shield"
+    },
+    "BaseEnergyShield32": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to maximum Energy Shield",
+      "stat": "+(91-100) to maximum Energy Shield"
+    },
+    "BaseEnergyShieldAndLife": {
+      "category": "Default Priority",
+      "type": "Prefix",
+      "displayName": "+# to maximum Energy Shield +# to maximum Life",
+      "stat": "+(11-15) to maximum Energy Shield+(24-28) to maximum Life"
+    },
+    "BaseEnergyShieldAndLife22": {
+      "category": "Default Priority",
+      "type": "Prefix",
+      "displayName": "+# to maximum Energy Shield +# to maximum Life",
+      "stat": "+(16-25) to maximum Energy Shield+(29-33) to maximum Life"
+    },
+    "BaseEnergyShieldAndMana": {
+      "category": "Default Priority",
+      "type": "Prefix",
+      "displayName": "+# to maximum Energy Shield +# to maximum Mana",
+      "stat": "+(26-30) to maximum Energy Shield+(23-25) to maximum Mana"
+    },
+    "BaseEnergyShieldAndMana2": {
+      "category": "Default Priority",
+      "type": "Prefix",
+      "displayName": "+# to maximum Energy Shield +# to maximum Mana",
+      "stat": "+(11-15) to maximum Energy Shield+(16-19) to maximum Mana"
+    },
+    "BaseEnergyShieldAndMana22": {
+      "category": "Default Priority",
+      "type": "Prefix",
+      "displayName": "+# to maximum Energy Shield +# to maximum Mana",
+      "stat": "+(16-25) to maximum Energy Shield+(20-22) to maximum Mana"
+    },
+    "BaseEnergyShieldAndMana222": {
+      "category": "Default Priority",
+      "type": "Prefix",
+      "displayName": "+# to maximum Energy Shield +# to maximum Mana",
+      "stat": "+(26-30) to maximum Energy Shield+(23-25) to maximum Mana"
+    },
+    "BaseEnergyShieldAndMana3": {
+      "category": "Default Priority",
+      "type": "Prefix",
+      "displayName": "+# to maximum Energy Shield+# to maximum Mana",
+      "stat": "+(16-25) to maximum Energy Shield+(20-22) to maximum Mana"
+    },
+    "BaseEvasion": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to Evasion Rating",
+      "stat": "+(121-150) to Evasion Rating"
+    },
+    "BaseEvasion2": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to Evasion Rating",
+      "stat": "+(151-200) to Evasion Rating"
+    },
+    "BaseEvasion3": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to Evasion Rating",
+      "stat": "+(401-500) to Evasion Rating"
+    },
+    "BaseEvasionAndLife": {
+      "category": "Default Priority",
+      "type": "Prefix",
+      "displayName": "+# to Evasion Rating +# to maximum Life",
+      "stat": "+(21-42) to Evasion Rating+(24-28) to maximum Life"
+    },
+    "BaseEvasionAndLife2": {
+      "category": "Default Priority",
+      "type": "Prefix",
+      "displayName": "+# to Evasion Rating +# to maximum Life",
+      "stat": "+(43-95) to Evasion Rating+(29-33) to maximum Life"
+    },
+    "BaseEvasionAndLife3": {
+      "category": "Default Priority",
+      "type": "Prefix",
+      "displayName": "+# to Evasion Rating +# to maximum Life",
+      "stat": "+(96-120) to Evasion Rating+(34-38) to maximum Life"
+    },
+    "BaseEvasionEnergyShield2": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to Evasion Rating +# to maximum Energy Shield",
+      "stat": "+(49-85) to Evasion Rating+(23-28) to maximum Energy Shield"
+    },
+    "BaseEvasionEnergyShield22": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to Evasion Rating +# to maximum Energy Shield",
+      "stat": "+(86-145) to Evasion Rating+(29-48) to maximum Energy Shield"
+    },
+    "BaseEvasionEnergyShield222": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to Evasion Rating +# to maximum Energy Shield",
+      "stat": "+(221-300) to Evasion Rating+(61-72) to maximum Energy Shield"
+    },
+    "BeltFlaskCharges": {
+      "category": "Flask Effects",
+      "type": "Suffix",
+      "displayName": "#% increased Flask Charges gained",
+      "stat": "(35-40)% increased Flask Charges gained"
+    },
+    "BeltFlaskDuration": {
+      "category": "Flask Effects",
+      "type": "Suffix",
+      "displayName": "#% increased Flask Effect Duration",
+      "stat": "(28-33)% increased Flask Effect Duration"
+    },
+    "BeltFlaskRecoveryRate": {
+      "category": "Flask Effects",
+      "type": "Prefix",
+      "displayName": "#% increased Flask Life Recovery rate",
+      "stat": "(35-40)% increased Flask Life Recovery rate"
+    },
+    "BeltFlaskRecoveryRateIncreasedFlask": {
+      "category": "Flask Effects",
+      "type": "Prefix",
+      "displayName": "#% increased Flask Mana Recovery rate",
+      "stat": "(35-40)% increased Flask Mana Recovery rate"
+    },
+    "ChanceToFreeze": {
+      "category": "Chance to Ailment",
+      "type": "Suffix",
+      "displayName": "#% chance to Freeze",
+      "stat": "(31-40)% chance to Freeze"
+    },
+    "ChanceToFreeze2": {
+      "category": "Chance to Ailment",
+      "type": "Suffix",
+      "displayName": "#% chance to Freeze",
+      "stat": "(43-55)% chance to Freeze"
+    },
+    "ChanceToIgnite": {
+      "category": "Chance to Ailment",
+      "type": "Suffix",
+      "displayName": "#% chance to Ignite",
+      "stat": "(31-40)% chance to Ignite"
+    },
+    "ChanceToIgnite2": {
+      "category": "Chance to Ailment",
+      "type": "Suffix",
+      "displayName": "#% chance to Ignite",
+      "stat": "(43-55)% chance to Ignite"
+    },
+    "ChanceToShock": {
+      "category": "Chance to Ailment",
+      "type": "Suffix",
+      "displayName": "#% chance to Shock",
+      "stat": "(31-40)% chance to Shock"
+    },
+    "ChanceToShock2": {
+      "category": "Chance to Ailment",
+      "type": "Suffix",
+      "displayName": "#% chance to Shock",
+      "stat": "(43-55)% chance to Shock"
+    },
+    "ChanceToSuppressSpells": {
+      "category": "Chance to Suppress Spell Damage",
+      "type": "Suffix",
+      "displayName": "+#% chance to Suppress Spell Damage",
+      "stat": "+(20-22)% chance to Suppress Spell Damage"
+    },
+    "ChanceToSuppressSpells2": {
+      "category": "Chance to Suppress Spell Damage",
+      "type": "Suffix",
+      "displayName": "+#% chance to Suppress Spell Damage",
+      "stat": "+(13-14)% chance to Suppress Spell Damage"
+    },
+    "ChaosDOTMultiplier": {
+      "category": "Damage over Time Multiplier",
+      "type": "Suffix",
+      "displayName": "+#% to Chaos Damage over Time Multiplier",
+      "stat": "+(29-33)% to Chaos Damage over Time Multiplier"
+    },
+    "ChaosDOTMultiplier2": {
+      "category": "Damage over Time Multiplier",
+      "type": "Suffix",
+      "displayName": "+#% to Chaos Damage over Time Multiplier",
+      "stat": "+(66-75)% to Chaos Damage over Time Multiplier"
+    },
+    "ChaosDOTMultiplier22": {
+      "category": "Damage over Time Multiplier",
+      "type": "Suffix",
+      "displayName": "+#% to Chaos Damage over Time Multiplier",
+      "stat": "+(34-38)% to Chaos Damage over Time Multiplier"
+    },
+    "ChaosDamage": {
+      "category": "Chaos Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Chaos Damage to Attacks",
+      "stat": "Adds (27-41) to (55-69) Chaos Damage to Attacks"
+    },
+    "ChaosResistance": {
+      "category": "Chaos Resistance",
+      "type": "Suffix",
+      "displayName": "+#% to Chaos Resistance",
+      "stat": "+(31-35)% to Chaos Resistance"
+    },
+    "ColdDOTMultiplier": {
+      "category": "Damage over Time Multiplier",
+      "type": "Suffix",
+      "displayName": "+#% to Cold Damage over Time Multiplier",
+      "stat": "+(66-75)% to Cold Damage over Time Multiplier"
+    },
+    "ColdDOTMultiplier2": {
+      "category": "Damage over Time Multiplier",
+      "type": "Suffix",
+      "displayName": "+#% to Cold Damage over Time Multiplier",
+      "stat": "+(34-38)% to Cold Damage over Time Multiplier"
+    },
+    "ColdDamage": {
+      "category": "Adds Cold Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Cold Damage",
+      "stat": "Adds (149-204) to (300-348) Cold Damage"
+    },
+    "ColdDamage2": {
+      "category": "Adds Cold Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Cold Damage to Attacks",
+      "stat": "Adds (10-13) to (20-24) Cold Damage to Attacks"
+    },
+    "ColdDamage22": {
+      "category": "Adds Cold Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Cold Damage",
+      "stat": "Adds (81-111) to (163-189) Cold Damage"
+    },
+    "ColdDamageAddsTo22": {
+      "category": "Adds Cold Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Cold Damage to Attacks",
+      "stat": "Adds (17-22) to (34-40) Cold Damage to Attacks"
+    },
+    "ColdDamageAddsTo222": {
+      "category": "Adds Cold Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Cold Damage to Attacks",
+      "stat": "Adds (33-45) to (67-78) Cold Damage to Attacks"
+    },
+    "ColdDamagePercentage": {
+      "category": "Elemental Damage %",
+      "type": "Suffix",
+      "displayName": "#% increased Cold Damage",
+      "stat": "(19-22)% increased Cold Damage"
+    },
+    "ColdDamagePercentage2": {
+      "category": "Elemental Damage %",
+      "type": "Suffix",
+      "displayName": "#% increased Cold Damage",
+      "stat": "(23-26)% increased Cold Damage"
+    },
+    "ColdDamagePercentage3": {
+      "category": "Elemental Damage %",
+      "type": "Suffix",
+      "displayName": "#% increased Cold Damage",
+      "stat": "(27-30)% increased Cold Damage"
+    },
+    "ColdDamagePercentagePrefix": {
+      "category": "Elemental Damage %",
+      "type": "Prefix",
+      "displayName": "#% increased Cold Damage",
+      "stat": "(150-164)% increased Cold Damage"
+    },
+    "ColdDamagePercentagePrefix2": {
+      "category": "Elemental Damage %",
+      "type": "Prefix",
+      "displayName": "#% increased Cold Damage",
+      "stat": "(100-109)% increased Cold Damage"
+    },
+    "ColdResistance": {
+      "category": "Cold Resistance",
+      "type": "Suffix",
+      "displayName": "+#% to Cold Resistance",
+      "stat": "+(46-48)% to Cold Resistance"
+    },
+    "CriticalStrikeChanceIncrease": {
+      "category": "Critical Strike Chance",
+      "type": "Suffix",
+      "displayName": "#% increased Critical Strike Chance with Bows",
+      "stat": "(39-44)% increased Critical Strike Chance with Bows"
+    },
+    "CriticalStrikeChanceIncrease2": {
+      "category": "Critical Strike Chance",
+      "type": "Suffix",
+      "displayName": "#% increased Critical Strike Chance",
+      "stat": "(35-38)% increased Critical Strike Chance"
+    },
+    "CriticalStrikeChanceIncreaseIncreasedGlobal2": {
+      "category": "Critical Strike Chance",
+      "type": "Suffix",
+      "displayName": "#% increased Global Critical Strike Chance",
+      "stat": "(35-38)% increased Global Critical Strike Chance"
+    },
+    "CriticalStrikeMultiplier": {
+      "category": "Critical Strike Multiplier",
+      "type": "Suffix",
+      "displayName": "+#% to Critical Strike Multiplier with Bows",
+      "stat": "+(35-38)% to Critical Strike Multiplier with Bows"
+    },
+    "CriticalStrikeMultiplierToGlobal": {
+      "category": "Critical Strike Multiplier",
+      "type": "Suffix",
+      "displayName": "+#% to Global Critical Strike Multiplier",
+      "stat": "+(35-38)% to Global Critical Strike Multiplier"
+    },
+    "DamageTakenGainedAsLife": {
+      "category": "Damage Recoup",
+      "type": "Suffix",
+      "displayName": "#% of Damage taken Recouped as Life",
+      "stat": "(13-15)% of Damage taken Recouped as Life"
+    },
+    "DamageWithWeaponTypeSkill": {
+      "category": "Default Priority",
+      "type": "Prefix",
+      "displayName": "#% increased Damage with Bow Skills",
+      "stat": "(43-50)% increased Damage with Bow Skills"
+    },
+    "Dexterity": {
+      "category": "Attributes (Int/Dex/Str)",
+      "type": "Suffix",
+      "displayName": "+# to Dexterity",
+      "stat": "+(51-55) to Dexterity"
+    },
+    "Dexterity2": {
+      "category": "Attributes (Int/Dex/Str)",
+      "type": "Suffix",
+      "displayName": "+# to Dexterity",
+      "stat": "+(56-60) to Dexterity"
+    },
+    "EnergyShieldDelay": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Suffix",
+      "displayName": "#% faster start of Energy Shield Recharge",
+      "stat": "(59-66)% faster start of Energy Shield Recharge"
+    },
+    "EnergyShieldPercent": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "#% increased maximum Energy Shield",
+      "stat": "(20-22)% increased maximum Energy Shield"
+    },
+    "EnergyShieldPercent2": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "#% increased Energy Shield",
+      "stat": "(101-110)% increased Energy Shield"
+    },
+    "EnergyShieldPercent22": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "#% increased Energy Shield",
+      "stat": "(92-100)% increased Energy Shield"
+    },
+    "EnergyShieldPercentIncreasedEnergy2": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "#% increased Energy Shield #% increased Stun and Block Recovery",
+      "stat": "(39-42)% increased Energy Shield(16-17)% increased Stun and Block Recovery"
+    },
+    "EnergyShieldRegeneration": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Suffix",
+      "displayName": "#% increased Energy Shield Recharge Rate",
+      "stat": "(36-38)% increased Energy Shield Recharge Rate"
+    },
+    "EvasionEnergyShieldPercent": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "#% increased Evasion and Energy Shield",
+      "stat": "(92-100)% increased Evasion and Energy Shield"
+    },
+    "EvasionEnergyShieldPercent2": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "#% increased Evasion and Energy Shield #% increased Stun and Block Recovery",
+      "stat": "(39-42)% increased Evasion and Energy Shield(16-17)% increased Stun and Block Recovery"
+    },
+    "EvasionEnergyShieldPercent22": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "#% increased Evasion and Energy Shield",
+      "stat": "(101-110)% increased Evasion and Energy Shield"
+    },
+    "EvasionPercent": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "#% increased Evasion Rating",
+      "stat": "(92-100)% increased Evasion Rating"
+    },
+    "EvasionPercent2": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "#% increased Evasion Rating",
+      "stat": "(101-110)% increased Evasion Rating"
+    },
+    "EvasionPercentIncreasedEvasion": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "#% increased Evasion Rating #% increased Stun and Block Recovery",
+      "stat": "(39-42)% increased Evasion Rating(16-17)% increased Stun and Block Recovery"
+    },
+    "EvasionRatingPercent": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "#% increased Evasion Rating",
+      "stat": "(33-36)% increased Evasion Rating"
+    },
+    "FireDOTMultiplier": {
+      "category": "Damage over Time Multiplier",
+      "type": "Suffix",
+      "displayName": "+#% to Fire Damage over Time Multiplier",
+      "stat": "+(34-38)% to Fire Damage over Time Multiplier"
+    },
+    "FireDOTMultiplier2": {
+      "category": "Damage over Time Multiplier",
+      "type": "Suffix",
+      "displayName": "+#% to Fire Damage over Time Multiplier",
+      "stat": "+(66-75)% to Fire Damage over Time Multiplier"
+    },
+    "FireDamage": {
+      "category": "Adds Fire Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Fire Damage",
+      "stat": "Adds (165-225) to (335-390) Fire Damage"
+    },
+    "FireDamage2": {
+      "category": "Adds Fire Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Fire Damage to Attacks",
+      "stat": "Adds (11-15) to (23-27) Fire Damage to Attacks"
+    },
+    "FireDamage22": {
+      "category": "Adds Fire Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Fire Damage",
+      "stat": "Adds (89-121) to (180-210) Fire Damage"
+    },
+    "FireDamageAddsTo22": {
+      "category": "Adds Fire Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Fire Damage to Attacks",
+      "stat": "Adds (19-25) to (39-45) Fire Damage to Attacks"
+    },
+    "FireDamageAddsTo222": {
+      "category": "Adds Fire Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Fire Damage to Attacks",
+      "stat": "Adds (37-50) to (74-87) Fire Damage to Attacks"
+    },
+    "FireDamagePercentage": {
+      "category": "Elemental Damage %",
+      "type": "Suffix",
+      "displayName": "#% increased Fire Damage",
+      "stat": "(19-22)% increased Fire Damage"
+    },
+    "FireDamagePercentage2": {
+      "category": "Elemental Damage %",
+      "type": "Suffix",
+      "displayName": "#% increased Fire Damage",
+      "stat": "(45-50)% increased Fire Damage"
+    },
+    "FireDamagePercentage3": {
+      "category": "Elemental Damage %",
+      "type": "Suffix",
+      "displayName": "#% increased Fire Damage",
+      "stat": "(27-30)% increased Fire Damage"
+    },
+    "FireDamagePercentagePrefix": {
+      "category": "Elemental Damage %",
+      "type": "Prefix",
+      "displayName": "#% increased Fire Damage",
+      "stat": "(150-164)% increased Fire Damage"
+    },
+    "FireDamagePercentagePrefix2": {
+      "category": "Elemental Damage %",
+      "type": "Prefix",
+      "displayName": "#% increased Fire Damage",
+      "stat": "(100-109)% increased Fire Damage"
+    },
+    "FireResistance": {
+      "category": "Fire Resistance",
+      "type": "Suffix",
+      "displayName": "+#% to Fire Resistance",
+      "stat": "+(46-48)% to Fire Resistance"
+    },
+    "FlaskEffect": {
+      "category": "Flask Effects",
+      "type": "Prefix",
+      "displayName": "Flasks applied to you have #% increased Effect",
+      "stat": "Flasks applied to you have (10-12)% increased Effect"
+    },
+    "GlobalDamageOverTimeMultiplier": {
+      "category": "Damage over Time Multiplier",
+      "type": "Suffix",
+      "displayName": "+#% to Damage over Time Multiplier",
+      "stat": "+(41-45)% to Damage over Time Multiplier"
+    },
+    "GlobalDamageOverTimeMultiplier2": {
+      "category": "Damage over Time Multiplier",
+      "type": "Suffix",
+      "displayName": "+#% to Damage over Time Multiplier",
+      "stat": "+(24-26)% to Damage over Time Multiplier"
+    },
+    "GlobalDamageOverTimeMultiplier22": {
+      "category": "Damage over Time Multiplier",
+      "type": "Suffix",
+      "displayName": "+#% to Damage over Time Multiplier with Attack Skills",
+      "stat": "+(24-26)% to Damage over Time Multiplier with Attack Skills"
+    },
+    "GlobalDamageTypeGemLevel": {
+      "category": "+# to Level of all Gems (not socketed)",
+      "type": "Prefix",
+      "displayName": "+# to Level of all Chaos Skill Gems",
+      "stat": "+1 to Level of all Chaos Skill Gems"
+    },
+    "GlobalDamageTypeGemLevel1To": {
+      "category": "+# to Level of all Gems (not socketed)",
+      "type": "Prefix",
+      "displayName": "+# to Level of all Cold Gems",
+      "stat": "+1 to Level of all Cold Skill Gems"
+    },
+    "GlobalDamageTypeGemLevel1To2": {
+      "category": "+# to Level of all Gems (not socketed)",
+      "type": "Prefix",
+      "displayName": "+# to Level of all Fire Skill Gems",
+      "stat": "+1 to Level of all Fire Skill Gems"
+    },
+    "GlobalDamageTypeGemLevel1To3": {
+      "category": "+# to Level of all Gems (not socketed)",
+      "type": "Prefix",
+      "displayName": "+# to Level of all Lightning Gems",
+      "stat": "+1 to Level of all Lightning Skill Gems"
+    },
+    "GlobalDamageTypeGemLevel1To4": {
+      "category": "+# to Level of all Gems (not socketed)",
+      "type": "Prefix",
+      "displayName": "+# to Level of all Physical Gems",
+      "stat": "+1 to Level of all Physical Skill Gems"
+    },
+    "GlobalSkillGemLevel": {
+      "category": "+# to Level of all Gems (not socketed)",
+      "type": "Prefix",
+      "displayName": "+# to Level of all Skill Gems",
+      "stat": "+1 to Level of all Skill Gems"
+    },
+    "IncreaseSocketedGemLevel": {
+      "category": "+# to Level of all Gems (not socketed)",
+      "type": "Prefix",
+      "displayName": "+# to Level of all Spell Skill Gems",
+      "stat": "+(1-2) to Level of all Spell Skill Gems"
+    },
+    "IncreaseSocketedGemLevel1To2": {
+      "category": "Socketed Gem Levels",
+      "type": "Prefix",
+      "displayName": "+# to Level of Socketed Gems",
+      "stat": "+1 to Level of Socketed Gems"
+    },
+    "IncreaseSocketedGemLevel2": {
+      "category": "+# to Level of all Gems (not socketed)",
+      "type": "Prefix",
+      "displayName": "+# to Level of all Spell Skill Gems",
+      "stat": "+1 to Level of all Spell Skill Gems"
+    },
+    "IncreasedAccuracy": {
+      "category": "Accuracy Rating",
+      "type": "Suffix",
+      "displayName": "+# to Accuracy Rating",
+      "stat": "+(456-624) to Accuracy Rating"
+    },
+    "IncreasedAccuracy2": {
+      "category": "Accuracy Rating",
+      "type": "Suffix",
+      "displayName": "+# to Accuracy Rating",
+      "stat": "+(625-780) to Accuracy Rating"
+    },
+    "IncreasedAccuracy22": {
+      "category": "Accuracy Rating",
+      "type": "Suffix",
+      "displayName": "+# to Accuracy Rating",
+      "stat": "+(351-480) to Accuracy Rating"
+    },
+    "IncreasedAccuracy222": {
+      "category": "Accuracy Rating",
+      "type": "Suffix",
+      "displayName": "+# to Accuracy Rating",
+      "stat": "+(481-600) to Accuracy Rating"
+    },
+    "IncreasedAttackSpeed": {
+      "category": "Attack Speed",
+      "type": "Suffix",
+      "displayName": "#% increased Attack Speed",
+      "stat": "(26-27)% increased Attack Speed"
+    },
+    "IncreasedAttackSpeed2": {
+      "category": "Attack Speed",
+      "type": "Suffix",
+      "displayName": "#% increased Attack Speed",
+      "stat": "(5-7)% increased Attack Speed"
+    },
+    "IncreasedAttackSpeed22": {
+      "category": "Attack Speed",
+      "type": "Suffix",
+      "displayName": "#% increased Attack Speed",
+      "stat": "(14-16)% increased Attack Speed"
+    },
+    "IncreasedCastSpeed": {
+      "category": "Cast Speed",
+      "type": "Suffix",
+      "displayName": "#% increased Cast Speed",
+      "stat": "(44-49)% increased Cast Speed"
+    },
+    "IncreasedCastSpeed2": {
+      "category": "Cast Speed",
+      "type": "Suffix",
+      "displayName": "#% increased Cast Speed",
+      "stat": "(13-16)% increased Cast Speed"
+    },
+    "IncreasedCastSpeed22": {
+      "category": "Cast Speed",
+      "type": "Suffix",
+      "displayName": "#% increased Cast Speed",
+      "stat": "(17-20)% increased Cast Speed"
+    },
+    "IncreasedCastSpeed3": {
+      "category": "Cast Speed",
+      "type": "Suffix",
+      "displayName": "#% increased Cast Speed",
+      "stat": "(29-32)% increased Cast Speed"
+    },
+    "IncreasedEnergyShield": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to maximum Energy Shield",
+      "stat": "+(44-47) to maximum Energy Shield"
+    },
+    "IncreasedEnergyShield2": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to maximum Energy Shield",
+      "stat": "+(48-51) to maximum Energy Shield"
+    },
+    "IncreasedEvasionRating": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to Evasion Rating",
+      "stat": "+(151-170) to Evasion Rating"
+    },
+    "IncreasedLife": {
+      "category": "Increased Life (solo)",
+      "type": "Prefix",
+      "displayName": "+# to maximum Life",
+      "stat": "+(100-114) to maximum Life"
+    },
+    "IncreasedLife2": {
+      "category": "Increased Life (solo)",
+      "type": "Prefix",
+      "displayName": "+# to maximum Life",
+      "stat": "+(115-129) to maximum Life"
+    },
+    "IncreasedLife22": {
+      "category": "Increased Life (solo)",
+      "type": "Prefix",
+      "displayName": "+# to maximum Life",
+      "stat": "+(130-144) to maximum Life"
+    },
+    "IncreasedLife3": {
+      "category": "Increased Life (solo)",
+      "type": "Prefix",
+      "displayName": "+# to maximum Life",
+      "stat": "+(145-159) to maximum Life"
+    },
+    "IncreasedLife4": {
+      "category": "Increased Life (solo)",
+      "type": "Prefix",
+      "displayName": "+# to maximum Life",
+      "stat": "+(175-189) to maximum Life"
+    },
+    "IncreasedMana": {
+      "category": "Mana (by itself)",
+      "type": "Prefix",
+      "displayName": "+# to maximum Mana",
+      "stat": "+(200-229) to maximum Mana"
+    },
+    "IncreasedMana2": {
+      "category": "Mana (by itself)",
+      "type": "Prefix",
+      "displayName": "+# to maximum Mana",
+      "stat": "+(65-68) to maximum Mana"
+    },
+    "IncreasedMana22": {
+      "category": "Mana (by itself)",
+      "type": "Prefix",
+      "displayName": "+# to maximum Mana",
+      "stat": "+(69-73) to maximum Mana"
+    },
+    "IncreasedMana222": {
+      "category": "Mana (by itself)",
+      "type": "Prefix",
+      "displayName": "+# to maximum Mana",
+      "stat": "+(140-159) to maximum Mana"
+    },
+    "IncreasedMana3": {
+      "category": "Mana (by itself)",
+      "type": "Prefix",
+      "displayName": "+# to maximum Mana",
+      "stat": "+(74-78) to maximum Mana"
+    },
+    "IncreasedPhysicalDamageReductionRating": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "+# to Armour",
+      "stat": "+(461-540) to Armour"
+    },
+    "IncreasedPhysicalDamageReductionRatingPercent": {
+      "category": "Increased Armour/Evasion/ES (not with life/mana)",
+      "type": "Prefix",
+      "displayName": "#% increased Armour",
+      "stat": "(33-36)% increased Armour"
+    },
+    "IncreasedShieldBlockPercentage": {
+      "category": "Chance to Block",
+      "type": "Prefix",
+      "displayName": "#% increased Chance to Block",
+      "stat": "(76-81)% increased Chance to Block"
+    },
+    "IncreasedWeaponElementalDamagePercent": {
+      "category": "Elemental Damage with Attacks",
+      "type": "Prefix",
+      "displayName": "#% increased Elemental Damage with Attack Skills",
+      "stat": "(37-42)% increased Elemental Damage with Attack Skills"
+    },
+    "IncreasedWeaponElementalDamagePercent2": {
+      "category": "Elemental Damage with Attacks",
+      "type": "Prefix",
+      "displayName": "#% increased Elemental Damage with Attack Skills",
+      "stat": "(87-100)% increased Elemental Damage with Attack Skills"
+    },
+    "IncreasedWeaponElementalDamagePercent222": {
+      "category": "Elemental Damage with Attacks",
+      "type": "Prefix",
+      "displayName": "#% increased Elemental Damage with Attack Skills",
+      "stat": "(51-59)% increased Elemental Damage with Attack Skills"
+    },
+    "Intelligence": {
+      "category": "Attributes (Int/Dex/Str)",
+      "type": "Suffix",
+      "displayName": "+# to Intelligence",
+      "stat": "+(51-55) to Intelligence"
+    },
+    "Intelligence2": {
+      "category": "Attributes (Int/Dex/Str)",
+      "type": "Suffix",
+      "displayName": "+# to Intelligence",
+      "stat": "+(56-60) to Intelligence"
+    },
+    "ItemFoundRarityIncrease": {
+      "category": "Item Rarity",
+      "type": "Suffix",
+      "displayName": "#% increased Rarity of Items found",
+      "stat": "(11-14)% increased Rarity of Items found"
+    },
+    "ItemFoundRarityIncrease2": {
+      "category": "Item Rarity",
+      "type": "Suffix",
+      "displayName": "#% increased Rarity of Items found",
+      "stat": "(21-26)% increased Rarity of Items found"
+    },
+    "ItemFoundRarityIncreasePrefix": {
+      "category": "Item Rarity",
+      "type": "Prefix",
+      "displayName": "#% increased Rarity of Items found",
+      "stat": "(13-18)% increased Rarity of Items found"
+    },
+    "ItemFoundRarityIncreasePrefix2": {
+      "category": "Item Rarity",
+      "type": "Prefix",
+      "displayName": "#% increased Rarity of Items found",
+      "stat": "(19-24)% increased Rarity of Items found"
+    },
+    "ItemFoundRarityIncreasePrefix3": {
+      "category": "Item Rarity",
+      "type": "Prefix",
+      "displayName": "#% increased Rarity of Items found",
+      "stat": "(25-28)% increased Rarity of Items found"
+    },
+    "LifeGainPerTarget": {
+      "category": "Life Gain on Hit/Kill",
+      "type": "Suffix",
+      "displayName": "Gain # Life per Enemy Hit with Attacks",
+      "stat": "Gain 2 Life per Enemy Hit with Attacks"
+    },
+    "LifeGainPerTarget2": {
+      "category": "Life Gain on Hit/Kill",
+      "type": "Suffix",
+      "displayName": "Gain # Life per Enemy Hit with Attacks",
+      "stat": "Gain 4 Life per Enemy Hit with Attacks"
+    },
+    "LifeGainPerTargetGrantsLife2": {
+      "category": "Life Gain on Hit/Kill",
+      "type": "Suffix",
+      "displayName": "Grants # Life per Enemy Hit",
+      "stat": "Grants (27-30) Life per Enemy Hit"
+    },
+    "LifeGainedFromEnemyDeath": {
+      "category": "Life Gain on Hit/Kill",
+      "type": "Suffix",
+      "displayName": "Gain # Life per Enemy Killed",
+      "stat": "Gain (84-110) Life per Enemy Killed"
+    },
+    "LifeLeech": {
+      "category": "Leech",
+      "type": "Suffix",
+      "displayName": "#% of Physical Attack Damage Leeched as Life",
+      "stat": "(0.2-0.4)% of Physical Attack Damage Leeched as Life"
+    },
+    "LifeLeech2": {
+      "category": "Leech",
+      "type": "Suffix",
+      "displayName": "#% of Physical Attack Damage Leeched as Life",
+      "stat": "(1-1.2)% of Physical Attack Damage Leeched as Life"
+    },
+    "LifeLeechAttackWeapons2": {
+      "category": "Leech",
+      "type": "Suffix",
+      "displayName": "#% of Physical Attack Damage Leeched as Life",
+      "stat": "(3.5-4.5)% of Physical Attack Damage Leeched as Life"
+    },
+    "LifeLeechJewellery222": {
+      "category": "Leech",
+      "type": "Suffix",
+      "displayName": "#% of Physical Attack Damage Leeched as Mana",
+      "stat": "(0.6-0.8)% of Physical Attack Damage Leeched as Mana"
+    },
+    "LifeRegenerationBodyArmour": {
+      "category": "Life Gain on Hit/Kill",
+      "type": "Suffix",
+      "displayName": "Regenerate # Life per second",
+      "stat": "Regenerate (152.1-176) Life per second"
+    },
+    "LifeRegenerationBoots": {
+      "category": "Life Gain on Hit/Kill",
+      "type": "Suffix",
+      "displayName": "Regenerate # Life per second",
+      "stat": "Regenerate (64.1-96) Life per second"
+    },
+    "LifeRegenerationHelmets": {
+      "category": "Life Gain on Hit/Kill",
+      "type": "Suffix",
+      "displayName": "Regenerate # Life per second",
+      "stat": "Regenerate (96.1-128) Life per second"
+    },
+    "LifeRegenerationRate": {
+      "category": "Life Regeneration Rate (percent)",
+      "type": "Suffix",
+      "displayName": "#% increased Life Regeneration rate",
+      "stat": "(20-21)% increased Life Regeneration rate"
+    },
+    "LifeRegenerationShield": {
+      "category": "Life Gain on Hit/Kill",
+      "type": "Suffix",
+      "displayName": "Regenerate # Life per second",
+      "stat": "Regenerate (128.1-152) Life per second"
+    },
+    "LightRadiusAndAccuracy": {
+      "category": "Accuracy Rating",
+      "type": "Suffix",
+      "displayName": "#% increased Light",
+      "stat": "(12-15)% increased Global Accuracy Rating10% increased Light Radius"
+    },
+    "LightRadiusAndAccuracyIncreasedGlobal": {
+      "category": "Accuracy Rating",
+      "type": "Suffix",
+      "displayName": "#% increased Global Accuracy Rating15% increased Light Radius",
+      "stat": "(16-20)% increased Global Accuracy Rating15% increased Light Radius"
+    },
+    "LightRadiusAndAccuracyIncreasedGlobal2": {
+      "category": "Accuracy Rating",
+      "type": "Suffix",
+      "displayName": "#% increased Light",
+      "stat": "(9-11)% increased Global Accuracy Rating5% increased Light Radius"
+    },
+    "LightningDamage": {
+      "category": "Adds Lightning Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Lightning Damage",
+      "stat": "Adds (28-38) to (549-638) Lightning Damage"
+    },
+    "LightningDamage2": {
+      "category": "Adds Lightning Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Lightning Damage to Attacks",
+      "stat": "Adds 1 to (14-15) Lightning Damage to Attacks"
+    },
+    "LightningDamage22": {
+      "category": "Adds Lightning Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Lightning Damage",
+      "stat": "Adds (15-21) to (296-344) Lightning Damage"
+    },
+    "LightningDamageAddsTo2": {
+      "category": "Adds Lightning Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Lightning Damage to Attacks",
+      "stat": "Adds (1-4) to (40-43) Lightning Damage to Attacks"
+    },
+    "LightningDamageAddsTo22": {
+      "category": "Adds Lightning Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Lightning Damage to Attacks",
+      "stat": "Adds (3-7) to (68-72) Lightning Damage to Attacks"
+    },
+    "LightningDamageAddsTo222": {
+      "category": "Adds Lightning Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Lightning Damage to Attacks",
+      "stat": "Adds (5-11) to (124-140) Lightning Damage to Attacks"
+    },
+    "LightningDamagePercentage": {
+      "category": "Elemental Damage %",
+      "type": "Suffix",
+      "displayName": "#% increased Lightning Damage",
+      "stat": "(19-22)% increased Lightning Damage"
+    },
+    "LightningDamagePercentage2": {
+      "category": "Elemental Damage %",
+      "type": "Suffix",
+      "displayName": "#% increased Lightning Damage",
+      "stat": "(45-50)% increased Lightning Damage"
+    },
+    "LightningDamagePercentage3": {
+      "category": "Elemental Damage %",
+      "type": "Suffix",
+      "displayName": "#% increased Lightning Damage",
+      "stat": "(27-30)% increased Lightning Damage"
+    },
+    "LightningDamagePercentagePrefix": {
+      "category": "Elemental Damage %",
+      "type": "Prefix",
+      "displayName": "#% increased Lightning Damage",
+      "stat": "(150-164)% increased Lightning Damage"
+    },
+    "LightningDamagePercentagePrefix2": {
+      "category": "Elemental Damage %",
+      "type": "Prefix",
+      "displayName": "#% increased Lightning Damage",
+      "stat": "(100-109)% increased Lightning Damage"
+    },
+    "LightningResistance": {
+      "category": "Lightning Resistance",
+      "type": "Suffix",
+      "displayName": "+#% to Lightning Resistance",
+      "stat": "+(46-48)% to Lightning Resistance"
+    },
+    "LocalAttributeRequirements": {
+      "category": "Attribute Requirements",
+      "type": "Suffix",
+      "displayName": "#% reduced Attribute Requirements",
+      "stat": "18% reduced Attribute Requirements"
+    },
+    "LocalAttributeRequirements32Reduced": {
+      "category": "Attribute Requirements",
+      "type": "Suffix",
+      "displayName": "#% reduced Attribute Requirements",
+      "stat": "32% reduced Attribute Requirements"
+    },
+    "LocalChaosDamage": {
+      "category": "Chaos Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Chaos Damage",
+      "stat": "Adds (98-149) to (183-280) Chaos Damage"
+    },
+    "LocalChaosDamage2": {
+      "category": "Chaos Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Chaos Damage",
+      "stat": "Adds (56-87) to (105-160) Chaos Damage"
+    },
+    "LocalIncreasedPhysicalDamagePercentAndAccuracyRating": {
+      "category": "Physical Damage % (attack weapons)",
+      "type": "Prefix",
+      "displayName": "#% increased Physical Damage +# to Accuracy Rating",
+      "stat": "(75-79)% increased Physical Damage+(175-200) to Accuracy Rating"
+    },
+    "LocalPhysicalDamagePercent": {
+      "category": "Physical Damage % (attack weapons)",
+      "type": "Prefix",
+      "displayName": "#% increased Physical Damage",
+      "stat": "(170-179)% increased Physical Damage"
+    },
+    "ManaGainedFromEnemyDeath": {
+      "category": "Mana Gain on Hit/Kill",
+      "type": "Suffix",
+      "displayName": "Gain # Mana per Enemy Killed",
+      "stat": "Gain (38-50) Mana per Enemy Killed"
+    },
+    "ManaLeech": {
+      "category": "Leech",
+      "type": "Suffix",
+      "displayName": "#% of Physical Attack Damage Leeched as Mana",
+      "stat": "(2.6-3.2)% of Physical Attack Damage Leeched as Mana"
+    },
+    "ManaLeech2": {
+      "category": "Leech",
+      "type": "Suffix",
+      "displayName": "#% of Physical Attack Damage Leeched as Mana",
+      "stat": "(0.2-0.4)% of Physical Attack Damage Leeched as Mana"
+    },
+    "ManaLeech222": {
+      "category": "Leech",
+      "type": "Suffix",
+      "displayName": "(#.#-#.#)% of Physical Attack Damage Leeched as Mana",
+      "stat": "(0.2-0.4)% of Physical Attack Damage Leeched as Mana"
+    },
+    "ManaRegeneration": {
+      "category": "Default Priority",
+      "type": "Suffix",
+      "displayName": "#% increased Mana Regeneration Rate",
+      "stat": "(86-105)% increased Mana Regeneration Rate"
+    },
+    "ManaRegeneration2": {
+      "category": "Default Priority",
+      "type": "Suffix",
+      "displayName": "#% increased Mana Regeneration Rate",
+      "stat": "(60-69)% increased Mana Regeneration Rate"
+    },
+    "MaximumChaosResistance": {
+      "category": "Maximum Chaos Resistance",
+      "type": "Suffix",
+      "displayName": "+#% to maximum Chaos Resistance",
+      "stat": "+3% to maximum Chaos Resistance"
+    },
+    "MaximumColdResist": {
+      "category": "Maximum Cold Resistance",
+      "type": "Suffix",
+      "displayName": "+#% to maximum Cold Resistance",
+      "stat": "+3% to maximum Cold Resistance"
+    },
+    "MaximumFireResist": {
+      "category": "Maximum Fire Resistance",
+      "type": "Suffix",
+      "displayName": "+#% to maximum Fire Resistance",
+      "stat": "+3% to maximum Fire Resistance"
+    },
+    "MaximumLightningResistance": {
+      "category": "Maximum Lightning Resistance",
+      "type": "Suffix",
+      "displayName": "+#% to maximum Lightning Resistance",
+      "stat": "+3% to maximum Lightning Resistance"
+    },
+    "MaximumResistances": {
+      "category": "Default Priority",
+      "type": "Suffix",
+      "displayName": "+#% to all maximum Resistances",
+      "stat": "+2% to all maximum Resistances"
+    },
+    "MinionAccuracyRating": {
+      "category": "Accuracy Rating",
+      "type": "Suffix",
+      "displayName": "Minions have +# to Accuracy Rating",
+      "stat": "Minions have +(546-624) to Accuracy Rating"
+    },
+    "MinionAttackSpeedAndCastSpeed": {
+      "category": "Cast Speed",
+      "type": "Suffix",
+      "displayName": "Minions have #% increased Attack and Cast Speed",
+      "stat": "Minions have (23-25)% increased Attack and Cast Speed"
+    },
+    "MinionCriticalStrikeChance": {
+      "category": "Critical Strike Chance",
+      "type": "Suffix",
+      "displayName": "Minions have #% increased Critical Strike Chance",
+      "stat": "Minions have (100-109)% increased Critical Strike Chance"
+    },
+    "MinionCriticalStrikeMultiplier": {
+      "category": "Critical Strike Multiplier",
+      "type": "Suffix",
+      "displayName": "Minions have +#% to Critical Strike Multiplier",
+      "stat": "Minions have +(35-38)% to Critical Strike Multiplier"
+    },
+    "MinionDamageMana": {
+      "category": "Mana (by itself)",
+      "type": "Prefix",
+      "displayName": "+# to maximum ManaMinions deal #% increased Damage",
+      "stat": "+(42-45) to maximum ManaMinions deal (35-39)% increased Damage"
+    },
+    "MinionDamagePercentage": {
+      "category": "Minion Related",
+      "type": "Prefix",
+      "displayName": "Minions deal #% increased Damage",
+      "stat": "Minions deal (100-109)% increased Damage"
+    },
+    "MovementVelocity": {
+      "category": "Movement Speed",
+      "type": "Prefix",
+      "displayName": "#% increased Movement Speed",
+      "stat": "35% increased Movement Speed"
+    },
+    "PhysicalDOTMultiplier": {
+      "category": "Damage over Time Multiplier",
+      "type": "Suffix",
+      "displayName": "+#% to Physical Damage over Time Multiplier",
+      "stat": "+(34-38)% to Physical Damage over Time Multiplier"
+    },
+    "PhysicalDOTMultiplier2": {
+      "category": "Damage over Time Multiplier",
+      "type": "Suffix",
+      "displayName": "+#% to Physical Damage over Time Multiplier",
+      "stat": "+(56-65)% to Physical Damage over Time Multiplier"
+    },
+    "PhysicalDamage": {
+      "category": "Physical Damage flat (attack weapons)",
+      "type": "Prefix",
+      "displayName": "Adds # to # Physical Damage to Attacks",
+      "stat": "Adds (17-23) to (34-39) Physical Damage to Attacks"
+    },
+    "PhysicalDamage2": {
+      "category": "Physical Damage flat (attack weapons)",
+      "type": "Prefix",
+      "displayName": "Adds # to # Physical Damage to Attacks",
+      "stat": "Adds (4-6) to (9-10) Physical Damage to Attacks"
+    },
+    "PhysicalDamage22": {
+      "category": "Physical Damage flat (attack weapons)",
+      "type": "Prefix",
+      "displayName": "Adds # to # Physical Damage",
+      "stat": "Adds (22-29) to (45-52) Physical Damage"
+    },
+    "PhysicalDamage222": {
+      "category": "Physical Damage flat (attack weapons)",
+      "type": "Prefix",
+      "displayName": "Adds # to # Physical Damage to Attacks",
+      "stat": "Adds (11-15) to (22-26) Physical Damage to Attacks"
+    },
+    "PhysicalDamageAddsTo2": {
+      "category": "Physical Damage flat (attack weapons)",
+      "type": "Prefix",
+      "displayName": "Adds # to # Physical Damage",
+      "stat": "Adds (34-47) to (72-84) Physical Damage"
+    },
+    "PhysicalDamageAddsTo222": {
+      "category": "Physical Damage flat (attack weapons)",
+      "type": "Prefix",
+      "displayName": "Adds # to # Physical Damage to Attacks",
+      "stat": "Adds (6-9) to (13-15) Physical Damage to Attacks"
+    },
+    "ProjectileSpeed": {
+      "category": "Projectile Speed",
+      "type": "Suffix",
+      "displayName": "#% increased Projectile Speed",
+      "stat": "(42-46)% increased Projectile Speed"
+    },
+    "ReducedExtraDamageFromCrits": {
+      "category": "Reduced Damage Taken",
+      "type": "Suffix",
+      "displayName": "You take #% reduced Extra Damage from Critical Strikes",
+      "stat": "You take (51-60)% reduced Extra Damage from Critical Strikes"
+    },
+    "ReducedPhysicalDamageTaken": {
+      "category": "Default Priority",
+      "type": "Suffix",
+      "displayName": "#% additional Physical Damage Reduction",
+      "stat": "8% additional Physical Damage Reduction"
+    },
+    "SocketedBowGemLevel": {
+      "category": "Socketed Gem Levels",
+      "type": "Prefix",
+      "displayName": "+# to Level of Socketed Bow Gems",
+      "stat": "+2 to Level of Socketed Bow Gems"
+    },
+    "SocketedChaosGemLevel": {
+      "category": "Socketed Gem Levels",
+      "type": "Prefix",
+      "displayName": "+# to Level of Socketed Chaos Gems",
+      "stat": "+2 to Level of Socketed Chaos Gems"
+    },
+    "SocketedColdGemLevel": {
+      "category": "Socketed Gem Levels",
+      "type": "Prefix",
+      "displayName": "+# to Level of Socketed Cold Gems",
+      "stat": "+2 to Level of Socketed Cold Gems"
+    },
+    "SocketedFireGemLevel": {
+      "category": "Socketed Gem Levels",
+      "type": "Prefix",
+      "displayName": "+# to Level of Socketed Fire Gems",
+      "stat": "+2 to Level of Socketed Fire Gems"
+    },
+    "SocketedLightningGemLevel": {
+      "category": "Socketed Gem Levels",
+      "type": "Prefix",
+      "displayName": "+# to Level of Socketed Lightning Gems",
+      "stat": "+2 to Level of Socketed Lightning Gems"
+    },
+    "SocketedMeleeGemLevel": {
+      "category": "Socketed Gem Levels",
+      "type": "Prefix",
+      "displayName": "+# to Level of Socketed Melee Gems",
+      "stat": "+2 to Level of Socketed Melee Gems"
+    },
+    "SpellAddedColdDamage": {
+      "category": "Adds Cold Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Cold Damage to Spells",
+      "stat": "Adds (61-81) to (120-140) Cold Damage to Spells"
+    },
+    "SpellAddedColdDamage2": {
+      "category": "Adds Cold Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Cold Damage to Spells",
+      "stat": "Adds (41-54) to (81-93) Cold Damage to Spells"
+    },
+    "SpellAddedFireDamage": {
+      "category": "Adds Fire Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Fire Damage to Spells",
+      "stat": "Adds (66-88) to (132-155) Fire Damage to Spells"
+    },
+    "SpellAddedFireDamage2": {
+      "category": "Adds Fire Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Fire Damage to Spells",
+      "stat": "Adds (49-66) to (98-115) Fire Damage to Spells"
+    },
+    "SpellAddedLightningDamage": {
+      "category": "Adds Lightning Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Lightning Damage to Spells",
+      "stat": "Adds (7-20) to (255-270) Lightning Damage to Spells"
+    },
+    "SpellAddedLightningDamage2": {
+      "category": "Adds Lightning Damage",
+      "type": "Prefix",
+      "displayName": "Adds # to # Lightning Damage to Spells",
+      "stat": "Adds (4-14) to (170-179) Lightning Damage to Spells"
+    },
+    "SpellBlockPercentage": {
+      "category": "Spell Damage",
+      "type": "Prefix",
+      "displayName": "#% Chance to Block Spell Damage",
+      "stat": "(14-15)% Chance to Block Spell Damage"
+    },
+    "SpellCriticalStrikeChanceIncrease": {
+      "category": "Critical Strike Chance",
+      "type": "Suffix",
+      "displayName": "#% increased Spell Critical Strike Chance",
+      "stat": "(100-109)% increased Spell Critical Strike Chance"
+    },
+    "SpellDamage": {
+      "category": "Spell Damage",
+      "type": "Prefix",
+      "displayName": "#% increased Spell Damage",
+      "stat": "(23-26)% increased Spell Damage"
+    },
+    "SpellDamageAndMana": {
+      "category": "Spell Damage",
+      "type": "Prefix",
+      "displayName": "#% increased Spell Damage +# to maximum Mana",
+      "stat": "(51-55)% increased Spell Damage+(60-64) to maximum Mana"
+    },
+    "SpellDamageMana": {
+      "category": "Spell Damage",
+      "type": "Prefix",
+      "displayName": "#% increased Spell Damage +# to maximum Mana",
+      "stat": "(35-39)% increased Spell Damage+(42-45) to maximum Mana"
+    },
+    "SpellPercentage2": {
+      "category": "Spell Damage",
+      "type": "Prefix",
+      "displayName": "#% increased Spell Damage",
+      "stat": "(100-109)% increased Spell Damage"
+    },
+    "SpellPercentage22": {
+      "category": "Elemental Damage %",
+      "type": "Prefix",
+      "displayName": "#% increased Cold Damage",
+      "stat": "(100-109)% increased Cold Damage"
+    },
+    "SpellPercentageIncreasedFire22": {
+      "category": "Elemental Damage %",
+      "type": "Prefix",
+      "displayName": "#% increased Fire Damage",
+      "stat": "(100-109)% increased Fire Damage"
+    },
+    "SpellPercentageIncreasedLightning22": {
+      "category": "Elemental Damage %",
+      "type": "Prefix",
+      "displayName": "#% increased Lightning Damage",
+      "stat": "(100-109)% increased Lightning Damage"
+    },
+    "Strength": {
+      "category": "Attributes (Int/Dex/Str)",
+      "type": "Suffix",
+      "displayName": "+# to Strength",
+      "stat": "+(51-55) to Strength"
+    },
+    "Strength2": {
+      "category": "Attributes (Int/Dex/Str)",
+      "type": "Suffix",
+      "displayName": "+# to Strength",
+      "stat": "+(56-60) to Strength"
+    },
+    "StunDurationIncreasePercent": {
+      "category": "Stun Duration",
+      "type": "Suffix",
+      "displayName": "#% increased Stun Duration on Enemies",
+      "stat": "(31-35)% increased Stun Duration on Enemies"
+    },
+    "StunRecovery": {
+      "category": "Stun and Block Recovery (solo)",
+      "type": "Suffix",
+      "displayName": "#% increased Stun and Block Recovery",
+      "stat": "(26-28)% increased Stun and Block Recovery"
+    },
+    "StunThresholdReduction": {
+      "category": "Stun Threshold",
+      "type": "Suffix",
+      "displayName": "#% reduced Enemy Stun Threshold",
+      "stat": "(14-15)% reduced Enemy Stun Threshold"
+    },
+    "MinionDamageX": {
+      "category": "Minion Related",
+      "type": "Prefix",
+      "displayName": "Minions deal ( #– #)% increased Damage",
+      "stat": "Minions deal (5–10)% increased Damage"
+    },
+    "MinionAttackSpeedAndCastSpeedX": {
+      "category": "Cast Speed",
+      "type": "Suffix",
+      "displayName": "Minions have ( #– #)% increased Attack and Cast Speed",
+      "stat": "Minions have (5–7)% increased Attack and Cast Speed"
+    },
+    "MinionLifeX": {
+      "category": "Increased Life (solo)",
+      "type": "Suffix",
+      "displayName": "Minions have ( #– #)% increased maximum Life",
+      "stat": "Minions have (13–17)% increased maximum Life"
+    },
+    "MinionMovementSpeedX": {
+      "category": "Minion Related",
+      "type": "Suffix",
+      "displayName": "Minions have ( #– #)% increased Movement Speed",
+      "stat": "Minions have (6–10)% increased Movement Speed"
+    },
+    "MinionElementalResistancesX": {
+      "category": "Fire Resistance",
+      "type": "Suffix",
+      "displayName": "Minions have +( #– #)% to all Elemental Resistances",
+      "stat": "Minions have +(11–15)% to all Elemental Resistances"
+    },
+    "IncreaseSocketedGemLevelX": {
+      "category": "Socketed Gem Levels",
+      "type": "Prefix",
+      "displayName": "+# to Level of Socketed Gems",
+      "stat": "+1 to Level of Socketed Gems"
+    },
+    "MinionDamageX2": {
+      "category": "Minion Related",
+      "type": "Prefix",
+      "displayName": "Minions deal ( #– #)% increased Damage",
+      "stat": "Minions deal (10–19)% increased Damage"
+    },
+    "MinionLifeX2": {
+      "category": "Increased Life (solo)",
+      "type": "Suffix",
+      "displayName": "Minions have ( #– #)% increased maximum Life",
+      "stat": "Minions have (13–17)% increased maximum Life"
+    },
+    "MinionElementalResistancesX2": {
+      "category": "Fire Resistance",
+      "type": "Suffix",
+      "displayName": "Minions have +( #– #)% to all Elemental Resistances",
+      "stat": "Minions have +(11–15)% to all Elemental Resistances"
+    },
+    "MinionPhysicalDamageReductionX2": {
+      "category": "Minion Related",
+      "type": "Suffix",
+      "displayName": "physical,minion500 Minions have ( #– #)% additional Physical Damage Reduction",
+      "stat": "physical,minion500 Minions have (7–9)% additional Physical Damage Reduction"
+    },
+    "MinionCriticalStrikeChanceX2": {
+      "category": "Critical Strike Chance",
+      "type": "Suffix",
+      "displayName": "Minions have ( #– #)% increased Critical Strike Chance",
+      "stat": "Minions have (10–19)% increased Critical Strike Chance"
+    },
+    "GrantedSkillX2": {
+      "category": "Default Priority",
+      "type": "Suffix",
+      "displayName": "Grants Level # Convocation Skill",
+      "stat": "Grants Level 1 Convocation Skill"
+    }
+  },
+  "categories": {
+    "Additional Arrows": [
+      {
+        "name": "AdditionalArrows",
+        "type": "Suffix",
+        "displayName": "Bow Attacks fire an additional Arrow",
+        "stat": "Bow Attacks fire an additional Arrow"
+      },
+      {
+        "name": "AdditionalArrows2",
+        "type": "Suffix",
+        "displayName": "Bow Attacks fire # additional Arrows",
+        "stat": "Bow Attacks fire 2 additional Arrows"
+      },
+      {
+        "name": "AdditionalArrowsBowAttacks2",
+        "type": "Suffix",
+        "displayName": "Bow Attacks fire an additional Arrow",
+        "stat": "Bow Attacks fire an additional Arrow"
+      }
+    ],
+    "Attributes (Int/Dex/Str)": [
+      {
+        "name": "AllAttributes",
+        "type": "Suffix",
+        "displayName": "+# to all Attributes",
+        "stat": "+(13-16) to all Attributes"
+      },
+      {
+        "name": "AllAttributes2",
+        "type": "Suffix",
+        "displayName": "+# to all Attributes",
+        "stat": "+(33-35) to all Attributes"
+      },
+      {
+        "name": "Dexterity",
+        "type": "Suffix",
+        "displayName": "+# to Dexterity",
+        "stat": "+(51-55) to Dexterity"
+      },
+      {
+        "name": "Dexterity2",
+        "type": "Suffix",
+        "displayName": "+# to Dexterity",
+        "stat": "+(56-60) to Dexterity"
+      },
+      {
+        "name": "Intelligence",
+        "type": "Suffix",
+        "displayName": "+# to Intelligence",
+        "stat": "+(51-55) to Intelligence"
+      },
+      {
+        "name": "Intelligence2",
+        "type": "Suffix",
+        "displayName": "+# to Intelligence",
+        "stat": "+(56-60) to Intelligence"
+      },
+      {
+        "name": "Strength",
+        "type": "Suffix",
+        "displayName": "+# to Strength",
+        "stat": "+(51-55) to Strength"
+      },
+      {
+        "name": "Strength2",
+        "type": "Suffix",
+        "displayName": "+# to Strength",
+        "stat": "+(56-60) to Strength"
+      }
+    ],
+    "+# to Level of all Gems (not socketed)": [
+      {
+        "name": "AllGemChaos",
+        "type": "Prefix",
+        "displayName": "+# to Level of all Chaos Spell Skill Gems",
+        "stat": "+1 to Level of all Chaos Spell Skill Gems"
+      },
+      {
+        "name": "AllGemChaos3",
+        "type": "Prefix",
+        "displayName": "+# to Level of all Chaos Spell Skill Gems",
+        "stat": "+3 to Level of all Chaos Spell Skill Gems"
+      },
+      {
+        "name": "AllGemCold",
+        "type": "Prefix",
+        "displayName": "+# to Level of all Cold Spell Skill Gems",
+        "stat": "+1 to Level of all Cold Spell Skill Gems"
+      },
+      {
+        "name": "AllGemCold3",
+        "type": "Prefix",
+        "displayName": "+# to Level of all Cold Spell Skill Gems",
+        "stat": "+3 to Level of all Cold Spell Skill Gems"
+      },
+      {
+        "name": "AllGemFire",
+        "type": "Prefix",
+        "displayName": "+# to Level of all Fire Spell Skill Gems",
+        "stat": "+1 to Level of all Fire Spell Skill Gems"
+      },
+      {
+        "name": "AllGemFire3",
+        "type": "Prefix",
+        "displayName": "+# to Level of all Fire Spell Skill Gems",
+        "stat": "+3 to Level of all Fire Spell Skill Gems"
+      },
+      {
+        "name": "AllGemLightning",
+        "type": "Prefix",
+        "displayName": "+# to Level of all Lightning Spell Skill Gems",
+        "stat": "+1 to Level of all Lightning Spell Skill Gems"
+      },
+      {
+        "name": "AllGemLightning3",
+        "type": "Prefix",
+        "displayName": "+# to Level of all Lightning Spell Skill Gems",
+        "stat": "+3 to Level of all Lightning Spell Skill Gems"
+      },
+      {
+        "name": "AllGemMinion",
+        "type": "Prefix",
+        "displayName": "+# to Level of all Minion Skill Gems",
+        "stat": "+1 to Level of all Minion Skill Gems"
+      },
+      {
+        "name": "AllGemPhysical",
+        "type": "Prefix",
+        "displayName": "+# to Level of all Physical Spell Skill Gems",
+        "stat": "+1 to Level of all Physical Spell Skill Gems"
+      },
+      {
+        "name": "AllGemPhysical3",
+        "type": "Prefix",
+        "displayName": "+# to Level of all Physical Spell Skill Gems",
+        "stat": "+3 to Level of all Physical Spell Skill Gems"
+      },
+      {
+        "name": "AllMinionGemLevel",
+        "type": "Prefix",
+        "displayName": "+# to Level of all Minion Skill Gems",
+        "stat": "+2 to Level of all Minion Skill Gems"
+      },
+      {
+        "name": "GlobalDamageTypeGemLevel",
+        "type": "Prefix",
+        "displayName": "+# to Level of all Chaos Skill Gems",
+        "stat": "+1 to Level of all Chaos Skill Gems"
+      },
+      {
+        "name": "GlobalDamageTypeGemLevel1To",
+        "type": "Prefix",
+        "displayName": "+# to Level of all Cold Gems",
+        "stat": "+1 to Level of all Cold Skill Gems"
+      },
+      {
+        "name": "GlobalDamageTypeGemLevel1To2",
+        "type": "Prefix",
+        "displayName": "+# to Level of all Fire Skill Gems",
+        "stat": "+1 to Level of all Fire Skill Gems"
+      },
+      {
+        "name": "GlobalDamageTypeGemLevel1To3",
+        "type": "Prefix",
+        "displayName": "+# to Level of all Lightning Gems",
+        "stat": "+1 to Level of all Lightning Skill Gems"
+      },
+      {
+        "name": "GlobalDamageTypeGemLevel1To4",
+        "type": "Prefix",
+        "displayName": "+# to Level of all Physical Gems",
+        "stat": "+1 to Level of all Physical Skill Gems"
+      },
+      {
+        "name": "GlobalSkillGemLevel",
+        "type": "Prefix",
+        "displayName": "+# to Level of all Skill Gems",
+        "stat": "+1 to Level of all Skill Gems"
+      },
+      {
+        "name": "IncreaseSocketedGemLevel",
+        "type": "Prefix",
+        "displayName": "+# to Level of all Spell Skill Gems",
+        "stat": "+(1-2) to Level of all Spell Skill Gems"
+      },
+      {
+        "name": "IncreaseSocketedGemLevel2",
+        "type": "Prefix",
+        "displayName": "+# to Level of all Spell Skill Gems",
+        "stat": "+1 to Level of all Spell Skill Gems"
+      }
+    ],
+    "Fire Resistance": [
+      {
+        "name": "AllResistances",
+        "type": "Suffix",
+        "displayName": "+#% to all Elemental Resistances",
+        "stat": "+(15-16)% to all Elemental Resistances"
+      },
+      {
+        "name": "AllResistances2",
+        "type": "Suffix",
+        "displayName": "+#% to all Elemental Resistances",
+        "stat": "+(17-18)% to all Elemental Resistances"
+      },
+      {
+        "name": "FireResistance",
+        "type": "Suffix",
+        "displayName": "+#% to Fire Resistance",
+        "stat": "+(46-48)% to Fire Resistance"
+      },
+      {
+        "name": "MinionElementalResistancesX",
+        "type": "Suffix",
+        "displayName": "Minions have +( #– #)% to all Elemental Resistances",
+        "stat": "Minions have +(11–15)% to all Elemental Resistances"
+      },
+      {
+        "name": "MinionElementalResistancesX2",
+        "type": "Suffix",
+        "displayName": "Minions have +( #– #)% to all Elemental Resistances",
+        "stat": "Minions have +(11–15)% to all Elemental Resistances"
+      }
+    ],
+    "Increased Armour/Evasion/ES (not with life/mana)": [
+      {
+        "name": "ArmourEnergyShieldPercent",
+        "type": "Prefix",
+        "displayName": "#% increased Armour and Energy Shield",
+        "stat": "(92-100)% increased Armour and Energy Shield"
+      },
+      {
+        "name": "ArmourEnergyShieldPercent2",
+        "type": "Prefix",
+        "displayName": "#% increased Armour and Energy Shield #% increased Stun and Block Recovery",
+        "stat": "(39-42)% increased Armour and Energy Shield(16-17)% increased Stun and Block Recovery"
+      },
+      {
+        "name": "ArmourEnergyShieldPercent22",
+        "type": "Prefix",
+        "displayName": "#% increased Armour and Energy Shield",
+        "stat": "(101-110)% increased Armour and Energy Shield"
+      },
+      {
+        "name": "ArmourEvasionPercent",
+        "type": "Prefix",
+        "displayName": "#% increased Armour and Evasion",
+        "stat": "(92-100)% increased Armour and Evasion"
+      },
+      {
+        "name": "ArmourEvasionPercent2",
+        "type": "Prefix",
+        "displayName": "#% increased Armour and Evasion #% increased Stun and Block Recovery",
+        "stat": "(39-42)% increased Armour and Evasion(16-17)% increased Stun and Block Recovery"
+      },
+      {
+        "name": "ArmourEvasionPercent22",
+        "type": "Prefix",
+        "displayName": "#% increased Armour and Evasion",
+        "stat": "(101-110)% increased Armour and Evasion"
+      },
+      {
+        "name": "ArmourPercent",
+        "type": "Prefix",
+        "displayName": "#% increased Armour",
+        "stat": "(92-100)% increased Armour"
+      },
+      {
+        "name": "ArmourPercent2",
+        "type": "Prefix",
+        "displayName": "#% increased Armour",
+        "stat": "(101-110)% increased Armour"
+      },
+      {
+        "name": "ArmourPercentIncreasedArmour",
+        "type": "Prefix",
+        "displayName": "#% increased Armour #% increased Stun and Block Recovery",
+        "stat": "(39-42)% increased Armour(16-17)% increased Stun and Block Recovery"
+      },
+      {
+        "name": "BaseArmour",
+        "type": "Prefix",
+        "displayName": "+# to Armour",
+        "stat": "+(121-150) to Armour"
+      },
+      {
+        "name": "BaseArmour2",
+        "type": "Prefix",
+        "displayName": "+# to Armour",
+        "stat": "+(151-200) to Armour"
+      },
+      {
+        "name": "BaseArmour3",
+        "type": "Prefix",
+        "displayName": "+# to Armour",
+        "stat": "+(401-500) to Armour"
+      },
+      {
+        "name": "BaseArmourEnergyShield2",
+        "type": "Prefix",
+        "displayName": "+# to Armour +# to maximum Energy Shield",
+        "stat": "+(49-85) to Armour+(23-28) to maximum Energy Shield"
+      },
+      {
+        "name": "BaseArmourEnergyShield22",
+        "type": "Prefix",
+        "displayName": "+# to Armour +# to maximum Energy Shield",
+        "stat": "+(86-145) to Armour+(29-48) to maximum Energy Shield"
+      },
+      {
+        "name": "BaseArmourEnergyShield222",
+        "type": "Prefix",
+        "displayName": "+# to Armour +# to maximum Energy Shield",
+        "stat": "+(221-300) to Armour+(61-72) to maximum Energy Shield"
+      },
+      {
+        "name": "BaseArmourEnergyShield3",
+        "type": "Prefix",
+        "displayName": "+# to Armour +# to maximum Energy Shield",
+        "stat": "+(301-375) to Armour+(73-80) to maximum Energy Shield"
+      },
+      {
+        "name": "BaseArmourEvasion2",
+        "type": "Prefix",
+        "displayName": "+# to Armour +# to Evasion Rating",
+        "stat": "+(49-85) to Armour+(49-85) to Evasion Rating"
+      },
+      {
+        "name": "BaseArmourEvasion22",
+        "type": "Prefix",
+        "displayName": "+# to Armour +# to Evasion Rating",
+        "stat": "+(86-145) to Armour+(86-145) to Evasion Rating"
+      },
+      {
+        "name": "BaseArmourEvasion222",
+        "type": "Prefix",
+        "displayName": "+# to Armour +# to Evasion Rating",
+        "stat": "+(221-300) to Armour+(221-300) to Evasion Rating"
+      },
+      {
+        "name": "BaseEnergyShield2",
+        "type": "Prefix",
+        "displayName": "+# to maximum Energy Shield",
+        "stat": "+(39-49) to maximum Energy Shield"
+      },
+      {
+        "name": "BaseEnergyShield22",
+        "type": "Prefix",
+        "displayName": "+# to maximum Energy Shield",
+        "stat": "+(50-61) to maximum Energy Shield"
+      },
+      {
+        "name": "BaseEnergyShield222",
+        "type": "Prefix",
+        "displayName": "+# to maximum Energy Shield",
+        "stat": "+(77-90) to maximum Energy Shield"
+      },
+      {
+        "name": "BaseEnergyShield32",
+        "type": "Prefix",
+        "displayName": "+# to maximum Energy Shield",
+        "stat": "+(91-100) to maximum Energy Shield"
+      },
+      {
+        "name": "BaseEvasion",
+        "type": "Prefix",
+        "displayName": "+# to Evasion Rating",
+        "stat": "+(121-150) to Evasion Rating"
+      },
+      {
+        "name": "BaseEvasion2",
+        "type": "Prefix",
+        "displayName": "+# to Evasion Rating",
+        "stat": "+(151-200) to Evasion Rating"
+      },
+      {
+        "name": "BaseEvasion3",
+        "type": "Prefix",
+        "displayName": "+# to Evasion Rating",
+        "stat": "+(401-500) to Evasion Rating"
+      },
+      {
+        "name": "BaseEvasionEnergyShield2",
+        "type": "Prefix",
+        "displayName": "+# to Evasion Rating +# to maximum Energy Shield",
+        "stat": "+(49-85) to Evasion Rating+(23-28) to maximum Energy Shield"
+      },
+      {
+        "name": "BaseEvasionEnergyShield22",
+        "type": "Prefix",
+        "displayName": "+# to Evasion Rating +# to maximum Energy Shield",
+        "stat": "+(86-145) to Evasion Rating+(29-48) to maximum Energy Shield"
+      },
+      {
+        "name": "BaseEvasionEnergyShield222",
+        "type": "Prefix",
+        "displayName": "+# to Evasion Rating +# to maximum Energy Shield",
+        "stat": "+(221-300) to Evasion Rating+(61-72) to maximum Energy Shield"
+      },
+      {
+        "name": "EnergyShieldDelay",
+        "type": "Suffix",
+        "displayName": "#% faster start of Energy Shield Recharge",
+        "stat": "(59-66)% faster start of Energy Shield Recharge"
+      },
+      {
+        "name": "EnergyShieldPercent",
+        "type": "Prefix",
+        "displayName": "#% increased maximum Energy Shield",
+        "stat": "(20-22)% increased maximum Energy Shield"
+      },
+      {
+        "name": "EnergyShieldPercent2",
+        "type": "Prefix",
+        "displayName": "#% increased Energy Shield",
+        "stat": "(101-110)% increased Energy Shield"
+      },
+      {
+        "name": "EnergyShieldPercent22",
+        "type": "Prefix",
+        "displayName": "#% increased Energy Shield",
+        "stat": "(92-100)% increased Energy Shield"
+      },
+      {
+        "name": "EnergyShieldPercentIncreasedEnergy2",
+        "type": "Prefix",
+        "displayName": "#% increased Energy Shield #% increased Stun and Block Recovery",
+        "stat": "(39-42)% increased Energy Shield(16-17)% increased Stun and Block Recovery"
+      },
+      {
+        "name": "EnergyShieldRegeneration",
+        "type": "Suffix",
+        "displayName": "#% increased Energy Shield Recharge Rate",
+        "stat": "(36-38)% increased Energy Shield Recharge Rate"
+      },
+      {
+        "name": "EvasionEnergyShieldPercent",
+        "type": "Prefix",
+        "displayName": "#% increased Evasion and Energy Shield",
+        "stat": "(92-100)% increased Evasion and Energy Shield"
+      },
+      {
+        "name": "EvasionEnergyShieldPercent2",
+        "type": "Prefix",
+        "displayName": "#% increased Evasion and Energy Shield #% increased Stun and Block Recovery",
+        "stat": "(39-42)% increased Evasion and Energy Shield(16-17)% increased Stun and Block Recovery"
+      },
+      {
+        "name": "EvasionEnergyShieldPercent22",
+        "type": "Prefix",
+        "displayName": "#% increased Evasion and Energy Shield",
+        "stat": "(101-110)% increased Evasion and Energy Shield"
+      },
+      {
+        "name": "EvasionPercent",
+        "type": "Prefix",
+        "displayName": "#% increased Evasion Rating",
+        "stat": "(92-100)% increased Evasion Rating"
+      },
+      {
+        "name": "EvasionPercent2",
+        "type": "Prefix",
+        "displayName": "#% increased Evasion Rating",
+        "stat": "(101-110)% increased Evasion Rating"
+      },
+      {
+        "name": "EvasionPercentIncreasedEvasion",
+        "type": "Prefix",
+        "displayName": "#% increased Evasion Rating #% increased Stun and Block Recovery",
+        "stat": "(39-42)% increased Evasion Rating(16-17)% increased Stun and Block Recovery"
+      },
+      {
+        "name": "EvasionRatingPercent",
+        "type": "Prefix",
+        "displayName": "#% increased Evasion Rating",
+        "stat": "(33-36)% increased Evasion Rating"
+      },
+      {
+        "name": "IncreasedEnergyShield",
+        "type": "Prefix",
+        "displayName": "+# to maximum Energy Shield",
+        "stat": "+(44-47) to maximum Energy Shield"
+      },
+      {
+        "name": "IncreasedEnergyShield2",
+        "type": "Prefix",
+        "displayName": "+# to maximum Energy Shield",
+        "stat": "+(48-51) to maximum Energy Shield"
+      },
+      {
+        "name": "IncreasedEvasionRating",
+        "type": "Prefix",
+        "displayName": "+# to Evasion Rating",
+        "stat": "+(151-170) to Evasion Rating"
+      },
+      {
+        "name": "IncreasedPhysicalDamageReductionRating",
+        "type": "Prefix",
+        "displayName": "+# to Armour",
+        "stat": "+(461-540) to Armour"
+      },
+      {
+        "name": "IncreasedPhysicalDamageReductionRatingPercent",
+        "type": "Prefix",
+        "displayName": "#% increased Armour",
+        "stat": "(33-36)% increased Armour"
+      }
+    ],
+    "Reflects Physical Damage": [
+      {
+        "name": "AttackerTakesDamageNoRange",
+        "type": "Prefix",
+        "displayName": "Reflects # Physical Damage to Melee Attackers",
+        "stat": "Reflects (5-10) Physical Damage to Melee Attackers"
+      },
+      {
+        "name": "AttackerTakesDamageNoRange2",
+        "type": "Prefix",
+        "displayName": "Reflects # Physical Damage to Melee Attackers",
+        "stat": "Reflects (25-50) Physical Damage to Melee Attackers"
+      }
+    ],
+    "Chance to Avoid Elemental Ailments": [
+      {
+        "name": "AvoidElementalStatusAilments",
+        "type": "Suffix",
+        "displayName": "#% chance to Avoid Elemental Ailments",
+        "stat": "(31-35)% chance to Avoid Elemental Ailments"
+      }
+    ],
+    "Default Priority": [
+      {
+        "name": "BaseArmourAndLife",
+        "type": "Prefix",
+        "displayName": "+# to Armour +# to maximum Life",
+        "stat": "+(33-48) to Armour+(24-28) to maximum Life"
+      },
+      {
+        "name": "BaseArmourAndLife2",
+        "type": "Prefix",
+        "displayName": "+# to Armour +# to maximum Life",
+        "stat": "+(49-96) to Armour+(29-33) to maximum Life"
+      },
+      {
+        "name": "BaseArmourAndLife3",
+        "type": "Prefix",
+        "displayName": "+# to Armour +# to maximum Life",
+        "stat": "+(97-144) to Armour+(34-38) to maximum Life"
+      },
+      {
+        "name": "BaseEnergyShieldAndLife",
+        "type": "Prefix",
+        "displayName": "+# to maximum Energy Shield +# to maximum Life",
+        "stat": "+(11-15) to maximum Energy Shield+(24-28) to maximum Life"
+      },
+      {
+        "name": "BaseEnergyShieldAndLife22",
+        "type": "Prefix",
+        "displayName": "+# to maximum Energy Shield +# to maximum Life",
+        "stat": "+(16-25) to maximum Energy Shield+(29-33) to maximum Life"
+      },
+      {
+        "name": "BaseEnergyShieldAndMana",
+        "type": "Prefix",
+        "displayName": "+# to maximum Energy Shield +# to maximum Mana",
+        "stat": "+(26-30) to maximum Energy Shield+(23-25) to maximum Mana"
+      },
+      {
+        "name": "BaseEnergyShieldAndMana2",
+        "type": "Prefix",
+        "displayName": "+# to maximum Energy Shield +# to maximum Mana",
+        "stat": "+(11-15) to maximum Energy Shield+(16-19) to maximum Mana"
+      },
+      {
+        "name": "BaseEnergyShieldAndMana22",
+        "type": "Prefix",
+        "displayName": "+# to maximum Energy Shield +# to maximum Mana",
+        "stat": "+(16-25) to maximum Energy Shield+(20-22) to maximum Mana"
+      },
+      {
+        "name": "BaseEnergyShieldAndMana222",
+        "type": "Prefix",
+        "displayName": "+# to maximum Energy Shield +# to maximum Mana",
+        "stat": "+(26-30) to maximum Energy Shield+(23-25) to maximum Mana"
+      },
+      {
+        "name": "BaseEnergyShieldAndMana3",
+        "type": "Prefix",
+        "displayName": "+# to maximum Energy Shield+# to maximum Mana",
+        "stat": "+(16-25) to maximum Energy Shield+(20-22) to maximum Mana"
+      },
+      {
+        "name": "BaseEvasionAndLife",
+        "type": "Prefix",
+        "displayName": "+# to Evasion Rating +# to maximum Life",
+        "stat": "+(21-42) to Evasion Rating+(24-28) to maximum Life"
+      },
+      {
+        "name": "BaseEvasionAndLife2",
+        "type": "Prefix",
+        "displayName": "+# to Evasion Rating +# to maximum Life",
+        "stat": "+(43-95) to Evasion Rating+(29-33) to maximum Life"
+      },
+      {
+        "name": "BaseEvasionAndLife3",
+        "type": "Prefix",
+        "displayName": "+# to Evasion Rating +# to maximum Life",
+        "stat": "+(96-120) to Evasion Rating+(34-38) to maximum Life"
+      },
+      {
+        "name": "DamageWithWeaponTypeSkill",
+        "type": "Prefix",
+        "displayName": "#% increased Damage with Bow Skills",
+        "stat": "(43-50)% increased Damage with Bow Skills"
+      },
+      {
+        "name": "ManaRegeneration",
+        "type": "Suffix",
+        "displayName": "#% increased Mana Regeneration Rate",
+        "stat": "(86-105)% increased Mana Regeneration Rate"
+      },
+      {
+        "name": "ManaRegeneration2",
+        "type": "Suffix",
+        "displayName": "#% increased Mana Regeneration Rate",
+        "stat": "(60-69)% increased Mana Regeneration Rate"
+      },
+      {
+        "name": "MaximumResistances",
+        "type": "Suffix",
+        "displayName": "+#% to all maximum Resistances",
+        "stat": "+2% to all maximum Resistances"
+      },
+      {
+        "name": "ReducedPhysicalDamageTaken",
+        "type": "Suffix",
+        "displayName": "#% additional Physical Damage Reduction",
+        "stat": "8% additional Physical Damage Reduction"
+      },
+      {
+        "name": "GrantedSkillX2",
+        "type": "Suffix",
+        "displayName": "Grants Level # Convocation Skill",
+        "stat": "Grants Level 1 Convocation Skill"
+      }
+    ],
+    "Flask Effects": [
+      {
+        "name": "BeltFlaskCharges",
+        "type": "Suffix",
+        "displayName": "#% increased Flask Charges gained",
+        "stat": "(35-40)% increased Flask Charges gained"
+      },
+      {
+        "name": "BeltFlaskDuration",
+        "type": "Suffix",
+        "displayName": "#% increased Flask Effect Duration",
+        "stat": "(28-33)% increased Flask Effect Duration"
+      },
+      {
+        "name": "BeltFlaskRecoveryRate",
+        "type": "Prefix",
+        "displayName": "#% increased Flask Life Recovery rate",
+        "stat": "(35-40)% increased Flask Life Recovery rate"
+      },
+      {
+        "name": "BeltFlaskRecoveryRateIncreasedFlask",
+        "type": "Prefix",
+        "displayName": "#% increased Flask Mana Recovery rate",
+        "stat": "(35-40)% increased Flask Mana Recovery rate"
+      },
+      {
+        "name": "FlaskEffect",
+        "type": "Prefix",
+        "displayName": "Flasks applied to you have #% increased Effect",
+        "stat": "Flasks applied to you have (10-12)% increased Effect"
+      }
+    ],
+    "Chance to Ailment": [
+      {
+        "name": "ChanceToFreeze",
+        "type": "Suffix",
+        "displayName": "#% chance to Freeze",
+        "stat": "(31-40)% chance to Freeze"
+      },
+      {
+        "name": "ChanceToFreeze2",
+        "type": "Suffix",
+        "displayName": "#% chance to Freeze",
+        "stat": "(43-55)% chance to Freeze"
+      },
+      {
+        "name": "ChanceToIgnite",
+        "type": "Suffix",
+        "displayName": "#% chance to Ignite",
+        "stat": "(31-40)% chance to Ignite"
+      },
+      {
+        "name": "ChanceToIgnite2",
+        "type": "Suffix",
+        "displayName": "#% chance to Ignite",
+        "stat": "(43-55)% chance to Ignite"
+      },
+      {
+        "name": "ChanceToShock",
+        "type": "Suffix",
+        "displayName": "#% chance to Shock",
+        "stat": "(31-40)% chance to Shock"
+      },
+      {
+        "name": "ChanceToShock2",
+        "type": "Suffix",
+        "displayName": "#% chance to Shock",
+        "stat": "(43-55)% chance to Shock"
+      }
+    ],
+    "Chance to Suppress Spell Damage": [
+      {
+        "name": "ChanceToSuppressSpells",
+        "type": "Suffix",
+        "displayName": "+#% chance to Suppress Spell Damage",
+        "stat": "+(20-22)% chance to Suppress Spell Damage"
+      },
+      {
+        "name": "ChanceToSuppressSpells2",
+        "type": "Suffix",
+        "displayName": "+#% chance to Suppress Spell Damage",
+        "stat": "+(13-14)% chance to Suppress Spell Damage"
+      }
+    ],
+    "Damage over Time Multiplier": [
+      {
+        "name": "ChaosDOTMultiplier",
+        "type": "Suffix",
+        "displayName": "+#% to Chaos Damage over Time Multiplier",
+        "stat": "+(29-33)% to Chaos Damage over Time Multiplier"
+      },
+      {
+        "name": "ChaosDOTMultiplier2",
+        "type": "Suffix",
+        "displayName": "+#% to Chaos Damage over Time Multiplier",
+        "stat": "+(66-75)% to Chaos Damage over Time Multiplier"
+      },
+      {
+        "name": "ChaosDOTMultiplier22",
+        "type": "Suffix",
+        "displayName": "+#% to Chaos Damage over Time Multiplier",
+        "stat": "+(34-38)% to Chaos Damage over Time Multiplier"
+      },
+      {
+        "name": "ColdDOTMultiplier",
+        "type": "Suffix",
+        "displayName": "+#% to Cold Damage over Time Multiplier",
+        "stat": "+(66-75)% to Cold Damage over Time Multiplier"
+      },
+      {
+        "name": "ColdDOTMultiplier2",
+        "type": "Suffix",
+        "displayName": "+#% to Cold Damage over Time Multiplier",
+        "stat": "+(34-38)% to Cold Damage over Time Multiplier"
+      },
+      {
+        "name": "FireDOTMultiplier",
+        "type": "Suffix",
+        "displayName": "+#% to Fire Damage over Time Multiplier",
+        "stat": "+(34-38)% to Fire Damage over Time Multiplier"
+      },
+      {
+        "name": "FireDOTMultiplier2",
+        "type": "Suffix",
+        "displayName": "+#% to Fire Damage over Time Multiplier",
+        "stat": "+(66-75)% to Fire Damage over Time Multiplier"
+      },
+      {
+        "name": "GlobalDamageOverTimeMultiplier",
+        "type": "Suffix",
+        "displayName": "+#% to Damage over Time Multiplier",
+        "stat": "+(41-45)% to Damage over Time Multiplier"
+      },
+      {
+        "name": "GlobalDamageOverTimeMultiplier2",
+        "type": "Suffix",
+        "displayName": "+#% to Damage over Time Multiplier",
+        "stat": "+(24-26)% to Damage over Time Multiplier"
+      },
+      {
+        "name": "GlobalDamageOverTimeMultiplier22",
+        "type": "Suffix",
+        "displayName": "+#% to Damage over Time Multiplier with Attack Skills",
+        "stat": "+(24-26)% to Damage over Time Multiplier with Attack Skills"
+      },
+      {
+        "name": "PhysicalDOTMultiplier",
+        "type": "Suffix",
+        "displayName": "+#% to Physical Damage over Time Multiplier",
+        "stat": "+(34-38)% to Physical Damage over Time Multiplier"
+      },
+      {
+        "name": "PhysicalDOTMultiplier2",
+        "type": "Suffix",
+        "displayName": "+#% to Physical Damage over Time Multiplier",
+        "stat": "+(56-65)% to Physical Damage over Time Multiplier"
+      }
+    ],
+    "Chaos Damage": [
+      {
+        "name": "ChaosDamage",
+        "type": "Prefix",
+        "displayName": "Adds # to # Chaos Damage to Attacks",
+        "stat": "Adds (27-41) to (55-69) Chaos Damage to Attacks"
+      },
+      {
+        "name": "LocalChaosDamage",
+        "type": "Prefix",
+        "displayName": "Adds # to # Chaos Damage",
+        "stat": "Adds (98-149) to (183-280) Chaos Damage"
+      },
+      {
+        "name": "LocalChaosDamage2",
+        "type": "Prefix",
+        "displayName": "Adds # to # Chaos Damage",
+        "stat": "Adds (56-87) to (105-160) Chaos Damage"
+      }
+    ],
+    "Chaos Resistance": [
+      {
+        "name": "ChaosResistance",
+        "type": "Suffix",
+        "displayName": "+#% to Chaos Resistance",
+        "stat": "+(31-35)% to Chaos Resistance"
+      }
+    ],
+    "Adds Cold Damage": [
+      {
+        "name": "ColdDamage",
+        "type": "Prefix",
+        "displayName": "Adds # to # Cold Damage",
+        "stat": "Adds (149-204) to (300-348) Cold Damage"
+      },
+      {
+        "name": "ColdDamage2",
+        "type": "Prefix",
+        "displayName": "Adds # to # Cold Damage to Attacks",
+        "stat": "Adds (10-13) to (20-24) Cold Damage to Attacks"
+      },
+      {
+        "name": "ColdDamage22",
+        "type": "Prefix",
+        "displayName": "Adds # to # Cold Damage",
+        "stat": "Adds (81-111) to (163-189) Cold Damage"
+      },
+      {
+        "name": "ColdDamageAddsTo22",
+        "type": "Prefix",
+        "displayName": "Adds # to # Cold Damage to Attacks",
+        "stat": "Adds (17-22) to (34-40) Cold Damage to Attacks"
+      },
+      {
+        "name": "ColdDamageAddsTo222",
+        "type": "Prefix",
+        "displayName": "Adds # to # Cold Damage to Attacks",
+        "stat": "Adds (33-45) to (67-78) Cold Damage to Attacks"
+      },
+      {
+        "name": "SpellAddedColdDamage",
+        "type": "Prefix",
+        "displayName": "Adds # to # Cold Damage to Spells",
+        "stat": "Adds (61-81) to (120-140) Cold Damage to Spells"
+      },
+      {
+        "name": "SpellAddedColdDamage2",
+        "type": "Prefix",
+        "displayName": "Adds # to # Cold Damage to Spells",
+        "stat": "Adds (41-54) to (81-93) Cold Damage to Spells"
+      }
+    ],
+    "Elemental Damage %": [
+      {
+        "name": "ColdDamagePercentage",
+        "type": "Suffix",
+        "displayName": "#% increased Cold Damage",
+        "stat": "(19-22)% increased Cold Damage"
+      },
+      {
+        "name": "ColdDamagePercentage2",
+        "type": "Suffix",
+        "displayName": "#% increased Cold Damage",
+        "stat": "(23-26)% increased Cold Damage"
+      },
+      {
+        "name": "ColdDamagePercentage3",
+        "type": "Suffix",
+        "displayName": "#% increased Cold Damage",
+        "stat": "(27-30)% increased Cold Damage"
+      },
+      {
+        "name": "ColdDamagePercentagePrefix",
+        "type": "Prefix",
+        "displayName": "#% increased Cold Damage",
+        "stat": "(150-164)% increased Cold Damage"
+      },
+      {
+        "name": "ColdDamagePercentagePrefix2",
+        "type": "Prefix",
+        "displayName": "#% increased Cold Damage",
+        "stat": "(100-109)% increased Cold Damage"
+      },
+      {
+        "name": "FireDamagePercentage",
+        "type": "Suffix",
+        "displayName": "#% increased Fire Damage",
+        "stat": "(19-22)% increased Fire Damage"
+      },
+      {
+        "name": "FireDamagePercentage2",
+        "type": "Suffix",
+        "displayName": "#% increased Fire Damage",
+        "stat": "(45-50)% increased Fire Damage"
+      },
+      {
+        "name": "FireDamagePercentage3",
+        "type": "Suffix",
+        "displayName": "#% increased Fire Damage",
+        "stat": "(27-30)% increased Fire Damage"
+      },
+      {
+        "name": "FireDamagePercentagePrefix",
+        "type": "Prefix",
+        "displayName": "#% increased Fire Damage",
+        "stat": "(150-164)% increased Fire Damage"
+      },
+      {
+        "name": "FireDamagePercentagePrefix2",
+        "type": "Prefix",
+        "displayName": "#% increased Fire Damage",
+        "stat": "(100-109)% increased Fire Damage"
+      },
+      {
+        "name": "LightningDamagePercentage",
+        "type": "Suffix",
+        "displayName": "#% increased Lightning Damage",
+        "stat": "(19-22)% increased Lightning Damage"
+      },
+      {
+        "name": "LightningDamagePercentage2",
+        "type": "Suffix",
+        "displayName": "#% increased Lightning Damage",
+        "stat": "(45-50)% increased Lightning Damage"
+      },
+      {
+        "name": "LightningDamagePercentage3",
+        "type": "Suffix",
+        "displayName": "#% increased Lightning Damage",
+        "stat": "(27-30)% increased Lightning Damage"
+      },
+      {
+        "name": "LightningDamagePercentagePrefix",
+        "type": "Prefix",
+        "displayName": "#% increased Lightning Damage",
+        "stat": "(150-164)% increased Lightning Damage"
+      },
+      {
+        "name": "LightningDamagePercentagePrefix2",
+        "type": "Prefix",
+        "displayName": "#% increased Lightning Damage",
+        "stat": "(100-109)% increased Lightning Damage"
+      },
+      {
+        "name": "SpellPercentage22",
+        "type": "Prefix",
+        "displayName": "#% increased Cold Damage",
+        "stat": "(100-109)% increased Cold Damage"
+      },
+      {
+        "name": "SpellPercentageIncreasedFire22",
+        "type": "Prefix",
+        "displayName": "#% increased Fire Damage",
+        "stat": "(100-109)% increased Fire Damage"
+      },
+      {
+        "name": "SpellPercentageIncreasedLightning22",
+        "type": "Prefix",
+        "displayName": "#% increased Lightning Damage",
+        "stat": "(100-109)% increased Lightning Damage"
+      }
+    ],
+    "Cold Resistance": [
+      {
+        "name": "ColdResistance",
+        "type": "Suffix",
+        "displayName": "+#% to Cold Resistance",
+        "stat": "+(46-48)% to Cold Resistance"
+      }
+    ],
+    "Critical Strike Chance": [
+      {
+        "name": "CriticalStrikeChanceIncrease",
+        "type": "Suffix",
+        "displayName": "#% increased Critical Strike Chance with Bows",
+        "stat": "(39-44)% increased Critical Strike Chance with Bows"
+      },
+      {
+        "name": "CriticalStrikeChanceIncrease2",
+        "type": "Suffix",
+        "displayName": "#% increased Critical Strike Chance",
+        "stat": "(35-38)% increased Critical Strike Chance"
+      },
+      {
+        "name": "CriticalStrikeChanceIncreaseIncreasedGlobal2",
+        "type": "Suffix",
+        "displayName": "#% increased Global Critical Strike Chance",
+        "stat": "(35-38)% increased Global Critical Strike Chance"
+      },
+      {
+        "name": "MinionCriticalStrikeChance",
+        "type": "Suffix",
+        "displayName": "Minions have #% increased Critical Strike Chance",
+        "stat": "Minions have (100-109)% increased Critical Strike Chance"
+      },
+      {
+        "name": "SpellCriticalStrikeChanceIncrease",
+        "type": "Suffix",
+        "displayName": "#% increased Spell Critical Strike Chance",
+        "stat": "(100-109)% increased Spell Critical Strike Chance"
+      },
+      {
+        "name": "MinionCriticalStrikeChanceX2",
+        "type": "Suffix",
+        "displayName": "Minions have ( #– #)% increased Critical Strike Chance",
+        "stat": "Minions have (10–19)% increased Critical Strike Chance"
+      }
+    ],
+    "Critical Strike Multiplier": [
+      {
+        "name": "CriticalStrikeMultiplier",
+        "type": "Suffix",
+        "displayName": "+#% to Critical Strike Multiplier with Bows",
+        "stat": "+(35-38)% to Critical Strike Multiplier with Bows"
+      },
+      {
+        "name": "CriticalStrikeMultiplierToGlobal",
+        "type": "Suffix",
+        "displayName": "+#% to Global Critical Strike Multiplier",
+        "stat": "+(35-38)% to Global Critical Strike Multiplier"
+      },
+      {
+        "name": "MinionCriticalStrikeMultiplier",
+        "type": "Suffix",
+        "displayName": "Minions have +#% to Critical Strike Multiplier",
+        "stat": "Minions have +(35-38)% to Critical Strike Multiplier"
+      }
+    ],
+    "Damage Recoup": [
+      {
+        "name": "DamageTakenGainedAsLife",
+        "type": "Suffix",
+        "displayName": "#% of Damage taken Recouped as Life",
+        "stat": "(13-15)% of Damage taken Recouped as Life"
+      }
+    ],
+    "Adds Fire Damage": [
+      {
+        "name": "FireDamage",
+        "type": "Prefix",
+        "displayName": "Adds # to # Fire Damage",
+        "stat": "Adds (165-225) to (335-390) Fire Damage"
+      },
+      {
+        "name": "FireDamage2",
+        "type": "Prefix",
+        "displayName": "Adds # to # Fire Damage to Attacks",
+        "stat": "Adds (11-15) to (23-27) Fire Damage to Attacks"
+      },
+      {
+        "name": "FireDamage22",
+        "type": "Prefix",
+        "displayName": "Adds # to # Fire Damage",
+        "stat": "Adds (89-121) to (180-210) Fire Damage"
+      },
+      {
+        "name": "FireDamageAddsTo22",
+        "type": "Prefix",
+        "displayName": "Adds # to # Fire Damage to Attacks",
+        "stat": "Adds (19-25) to (39-45) Fire Damage to Attacks"
+      },
+      {
+        "name": "FireDamageAddsTo222",
+        "type": "Prefix",
+        "displayName": "Adds # to # Fire Damage to Attacks",
+        "stat": "Adds (37-50) to (74-87) Fire Damage to Attacks"
+      },
+      {
+        "name": "SpellAddedFireDamage",
+        "type": "Prefix",
+        "displayName": "Adds # to # Fire Damage to Spells",
+        "stat": "Adds (66-88) to (132-155) Fire Damage to Spells"
+      },
+      {
+        "name": "SpellAddedFireDamage2",
+        "type": "Prefix",
+        "displayName": "Adds # to # Fire Damage to Spells",
+        "stat": "Adds (49-66) to (98-115) Fire Damage to Spells"
+      }
+    ],
+    "Socketed Gem Levels": [
+      {
+        "name": "IncreaseSocketedGemLevel1To2",
+        "type": "Prefix",
+        "displayName": "+# to Level of Socketed Gems",
+        "stat": "+1 to Level of Socketed Gems"
+      },
+      {
+        "name": "SocketedBowGemLevel",
+        "type": "Prefix",
+        "displayName": "+# to Level of Socketed Bow Gems",
+        "stat": "+2 to Level of Socketed Bow Gems"
+      },
+      {
+        "name": "SocketedChaosGemLevel",
+        "type": "Prefix",
+        "displayName": "+# to Level of Socketed Chaos Gems",
+        "stat": "+2 to Level of Socketed Chaos Gems"
+      },
+      {
+        "name": "SocketedColdGemLevel",
+        "type": "Prefix",
+        "displayName": "+# to Level of Socketed Cold Gems",
+        "stat": "+2 to Level of Socketed Cold Gems"
+      },
+      {
+        "name": "SocketedFireGemLevel",
+        "type": "Prefix",
+        "displayName": "+# to Level of Socketed Fire Gems",
+        "stat": "+2 to Level of Socketed Fire Gems"
+      },
+      {
+        "name": "SocketedLightningGemLevel",
+        "type": "Prefix",
+        "displayName": "+# to Level of Socketed Lightning Gems",
+        "stat": "+2 to Level of Socketed Lightning Gems"
+      },
+      {
+        "name": "SocketedMeleeGemLevel",
+        "type": "Prefix",
+        "displayName": "+# to Level of Socketed Melee Gems",
+        "stat": "+2 to Level of Socketed Melee Gems"
+      },
+      {
+        "name": "IncreaseSocketedGemLevelX",
+        "type": "Prefix",
+        "displayName": "+# to Level of Socketed Gems",
+        "stat": "+1 to Level of Socketed Gems"
+      }
+    ],
+    "Accuracy Rating": [
+      {
+        "name": "IncreasedAccuracy",
+        "type": "Suffix",
+        "displayName": "+# to Accuracy Rating",
+        "stat": "+(456-624) to Accuracy Rating"
+      },
+      {
+        "name": "IncreasedAccuracy2",
+        "type": "Suffix",
+        "displayName": "+# to Accuracy Rating",
+        "stat": "+(625-780) to Accuracy Rating"
+      },
+      {
+        "name": "IncreasedAccuracy22",
+        "type": "Suffix",
+        "displayName": "+# to Accuracy Rating",
+        "stat": "+(351-480) to Accuracy Rating"
+      },
+      {
+        "name": "IncreasedAccuracy222",
+        "type": "Suffix",
+        "displayName": "+# to Accuracy Rating",
+        "stat": "+(481-600) to Accuracy Rating"
+      },
+      {
+        "name": "LightRadiusAndAccuracy",
+        "type": "Suffix",
+        "displayName": "#% increased Light",
+        "stat": "(12-15)% increased Global Accuracy Rating10% increased Light Radius"
+      },
+      {
+        "name": "LightRadiusAndAccuracyIncreasedGlobal",
+        "type": "Suffix",
+        "displayName": "#% increased Global Accuracy Rating15% increased Light Radius",
+        "stat": "(16-20)% increased Global Accuracy Rating15% increased Light Radius"
+      },
+      {
+        "name": "LightRadiusAndAccuracyIncreasedGlobal2",
+        "type": "Suffix",
+        "displayName": "#% increased Light",
+        "stat": "(9-11)% increased Global Accuracy Rating5% increased Light Radius"
+      },
+      {
+        "name": "MinionAccuracyRating",
+        "type": "Suffix",
+        "displayName": "Minions have +# to Accuracy Rating",
+        "stat": "Minions have +(546-624) to Accuracy Rating"
+      }
+    ],
+    "Attack Speed": [
+      {
+        "name": "IncreasedAttackSpeed",
+        "type": "Suffix",
+        "displayName": "#% increased Attack Speed",
+        "stat": "(26-27)% increased Attack Speed"
+      },
+      {
+        "name": "IncreasedAttackSpeed2",
+        "type": "Suffix",
+        "displayName": "#% increased Attack Speed",
+        "stat": "(5-7)% increased Attack Speed"
+      },
+      {
+        "name": "IncreasedAttackSpeed22",
+        "type": "Suffix",
+        "displayName": "#% increased Attack Speed",
+        "stat": "(14-16)% increased Attack Speed"
+      }
+    ],
+    "Cast Speed": [
+      {
+        "name": "IncreasedCastSpeed",
+        "type": "Suffix",
+        "displayName": "#% increased Cast Speed",
+        "stat": "(44-49)% increased Cast Speed"
+      },
+      {
+        "name": "IncreasedCastSpeed2",
+        "type": "Suffix",
+        "displayName": "#% increased Cast Speed",
+        "stat": "(13-16)% increased Cast Speed"
+      },
+      {
+        "name": "IncreasedCastSpeed22",
+        "type": "Suffix",
+        "displayName": "#% increased Cast Speed",
+        "stat": "(17-20)% increased Cast Speed"
+      },
+      {
+        "name": "IncreasedCastSpeed3",
+        "type": "Suffix",
+        "displayName": "#% increased Cast Speed",
+        "stat": "(29-32)% increased Cast Speed"
+      },
+      {
+        "name": "MinionAttackSpeedAndCastSpeed",
+        "type": "Suffix",
+        "displayName": "Minions have #% increased Attack and Cast Speed",
+        "stat": "Minions have (23-25)% increased Attack and Cast Speed"
+      },
+      {
+        "name": "MinionAttackSpeedAndCastSpeedX",
+        "type": "Suffix",
+        "displayName": "Minions have ( #– #)% increased Attack and Cast Speed",
+        "stat": "Minions have (5–7)% increased Attack and Cast Speed"
+      }
+    ],
+    "Increased Life (solo)": [
+      {
+        "name": "IncreasedLife",
+        "type": "Prefix",
+        "displayName": "+# to maximum Life",
+        "stat": "+(100-114) to maximum Life"
+      },
+      {
+        "name": "IncreasedLife2",
+        "type": "Prefix",
+        "displayName": "+# to maximum Life",
+        "stat": "+(115-129) to maximum Life"
+      },
+      {
+        "name": "IncreasedLife22",
+        "type": "Prefix",
+        "displayName": "+# to maximum Life",
+        "stat": "+(130-144) to maximum Life"
+      },
+      {
+        "name": "IncreasedLife3",
+        "type": "Prefix",
+        "displayName": "+# to maximum Life",
+        "stat": "+(145-159) to maximum Life"
+      },
+      {
+        "name": "IncreasedLife4",
+        "type": "Prefix",
+        "displayName": "+# to maximum Life",
+        "stat": "+(175-189) to maximum Life"
+      },
+      {
+        "name": "MinionLifeX",
+        "type": "Suffix",
+        "displayName": "Minions have ( #– #)% increased maximum Life",
+        "stat": "Minions have (13–17)% increased maximum Life"
+      },
+      {
+        "name": "MinionLifeX2",
+        "type": "Suffix",
+        "displayName": "Minions have ( #– #)% increased maximum Life",
+        "stat": "Minions have (13–17)% increased maximum Life"
+      }
+    ],
+    "Mana (by itself)": [
+      {
+        "name": "IncreasedMana",
+        "type": "Prefix",
+        "displayName": "+# to maximum Mana",
+        "stat": "+(200-229) to maximum Mana"
+      },
+      {
+        "name": "IncreasedMana2",
+        "type": "Prefix",
+        "displayName": "+# to maximum Mana",
+        "stat": "+(65-68) to maximum Mana"
+      },
+      {
+        "name": "IncreasedMana22",
+        "type": "Prefix",
+        "displayName": "+# to maximum Mana",
+        "stat": "+(69-73) to maximum Mana"
+      },
+      {
+        "name": "IncreasedMana222",
+        "type": "Prefix",
+        "displayName": "+# to maximum Mana",
+        "stat": "+(140-159) to maximum Mana"
+      },
+      {
+        "name": "IncreasedMana3",
+        "type": "Prefix",
+        "displayName": "+# to maximum Mana",
+        "stat": "+(74-78) to maximum Mana"
+      },
+      {
+        "name": "MinionDamageMana",
+        "type": "Prefix",
+        "displayName": "+# to maximum ManaMinions deal #% increased Damage",
+        "stat": "+(42-45) to maximum ManaMinions deal (35-39)% increased Damage"
+      }
+    ],
+    "Chance to Block": [
+      {
+        "name": "IncreasedShieldBlockPercentage",
+        "type": "Prefix",
+        "displayName": "#% increased Chance to Block",
+        "stat": "(76-81)% increased Chance to Block"
+      }
+    ],
+    "Elemental Damage with Attacks": [
+      {
+        "name": "IncreasedWeaponElementalDamagePercent",
+        "type": "Prefix",
+        "displayName": "#% increased Elemental Damage with Attack Skills",
+        "stat": "(37-42)% increased Elemental Damage with Attack Skills"
+      },
+      {
+        "name": "IncreasedWeaponElementalDamagePercent2",
+        "type": "Prefix",
+        "displayName": "#% increased Elemental Damage with Attack Skills",
+        "stat": "(87-100)% increased Elemental Damage with Attack Skills"
+      },
+      {
+        "name": "IncreasedWeaponElementalDamagePercent222",
+        "type": "Prefix",
+        "displayName": "#% increased Elemental Damage with Attack Skills",
+        "stat": "(51-59)% increased Elemental Damage with Attack Skills"
+      }
+    ],
+    "Item Rarity": [
+      {
+        "name": "ItemFoundRarityIncrease",
+        "type": "Suffix",
+        "displayName": "#% increased Rarity of Items found",
+        "stat": "(11-14)% increased Rarity of Items found"
+      },
+      {
+        "name": "ItemFoundRarityIncrease2",
+        "type": "Suffix",
+        "displayName": "#% increased Rarity of Items found",
+        "stat": "(21-26)% increased Rarity of Items found"
+      },
+      {
+        "name": "ItemFoundRarityIncreasePrefix",
+        "type": "Prefix",
+        "displayName": "#% increased Rarity of Items found",
+        "stat": "(13-18)% increased Rarity of Items found"
+      },
+      {
+        "name": "ItemFoundRarityIncreasePrefix2",
+        "type": "Prefix",
+        "displayName": "#% increased Rarity of Items found",
+        "stat": "(19-24)% increased Rarity of Items found"
+      },
+      {
+        "name": "ItemFoundRarityIncreasePrefix3",
+        "type": "Prefix",
+        "displayName": "#% increased Rarity of Items found",
+        "stat": "(25-28)% increased Rarity of Items found"
+      }
+    ],
+    "Life Gain on Hit/Kill": [
+      {
+        "name": "LifeGainPerTarget",
+        "type": "Suffix",
+        "displayName": "Gain # Life per Enemy Hit with Attacks",
+        "stat": "Gain 2 Life per Enemy Hit with Attacks"
+      },
+      {
+        "name": "LifeGainPerTarget2",
+        "type": "Suffix",
+        "displayName": "Gain # Life per Enemy Hit with Attacks",
+        "stat": "Gain 4 Life per Enemy Hit with Attacks"
+      },
+      {
+        "name": "LifeGainPerTargetGrantsLife2",
+        "type": "Suffix",
+        "displayName": "Grants # Life per Enemy Hit",
+        "stat": "Grants (27-30) Life per Enemy Hit"
+      },
+      {
+        "name": "LifeGainedFromEnemyDeath",
+        "type": "Suffix",
+        "displayName": "Gain # Life per Enemy Killed",
+        "stat": "Gain (84-110) Life per Enemy Killed"
+      },
+      {
+        "name": "LifeRegenerationBodyArmour",
+        "type": "Suffix",
+        "displayName": "Regenerate # Life per second",
+        "stat": "Regenerate (152.1-176) Life per second"
+      },
+      {
+        "name": "LifeRegenerationBoots",
+        "type": "Suffix",
+        "displayName": "Regenerate # Life per second",
+        "stat": "Regenerate (64.1-96) Life per second"
+      },
+      {
+        "name": "LifeRegenerationHelmets",
+        "type": "Suffix",
+        "displayName": "Regenerate # Life per second",
+        "stat": "Regenerate (96.1-128) Life per second"
+      },
+      {
+        "name": "LifeRegenerationShield",
+        "type": "Suffix",
+        "displayName": "Regenerate # Life per second",
+        "stat": "Regenerate (128.1-152) Life per second"
+      }
+    ],
+    "Leech": [
+      {
+        "name": "LifeLeech",
+        "type": "Suffix",
+        "displayName": "#% of Physical Attack Damage Leeched as Life",
+        "stat": "(0.2-0.4)% of Physical Attack Damage Leeched as Life"
+      },
+      {
+        "name": "LifeLeech2",
+        "type": "Suffix",
+        "displayName": "#% of Physical Attack Damage Leeched as Life",
+        "stat": "(1-1.2)% of Physical Attack Damage Leeched as Life"
+      },
+      {
+        "name": "LifeLeechAttackWeapons2",
+        "type": "Suffix",
+        "displayName": "#% of Physical Attack Damage Leeched as Life",
+        "stat": "(3.5-4.5)% of Physical Attack Damage Leeched as Life"
+      },
+      {
+        "name": "LifeLeechJewellery222",
+        "type": "Suffix",
+        "displayName": "#% of Physical Attack Damage Leeched as Mana",
+        "stat": "(0.6-0.8)% of Physical Attack Damage Leeched as Mana"
+      },
+      {
+        "name": "ManaLeech",
+        "type": "Suffix",
+        "displayName": "#% of Physical Attack Damage Leeched as Mana",
+        "stat": "(2.6-3.2)% of Physical Attack Damage Leeched as Mana"
+      },
+      {
+        "name": "ManaLeech2",
+        "type": "Suffix",
+        "displayName": "#% of Physical Attack Damage Leeched as Mana",
+        "stat": "(0.2-0.4)% of Physical Attack Damage Leeched as Mana"
+      },
+      {
+        "name": "ManaLeech222",
+        "type": "Suffix",
+        "displayName": "(#.#-#.#)% of Physical Attack Damage Leeched as Mana",
+        "stat": "(0.2-0.4)% of Physical Attack Damage Leeched as Mana"
+      }
+    ],
+    "Life Regeneration Rate (percent)": [
+      {
+        "name": "LifeRegenerationRate",
+        "type": "Suffix",
+        "displayName": "#% increased Life Regeneration rate",
+        "stat": "(20-21)% increased Life Regeneration rate"
+      }
+    ],
+    "Adds Lightning Damage": [
+      {
+        "name": "LightningDamage",
+        "type": "Prefix",
+        "displayName": "Adds # to # Lightning Damage",
+        "stat": "Adds (28-38) to (549-638) Lightning Damage"
+      },
+      {
+        "name": "LightningDamage2",
+        "type": "Prefix",
+        "displayName": "Adds # to # Lightning Damage to Attacks",
+        "stat": "Adds 1 to (14-15) Lightning Damage to Attacks"
+      },
+      {
+        "name": "LightningDamage22",
+        "type": "Prefix",
+        "displayName": "Adds # to # Lightning Damage",
+        "stat": "Adds (15-21) to (296-344) Lightning Damage"
+      },
+      {
+        "name": "LightningDamageAddsTo2",
+        "type": "Prefix",
+        "displayName": "Adds # to # Lightning Damage to Attacks",
+        "stat": "Adds (1-4) to (40-43) Lightning Damage to Attacks"
+      },
+      {
+        "name": "LightningDamageAddsTo22",
+        "type": "Prefix",
+        "displayName": "Adds # to # Lightning Damage to Attacks",
+        "stat": "Adds (3-7) to (68-72) Lightning Damage to Attacks"
+      },
+      {
+        "name": "LightningDamageAddsTo222",
+        "type": "Prefix",
+        "displayName": "Adds # to # Lightning Damage to Attacks",
+        "stat": "Adds (5-11) to (124-140) Lightning Damage to Attacks"
+      },
+      {
+        "name": "SpellAddedLightningDamage",
+        "type": "Prefix",
+        "displayName": "Adds # to # Lightning Damage to Spells",
+        "stat": "Adds (7-20) to (255-270) Lightning Damage to Spells"
+      },
+      {
+        "name": "SpellAddedLightningDamage2",
+        "type": "Prefix",
+        "displayName": "Adds # to # Lightning Damage to Spells",
+        "stat": "Adds (4-14) to (170-179) Lightning Damage to Spells"
+      }
+    ],
+    "Lightning Resistance": [
+      {
+        "name": "LightningResistance",
+        "type": "Suffix",
+        "displayName": "+#% to Lightning Resistance",
+        "stat": "+(46-48)% to Lightning Resistance"
+      }
+    ],
+    "Attribute Requirements": [
+      {
+        "name": "LocalAttributeRequirements",
+        "type": "Suffix",
+        "displayName": "#% reduced Attribute Requirements",
+        "stat": "18% reduced Attribute Requirements"
+      },
+      {
+        "name": "LocalAttributeRequirements32Reduced",
+        "type": "Suffix",
+        "displayName": "#% reduced Attribute Requirements",
+        "stat": "32% reduced Attribute Requirements"
+      }
+    ],
+    "Physical Damage % (attack weapons)": [
+      {
+        "name": "LocalIncreasedPhysicalDamagePercentAndAccuracyRating",
+        "type": "Prefix",
+        "displayName": "#% increased Physical Damage +# to Accuracy Rating",
+        "stat": "(75-79)% increased Physical Damage+(175-200) to Accuracy Rating"
+      },
+      {
+        "name": "LocalPhysicalDamagePercent",
+        "type": "Prefix",
+        "displayName": "#% increased Physical Damage",
+        "stat": "(170-179)% increased Physical Damage"
+      }
+    ],
+    "Mana Gain on Hit/Kill": [
+      {
+        "name": "ManaGainedFromEnemyDeath",
+        "type": "Suffix",
+        "displayName": "Gain # Mana per Enemy Killed",
+        "stat": "Gain (38-50) Mana per Enemy Killed"
+      }
+    ],
+    "Maximum Chaos Resistance": [
+      {
+        "name": "MaximumChaosResistance",
+        "type": "Suffix",
+        "displayName": "+#% to maximum Chaos Resistance",
+        "stat": "+3% to maximum Chaos Resistance"
+      }
+    ],
+    "Maximum Cold Resistance": [
+      {
+        "name": "MaximumColdResist",
+        "type": "Suffix",
+        "displayName": "+#% to maximum Cold Resistance",
+        "stat": "+3% to maximum Cold Resistance"
+      }
+    ],
+    "Maximum Fire Resistance": [
+      {
+        "name": "MaximumFireResist",
+        "type": "Suffix",
+        "displayName": "+#% to maximum Fire Resistance",
+        "stat": "+3% to maximum Fire Resistance"
+      }
+    ],
+    "Maximum Lightning Resistance": [
+      {
+        "name": "MaximumLightningResistance",
+        "type": "Suffix",
+        "displayName": "+#% to maximum Lightning Resistance",
+        "stat": "+3% to maximum Lightning Resistance"
+      }
+    ],
+    "Minion Related": [
+      {
+        "name": "MinionDamagePercentage",
+        "type": "Prefix",
+        "displayName": "Minions deal #% increased Damage",
+        "stat": "Minions deal (100-109)% increased Damage"
+      },
+      {
+        "name": "MinionDamageX",
+        "type": "Prefix",
+        "displayName": "Minions deal ( #– #)% increased Damage",
+        "stat": "Minions deal (5–10)% increased Damage"
+      },
+      {
+        "name": "MinionMovementSpeedX",
+        "type": "Suffix",
+        "displayName": "Minions have ( #– #)% increased Movement Speed",
+        "stat": "Minions have (6–10)% increased Movement Speed"
+      },
+      {
+        "name": "MinionDamageX2",
+        "type": "Prefix",
+        "displayName": "Minions deal ( #– #)% increased Damage",
+        "stat": "Minions deal (10–19)% increased Damage"
+      },
+      {
+        "name": "MinionPhysicalDamageReductionX2",
+        "type": "Suffix",
+        "displayName": "physical,minion500 Minions have ( #– #)% additional Physical Damage Reduction",
+        "stat": "physical,minion500 Minions have (7–9)% additional Physical Damage Reduction"
+      }
+    ],
+    "Movement Speed": [
+      {
+        "name": "MovementVelocity",
+        "type": "Prefix",
+        "displayName": "#% increased Movement Speed",
+        "stat": "35% increased Movement Speed"
+      }
+    ],
+    "Physical Damage flat (attack weapons)": [
+      {
+        "name": "PhysicalDamage",
+        "type": "Prefix",
+        "displayName": "Adds # to # Physical Damage to Attacks",
+        "stat": "Adds (17-23) to (34-39) Physical Damage to Attacks"
+      },
+      {
+        "name": "PhysicalDamage2",
+        "type": "Prefix",
+        "displayName": "Adds # to # Physical Damage to Attacks",
+        "stat": "Adds (4-6) to (9-10) Physical Damage to Attacks"
+      },
+      {
+        "name": "PhysicalDamage22",
+        "type": "Prefix",
+        "displayName": "Adds # to # Physical Damage",
+        "stat": "Adds (22-29) to (45-52) Physical Damage"
+      },
+      {
+        "name": "PhysicalDamage222",
+        "type": "Prefix",
+        "displayName": "Adds # to # Physical Damage to Attacks",
+        "stat": "Adds (11-15) to (22-26) Physical Damage to Attacks"
+      },
+      {
+        "name": "PhysicalDamageAddsTo2",
+        "type": "Prefix",
+        "displayName": "Adds # to # Physical Damage",
+        "stat": "Adds (34-47) to (72-84) Physical Damage"
+      },
+      {
+        "name": "PhysicalDamageAddsTo222",
+        "type": "Prefix",
+        "displayName": "Adds # to # Physical Damage to Attacks",
+        "stat": "Adds (6-9) to (13-15) Physical Damage to Attacks"
+      }
+    ],
+    "Projectile Speed": [
+      {
+        "name": "ProjectileSpeed",
+        "type": "Suffix",
+        "displayName": "#% increased Projectile Speed",
+        "stat": "(42-46)% increased Projectile Speed"
+      }
+    ],
+    "Reduced Damage Taken": [
+      {
+        "name": "ReducedExtraDamageFromCrits",
+        "type": "Suffix",
+        "displayName": "You take #% reduced Extra Damage from Critical Strikes",
+        "stat": "You take (51-60)% reduced Extra Damage from Critical Strikes"
+      }
+    ],
+    "Spell Damage": [
+      {
+        "name": "SpellBlockPercentage",
+        "type": "Prefix",
+        "displayName": "#% Chance to Block Spell Damage",
+        "stat": "(14-15)% Chance to Block Spell Damage"
+      },
+      {
+        "name": "SpellDamage",
+        "type": "Prefix",
+        "displayName": "#% increased Spell Damage",
+        "stat": "(23-26)% increased Spell Damage"
+      },
+      {
+        "name": "SpellDamageAndMana",
+        "type": "Prefix",
+        "displayName": "#% increased Spell Damage +# to maximum Mana",
+        "stat": "(51-55)% increased Spell Damage+(60-64) to maximum Mana"
+      },
+      {
+        "name": "SpellDamageMana",
+        "type": "Prefix",
+        "displayName": "#% increased Spell Damage +# to maximum Mana",
+        "stat": "(35-39)% increased Spell Damage+(42-45) to maximum Mana"
+      },
+      {
+        "name": "SpellPercentage2",
+        "type": "Prefix",
+        "displayName": "#% increased Spell Damage",
+        "stat": "(100-109)% increased Spell Damage"
+      }
+    ],
+    "Stun Duration": [
+      {
+        "name": "StunDurationIncreasePercent",
+        "type": "Suffix",
+        "displayName": "#% increased Stun Duration on Enemies",
+        "stat": "(31-35)% increased Stun Duration on Enemies"
+      }
+    ],
+    "Stun and Block Recovery (solo)": [
+      {
+        "name": "StunRecovery",
+        "type": "Suffix",
+        "displayName": "#% increased Stun and Block Recovery",
+        "stat": "(26-28)% increased Stun and Block Recovery"
+      }
+    ],
+    "Stun Threshold": [
+      {
+        "name": "StunThresholdReduction",
+        "type": "Suffix",
+        "displayName": "#% reduced Enemy Stun Threshold",
+        "stat": "(14-15)% reduced Enemy Stun Threshold"
+      }
+    ]
+  }
+}

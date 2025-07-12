@@ -14,6 +14,12 @@ body {
   color: #e6e6e6;
   line-height: 1.6;
   font-weight: bold;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background: var(--background, #181818);
 }
 
 :root {
@@ -263,10 +269,28 @@ body {
   }
 }
 
-.app-main {
-  max-width: 1100px;
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  25%, 75% { opacity: 0.5; }
+}
+
+.blinking {
+  animation: blink 1s infinite;
+}
+
+.app-root {
+  max-width: 1300px;
   margin: 0 auto;
-  padding: 2rem 1rem 3rem 1rem;
+  padding: 32px 24px;
+  /* No text-align here, keep content left-aligned */
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.app-main {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .app-selectors {
@@ -288,7 +312,7 @@ body {
   border: 2px solid var(--border);
   color: var(--text);
   font-size: 1.2rem;
-  padding: 0.6em 1.4em;
+  padding: 0.4em 1.1em;
   border-radius: 4px;
   cursor: pointer;
   transition: background 0.15s, border 0.15s, color 0.15s;
@@ -1131,6 +1155,8 @@ body {
   background: var(--surface);
   border-radius: 0.5rem;
   border: 1px solid var(--border);
+  text-align: left;
+  display: block;
 }
 
 .preview-line {
@@ -1145,6 +1171,7 @@ body {
   font-size: 0.9rem;
   font-weight: 600;
   box-shadow: 0 2px 8px rgba(231,184,111,0.12);
+  text-align: left;
 }
 
 .preview-line:last-child {
